@@ -2689,5 +2689,40 @@
     "variant": "10",
     "child": "c043",
     "modder": "Milky"
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c312",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c377",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "see through",
+    "variant": "01",
+    "child": "c377",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "cum",
+    "variant": "10",
+    "child": "c318",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c242",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
