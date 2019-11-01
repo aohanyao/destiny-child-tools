@@ -12,6 +12,7 @@ const config = {
   devServer: {
     contentBase: './docs/',
     hot: true,
+    port: 9605,
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
