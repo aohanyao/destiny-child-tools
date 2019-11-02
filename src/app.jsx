@@ -39,7 +39,7 @@ const App = function({fetchChilds, fetchMods, page}) {
         Page = pages[page] || NotFound
 
   return (
-    <CssBaseline>
+    <React.Fragment>
       <ThemeProvider theme={theme}>
         <div className={classes.flexGrow}>
           <AppBar position="static">
@@ -65,7 +65,7 @@ const App = function({fetchChilds, fetchMods, page}) {
           </Box>
         </Box>
       </ThemeProvider>
-    </CssBaseline>
+    </React.Fragment>
   )
 }
 
