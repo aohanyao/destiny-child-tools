@@ -6,6 +6,7 @@ import Link from '@material-ui/core/Link'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import ChildLink from './links/child.jsx'
 import Stars from './stars.jsx'
 import Tier from './tier.jsx'
 import TypeIcon from './type-icon.jsx'
@@ -36,10 +37,12 @@ const ChildCard = ({child}) => {
         <Grid container>
           <Censor min={1}>
             <Grid item xs={4}>
-              <img src={`./img/childs/portraits/${child.get('id')}_01.png`}
-                height="250"
-                alt={`${name} Portrait`}
-                className={classes.portrait} />
+              <ChildLink child={child}>
+                <img src={`/destiny-child-tools/img/childs/portraits/${child.get('id')}_01.png`}
+                  height="250"
+                  alt={`${name} Portrait`}
+                  className={classes.portrait} />
+              </ChildLink>
             </Grid>
           </Censor>
           <Grid item xs={8}>

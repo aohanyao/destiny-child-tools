@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 
 const EditButtonComponent = ({mode, setMode}) => {
   const classes = useStyles()
-  return __DEV__
+  return (typeof __DEV__ != 'undefined' && __DEV__)
     ? (mode == 'view'
       ? <IconButton className={classes.editButton} aria-label="Edit" onClick={() => setMode('edit')}>
         <EditIcon />

@@ -22,7 +22,7 @@ const ListLink = ({href, text, Icon}) => (
 
 const Home = () => (
   <List component="nav">
-    <ListItem button component={RouterLink} to="/childs">
+    <ListItem button component={RouterLink} to="/destiny-child-tools/childs">
       <ListItemIcon><FaceIcon /></ListItemIcon>
       <ListItemText primary="Childs &amp; Mods Database" />
     </ListItem>

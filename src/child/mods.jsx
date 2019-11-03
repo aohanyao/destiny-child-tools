@@ -52,17 +52,17 @@ const Mods = ({child, mods, mode}) => {
                 <Card className={classes.card}>
                   <CardContent>
                     <Typography variant="subtitle1">
-                      <Link href={`./live2d/viewer.html?mN=${modPath}&size=1000`} target="_blank">
+                      <Link href={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=1000`} target="_blank">
                         {child.get('id')}_{variantId} {mod.get('name')} by {mod.get('modder')} {' '}
                       </Link>
-                      <IconButton title="Download" href={`./live2d/assets/${modPath}/${id}_${variantId}.pck`}>
+                      <IconButton title="Download" href={`/destiny-child-tools/live2d/assets/${modPath}/${id}_${variantId}.pck`}>
                         <DownloadIcon />
                       </IconButton>
                     </Typography>
                     <Grid container>
                       <Grid item xs={1}>
                         <Censor min={1}>
-                          <img src={`./img/childs/portraits/${id}_${variantId}.png`}
+                          <img src={`/destiny-child-tools/img/childs/portraits/${id}_${variantId}.png`}
                             width="100%" />
                         </Censor>
                       </Grid>
@@ -85,7 +85,7 @@ const Mods = ({child, mods, mode}) => {
                             className={classes.live2d}
                             scrolling="no"
                             seamless="seamless"
-                            src={`./live2d/viewer.html?mN=${modPath}&size=400`} />
+                            src={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=400`} />
                         </Censor>
                       </Grid>
                     </Grid>
@@ -102,7 +102,7 @@ const Mods = ({child, mods, mode}) => {
                 Upload new mod
               </Typography>
             </Box>
-            <form method="post" encType="multipart/form-data" action="./api/mod">
+            <form method="post" encType="multipart/form-data" action="/api/mod">
               <input type="hidden" value={document.location} name="backUrl" />
               <p>Modder: <input type="text" name="modder" /></p>
               <p>Name: <input type="text" name="name" /></p>

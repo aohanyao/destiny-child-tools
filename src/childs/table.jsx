@@ -10,6 +10,7 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import TablePagination from '@material-ui/core/TablePagination'
 import TableSortLabel from '@material-ui/core/TableSortLabel'
+import ChildLink from '../links/child.jsx'
 import StarsInput from '../stars-input.jsx'
 import TypeInput from '../type-input.jsx'
 import ElementInput from '../element-input.jsx'
@@ -23,9 +24,7 @@ const TableChildCellLink = ({child, children, Editor, mode}) => (
   <TableCell>
     {mode == 'edit' && Editor
       ? <Editor child={child} />
-      : <Link component={RouterLink} to={`/childs/${child.get('id')}`}>
-        {children || ''}
-      </Link>
+      : <ChildLink child={child}>{children || ''}</ChildLink>
     }
   </TableCell>
 )
@@ -80,7 +79,7 @@ const ChildsTable = ({
                   {id}
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
-                  <img src={`./img/childs/icons/${child.get('id')}_01.png`} height="40" />
+                  <img src={`/img/childs/icons/${child.get('id')}_01.png`} height="40" />
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
                   {child.get('name')}

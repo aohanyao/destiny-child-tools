@@ -19,7 +19,7 @@ const ElementIcon = ({child, element, mode}) => {
     : element
       ? (
         <img
-          src={`./img/elements/${element}.png`}
+          src={`/destiny-child-tools/img/elements/${element}.png`}
           className={classes.icon}
           title={element.charAt(0).toUpperCase() + element.slice(1)}/>
       )

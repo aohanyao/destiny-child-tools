@@ -1,4 +1,4 @@
-const defaultState = typeof localStorage.getItem('censorship') == 'string'
+const defaultState = (typeof localStorage != 'undefined' && typeof localStorage.getItem('censorship') == 'string')
   ? parseInt(localStorage.getItem('censorship'))
   : 1
 

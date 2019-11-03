@@ -1,25 +1,84 @@
-const express = require('express'),
-      bodyParser = require('body-parser'),
-      fs = require('fs'),
-      path = require('path'),
-      fileUpload = require('express-fileupload'),
-      {exec} = require('child_process')
+import React from 'react'
+import express from 'express'
+import bodyParser from 'body-parser'
+import fs from 'fs'
+import path from 'path'
+import fileUpload from 'express-fileupload'
+import {exec} from 'child_process'
+import webpack from 'webpack'
+import WebpackDevServer from 'webpack-dev-server'
+import httpProxy from 'http-proxy'
+import ReactDOMServer from 'react-dom/server'
+import config from '../webpack.config.js'
+import {renderHtml} from './html.js'
 
-const app = express()
-const port = 3000
+const app = express(),
+      port = 3000,
+      webpackPort = port + 1,
+      // __dirname = path.dirname(fileURLToPath(import.meta.url)),
+      webpackProxy = httpProxy.createProxyServer({
+        target: 'http://localhost:' + webpackPort,
+        changeOrigin: true,
+        ws: true
+      })
+
+const webpackDevServer = new WebpackDevServer(webpack(config), {
+  contentBase: path.join(__dirname, '../docs/'),
+  publicPath: config.output.publicPath,
+  clientLogLevel: 'warning',
+  inline: false,
+  hot: false,
+  stats: {
+    colors: true,
+    hash: false,
+    version: false,
+    timings: false,
+    assets: false,
+    chunks: false,
+    modules: false,
+    reasons: false,
+    children: false,
+    source: false,
+    errors: true,
+    errorDetails: true,
+    warnings: true
+  }
+})
+
+webpackDevServer.listen(webpackPort, 'localhost')
 
 app.use(bodyParser.json({extended: true, limit: '50mb'}))
 app.use(bodyParser.urlencoded())
 app.use(fileUpload({limits: { fileSize: 50 * 1024 * 1024 }}))
 
-app.post('/childs', (req, res) => {
+app.get('*', (req, res) => {
+  if(req.headers.accept &&
+    req.headers.accept.match(/\/html/) &&
+    !req.url.match(/\.[a-z]+$/) &&
+    !req.url.match(/\/live2d\//)
+  ) {
+    res.setHeader('content-type', 'text/html')
+    const body = 'OK'
+    res.send(
+      // fs.readFileSync(path.resolve(__dirname, '../src/index.html')).toString()
+      renderHtml(req.url)
+        .replace('<div id="root"></div>', `<div id="root">${body}</div>`)
+    )
+  }
+  else {
+    req.url = req.url.replace('/destiny-child-tools', '')
+    webpackProxy.web(req, res)
+  }
+
+})
+app.post('/api/childs', (req, res) => {
   fs.writeFileSync(path.resolve(__dirname, '../docs/data/childs.json'),
     JSON.stringify(req.body, null, 2)
   )
   res.send(req.body)
 })
 
-app.post('/mod', function(req, res) {
+app.post('/api/mod', function(req, res) {
   req.files.pck.mv(path.join(__dirname, '../pckmanager', req.files.pck.name))
   const name = req.files.pck.name.replace('.pck', '')
 
@@ -38,7 +97,6 @@ app.post('/mod', function(req, res) {
   if(req.body.nsfw == 'nsfw') mod.nsfw = true
 
   function run(cmd) {
-    const exec = require('child_process').exec
     return new Promise((resolve, reject) => {
       exec(cmd, (error, stdout, stderr) => {
         if(error) {

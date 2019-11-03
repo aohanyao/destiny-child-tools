@@ -10,26 +10,29 @@ import processing from './reducers/processing.js'
 import page from './reducers/page.js'
 import mods from './reducers/mods.js'
 import routes from './routes.js'
-import {history} from './history.js'
+import {createHistory} from './history.js'
 
-const {reducer, middleware, enhancer} = connectRoutes(routes, {
-  createHistory: () => history,
-  location: state => state.get('location')
-})
+export const createBrowserStore = (url) => {
+  const history = createHistory(url)
+  const {reducer, middleware, enhancer} = connectRoutes(routes, {
+    createHistory: () => history,
+    location: state => state.get('location')
+  })
 
-const rootReducer = combineReducers({
-  censorship,
-  processing,
-  child,
-  childs,
-  childList,
-  mods,
-  page,
-  location: reducer
-})
-const middlewares = applyMiddleware(middleware, thunk)
+  const rootReducer = combineReducers({
+    censorship,
+    processing,
+    child,
+    childs,
+    childList,
+    mods,
+    page,
+    location: reducer
+  })
+  const middlewares = applyMiddleware(middleware, thunk)
 
-const enhancers = [enhancer, middlewares]
-if(window.__REDUX_DEVTOOLS_EXTENSION__) enhancers.push(window.__REDUX_DEVTOOLS_EXTENSION__())
+  const enhancers = [enhancer, middlewares]
+  if(typeof window != 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__) enhancers.push(window.__REDUX_DEVTOOLS_EXTENSION__())
 
-export default createStore(rootReducer, compose.apply(compose, enhancers))
+  return createStore(rootReducer, compose.apply(compose, enhancers))
+}

@@ -22,7 +22,7 @@ const Stars = ({child, mode}) => {
     : stars
       ? <span className={classes.stars} title={`${stars} Stars`}>
         {(new Array(stars)).fill(0).map((_, i) =>
-          <img key={'star' + i} src="./img/star.png" className={classes.star}/>
+          <img key={'star' + i} src="/destiny-child-tools/img/star.png" className={classes.star}/>
         )}
       </span>
       : ''

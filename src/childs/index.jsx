@@ -12,6 +12,7 @@ import ChildCards from './cards.jsx'
 import Filters from './filters.jsx'
 import EditButton from '../edit-button.jsx'
 import {setPage, setFilter} from '../actions/child-list.js'
+import routes from '../routes.js'
 
 const Childs = ({
   childs,
@@ -49,7 +50,7 @@ const Childs = ({
       <Box mb={2}>
         <EditButton />
         <Breadcrumbs aria-label="Breadcrumb">
-          <Link component={RouterLink} to="/">Home</Link>
+          <Link component={RouterLink} to={routes.HOME}>Home</Link>
           <Typography color="textPrimary">Childs</Typography>
         </Breadcrumbs>
       </Box>

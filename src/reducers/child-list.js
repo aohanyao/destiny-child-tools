@@ -1,7 +1,9 @@
 import {fromJS} from 'immutable'
 
 const load = (name, dflt) => {
-  const stored = localStorage.getItem('child-list-filter-' + name)
+  const stored = typeof localStorage == 'undefined'
+    ? null
+    : localStorage.getItem('child-list-filter-' + name)
   return stored === null
     ? dflt
     : stored.match(/^true|false$/)

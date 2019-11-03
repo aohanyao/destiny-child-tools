@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid'
 import {Censor} from '../censorship.jsx'
 import EditButton from '../edit-button.jsx'
 import ChildCard from '../child-card.jsx'
+import routes from '../routes.js'
 import Mods from './mods.jsx'
 
 const useStyles = makeStyles({
@@ -44,8 +45,8 @@ const Child = ({child, mods}) => {
     <div>
       <EditButton />
       <Breadcrumbs aria-label="Breadcrumb">
-        <Link component={RouterLink} to="/">Home</Link>
-        <Link component={RouterLink} to="/childs">Childs</Link>
+        <Link component={RouterLink} to={routes.HOME}>Home</Link>
+        <Link component={RouterLink} to={routes.CHILDS}>Childs</Link>
         <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
       <Box mt={2}>
@@ -60,7 +61,7 @@ const Child = ({child, mods}) => {
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <Button
-                  href={`./live2d/?model=${id}_${vId}`}
+                  href={`/destiny-child-tools/live2d/?model=${id}_${vId}`}
                   target="_blank">
                   {variant.get('title')} {name} ({id}_{vId})
                   <Box ml={2}><OpenInNewIcon /></Box>
@@ -68,7 +69,7 @@ const Child = ({child, mods}) => {
                 <Grid container>
                   <Grid item xs={4}>
                     <Censor min={1}>
-                      <img src={`./img/childs/portraits/${id}_${vId}.png`}
+                      <img src={`/destiny-child-tools/img/childs/portraits/${id}_${vId}.png`}
                         height="250"
                         alt={`${variant.get('title')} ${name} Portrait`} />
                     </Censor>
@@ -86,7 +87,7 @@ const Child = ({child, mods}) => {
                         className={classes.live2d}
                         scrolling="no"
                         seamless="seamless"
-                        src={`./live2d/viewer.html?mN=${id}_${vId}&size=500`} />
+                        src={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=500`} />
                     </Censor>
                   </Grid>
                 </Grid>

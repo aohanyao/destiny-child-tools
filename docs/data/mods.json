@@ -2724,5 +2724,12 @@
     "child": "c242",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c424",
+    "modder": "蠟燭炭",
+    "nsfw": true
   }
 ]

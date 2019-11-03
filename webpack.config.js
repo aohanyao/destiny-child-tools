@@ -1,6 +1,8 @@
-const webpack = require('webpack'),
-      HtmlWebpackPlugin = require('html-webpack-plugin'),
-      path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+
+// const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const config = {
   entry: './src/index.js',
@@ -9,37 +11,24 @@ const config = {
     publicPath: '/',
     filename: 'bundle.js'
   },
-  devServer: {
-    contentBase: './docs/',
-    hot: true,
-    port: 9605,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        pathRewrite: {'^/api': ''}
-      }
-    }
-  },
+  // devServer: {
+  //   contentBase: './docs/',
+  //   hot: true,
+  //   port: 9605,
+  //   proxy: {
+  //     '/api': {
+  //       target: 'http://localhost:3000',
+  //       pathRewrite: {'^/api': ''}
+  //     }
+  //   }
+  // },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {},
-          },
-        ],
-      },
+      }
     ]
   },
   plugins: [

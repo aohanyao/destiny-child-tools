@@ -19,7 +19,7 @@ const TypeIcon = ({child, type, mode}) => {
     : type
       ? (
         <img
-          src={`./img/types/${type}.png`}
+          src={`/destiny-child-tools/img/types/${type}.png`}
           className={classes.icon}
           title={type.charAt(0).toUpperCase() + type.slice(1)}/>
       )
