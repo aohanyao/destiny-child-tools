@@ -15,6 +15,16 @@ const generateHtml = (pathname) => {
   fs.writeFileSync(path.resolve(__dirname, '../docs' + target), res.getBody('utf8'))
 }
 
+const res = request('GET', 'http://localhost:3000/destiny-child-tools/', {
+  headers: {
+    'accept': 'text/html',
+  },
+})
+if(!res.getBody('utf8').match('Destiny Child Tools')) {
+  throw new Error('Dev server not running. Cannot generate HTML.')
+  process.exit(1)
+}
+
 generateHtml('/')
 generateHtml('/childs')
 Object.keys(childs).forEach(id => generateHtml('/childs/' + id))
