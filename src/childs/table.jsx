@@ -79,7 +79,7 @@ const ChildsTable = ({
                   {id}
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
-                  <img src={`/img/childs/icons/${child.get('id')}_01.png`} height="40" />
+                  <img src={`/destiny-child-tools/img/childs/icons/${child.get('id')}_01.png`} height="40" />
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
                   {child.get('name')}
