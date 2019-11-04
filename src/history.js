@@ -1,9 +1,10 @@
 import {createBrowserHistory, createMemoryHistory, createLocation} from 'history'
 import routes from './routes.js'
 
+let history
 export const createHistory = url => {
   const location = createLocation(url)
-  const history = typeof window == 'undefined'
+  history = (typeof __HTML__ !== 'undefined' && __HTML__)
     ? createMemoryHistory()
     : createBrowserHistory()
   if(typeof window == 'undefined') history.push(location)

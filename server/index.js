@@ -45,6 +45,8 @@ const webpackDevServer = new WebpackDevServer(webpack(config), {
   }
 })
 
+global.__HTML__ = true
+
 webpackDevServer.listen(webpackPort, 'localhost')
 
 app.use(bodyParser.json({extended: true, limit: '50mb'}))
