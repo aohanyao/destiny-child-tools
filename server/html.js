@@ -5,6 +5,7 @@ import {ServerStyleSheets, ThemeProvider} from '@material-ui/styles'
 import App from '../src/app.jsx'
 import {createBrowserStore} from '../src/store.js'
 import theme from '../src/theme.js'
+import childData from '../docs/data/childs.json'
 
 export const renderHtml = url => {
   const StyledApp = () => (
@@ -14,13 +15,20 @@ export const renderHtml = url => {
       </ThemeProvider>
     </Provider>
   )
-  const sheets = new ServerStyleSheets()
-  const html = ReactDOMServer.renderToString(sheets.collect(<StyledApp />))
+  const sheets = new ServerStyleSheets(),
+        html = ReactDOMServer.renderToString(sheets.collect(<StyledApp />)),
+        childId = url.match(/\/childs\/([^/]+)/),
+        childDb = url.match(/\/childs\/?$/),
+        title = childId
+          ? ReactDOMServer.renderToString(childData[childId[1]].name) + ' | '
+          : childDb
+            ? 'Childs Database | '
+            : ''
   return `
     <html>
       <head>
         <meta charset="UTF-8" />
-        <title>Destiny Child Mods &amp; Tools</title>
+        <title>${title}Destiny Child Mods &amp; Tools</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style type="text/css">
           body {
