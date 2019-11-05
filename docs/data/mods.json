@@ -2731,5 +2731,222 @@
     "child": "c424",
     "modder": "蠟燭炭",
     "nsfw": true
+  },
+  {
+    "name": "Swimsuit",
+    "variant": "01",
+    "child": "c001",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c339",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "White Booty",
+    "variant": "11",
+    "child": "c318",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "White Booty",
+    "variant": "01",
+    "child": "c318",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer Top",
+    "variant": "01",
+    "child": "c411",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "v2",
+    "variant": "10",
+    "child": "c318",
+    "modder": "Bugs Bunnay",
+    "nsfw": true
+  },
+  {
+    "name": "Pussy",
+    "variant": "10",
+    "child": "c318",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c318",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c318",
+    "modder": "Seireiko",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c129",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c129",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Empress Nike Topless Swap",
+    "variant": "01",
+    "child": "c266",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Empress Nike Topless Swap",
+    "variant": "02",
+    "child": "c266",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Cleavage",
+    "variant": "01",
+    "child": "c410",
+    "modder": "KDG"
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c410",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c372",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c064",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c403",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "01",
+    "child": "sc403",
+    "modder": "Seireiko",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c402",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Cleavage v2",
+    "variant": "02",
+    "child": "c167",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c160",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "01",
+    "child": "c364",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap Ishtar",
+    "variant": "02",
+    "child": "c183",
+    "modder": "Eljoseto"
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c296",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Swap",
+    "variant": "01",
+    "child": "c167",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap Baby Girl",
+    "variant": "01",
+    "child": "c000",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Flashing",
+    "variant": "01",
+    "child": "c290",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c414",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c415",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c414",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "89",
+    "child": "c414",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
