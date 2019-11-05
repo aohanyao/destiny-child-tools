@@ -1,7 +1,7 @@
 import {fromJS} from 'immutable'
-import childs from '../../docs/data/mods.json'
+import mods from '../../docs/data/mods.json'
 
-export default function(state = fromJS(childs), action) {
+export default function(state = fromJS(mods), action) {
   if(action.type == 'MODS_SET') {
     return fromJS(action.mods)
   }
