@@ -30,11 +30,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const App = function({fetchChilds, fetchMods, page, htmlMode}) {
-  if(!htmlMode) {
-    fetchChilds()
-    fetchMods()
-  }
+const App = function({page}) {
   const classes = useStyles(),
         Page = pages[page] || NotFound
   return (

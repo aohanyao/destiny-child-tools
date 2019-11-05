@@ -1,6 +1,7 @@
 import {fromJS, Map} from 'immutable'
+import childs from '../../docs/data/childs.json'
 
-export default (state = Map(), action) => {
+export default (state = fromJS(childs), action) => {
   if(action.type == 'SET_CHILDS') {
     return fromJS(Object.keys(action.childs).reduce(
       (acc, id) => {

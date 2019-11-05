@@ -8,7 +8,6 @@ import {exec} from 'child_process'
 import webpack from 'webpack'
 import WebpackDevServer from 'webpack-dev-server'
 import httpProxy from 'http-proxy'
-import ReactDOMServer from 'react-dom/server'
 import config from '../webpack.config.js'
 import {renderHtml} from './html.js'
 

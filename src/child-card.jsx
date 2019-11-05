@@ -40,7 +40,7 @@ const ChildCard = ({child}) => {
               <ChildLink child={child}>
                 <img src={`/destiny-child-tools/img/childs/portraits/${child.get('id')}_01.png`}
                   height="250"
-                  alt={`${name} Portrait`}
+                  alt={`${child.get('name')} Portrait`}
                   className={classes.portrait} />
               </ChildLink>
             </Grid>
