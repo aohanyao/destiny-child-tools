@@ -2948,5 +2948,99 @@
     "child": "c414",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "DBZ Android 18",
+    "variant": "01",
+    "child": "c002",
+    "modder": "Heather"
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c391",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c391",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c390",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c390",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "88",
+    "child": "c390",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "89",
+    "child": "c390",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c242",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c242",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c183",
+    "modder": "Requiem"
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c174",
+    "modder": "Requiem"
+  },
+  {
+    "name": "Translucent",
+    "variant": "02",
+    "child": "c029",
+    "modder": "Requiem",
+    "nsfw": true
+  },
+  {
+    "name": "Hot",
+    "variant": "01",
+    "child": "c001",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c193",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
