@@ -13,14 +13,14 @@ const load = (name, dflt) => {
 
 const defaultState = fromJS({
   ids: [],
-  numToShow: 20,
+  numToShow: 50,
   asc: true,
   sort: 'id',
   page: 0,
   element: load('element', false),
   stars: load('stars', false),
   type: load('type', false),
-  view: load('view', 'table'),
+  view: load('view', 'cards'),
   filter: ''
 })
 
