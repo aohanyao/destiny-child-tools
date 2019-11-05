@@ -1,4 +1,4 @@
 {
-  "baseUrl": "http://localhost:3000",
-  "videos": false
+  "baseUrl": "http://localhost:3000/destiny-child-tools/",
+  "video": false
 }
