@@ -3456,5 +3456,133 @@
     "child": "m177",
     "modder": "Heather",
     "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "00",
+    "child": "c247",
+    "modder": "KDG"
+  },
+  {
+    "name": "Topless",
+    "variant": "00",
+    "child": "c312",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c312",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "00",
+    "child": "c038",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Story Swap Sheer",
+    "variant": "01",
+    "child": "c038",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "89",
+    "child": "c417",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c417",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "00",
+    "child": "c417",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Tamamo Nude",
+    "variant": "02",
+    "child": "c061",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Tamamo Nude",
+    "variant": "01",
+    "child": "c061",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude Story",
+    "variant": "00",
+    "child": "c417",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c294",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c294",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c156",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Black Dress Red Dragon",
+    "variant": "01",
+    "child": "c343",
+    "modder": "Heather"
+  },
+  {
+    "name": "Swap Black Dress Red Dragon",
+    "variant": "01",
+    "child": "c041",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Torn Dress",
+    "variant": "02",
+    "child": "c041",
+    "modder": "Heather"
+  },
+  {
+    "name": "Torn Dress",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Heather"
+  },
+  {
+    "name": "Gold Dress",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Heather"
   }
 ]
