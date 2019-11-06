@@ -28,7 +28,7 @@ const webpackDevServer = new WebpackDevServer(webpack(config), {
   inline: false,
   watchOptions: {
     ignored: [
-      path.resolve(__dirname, '../docs'),
+      path.resolve(__dirname, '../docs/live2d'),
       path.resolve(__dirname, '../server')
     ]
   },
@@ -153,8 +153,8 @@ app.post('/api/mod', function(req, res) {
     .then(() => run(`rm -rf ${pckPath}${name}`))
     .then(() => run('./pckmanager/PCK.exe /R /U ./pckmanager/' + name + '.pck'))
     .then(() => run(`mv ${pckPath}${name}.pck.newUnencrypted ${assetPath}${stringify(mod)}/${name}.pck`))
-    .then(() => run(`rm ${pckPath}${name}.pck.newUnencrypted`))
-    .then(() => run(`rm ${pckPath}${name}`))
+    .then(() => run(`rm -rf ${pckPath}${name}.pck.newUnencrypted`))
+    .then(() => run(`rm -rf ${pckPath}${name}`))
     .then(() => run(`rm -rf ${pckPath}${name}`))
     .then(() => run(`rm -rf ${pckPath}${name}.pck`))
     .then(() => {
