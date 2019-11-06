@@ -26,6 +26,12 @@ const webpackDevServer = new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   clientLogLevel: 'warning',
   inline: false,
+  watchOptions: {
+    ignored: [
+      path.resolve(__dirname, '../docs'),
+      path.resolve(__dirname, '../server')
+    ]
+  },
   hot: false,
   stats: {
     colors: true,

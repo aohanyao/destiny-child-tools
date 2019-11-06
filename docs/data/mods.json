@@ -3255,5 +3255,19 @@
     "child": "c371",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c402",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c404",
+    "modder": "Heather",
+    "nsfw": true
   }
 ]

@@ -1548,6 +1548,22 @@
     "id": "m142",
     "stars": 3
   },
+  "m263": {
+    "id": "m263",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "m153": {
     "name": "Manti",
     "variants": {
@@ -4731,6 +4747,22 @@
     },
     "id": "c081"
   },
+  "sc403": {
+    "id": "sc403",
+    "name": "Makoto",
+    "variants": {
+      "01": {
+        "title": "Spa",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "sc304": {
     "name": "네뷸라",
     "variants": {
@@ -6107,6 +6139,42 @@
     "element": "fire",
     "tierPVE": 4
   },
+  "c193": {
+    "id": "c193",
+    "name": "?",
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c083": {
     "name": "Neith",
     "variants": {
@@ -6860,6 +6928,42 @@
     "id": "c183",
     "element": "light",
     "tierPVE": 10
+  },
+  "c073": {
+    "id": "c073",
+    "name": "?",
+    "variants": {
+      "00": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c194": {
     "stars": 5,
@@ -8381,6 +8485,32 @@
       }
     },
     "id": "c152"
+  },
+  "c394": {
+    "id": "c394",
+    "name": "Oiran",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c053": {
     "stars": 5,
@@ -11061,6 +11191,32 @@
     },
     "id": "c034"
   },
+  "c397": {
+    "id": "c397",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c045": {
     "stars": 5,
     "tierPVP": 7,
@@ -11153,6 +11309,42 @@
     "id": "c045",
     "element": "light",
     "tierPVE": 7
+  },
+  "c287": {
+    "id": "c287",
+    "name": "?",
+    "variants": {
+      "00": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c056": {
     "name": "Jeanne d'Arc",
@@ -11321,6 +11513,52 @@
     "id": "c199",
     "element": "fire",
     "tierPVE": 7
+  },
+  "c420": {
+    "id": "c420",
+    "name": "Catherine",
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "89": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c200": {
     "name": "Seshet",
@@ -12406,6 +12644,32 @@
     },
     "id": "c189"
   },
+  "c410": {
+    "id": "c410",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c300": {
     "name": "Pietas",
     "variants": {
@@ -12431,6 +12695,32 @@
       }
     },
     "id": "c300"
+  },
+  "c421": {
+    "id": "c421",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c311": {
     "stars": 5,
@@ -13514,6 +13804,22 @@
     },
     "id": "c069"
   },
+  "c411": {
+    "id": "c411",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c301": {
     "name": "Jacheongbi",
     "variants": {
@@ -14131,6 +14437,42 @@
     "element": "water",
     "tierPVE": 7
   },
+  "c279": {
+    "id": "c279",
+    "name": "?",
+    "variants": {
+      "88": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c048": {
     "stars": 4,
     "tierPVP": 6,
@@ -14253,6 +14595,32 @@
       }
     },
     "id": "sm040"
+  },
+  "c423": {
+    "id": "c423",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "sm051": {
     "name": "하데스",
@@ -14892,6 +15260,42 @@
     "element": "light",
     "tierPVE": 8
   },
+  "c402": {
+    "id": "c402",
+    "name": "Noel",
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "sm151": {
     "name": "암즈",
     "variants": {
@@ -14901,6 +15305,22 @@
       }
     },
     "id": "sm151"
+  },
+  "c424": {
+    "id": "c424",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "sm052": {
     "name": "바실리",
@@ -15005,6 +15425,32 @@
       }
     },
     "id": "c226"
+  },
+  "c347": {
+    "id": "c347",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c116": {
     "name": "Pluto",
@@ -15363,6 +15809,32 @@
     },
     "id": "sm141"
   },
+  "c403": {
+    "id": "c403",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "sm152": {
     "name": "파이터",
     "variants": {
@@ -15372,6 +15844,52 @@
       }
     },
     "id": "sm152"
+  },
+  "c414": {
+    "id": "c414",
+    "name": "?",
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "89": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "c304": {
     "name": "Nebula",
@@ -16008,6 +16526,32 @@
     },
     "id": "sm153"
   },
+  "c415": {
+    "id": "c415",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c305": {
     "stars": 5,
     "tierPVP": 7,
@@ -16582,6 +17126,32 @@
     },
     "id": "sm144"
   },
+  "c406": {
+    "id": "c406",
+    "name": "Serval",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "sm045": {
     "name": "정령",
     "variants": {
@@ -16862,6 +17432,32 @@
     },
     "id": "sm145"
   },
+  "c418": {
+    "id": "c418",
+    "name": "Mafdet",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
   "c308": {
     "stars": 5,
     "tierPVP": 7,
@@ -17112,6 +17708,32 @@
       }
     },
     "id": "sm036"
+  },
+  "c419": {
+    "id": "c419",
+    "name": "Catherine",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   },
   "sc290": {
     "name": "브리지드",
@@ -19079,81 +19701,8 @@
     },
     "id": "m095"
   },
-  "c287": {
-    "id": "c287",
-    "name": "?",
-    "variants": {
-      "00": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c073": {
-    "id": "c073",
-    "name": "?",
-    "variants": {
-      "00": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c397": {
-    "id": "c397",
-    "name": "?",
+  "c404": {
+    "name": "Nine",
     "variants": {
       "01": {
         "title": "",
@@ -19170,525 +19719,12 @@
         "positions": {
           "home": {
             "x": -15,
-            "y": -75,
-            "scale": 0.75
+            "y": -50,
+            "scale": 1.15
           }
         }
       }
-    }
-  },
-  "c406": {
-    "id": "c406",
-    "name": "Serval",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c394": {
-    "id": "c394",
-    "name": "Oiran",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "m263": {
-    "id": "m263",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c424": {
-    "id": "c424",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c410": {
-    "id": "c410",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c411": {
-    "id": "c411",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c402": {
-    "id": "c402",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "sc403": {
-    "id": "sc403",
-    "name": "Makoto",
-    "variants": {
-      "01": {
-        "title": "Spa",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c403": {
-    "id": "c403",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c414": {
-    "id": "c414",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "10": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "89": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c415": {
-    "id": "c415",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c193": {
-    "id": "c193",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "10": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c279": {
-    "id": "c279",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "88": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c418": {
-    "id": "c418",
-    "name": "Mafdet",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c423": {
-    "id": "c423",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c421": {
-    "id": "c421",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c347": {
-    "id": "c347",
-    "name": "?",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c419": {
-    "id": "c419",
-    "name": "Catherine",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
-  },
-  "c420": {
-    "id": "c420",
-    "name": "Catherine",
-    "variants": {
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "10": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "89": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    }
+    },
+    "id": "c404"
   }
 }
