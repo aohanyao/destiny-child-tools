@@ -53,9 +53,11 @@ const ChildCard = ({child}) => {
             </Grid>
           </Censor>
           <Grid item xs={8}>
-            <Typography gutterBottom variant="h6" component="h2">
-              <ChildName child={child} /> ({child.get('id')})
-            </Typography>
+            <ChildLink child={child}>
+              <Typography gutterBottom variant="h6" component="h2">
+                <ChildName child={child} /> ({child.get('id')})
+              </Typography>
+            </ChildLink>
             <Stars child={child} />
             <div>
               <ElementIcon child={child} />
