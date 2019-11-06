@@ -749,6 +749,75 @@
     cursor: default;
     pointer-events: none;
   }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #556cd6;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(85, 108, 214, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #19857b;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(25, 133, 123, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
   .PrivateBreadcrumbSeparator-root-96 {
     display: flex;
     margin-left: 8px;
@@ -1618,75 +1687,6 @@
   }
   .MuiInputLabel-outlined.MuiInputLabel-shrink {
     transform: translate(14px, -6px) scale(0.75);
-  }
-  .MuiIconButton-root {
-    flex: 0 0 auto;
-    color: rgba(0, 0, 0, 0.54);
-    padding: 12px;
-    overflow: visible;
-    font-size: 1.5rem;
-    text-align: center;
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border-radius: 50%;
-  }
-  .MuiIconButton-root:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-  .MuiIconButton-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.26);
-    background-color: transparent;
-  }
-@media (hover: none) {
-  .MuiIconButton-root:hover {
-    background-color: transparent;
-  }
-}
-  .MuiIconButton-edgeStart {
-    margin-left: -12px;
-  }
-  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
-    margin-left: -3px;
-  }
-  .MuiIconButton-edgeEnd {
-    margin-right: -12px;
-  }
-  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
-    margin-right: -3px;
-  }
-  .MuiIconButton-colorInherit {
-    color: inherit;
-  }
-  .MuiIconButton-colorPrimary {
-    color: #556cd6;
-  }
-  .MuiIconButton-colorPrimary:hover {
-    background-color: rgba(85, 108, 214, 0.08);
-  }
-@media (hover: none) {
-  .MuiIconButton-colorPrimary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiIconButton-colorSecondary {
-    color: #19857b;
-  }
-  .MuiIconButton-colorSecondary:hover {
-    background-color: rgba(25, 133, 123, 0.08);
-  }
-@media (hover: none) {
-  .MuiIconButton-colorSecondary:hover {
-    background-color: transparent;
-  }
-}
-  .MuiIconButton-sizeSmall {
-    padding: 3px;
-    font-size: 1.125rem;
-  }
-  .MuiIconButton-label {
-    width: 100%;
-    display: flex;
-    align-items: inherit;
-    justify-content: inherit;
   }
   .makeStyles-editButton-85 {
     top: -.6rem;
