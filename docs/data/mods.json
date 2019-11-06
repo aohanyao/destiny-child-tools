@@ -3584,5 +3584,47 @@
     "variant": "02",
     "child": "c343",
     "modder": "Heather"
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c047",
+    "modder": "Requiem",
+    "nsfw": true
+  },
+  {
+    "name": "Cleavage",
+    "variant": "10",
+    "child": "c028",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c343",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c253",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "89",
+    "child": "c253",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Girl",
+    "variant": "89",
+    "child": "m256",
+    "modder": "Heather",
+    "nsfw": true
   }
 ]
