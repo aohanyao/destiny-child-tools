@@ -12,6 +12,13 @@
         "fade_out": 0
       }
     ],
+    "banner": [
+      {
+        "file": "c256_01_banner.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
     "idle": [
       {
         "file": "c256_01_idle.mtn",

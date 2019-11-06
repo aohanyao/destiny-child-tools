@@ -12,6 +12,13 @@
         "fade_out": 0
       }
     ],
+    "event_c319": [
+      {
+        "file": "c319_01_event_c319.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
     "hit": [
       {
         "file": "c319_01_hit.mtn",
