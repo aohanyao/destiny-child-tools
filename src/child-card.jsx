@@ -30,7 +30,14 @@ const useStyles = makeStyles({
 })
 
 const ChildCard = ({child}) => {
-  const classes = useStyles()
+  const classes = useStyles(),
+        variantId = ['01', '02', '89'].reduce((acc, vId) => {
+          return acc
+            ? acc
+            : child.get('variants').get(vId)
+              ? vId
+              : acc
+        }, false)
   return (
     <Card className={classes.card}>
       <CardContent>
@@ -38,7 +45,7 @@ const ChildCard = ({child}) => {
           <Censor min={1}>
             <Grid item xs={4}>
               <ChildLink child={child}>
-                <img src={`/destiny-child-tools/img/childs/portraits/${child.get('id')}_01.png`}
+                <img src={`/destiny-child-tools/img/childs/portraits/${child.get('id')}_${variantId}.png`}
                   height="250"
                   alt={`${child.get('name')} Portrait`}
                   className={classes.portrait} />
