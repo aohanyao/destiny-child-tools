@@ -26,6 +26,10 @@ To start a development server, install/update dependencies by running `npm insta
 
 Run `yarn start` to start a development server running on http://localhost:8080 to be able to see the result of your changes locally.
 
+#### Importing Data
+
+Place `assets/characters/*.pck` files from KR game in `import/characters/` and run `yarn import-files` then commit the changes.
+
 ### More help
 
 For more help, `Loki#7248` on the [Destiny Child Discord Server](https://discord.gg/ahv7SM).
