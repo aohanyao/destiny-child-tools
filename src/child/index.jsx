@@ -43,7 +43,9 @@ const Child = ({child, mods}) => {
         <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
       <Box mt={2} mb={2}>
-        <ChildCard child={child} />
+        <div style={{maxWidth: '400px'}}>
+          <ChildCard child={child} />
+        </div>
       </Box>
       <Box ml={0} mb={2} mt={4}>
         <Paper>
@@ -59,18 +61,24 @@ const Child = ({child, mods}) => {
               <Grid item xs={12} sm={6} md={4} lg={3} key={id + vId}>
                 <Card>
                   <CardContent className={classes.cardContent}>
-                    <IconButton
-                      title="Download"
-                      className={classes.download}
-                      href={`/destiny-child-tools/live2d/assets/${id}_${vId}/${id}_${vId}.pck`}>
-                      <DownloadIcon />
-                    </IconButton>
-                    <Button
-                      href={`/destiny-child-tools/live2d/?model=${id}_${vId}`}
-                      target="_blank"
-                      color="primary">
-                      {variant.get('title')} {name} ({id}_{vId})
-                    </Button>
+                    <Grid container>
+                      <Grid item xs={11}>
+                        <Button
+                          href={`/destiny-child-tools/live2d/?model=${id}_${vId}`}
+                          target="_blank"
+                          color="primary">
+                          {variant.get('title')} {name} ({id}_{vId})
+                        </Button>
+                      </Grid>
+                      <Grid item xs={1}>
+                        <IconButton
+                          title="Download"
+                          className={classes.download}
+                          href={`/destiny-child-tools/live2d/assets/${id}_${vId}/${id}_${vId}.pck`}>
+                          <DownloadIcon />
+                        </IconButton>
+                      </Grid>
+                    </Grid>
                     <Grid container>
                       <Grid item xs={4}>
                         <Censor min={1}>

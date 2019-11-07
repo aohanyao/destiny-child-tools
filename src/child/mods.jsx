@@ -15,7 +15,7 @@ import {Censor} from '../censorship.jsx'
 
 const useStyles = makeStyles({
   live2d: {
-    minHeight: 250,
+    // minHeight: 250,
   },
   download: {
     position: 'relative',
@@ -86,9 +86,11 @@ const Mods = ({child, mods, mode}) => {
                         <iframe
                           style={{
                             width: '100%',
-                            height: '330px',
+                            height: '350px',
                             maxWidth: '100%',
                             border: 'none',
+                            position: 'relative',
+                            top: '-.5em',
                             overflow: 'hidden'
                           }}
                           className={classes.live2d}
