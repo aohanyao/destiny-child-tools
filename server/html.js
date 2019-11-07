@@ -35,6 +35,7 @@ export const renderHtml = url => {
             margin: 0;
             padding: 0;
             font-family: arial, sans-sans-serif;
+            background: #333;
           }
           ${sheets.toString()}
         </style>

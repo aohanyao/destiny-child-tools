@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
 const Cards = ({childs}) => {
   const classes = useStyles()
-  return <Box p={2}>
+  return <Box mt={2}>
     {childs.map(child =>
       <div
         className={classes.card}

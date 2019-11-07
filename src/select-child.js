@@ -16,7 +16,7 @@ import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   input: {
     display: 'flex',
@@ -31,6 +31,7 @@ const useStyles = makeStyles(theme => ({
     flex: 1,
     alignItems: 'center',
     overflow: 'hidden',
+    position: 'relative'
   },
   chip: {
     margin: theme.spacing(0.5, 0.25),
@@ -39,20 +40,21 @@ const useStyles = makeStyles(theme => ({
   chipFocused: {
     backgroundColor: emphasize(
       theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[700],
-      0.08,
-    ),
+      0.08
+    )
   },
   noOptionsMessage: {
-    padding: theme.spacing(1, 2),
+    padding: theme.spacing(1, 2)
   },
   singleValue: {
-    fontSize: 16,
+    fontSize: 16
   },
   placeholder: {
     position: 'absolute',
-    left: '1rem',
+    left: 0,
     bottom: 6,
     fontSize: 16,
+    color: theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[500],
   },
   paper: {
     position: 'absolute',
@@ -260,6 +262,7 @@ function IntegrationReactSelect({childs}) {
       color: theme.palette.text.primary,
       '& input': {
         font: 'inherit',
+        color: theme.palette.text.primary,
       },
     }),
   }
@@ -274,6 +277,7 @@ function IntegrationReactSelect({childs}) {
           options={data}
           components={components}
           value={single}
+          color="primary"
           placeholder="Select Child ..."
           onChange={handleChangeSingle}
         />

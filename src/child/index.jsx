@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
 import Box from '@material-ui/core/Box'
+import Paper from '@material-ui/core/Paper'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import DownloadIcon from '@material-ui/icons/CloudDownload'
@@ -46,20 +47,22 @@ const Child = ({child, mods}) => {
   return (
     <div>
       <EditButton />
-      <Breadcrumbs aria-label="Breadcrumb">
+      <Breadcrumbs aria-label="breadcrumb">
         <Link component={RouterLink} to={routes.HOME}>Home</Link>
         <Link component={RouterLink} to={routes.CHILDS}>Childs</Link>
         <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
-      <Box mt={2}>
+      <Box mt={2} mb={2}>
         <ChildCard child={child} />
       </Box>
-      <Box mt={2}>
-        <Typography variant="h5">{name} Variants</Typography>
-      </Box>
+      <Paper>
+        <Box px={2} py={1}>
+          <Typography variant="h5">{name} Variants</Typography>
+        </Box>
+      </Paper>
       {variants.toOrderedMap().sortBy((v, k) => k)
         .map((variant, vId) => variant && variant.get &&
-          <Box m={1} key={id + vId} className={classes.box}>
+          <Box my={1} key={id + vId} className={classes.box}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <Button

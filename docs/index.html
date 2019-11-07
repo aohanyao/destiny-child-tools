@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: arial, sans-sans-serif;
+            background: #333;
           }
           .MuiToolbar-root {
   display: flex;
@@ -42,9 +43,9 @@
     min-height: 48px;
   }
   .MuiPaper-root {
-    color: rgba(0, 0, 0, 0.87);
+    color: #fff;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #fff;
+    background-color: #424242;
   }
   .MuiPaper-rounded {
     border-radius: 4px;
@@ -158,16 +159,16 @@
     position: relative;
   }
   .MuiAppBar-colorDefault {
-    color: rgba(0, 0, 0, 0.87);
-    background-color: #f5f5f5;
+    color: #fff;
+    background-color: #212121;
   }
   .MuiAppBar-colorPrimary {
-    color: #fff;
-    background-color: #556cd6;
+    color: #fafafa;
+    background-color: #80cbc4;
   }
   .MuiAppBar-colorSecondary {
     color: #fff;
-    background-color: #19857b;
+    background-color: #424242;
   }
 
   .MuiBox-root-43 {
@@ -177,7 +178,11 @@
     padding: 16px;
   }
   .MuiBox-root-125 {
-    padding-top: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .MuiBox-root-126 {
+    padding: 8px;
   }
   .MuiTypography-root {
     margin: 0;
@@ -308,19 +313,19 @@
     color: inherit;
   }
   .MuiTypography-colorPrimary {
-    color: #556cd6;
+    color: #80cbc4;
   }
   .MuiTypography-colorSecondary {
-    color: #19857b;
+    color: #424242;
   }
   .MuiTypography-colorTextPrimary {
-    color: rgba(0, 0, 0, 0.87);
+    color: #fff;
   }
   .MuiTypography-colorTextSecondary {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(255, 255, 255, 0.7);
   }
   .MuiTypography-colorError {
-    color: #ff1744;
+    color: #f44336;
   }
   .MuiTypography-displayInline {
     display: inline;
@@ -339,19 +344,19 @@
     user-select: none;
   }
   .MuiSvgIcon-colorPrimary {
-    color: #556cd6;
+    color: #80cbc4;
   }
   .MuiSvgIcon-colorSecondary {
-    color: #19857b;
+    color: #424242;
   }
   .MuiSvgIcon-colorAction {
-    color: rgba(0, 0, 0, 0.54);
+    color: #fff;
   }
   .MuiSvgIcon-colorError {
-    color: #ff1744;
+    color: #f44336;
   }
   .MuiSvgIcon-colorDisabled {
-    color: rgba(0, 0, 0, 0.26);
+    color: rgba(255, 255, 255, 0.3);
   }
   .MuiSvgIcon-fontSizeInherit {
     font-size: inherit;
@@ -420,7 +425,7 @@
     outline: 0;
   }
   .MuiInputBase-root {
-    color: rgba(0, 0, 0, 0.87);
+    color: #fff;
     cursor: text;
     display: inline-flex;
     position: relative;
@@ -431,7 +436,7 @@
     line-height: 1.1875em;
   }
   .MuiInputBase-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.38);
+    color: rgba(255, 255, 255, 0.5);
     cursor: default;
   }
   .MuiInputBase-multiline {
@@ -460,22 +465,22 @@
   }
   .MuiInputBase-input::-webkit-input-placeholder {
     color: currentColor;
-    opacity: 0.42;
+    opacity: 0.5;
     transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
   .MuiInputBase-input::-moz-placeholder {
     color: currentColor;
-    opacity: 0.42;
+    opacity: 0.5;
     transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
   .MuiInputBase-input:-ms-input-placeholder {
     color: currentColor;
-    opacity: 0.42;
+    opacity: 0.5;
     transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
   .MuiInputBase-input::-ms-input-placeholder {
     color: currentColor;
-    opacity: 0.42;
+    opacity: 0.5;
     transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
   .MuiInputBase-input:focus {
@@ -507,16 +512,16 @@
     opacity: 0 !important;
   }
   label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
-    opacity: 0.42;
+    opacity: 0.5;
   }
   label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
-    opacity: 0.42;
+    opacity: 0.5;
   }
   label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
-    opacity: 0.42;
+    opacity: 0.5;
   }
   label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
-    opacity: 0.42;
+    opacity: 0.5;
   }
 @keyframes MuiInputBase-keyframes-auto-fill {}
 @keyframes MuiInputBase-keyframes-auto-fill-cancel {}
@@ -549,7 +554,7 @@
     position: absolute;
     transform: scaleX(0);
     transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-    border-bottom: 2px solid rgb(59, 75, 149);
+    border-bottom: 2px solid rgb(153, 213, 207);
     pointer-events: none;
   }
   .MuiInput-underline.Mui-focused:after {
@@ -557,7 +562,7 @@
   }
   .MuiInput-underline.Mui-error:after {
     transform: scaleX(1);
-    border-bottom-color: #ff1744;
+    border-bottom-color: #f44336;
   }
   .MuiInput-underline:before {
     left: 0;
@@ -566,18 +571,18 @@
     content: "\00a0";
     position: absolute;
     transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     pointer-events: none;
   }
   .MuiInput-underline:hover:not(.Mui-disabled):before {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+    border-bottom: 2px solid #fff;
   }
   .MuiInput-underline.Mui-disabled:before {
     border-bottom-style: dotted;
   }
 @media (hover: none) {
   .MuiInput-underline:hover:not(.Mui-disabled):before {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
 }
   .MuiSelect-select {
@@ -590,7 +595,7 @@
   }
   .MuiSelect-select:focus {
     border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
   }
   .MuiSelect-select::-ms-expand {
     display: none;
@@ -602,7 +607,7 @@
     height: auto;
   }
   .MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
-    background-color: #fff;
+    background-color: #424242;
   }
   .MuiSelect-outlined {
     border-radius: 4px;
@@ -615,7 +620,7 @@
   }
   .MuiSelect-icon {
     top: calc(50% - 12px);
-    color: rgba(0, 0, 0, 0.54);
+    color: #fff;
     right: 0;
     position: absolute;
     pointer-events: none;
@@ -663,10 +668,10 @@
     text-decoration: none;
   }
   .MuiListItem-root.Mui-focusVisible {
-    background-color: rgba(0, 0, 0, 0.14);
+    background-color: rgba(255, 255, 255, 0.2);
   }
   .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
-    background-color: rgba(0, 0, 0, 0.14);
+    background-color: rgba(255, 255, 255, 0.2);
   }
   .MuiListItem-root.Mui-disabled {
     opacity: 0.5;
@@ -682,7 +687,7 @@
     align-items: flex-start;
   }
   .MuiListItem-divider {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     background-clip: padding-box;
   }
   .MuiListItem-gutters {
@@ -694,7 +699,7 @@
   }
   .MuiListItem-button:hover {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 @media (hover: none) {
   .MuiListItem-button:hover {
@@ -705,7 +710,7 @@
     padding-right: 48px;
   }
   .MuiFormLabel-root {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(255, 255, 255, 0.7);
     padding: 0;
     font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -714,16 +719,16 @@
     letter-spacing: 0.00938em;
   }
   .MuiFormLabel-root.Mui-focused {
-    color: rgb(59, 75, 149);
+    color: rgb(153, 213, 207);
   }
   .MuiFormLabel-root.Mui-disabled {
-    color: rgba(0, 0, 0, 0.38);
+    color: rgba(255, 255, 255, 0.5);
   }
   .MuiFormLabel-root.Mui-error {
-    color: #ff1744;
+    color: #f44336;
   }
   .MuiFormLabel-asterisk.Mui-error {
-    color: #ff1744;
+    color: #f44336;
   }
   .MuiInputLabel-root {
     display: block;
@@ -771,7 +776,7 @@
     transform: translate(14px, -6px) scale(0.75);
   }
   .MuiListItemIcon-root {
-    color: rgba(0, 0, 0, 0.54);
+    color: #fff;
     display: inline-flex;
     min-width: 56px;
     flex-shrink: 0;
@@ -797,7 +802,7 @@
     height: 1px;
     margin: 0;
     flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
   }
   .MuiDivider-absolute {
     left: 0;
@@ -809,7 +814,7 @@
     margin-left: 72px;
   }
   .MuiDivider-light {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.08);
   }
   .MuiDivider-middle {
     margin-left: 16px;
@@ -823,7 +828,7 @@
     flex-grow: 1;
   }
   .makeStyles-input-75 {
-    color: #e0e0e0;
+    color: #616161;
     height: auto;
     display: flex;
     padding: 0;
@@ -833,15 +838,16 @@
     flex: 1;
     display: flex;
     overflow: hidden;
+    position: relative;
     flex-wrap: wrap;
     align-items: center;
   }
   .makeStyles-chip-77 {
-    color: #e0e0e0;
+    color: #616161;
     margin: 4px 2px;
   }
   .makeStyles-chipFocused-78 {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(109, 109, 109);
   }
   .makeStyles-noOptionsMessage-79 {
     padding: 8px 16px;
@@ -850,7 +856,8 @@
     font-size: 16px;
   }
   .makeStyles-placeholder-81 {
-    left: 1rem;
+    left: 0;
+    color: #9e9e9e;
     bottom: 6px;
     position: absolute;
     font-size: 16px;
@@ -868,7 +875,7 @@
         </style>
       </head>
       <body>
-        <div id="root"><div class="makeStyles-flexGrow-1"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiBox-root MuiBox-root-43"><a href="/destiny-child-tools/"><img src="/destiny-child-tools/icon.png" height="32"/></a></div><h6 class="MuiTypography-root makeStyles-flexGrow-1 MuiTypography-h6">Destiny Child Tools</h6><div class="makeStyles-root-74"></div></div></header></div><div class="MuiBox-root MuiBox-root-83"><nav class="MuiList-root MuiList-padding"><a href="/destiny-child-tools/childs" class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Childs &amp; Mods Database</span></div></a><hr class="MuiDivider-root"/><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="./live2d/" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Live2D Viewer</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://arsylk.pythonanywhere.com/apk/view_models" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Arsylk&#x27;s dctools</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Mods" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z" clip-rule="evenodd"></path><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Modding Wiki (nsfw)</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://github.com/LokiCoder/destiny-child-tools" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">GitHub Sourcecode</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://drive.google.com/drive/u/0/folders/1ZgUD3gnXgyb5Vtu-3yD5pb0kM2ZUTugT" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Original PCK files (outdated?)</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></nav><div class="MuiBox-root MuiBox-root-125"><div class="MuiFormControl-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled" data-shrink="true">Censorship Level</label><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect" tabindex="0" role="button" aria-labelledby=" " aria-haspopup="listbox">Mild (uncensored images)</div><input type="hidden" value="1"/><svg class="MuiSvgIcon-root MuiSelect-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div></div></div>
+        <div id="root"><div class="makeStyles-flexGrow-1"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorSecondary"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="MuiBox-root MuiBox-root-43"><a href="/destiny-child-tools/"><img src="/destiny-child-tools/icon.png" height="32"/></a></div><h6 class="MuiTypography-root makeStyles-flexGrow-1 MuiTypography-h6">Destiny Child Tools</h6><div class="makeStyles-root-74"></div></div></header></div><div class="MuiBox-root MuiBox-root-83"><div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"><nav class="MuiList-root MuiList-padding"><a href="/destiny-child-tools/childs" class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Childs &amp; Mods Database</span></div></a><hr class="MuiDivider-root"/><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="./live2d/" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Live2D Viewer</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://arsylk.pythonanywhere.com/apk/view_models" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Arsylk&#x27;s dctools</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Mods" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z" clip-rule="evenodd"></path><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Modding Wiki (nsfw)</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://github.com/LokiCoder/destiny-child-tools" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">GitHub Sourcecode</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" aria-disabled="false" href="https://drive.google.com/drive/u/0/folders/1ZgUD3gnXgyb5Vtu-3yD5pb0kM2ZUTugT" target="_blank"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1">Original PCK files (outdated?)</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a></nav></div><div class="MuiBox-root MuiBox-root-125"><div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"><div class="MuiBox-root MuiBox-root-126"><div class="MuiFormControl-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled" data-shrink="true">Censorship Level</label><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"><div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputSelect" tabindex="0" role="button" aria-labelledby=" " aria-haspopup="listbox">Mild (uncensored images)</div><input type="hidden" value="1"/><svg class="MuiSvgIcon-root MuiSelect-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div></div></div></div></div>
         <script type="text/javascript" src="/destiny-child-tools/bundle.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49949240-9"></script>
         <script>

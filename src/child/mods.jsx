@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
+import Paper from '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
 import Link from '@material-ui/core/Link'
 import IconButton from '@material-ui/core/IconButton'
@@ -36,19 +37,23 @@ const Mods = ({child, mods, mode}) => {
   return mods
     ? (
       <Box mt={2}>
-        <Typography variant="h5">
-          {child.get('name')} Mods
-        </Typography>
-        <Typography variant="body1">
-          <Link href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Modding" target="_blank">
-            Installation instructions
-          </Link>
-        </Typography>
+        <Paper>
+          <Box px={2} py={1}>
+            <Typography variant="h5">
+              {child.get('name')} Mods
+            </Typography>
+            <Typography variant="body1">
+              <Link href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Modding" target="_blank">
+                Installation instructions
+              </Link>
+            </Typography>
+          </Box>
+        </Paper>
         {child.get('variants').toOrderedMap().sortBy((_, v) => parseInt(v)).map((_, variantId) =>
           mods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => {
             const modPath = stringify(mod)
             return (
-              <Box m={1} className={classes.box} key={mod.get('modder') + mod.get('name') + i}>
+              <Box my={1} mr={1} className={classes.box} key={mod.get('modder') + mod.get('name') + i}>
                 <Card className={classes.card}>
                   <CardContent>
                     <Typography variant="subtitle1">

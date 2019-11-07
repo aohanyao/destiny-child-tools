@@ -4,6 +4,7 @@ import Link from 'redux-first-router-link'
 import {makeStyles} from '@material-ui/core/styles'
 import Toolbar from '@material-ui/core/Toolbar'
 import AppBar from '@material-ui/core/AppBar'
+import Paper from '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew'
@@ -36,7 +37,7 @@ const App = function({page}) {
   return (
     <React.Fragment>
       <div className={classes.flexGrow}>
-        <AppBar position="static">
+        <AppBar position="static" color="secondary">
           <Toolbar>
             <Box mr={2}>
               <Link to={routes.HOME}>
@@ -54,8 +55,12 @@ const App = function({page}) {
       </div>
       <Box p={2}>
         <Page />
-        <Box pt={2}>
-          <Censorship/>
+        <Box my={2}>
+          <Paper>
+            <Box p={1}>
+              <Censorship/>
+            </Box>
+          </Paper>
         </Box>
       </Box>
     </React.Fragment>

@@ -21,7 +21,9 @@ const app = express(),
         ws: true
       })
 
-const webpackDevServer = new WebpackDevServer(webpack(config), {
+const webpackDevServer = new WebpackDevServer(webpack(Object.assign({}, config, {
+  mode: 'development'
+})), {
   contentBase: path.join(__dirname, '../docs/'),
   publicPath: config.output.publicPath,
   clientLogLevel: 'warning',
@@ -32,7 +34,7 @@ const webpackDevServer = new WebpackDevServer(webpack(config), {
       path.resolve(__dirname, '../server')
     ]
   },
-  hot: false,
+  hot: true,
   stats: {
     colors: true,
     hash: false,
