@@ -2553,13 +2553,6 @@
   },
   {
     "name": "Nude",
-    "variant": "02",
-    "child": "c370",
-    "modder": "Heather",
-    "nsfw": true
-  },
-  {
-    "name": "Nude",
     "variant": "10",
     "child": "m051",
     "modder": "Heather",
@@ -3506,13 +3499,6 @@
     "nsfw": true
   },
   {
-    "name": "Nude",
-    "variant": "00",
-    "child": "c417",
-    "modder": "Heather",
-    "nsfw": true
-  },
-  {
     "name": "Swap Tamamo Nude",
     "variant": "02",
     "child": "c061",
@@ -3625,6 +3611,179 @@
     "variant": "89",
     "child": "m256",
     "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Girl",
+    "variant": "89",
+    "child": "m228",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Panties",
+    "variant": "02",
+    "child": "c305",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Ahegao",
+    "variant": "89",
+    "child": "c305",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Ahegao",
+    "variant": "10",
+    "child": "c305",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Nude",
+    "variant": "12",
+    "child": "c283",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Swap",
+    "variant": "02",
+    "child": "c387",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap Swimsuit",
+    "variant": "01",
+    "child": "c387",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap Costume",
+    "variant": "01",
+    "child": "c386",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap pink",
+    "variant": "02",
+    "child": "c385",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap Blue",
+    "variant": "01",
+    "child": "c385",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Swap",
+    "variant": "01",
+    "child": "c041",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Nude",
+    "variant": "16",
+    "child": "c001",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c001",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "89",
+    "child": "c417",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c417",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c390",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude Light",
+    "variant": "02",
+    "child": "c417",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude Light",
+    "variant": "89",
+    "child": "c417",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c391",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c311",
+    "modder": "Eljoseto",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c418",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c370",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "00",
+    "child": "c311",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Girl",
+    "variant": "89",
+    "child": "m232",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "00",
+    "child": "c216",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c416",
+    "modder": "KDG",
     "nsfw": true
   }
 ]
