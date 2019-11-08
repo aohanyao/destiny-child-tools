@@ -105,6 +105,15 @@ const Mods = ({child, mods, mode}) => {
             })
           ).toList()}
         </Grid>
+        <Box mt={2}>
+          <Typography align="right">
+            <Button
+              href="https://github.com/LokiCoder/destiny-child-tools/issues/new"
+              target="_blank">
+              Submit Mod / Report Issue
+            </Button>
+          </Typography>
+        </Box>
         {mode == 'edit' &&
           <Box mt={2}>
             <Box mb={1}>
@@ -126,6 +135,7 @@ const Mods = ({child, mods, mode}) => {
             </form>
           </Box>
         }
+
       </Box>
     )
     : null

@@ -3785,5 +3785,137 @@
     "child": "c416",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Nude Red",
+    "variant": "00",
+    "child": "c417",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "88",
+    "child": "c370",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c013",
+    "modder": "Ray",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Hildr",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Wedding Hildr",
+    "variant": "01",
+    "child": "c101",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Pink",
+    "variant": "02",
+    "child": "c374",
+    "modder": "Pebble5",
+    "nsfw": true
+  },
+  {
+    "name": "Camo",
+    "variant": "01",
+    "child": "c374",
+    "modder": "Pebble5",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "m051",
+    "modder": "Punkster",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Wedding Pamona",
+    "variant": "02",
+    "child": "c049",
+    "modder": "Heather"
+  },
+  {
+    "name": "Swap Wedding Pamona",
+    "variant": "01",
+    "child": "c049",
+    "modder": "Heather"
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Schoolgirl Sheer",
+    "variant": "01",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "01",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Bikini",
+    "variant": "01",
+    "child": "c387",
+    "modder": "Heather"
+  },
+  {
+    "name": "Female Topless",
+    "variant": "01",
+    "child": "c000",
+    "modder": "Uber",
+    "nsfw": true
+  },
+  {
+    "name": "Water Goblet Flowers",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Momotaro"
+  },
+  {
+    "name": "Black Dress Flowers",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Momotaro"
+  },
+  {
+    "name": "Black Dress",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Momotaro"
+  },
+  {
+    "name": "Black Dress Dark Skin",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Momotaro"
+  },
+  {
+    "name": "Dark Skin",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Momotaro"
   }
 ]
