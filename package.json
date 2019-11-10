@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "4.5.2",
     "@material-ui/icons": "4.5.1",
+    "copy-to-clipboard": "3.2.0",
     "cypress": "3.6.0",
     "history": "4.9.0",
     "immutable": "4.0.0-rc.12",

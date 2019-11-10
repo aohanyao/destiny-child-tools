@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import copyToClipoard from 'copy-to-clipboard'
 import {makeStyles} from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
@@ -36,6 +37,12 @@ const stringify = mod =>
   mod.get('modder').toLowerCase().replace(/\s/g, '_') + '-' +
   mod.get('name').toLowerCase().replace(/\s/g, '_')
 
+const copy = text => {
+  if(copyToClipoard(text)) {
+    alert('The following was coppied to your clipboard: \n\n' + text)
+  }
+}
+
 const ModModal = ({mod, setModDetails, child}) => {
   if(!mod) return null
   const classes = useStyles()
@@ -44,7 +51,8 @@ const ModModal = ({mod, setModDetails, child}) => {
   const handleClose = () => {
     setModDetails(null)
   }
-  const modPath = stringify(mod)
+  const modPath = stringify(mod),
+        modelInfo = JSON.stringify(mod.get('modelInfo'), null, 2)
   return (
     <div>
       <Dialog fullScreen open={Boolean(mod)} onClose={handleClose} TransitionComponent={Transition}>
@@ -77,8 +85,13 @@ const ModModal = ({mod, setModDetails, child}) => {
           <Grid item xs={12} s={6}>
             {mod.get('modelInfo') &&
               <Paper>
-                <Typography>This mod requires editing <em>files/asset/character/model_info.json</em> for proper placement. Find where it says <em>"{mod.get('child')}_{mod.get('variant')}":</em> and replace the value with the following new data:</Typography>
-                <pre>{JSON.stringify(mod.get('modelInfo'), null, 2)}</pre>
+                <Typography>
+                  This mod requires editing <em>files/asset/character/model_info.json</em> for proper placement. Find where it says <em>"{mod.get('child')}_{mod.get('variant')}":</em> and replace the value with the following new data:
+                  <Button onClick={() => copy(modelInfo)}>
+                    Copy to Clipoard
+                  </Button>
+                </Typography>
+                <pre onClick={() => copy(modelInfo)}>{modelInfo}</pre>
               </Paper>
             }
           </Grid>
