@@ -4097,5 +4097,389 @@
     "variant": "02",
     "child": "c003",
     "modder": "Requiem"
+  },
+  {
+    "name": "Topless",
+    "variant": "11",
+    "child": "c246",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "m142",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "m143",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "m144",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "m145",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "m146",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "00",
+    "child": "c198",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "00",
+    "child": "c267",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Genderbend Topless",
+    "variant": "01",
+    "child": "c132",
+    "modder": "luculluslanguish",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c382",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c382",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "No Cloth",
+    "variant": "10",
+    "child": "c127",
+    "modder": "Charlotte"
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c294",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c294",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c099",
+    "modder": "Charlotte",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c124",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c372",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c372",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Recolor",
+    "variant": "02",
+    "child": "c169",
+    "modder": "Charlotte"
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c344",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "No Stockings",
+    "variant": "02",
+    "child": "c169",
+    "modder": "Zipxim"
+  },
+  {
+    "name": "Topless",
+    "variant": "00",
+    "child": "c311",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Nude 2",
+    "variant": "02",
+    "child": "c344",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c344",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Nude small tits",
+    "variant": "01",
+    "child": "c344",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Panties no stockings",
+    "variant": "02",
+    "child": "c172",
+    "modder": "Zipxim"
+  },
+  {
+    "name": "psych loli from Youjo Senki",
+    "variant": "01",
+    "child": "c083",
+    "modder": "Zipxim"
+  },
+  {
+    "name": "psych loli from Youjo Senki",
+    "variant": "02",
+    "child": "c083",
+    "modder": "Zipxim",
+    "nsfw": true
+  },
+  {
+    "name": "Slut",
+    "variant": "10",
+    "child": "c036",
+    "modder": "KYS",
+    "nsfw": true
+  },
+  {
+    "name": "No bottoms",
+    "variant": "01",
+    "child": "c280",
+    "modder": "KYS",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c332",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c292",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "No Pants",
+    "variant": "00",
+    "child": "c153",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless Cumshot",
+    "variant": "01",
+    "child": "c158",
+    "modder": "pangtong128",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c060",
+    "modder": "pangtong128",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "89",
+    "child": "c311",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c311",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c068",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c028",
+    "modder": "Charlotte",
+    "nsfw": true
+  },
+  {
+    "name": "Golden",
+    "variant": "02",
+    "child": "c353",
+    "modder": "Charlotte"
+  },
+  {
+    "name": "Nip Slip",
+    "variant": "18",
+    "child": "c003",
+    "modder": "MOAE",
+    "nsfw": true
+  },
+  {
+    "name": "Silver",
+    "variant": "02",
+    "child": "c058",
+    "modder": "Charlotte",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Diablo Special",
+    "variant": "11",
+    "child": "m038",
+    "modder": "Heather"
+  },
+  {
+    "name": "Sheer Bikini",
+    "variant": "12",
+    "child": "c002",
+    "modder": "SpookyGhost",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "02",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "variant": "11",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Gold",
+    "variant": "12",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c036",
+    "modder": "SpookyGhost",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c036",
+    "modder": "SpookyGhost",
+    "nsfw": true
+  },
+  {
+    "name": "Topless Swimsuit",
+    "variant": "16",
+    "child": "c001",
+    "modder": "SpookyGhost",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Saturn Slut",
+    "variant": "02",
+    "child": "c022",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Saturn Slut",
+    "variant": "01",
+    "child": "c022",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Slut",
+    "variant": "00",
+    "child": "c349",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Girl",
+    "variant": "89",
+    "child": "m238",
+    "modder": "Heather"
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c158",
+    "modder": "Heather",
+    "nsfw": true
   }
 ]
