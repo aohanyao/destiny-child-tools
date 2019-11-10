@@ -11,7 +11,10 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import DownloadIcon from '@material-ui/icons/CloudDownload'
+import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications'
+import {setModDetails} from '../actions/child.js'
 import {Censor} from '../censorship.jsx'
+import ModModal from './mod-modal.jsx'
 
 const useStyles = makeStyles({
   live2d: {
@@ -21,6 +24,15 @@ const useStyles = makeStyles({
     position: 'relative',
     left: '-.5em',
     top: '-.2em'
+  },
+  cardContent: {
+    position: 'relative'
+  },
+  modelInfo: {
+    position: 'absolute',
+    top: '50px',
+    right: '5px',
+    zIndex: 100
   }
 })
 
@@ -30,12 +42,13 @@ const stringify = mod =>
   mod.get('modder').toLowerCase().replace(/\s/g, '_') + '-' +
   mod.get('name').toLowerCase().replace(/\s/g, '_')
 
-const Mods = ({child, mods, mode}) => {
+const Mods = ({child, mods, mode, setModDetails}) => {
   const id = child.get('id'),
         classes = useStyles()
   return mods
     ? (
       <Box mt={4} ml={0}>
+        <ModModal />
         <Box ml={0} mb={2}>
           <Paper>
             <Box pl={2} py={1}>
@@ -57,7 +70,15 @@ const Mods = ({child, mods, mode}) => {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={3} key={mod.get('modder') + mod.get('name') + i}>
                   <Card>
-                    <CardContent>
+                    <CardContent className={classes.cardContent}>
+                      {mod.get('modelInfo') &&
+                        <IconButton
+                          title="Model Info - This mod requires modifying model_info.json"
+                          className={classes.modelInfo}
+                          onClick={() => setModDetails(mod)}>
+                          <SettingsApplicationsIcon />
+                        </IconButton>
+                      }
                       <Grid container>
                         <Grid item xs={11}>
                           <Button
@@ -147,5 +168,8 @@ export default connect(
       mods: state.get('mods').filter(mod => mod.get('child') == child.get('id')),
       mode: state.get('child').get('mode')
     }
-  }
+  },
+  dispatch => ({
+    setModDetails: mod => dispatch(setModDetails(mod))
+  })
 )(Mods)
