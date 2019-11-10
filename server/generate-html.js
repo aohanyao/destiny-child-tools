@@ -9,8 +9,9 @@ const generateHtml = (pathname) => {
       'accept': 'text/html',
     },
   })
-  const target = pathname == '/' ? '/index.html' : pathname + '/index.html'
-  fs.mkdirSync(path.resolve(__dirname, '../docs' + pathname), { recursive: true })
+  const target = pathname == '/' ? '/index.html' : pathname + '/index.html',
+        dir = path.resolve(__dirname, '../docs' + pathname)
+  if(!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
   console.log('Writing HTML to', target)
   fs.writeFileSync(path.resolve(__dirname, '../docs' + target), res.getBody('utf8'))
 }

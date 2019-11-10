@@ -1,0 +1,103 @@
+import React from 'react'
+import {connect} from 'react-redux'
+import {makeStyles} from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
+import Dialog from '@material-ui/core/Dialog'
+import ListItemText from '@material-ui/core/ListItemText'
+import ListItem from '@material-ui/core/ListItem'
+import Paper from '@material-ui/core/Paper'
+import Divider from '@material-ui/core/Divider'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import IconButton from '@material-ui/core/IconButton'
+import Typography from '@material-ui/core/Typography'
+import CloseIcon from '@material-ui/icons/Close'
+import Slide from '@material-ui/core/Slide'
+import {setModDetails} from '../actions/child.js'
+
+const useStyles = makeStyles(theme => ({
+  appBar: {
+    position: 'relative',
+  },
+  title: {
+    marginLeft: theme.spacing(2),
+    flex: 1,
+  },
+}))
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />
+})
+
+const stringify = mod =>
+  mod.get('child') + '_' +
+  mod.get('variant') + '-' +
+  mod.get('modder').toLowerCase().replace(/\s/g, '_') + '-' +
+  mod.get('name').toLowerCase().replace(/\s/g, '_')
+
+const ModModal = ({mod, setModDetails, child}) => {
+  if(!mod) return null
+  const classes = useStyles()
+  const [open, setOpen] = React.useState(false)
+
+  const handleClose = () => {
+    setModDetails(null)
+  }
+  const modPath = stringify(mod)
+  return (
+    <div>
+      <Dialog fullScreen open={Boolean(mod)} onClose={handleClose} TransitionComponent={Transition}>
+        <AppBar className={classes.appBar}>
+          <Toolbar>
+            <IconButton edge="start" onClick={handleClose} aria-label="close">
+              <CloseIcon />
+            </IconButton>
+            <Typography variant="h6" className={classes.title}>
+              {child.get('name')} {mod.get('name')} by {mod.get('modder')}
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Grid container>
+          <Grid item xs={12} s={6}>
+            <iframe
+              style={{
+                width: '100%',
+                height: '500px',
+                maxWidth: '100%',
+                border: 'none',
+                position: 'relative',
+                top: '-.5em',
+                overflow: 'hidden'
+              }}
+              scrolling="no"
+              seamless="seamless"
+              src={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=500`} />
+          </Grid>
+          <Grid item xs={12} s={6}>
+            {mod.get('modelInfo') &&
+              <Paper>
+                <Typography>This mod requires editing <em>files/asset/character/model_info.json</em> for proper placement. Find where it says <em>"{mod.get('child')}_{mod.get('variant')}":</em> and replace the value with the following new data:</Typography>
+                <pre>{JSON.stringify(mod.get('modelInfo'), null, 2)}</pre>
+              </Paper>
+            }
+          </Grid>
+        </Grid>
+      </Dialog>
+    </div>
+  )
+}
+
+export default connect(
+  (state) => {
+    const mod = state.get('child').get('modDetails')
+    return {
+      mode: state.get('child').get('mode'),
+      mod,
+      child: mod && state.getIn(['childs', mod.get('child')])
+    }
+  },
+  dispatch => ({
+    setModDetails: mod => dispatch(setModDetails(mod))
+  })
+)(ModModal)
