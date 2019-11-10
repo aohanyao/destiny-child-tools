@@ -3925,13 +3925,13 @@
     "modder": "Heather",
     "nsfw": true,
     "modelInfo": {
-    "modeltype": "live2d",
+      "modeltype": "live2d",
       "home": {
         "position": {
           "x": -25,
           "y": 0
         },
-        "scale": 1.0,
+        "scale": 1,
         "flip": false
       },
       "talk": {
@@ -4005,13 +4005,13 @@
     "modder": "Heather",
     "nsfw": true,
     "modelInfo": {
-    "modeltype": "live2d",
+      "modeltype": "live2d",
       "home": {
         "position": {
           "x": -25,
           "y": 0
         },
-        "scale": 1.0,
+        "scale": 1,
         "flip": false
       },
       "talk": {
@@ -4077,5 +4077,25 @@
         }
       ]
     }
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c388",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c390",
+    "modder": "Charlotte",
+    "nsfw": true
+  },
+  {
+    "name": "Semi Lewd",
+    "variant": "02",
+    "child": "c003",
+    "modder": "Requiem"
   }
 ]
