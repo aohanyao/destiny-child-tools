@@ -4845,5 +4845,12 @@
     "child": "c365",
     "modder": "Heather",
     "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "00",
+    "child": "m136",
+    "modder": "蠟燭炭",
+    "nsfw": true
   }
 ]
