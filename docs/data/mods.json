@@ -4733,5 +4733,117 @@
     "child": "c214",
     "modder": "Heather",
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c221",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Special Topless",
+    "variant": "02",
+    "child": "c148",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Special Topless",
+    "variant": "01",
+    "child": "c148",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless Facial",
+    "variant": "02",
+    "child": "c148",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c148",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Special Lewd",
+    "variant": "10",
+    "child": "m051",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Leuce",
+    "variant": "01",
+    "child": "c051",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Leuce",
+    "variant": "02",
+    "child": "c051",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Honoka",
+    "variant": "02",
+    "child": "c051",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Honoka",
+    "variant": "01",
+    "child": "c051",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c063",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Lewd Raid",
+    "variant": "02",
+    "child": "m038",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Lewd Raid",
+    "variant": "01",
+    "child": "m038",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Recolor Topless",
+    "variant": "10",
+    "child": "c360",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Recolor Topless",
+    "variant": "01",
+    "child": "c360",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Gold Topless",
+    "variant": "02",
+    "child": "c365",
+    "modder": "Heather",
+    "nsfw": true
   }
 ]
