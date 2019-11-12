@@ -68,7 +68,7 @@ const Mods = ({child, mods, mode, setModDetails}) => {
             mods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => {
               const modPath = stringify(mod)
               return (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={mod.get('modder') + mod.get('name') + i}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={mod.get('modder') + mod.get('name') + i}>
                   <Card>
                     <CardContent className={classes.cardContent}>
                       {mod.get('modelInfo') &&

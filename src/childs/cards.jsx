@@ -8,7 +8,7 @@ const Cards = ({childs}) => {
   return <Box mt={2}>
     <Grid container spacing={2}>
       {childs.map(child =>
-        <Grid xs={12} sm={6} md={4} lg={3}
+        <Grid xs={12} sm={6} md={4} lg={3} xl={2}
           item
           key={child.get('id') + 'card'}>
           <ChildCard child={child} />

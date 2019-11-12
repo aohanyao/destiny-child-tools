@@ -58,7 +58,7 @@ const Child = ({child, mods}) => {
         <Grid container spacing={2}>
           {variants.toOrderedMap().sortBy((v, k) => k)
             .map((variant, vId) => variant && variant.get &&
-              <Grid item xs={12} sm={6} md={4} lg={3} key={id + vId}>
+              <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={id + vId}>
                 <Card>
                   <CardContent className={classes.cardContent}>
                     <Grid container>
