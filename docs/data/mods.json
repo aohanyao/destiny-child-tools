@@ -4852,5 +4852,170 @@
     "child": "m136",
     "modder": "蠟燭炭",
     "nsfw": true
+  },
+  {
+    "name": "Swap Ganesha",
+    "variant": "01",
+    "child": "c180",
+    "modder": "Loki",
+    "modelInfo": {
+      "modeltype": "live2d",
+      "home": {
+        "position": {
+          "x": -25,
+          "y": 0
+        },
+        "scale": 1,
+        "flip": false
+      },
+      "talk": {
+        "position": {
+          "x": 80,
+          "y": 280
+        },
+        "scale": 1.85,
+        "flip": false
+      },
+      "ally": {
+        "position": {
+          "x": 50,
+          "y": 220
+        },
+        "scale": 1.3,
+        "flip": false
+      },
+      "enemy": {
+        "position": {
+          "x": 6,
+          "y": 0
+        },
+        "scale": 1.05,
+        "flip": false,
+        "not_fov_scale": true,
+        "bossCamY": 70
+      },
+      "talk_zoom": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 3.7,
+        "flip": false
+      },
+      "drive": {
+        "position": {
+          "x": 100,
+          "y": 0
+        },
+        "scale": 1.2,
+        "flip": false
+      },
+      "selectRect": [
+        {
+          "top": 0.3,
+          "right": 0.560416639,
+          "left": 0.441666663,
+          "bottom": 0.34625
+        },
+        {
+          "top": 0,
+          "right": 0,
+          "left": 0,
+          "bottom": 0
+        },
+        {
+          "top": 0.16875,
+          "right": 0.5625,
+          "left": 0.435416669,
+          "bottom": 0.2425
+        }
+      ]
+    }
+  },
+  {
+    "name": "Swap Ganesha",
+    "variant": "02",
+    "child": "c180",
+    "modder": "Loki",
+    "modelInfo": {
+      "modeltype": "live2d",
+      "home": {
+        "position": {
+          "x": -25,
+          "y": 0
+        },
+        "scale": 1,
+        "flip": false
+      },
+      "talk": {
+        "position": {
+          "x": 80,
+          "y": 280
+        },
+        "scale": 1.85,
+        "flip": false
+      },
+      "ally": {
+        "position": {
+          "x": 50,
+          "y": 220
+        },
+        "scale": 1.3,
+        "flip": false
+      },
+      "enemy": {
+        "position": {
+          "x": 6,
+          "y": 0
+        },
+        "scale": 1.05,
+        "flip": false,
+        "not_fov_scale": true,
+        "bossCamY": 70
+      },
+      "talk_zoom": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 3.7,
+        "flip": false
+      },
+      "drive": {
+        "position": {
+          "x": 100,
+          "y": 0
+        },
+        "scale": 1.2,
+        "flip": false
+      },
+      "selectRect": [
+        {
+          "top": 0.3,
+          "right": 0.560416639,
+          "left": 0.441666663,
+          "bottom": 0.34625
+        },
+        {
+          "top": 0,
+          "right": 0,
+          "left": 0,
+          "bottom": 0
+        },
+        {
+          "top": 0.16875,
+          "right": 0.5625,
+          "left": 0.435416669,
+          "bottom": 0.2425
+        }
+      ]
+    }
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c202",
+    "modder": "Eljoseto",
+    "nsfw": true
   }
 ]
