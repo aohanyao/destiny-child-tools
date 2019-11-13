@@ -18,6 +18,7 @@ import EditButton from '../edit-button.jsx'
 import ChildCard from '../child-card.jsx'
 import routes from '../routes.js'
 import Mods from './mods.jsx'
+import Issues from './issues.jsx'
 
 const useStyles = makeStyles({
   live2d: {
@@ -102,18 +103,6 @@ const Child = ({child, mods}) => {
                             href={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=1000&background=%23424242`}
                             target="_blank">
                           </a>
-                          {/* <iframe
-                            style={{
-                              width: '100%',
-                              height: '100%',
-                              maxWidth: '100%',
-                              border: 'none',
-                              overflow: 'hidden'
-                            }}
-                            className={classes.live2d}
-                            scrolling="no"
-                            seamless="seamless"
-                            src={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=500`} /> */}
                         </Censor>
                       </Grid>
                     </Grid>
@@ -125,6 +114,7 @@ const Child = ({child, mods}) => {
         </Grid>
       </Box>
       <Mods mods={mods} child={child} />
+      <Issues child={child} />
     </div>
   )
 }
