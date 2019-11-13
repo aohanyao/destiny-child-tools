@@ -27,7 +27,7 @@ const webpackDevServer = new WebpackDevServer(webpack(Object.assign({}, config, 
   contentBase: path.join(__dirname, '../docs/'),
   publicPath: config.output.publicPath,
   clientLogLevel: 'warning',
-  inline: false,
+  // inline: true,
   watchOptions: {
     ignored: [
       path.resolve(__dirname, '../docs/live2d'),
@@ -35,6 +35,9 @@ const webpackDevServer = new WebpackDevServer(webpack(Object.assign({}, config, 
     ]
   },
   hot: true,
+  inline: true,
+  host: 'localhost',  
+  port: webpackPort,
   stats: {
     colors: true,
     hash: false,
