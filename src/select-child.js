@@ -31,7 +31,8 @@ const useStyles = makeStyles(theme => ({
     flex: 1,
     alignItems: 'center',
     overflow: 'hidden',
-    position: 'relative'
+    position: 'relative',
+    color: theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[300],
   },
   chip: {
     margin: theme.spacing(0.5, 0.25),
@@ -57,11 +58,12 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[500],
   },
   paper: {
-    position: 'absolute',
-    zIndex: 1,
     marginTop: theme.spacing(1),
+    position: 'absolute',
     left: 0,
     right: 0,
+    top: theme.spacing(5),
+    background: theme.palette.grey[900]
   },
 }))
 
@@ -131,7 +133,7 @@ function Option(props) {
       selected={props.isFocused}
       component="div"
       style={{
-        fontWeight: props.isSelected ? 500 : 400,
+        fontWeight: props.isSelected ? 500 : 400
       }}
       {...props.innerProps}
     >
@@ -211,8 +213,10 @@ MultiValue.propTypes = {
 
 function Menu(props) {
   return (
-    <Paper square className={props.selectProps.classes.paper} {...props.innerProps}>
-      {props.children}
+    <Paper square elevation={4} className={props.selectProps.classes.paper} {...props.innerProps}>
+      <div style={{zIndex:2000}}>
+        {props.children}
+      </div>
     </Paper>
   )
 }
