@@ -21,11 +21,18 @@
   <script src="./yukimiku.2d.js"></script>
   <script>
     window.addEventListener("load", function() {
+      var urlParams = new URLSearchParams(window.location.search)
+      if(urlParams.get('background')) {
+      console.log('params', urlParams.get('background'));
+        document.body.style.background = urlParams.get('background')
+      }
       var notme = document.getElementsByTagName("div");
       for (var i = 0; i < notme.length; i++) {
         notme[i].remove();
       }
+      
     });
+    
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
