@@ -25,9 +25,6 @@
     ],
     "ios": {
       "supportsTablet": true
-    },
-    "android": {
-      "package": "io.github.lokicoder.destiny-child-tools"
     }
   }
 }

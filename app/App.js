@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import {StyleSheet, Text, ScrollView, View, StatusBar, WebView} from 'react-native'
+import {StyleSheet, Image, Text, ScrollView, View, StatusBar, WebView} from 'react-native'
 import {Toolbar} from 'react-native-material-ui'
+import ScaledImage from './scaled-image'
 
 const stringify = mod =>
   mod.child + '_' +
@@ -54,21 +55,19 @@ export default function App() {
       />
       <ScrollView>
         {mods && childs && Object.keys(childs[id].variants).map(vId => (
-          <View style={{height: 400}} key={vId}>
-            <WebView
-              originWhitelist={['*']}
-              source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=500` }}/>
-          </View>
+          <ScaledImage
+            key={`${id}_${vId}`}
+            uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png`}
+          />
         ))}
         {mods && childs && mods.reduce((acc, mod) => { 
           if(mod.child == id) acc.push(mod)
           return acc
         }, []).map(mod => (
-          <View style={{height: 400}} key={mod.modder + mod.variant + mod.name}>
-            <WebView
-              originWhitelist={['*']}
-              source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/viewer.html?mN=${stringify(mod)}&size=1000` }}/>
-          </View>
+          <ScaledImage
+            key={`${stringify(mod)}}}`}
+            uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
+          />
         ))}
       </ScrollView>
       {/* {childs && Object.keys(childs).map(id => (
