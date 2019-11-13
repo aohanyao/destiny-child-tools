@@ -1,3 +1,5 @@
 node_modules
 .*
 *.lock
+cypress/screenshots/
+missing-previews.json

@@ -38,6 +38,7 @@
     "file-loader": "4.0.0",
     "html-webpack-plugin": "3.2.0",
     "http-server": "0.11.1",
+    "jimp": "0.8.5",
     "react-hot-loader": "4.12.15",
     "style-loader": "0.23.1",
     "sync-request": "6.1.0",
@@ -51,9 +52,11 @@
     "server": "npx babel-node ./server/index.js",
     "server-prod": "npx babel-node ./server/prod.js",
     "import-files": "npx babel-node ./server/import.js",
-    "dist": "NODE_ENV=production webpack --config ./webpack.config.js --mode production && node ./docs/live2d/generate-json.js && node ./server/generate-html.js",
+    "dist": "NODE_ENV=production webpack --config ./webpack.config.js --mode production && node ./docs/live2d/generate-json.js && node ./server/generate-html.js && yarn previews",
     "test": "npx cypress run",
-    "release": "yarn dist && git add . && git commit -sm \"Release\" && git push"
+    "release": "yarn dist && git add . && git commit -sm \"Release\" && git push",
+    "auto-crop": "npx babel-node ./server/auto-crop.js",
+    "previews": "yarn auto-crop && npx cypress run --spec=cypress/integration/previews.spec.js &&  yarn auto-crop || yarn auto-crop"
   },
   "repository": {
     "type": "git",

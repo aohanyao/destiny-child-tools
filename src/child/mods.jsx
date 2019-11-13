@@ -104,20 +104,18 @@ const Mods = ({child, mods, mode, setModDetails}) => {
                             <p>Change your censorship settings in the footer if you want to see this.</p>
                           </div>
                         }>
-                        <iframe
+                        <a 
                           style={{
-                            width: '100%',
-                            height: '350px',
-                            maxWidth: '100%',
-                            border: 'none',
-                            position: 'relative',
-                            top: '-.5em',
-                            overflow: 'hidden'
+                            textAlign: 'center', 
+                            display: 'block', 
+                            minHeight: '300px',
+                            background: `url(/destiny-child-tools/live2d/assets/${modPath}/preview-424242.png)`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center'
                           }}
-                          className={classes.live2d}
-                          scrolling="no"
-                          seamless="seamless"
-                          src={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=500`} />
+                          href={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=1000&background=%23424242`}
+                          target="_blank"></a>
                       </Censor>
                     </CardContent>
                   </Card>

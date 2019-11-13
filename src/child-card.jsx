@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 const ChildCard = ({child}) => {
   const classes = useStyles(),
-        variantId = ['01', '02', '89'].reduce((acc, vId) => {
+        variantId = ['01', '02', '89', '00'].reduce((acc, vId) => {
           return acc
             ? acc
             : child.get('variants').get(vId)

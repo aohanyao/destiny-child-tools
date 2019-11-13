@@ -89,7 +89,20 @@ const Child = ({child, mods}) => {
                       </Grid>
                       <Grid item xs={8}>
                         <Censor min={1}>
-                          <iframe
+                          <a 
+                            style={{
+                              textAlign: 'center', 
+                              display: 'block', 
+                              minHeight: '300px',
+                              background: `url(/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png)`,
+                              backgroundSize: 'contain',
+                              backgroundRepeat: 'no-repeat',
+                              backgroundPosition: 'center'
+                            }}
+                            href={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=1000&background=%23424242`}
+                            target="_blank">
+                          </a>
+                          {/* <iframe
                             style={{
                               width: '100%',
                               height: '100%',
@@ -100,7 +113,7 @@ const Child = ({child, mods}) => {
                             className={classes.live2d}
                             scrolling="no"
                             seamless="seamless"
-                            src={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=500`} />
+                            src={`/destiny-child-tools/live2d/viewer.html?mN=${id}_${vId}&size=500`} /> */}
                         </Censor>
                       </Grid>
                     </Grid>
