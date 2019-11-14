@@ -33,3 +33,11 @@ Place `assets/characters/*.pck` files from KR game in `import/characters/` and r
 ### More help
 
 For more help, `Loki#7248` on the [Destiny Child Discord Server](https://discord.gg/ahv7SM).
+
+
+## React Native App Development
+
+1. Connect Android device over ADB (use wireless for WSL with `adb connect [phone's IP])
+1. `cd app`
+1. `yarn start` server in one tab
+1. `yarn android` in another to connect to the phone
