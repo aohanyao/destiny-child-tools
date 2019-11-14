@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from "react"
 import { Image } from "react-native"
 
+// TODO use plain function with hooks
 export default class ScaledImage extends Component {
   constructor(props) {
     super(props)
-    this.state = { source: { uri: this.props.uri } }
+    this.state = {source: {uri: this.props.uri}}
   }
-
   componentDidMount() {
     Image.getSize(this.props.uri, (width, height) => {
       if(this.props.width && !this.props.height) {
@@ -31,7 +31,7 @@ export default class ScaledImage extends Component {
     return (
       <Image
         source={this.state.source}
-        style={{ height: this.state.height, width: this.state.width }} />
+        style={{height: this.state.height, width: this.state.width}} />
     )
   }
 }

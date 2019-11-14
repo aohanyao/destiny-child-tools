@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Dimensions
 } from 'react-native'
 import {
   Header,
@@ -54,26 +55,34 @@ const App: () => React$Node = () => {
         alert(error)
       })
   }
-  const id = 'c202'
+  const id = 'c001'
   return (
     <View style={{flex: 1, backgroundColor: '#424242'}}>
       <StatusBar barStyle="dark-content" />
       <ScrollView>
-        {mods && childs && Object.keys(childs[id].variants).map(vId => (
-          <ScaledImage
-            key={`${id}_${vId}`}
-            uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png`}
-          />
-        ))}
-        {mods && childs && mods.reduce((acc, mod) => { 
-          if(mod.child == id) acc.push(mod)
-          return acc
-        }, []).map(mod => (
-          <ScaledImage
-            key={`${stringify(mod)}}}`}
-            uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
-          />
-        ))}
+        <View style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center'
+          }}>
+            {childs && Object.keys(childs[id].variants).map(vId => (
+              <ScaledImage
+                key={`${id}_${vId}`}
+                height={Dimensions.get('window').height * .9}
+                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png`}
+              />
+            ))}
+            {mods && mods.reduce((acc, mod) => { 
+              if(mod.child == id) acc.push(mod)
+              return acc
+            }, []).map(mod => (
+              <ScaledImage
+                key={`${stringify(mod)}}}`}
+                height={Dimensions.get('window').height * .9}
+                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
+              />
+            ))}
+          </View>
       </ScrollView>
     </View>
   )
