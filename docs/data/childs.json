@@ -7,7 +7,8 @@
         "positions": {}
       }
     },
-    "id": "sc220"
+    "id": "sc220",
+    "numMods": 1
   },
   "sc121": {
     "name": "뮤즈",
@@ -17,7 +18,8 @@
         "positions": {}
       }
     },
-    "id": "sc121"
+    "id": "sc121",
+    "numMods": 0
   },
   "sc242": {
     "name": "알릴",
@@ -35,7 +37,8 @@
         "positions": {}
       }
     },
-    "id": "sc242"
+    "id": "sc242",
+    "numMods": 0
   },
   "sc011": {
     "name": "데이노",
@@ -45,7 +48,8 @@
         "positions": {}
       }
     },
-    "id": "sc011"
+    "id": "sc011",
+    "numMods": 1
   },
   "sc132": {
     "name": "미다스",
@@ -55,7 +59,8 @@
         "positions": {}
       }
     },
-    "id": "sc132"
+    "id": "sc132",
+    "numMods": 0
   },
   "sc253": {
     "name": "니콜",
@@ -65,7 +70,8 @@
         "positions": {}
       }
     },
-    "id": "sc253"
+    "id": "sc253",
+    "numMods": 0
   },
   "sc374": {
     "name": "힐드",
@@ -83,7 +89,8 @@
         "positions": {}
       }
     },
-    "id": "sc374"
+    "id": "sc374",
+    "numMods": 0
   },
   "sc022": {
     "name": "마야우엘",
@@ -93,7 +100,8 @@
         "positions": {}
       }
     },
-    "id": "sc022"
+    "id": "sc022",
+    "numMods": 0
   },
   "sc385": {
     "name": "마리 로즈",
@@ -111,7 +119,8 @@
         "positions": {}
       }
     },
-    "id": "sc385"
+    "id": "sc385",
+    "numMods": 0
   },
   "sc033": {
     "name": "다이아나",
@@ -121,7 +130,8 @@
         "positions": {}
       }
     },
-    "id": "sc033"
+    "id": "sc033",
+    "numMods": 0
   },
   "sc154": {
     "name": "토트",
@@ -131,7 +141,8 @@
         "positions": {}
       }
     },
-    "id": "sc154"
+    "id": "sc154",
+    "numMods": 0
   },
   "sc396": {
     "id": "sc396",
@@ -147,7 +158,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc044": {
     "name": "판테온",
@@ -157,7 +169,8 @@
         "positions": {}
       }
     },
-    "id": "sc044"
+    "id": "sc044",
+    "numMods": 0
   },
   "sc286": {
     "name": "베르들레",
@@ -167,7 +180,8 @@
         "positions": {}
       }
     },
-    "id": "sc286"
+    "id": "sc286",
+    "numMods": 0
   },
   "sc176": {
     "name": "에슈",
@@ -177,7 +191,8 @@
         "positions": {}
       }
     },
-    "id": "sc176"
+    "id": "sc176",
+    "numMods": 0
   },
   "sc297": {
     "name": "레드퀸",
@@ -187,7 +202,8 @@
         "positions": {}
       }
     },
-    "id": "sc297"
+    "id": "sc297",
+    "numMods": 0
   },
   "sc066": {
     "name": "아텐",
@@ -197,7 +213,8 @@
         "positions": {}
       }
     },
-    "id": "sc066"
+    "id": "sc066",
+    "numMods": 0
   },
   "sc198": {
     "name": "젤로스",
@@ -207,7 +224,8 @@
         "positions": {}
       }
     },
-    "id": "sc198"
+    "id": "sc198",
+    "numMods": 0
   },
   "m261": {
     "stars": 5,
@@ -260,7 +278,8 @@
     "type": "tank",
     "id": "m261",
     "element": "dark",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 2
   },
   "m030": {
     "name": "Ball",
@@ -286,7 +305,8 @@
         }
       }
     },
-    "id": "m030"
+    "id": "m030",
+    "numMods": 0
   },
   "m151": {
     "name": "Arms",
@@ -312,7 +332,8 @@
         }
       }
     },
-    "id": "m151"
+    "id": "m151",
+    "numMods": 0
   },
   "sc099": {
     "name": "멜포메네",
@@ -322,7 +343,8 @@
         "positions": {}
       }
     },
-    "id": "sc099"
+    "id": "sc099",
+    "numMods": 1
   },
   "m162": {
     "name": "Light Blobbie",
@@ -348,7 +370,8 @@
         }
       }
     },
-    "id": "m162"
+    "id": "m162",
+    "numMods": 0
   },
   "m052": {
     "name": "Basilisk",
@@ -374,7 +397,8 @@
         }
       }
     },
-    "id": "m052"
+    "id": "m052",
+    "numMods": 0
   },
   "m173": {
     "name": "Fire Star",
@@ -400,7 +424,8 @@
         }
       }
     },
-    "id": "m173"
+    "id": "m173",
+    "numMods": 2
   },
   "m063": {
     "name": "Ampule",
@@ -436,7 +461,8 @@
         }
       }
     },
-    "id": "m063"
+    "id": "m063",
+    "numMods": 0
   },
   "m184": {
     "name": "Ooram",
@@ -452,7 +478,8 @@
         }
       }
     },
-    "id": "m184"
+    "id": "m184",
+    "numMods": 0
   },
   "m074": {
     "name": "Cube",
@@ -478,7 +505,8 @@
         }
       }
     },
-    "id": "m074"
+    "id": "m074",
+    "numMods": 0
   },
   "m195": {
     "name": "Daron",
@@ -504,7 +532,8 @@
         }
       }
     },
-    "id": "m195"
+    "id": "m195",
+    "numMods": 0
   },
   "m096": {
     "name": "Ball",
@@ -530,7 +559,8 @@
         }
       }
     },
-    "id": "m096"
+    "id": "m096",
+    "numMods": 0
   },
   "sc320": {
     "name": "얀 지슈카",
@@ -540,7 +570,8 @@
         "positions": {}
       }
     },
-    "id": "sc320"
+    "id": "sc320",
+    "numMods": 0
   },
   "sc210": {
     "name": "타르타로스",
@@ -550,7 +581,8 @@
         "positions": {}
       }
     },
-    "id": "sc210"
+    "id": "sc210",
+    "numMods": 0
   },
   "sc221": {
     "name": "야나",
@@ -570,7 +602,8 @@
         }
       }
     },
-    "id": "sc221"
+    "id": "sc221",
+    "numMods": 0
   },
   "sc232": {
     "name": "다프네",
@@ -580,7 +613,8 @@
         "positions": {}
       }
     },
-    "id": "sc232"
+    "id": "sc232",
+    "numMods": 0
   },
   "sc353": {
     "name": "샤를",
@@ -598,7 +632,8 @@
         "positions": {}
       }
     },
-    "id": "sc353"
+    "id": "sc353",
+    "numMods": 0
   },
   "sc001": {
     "name": "모나",
@@ -608,7 +643,8 @@
         "positions": {}
       }
     },
-    "id": "sc001"
+    "id": "sc001",
+    "numMods": 0
   },
   "sc364": {
     "name": "시트리",
@@ -618,7 +654,8 @@
         "positions": {}
       }
     },
-    "id": "sc364"
+    "id": "sc364",
+    "numMods": 0
   },
   "sc012": {
     "name": "아가멤논",
@@ -636,7 +673,8 @@
         "positions": {}
       }
     },
-    "id": "sc012"
+    "id": "sc012",
+    "numMods": 0
   },
   "sc133": {
     "name": "티타니아",
@@ -646,7 +684,8 @@
         "positions": {}
       }
     },
-    "id": "sc133"
+    "id": "sc133",
+    "numMods": 1
   },
   "sc144": {
     "name": "메데아",
@@ -664,7 +703,8 @@
         "positions": {}
       }
     },
-    "id": "sc144"
+    "id": "sc144",
+    "numMods": 0
   },
   "sc386": {
     "id": "sc386",
@@ -680,7 +720,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc034": {
     "name": "므네모시네",
@@ -698,7 +739,8 @@
         "positions": {}
       }
     },
-    "id": "sc034"
+    "id": "sc034",
+    "numMods": 0
   },
   "sc397": {
     "id": "sc397",
@@ -714,7 +756,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc045": {
     "name": "아리아",
@@ -724,7 +767,8 @@
         "positions": {}
       }
     },
-    "id": "sc045"
+    "id": "sc045",
+    "numMods": 1
   },
   "sc056": {
     "name": "잔다르크",
@@ -742,7 +786,8 @@
         "positions": {}
       }
     },
-    "id": "sc056"
+    "id": "sc056",
+    "numMods": 0
   },
   "sc067": {
     "name": "타나토스",
@@ -752,7 +797,8 @@
         "positions": {}
       }
     },
-    "id": "sc067"
+    "id": "sc067",
+    "numMods": 0
   },
   "m240": {
     "name": "Spa Lantern",
@@ -768,7 +814,8 @@
         }
       }
     },
-    "id": "m240"
+    "id": "m240",
+    "numMods": 0
   },
   "sc188": {
     "name": "아탈란테",
@@ -786,7 +833,8 @@
         "positions": {}
       }
     },
-    "id": "sc188"
+    "id": "sc188",
+    "numMods": 0
   },
   "m130": {
     "name": "Pop-Up",
@@ -812,7 +860,8 @@
         }
       }
     },
-    "id": "m130"
+    "id": "m130",
+    "numMods": 0
   },
   "sc199": {
     "name": "아우로라",
@@ -822,7 +871,8 @@
         "positions": {}
       }
     },
-    "id": "sc199"
+    "id": "sc199",
+    "numMods": 1
   },
   "m141": {
     "name": "Halloween",
@@ -858,7 +908,8 @@
         }
       }
     },
-    "id": "m141"
+    "id": "m141",
+    "numMods": 0
   },
   "m262": {
     "name": "Cocoon",
@@ -874,7 +925,8 @@
         }
       }
     },
-    "id": "m262"
+    "id": "m262",
+    "numMods": 0
   },
   "m031": {
     "name": "Tree",
@@ -900,7 +952,8 @@
         }
       }
     },
-    "id": "m031"
+    "id": "m031",
+    "numMods": 0
   },
   "m152": {
     "name": "Fighter",
@@ -936,7 +989,8 @@
         }
       }
     },
-    "id": "m152"
+    "id": "m152",
+    "numMods": 0
   },
   "m163": {
     "name": "Wood Blobbie",
@@ -962,7 +1016,8 @@
         }
       }
     },
-    "id": "m163"
+    "id": "m163",
+    "numMods": 0
   },
   "m053": {
     "name": "Daria (Hydra)",
@@ -999,7 +1054,8 @@
       }
     },
     "id": "m053",
-    "stars": 4
+    "stars": 4,
+    "numMods": 1
   },
   "m174": {
     "name": "Light Star",
@@ -1025,7 +1081,8 @@
         }
       }
     },
-    "id": "m174"
+    "id": "m174",
+    "numMods": 2
   },
   "m064": {
     "name": "Naouf",
@@ -1051,7 +1108,8 @@
         }
       }
     },
-    "id": "m064"
+    "id": "m064",
+    "numMods": 0
   },
   "m185": {
     "name": "Actyon",
@@ -1087,7 +1145,8 @@
         }
       }
     },
-    "id": "m185"
+    "id": "m185",
+    "numMods": 0
   },
   "m075": {
     "name": "Cube",
@@ -1113,7 +1172,8 @@
         }
       }
     },
-    "id": "m075"
+    "id": "m075",
+    "numMods": 0
   },
   "m196": {
     "name": "Daron",
@@ -1139,7 +1199,8 @@
         }
       }
     },
-    "id": "m196"
+    "id": "m196",
+    "numMods": 0
   },
   "m086": {
     "name": "Chains",
@@ -1165,7 +1226,8 @@
         }
       }
     },
-    "id": "m086"
+    "id": "m086",
+    "numMods": 0
   },
   "m097": {
     "name": "Ball",
@@ -1191,7 +1253,8 @@
         }
       }
     },
-    "id": "m097"
+    "id": "m097",
+    "numMods": 0
   },
   "sc420": {
     "id": "sc420",
@@ -1207,7 +1270,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc310": {
     "id": "sc310",
@@ -1223,7 +1287,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc200": {
     "name": "세스헤트",
@@ -1233,7 +1298,8 @@
         "positions": {}
       }
     },
-    "id": "sc200"
+    "id": "sc200",
+    "numMods": 0
   },
   "sc321": {
     "name": "루나",
@@ -1251,7 +1317,8 @@
         "positions": {}
       }
     },
-    "id": "sc321"
+    "id": "sc321",
+    "numMods": 0
   },
   "sc101": {
     "name": "시링크스",
@@ -1261,7 +1328,8 @@
         "positions": {}
       }
     },
-    "id": "sc101"
+    "id": "sc101",
+    "numMods": 0
   },
   "sc222": {
     "name": "엘도라도",
@@ -1271,7 +1339,8 @@
         "positions": {}
       }
     },
-    "id": "sc222"
+    "id": "sc222",
+    "numMods": 0
   },
   "sc112": {
     "name": "엘리어스",
@@ -1281,7 +1350,8 @@
         "positions": {}
       }
     },
-    "id": "sc112"
+    "id": "sc112",
+    "numMods": 0
   },
   "sc233": {
     "name": "아르게스",
@@ -1291,7 +1361,8 @@
         "positions": {}
       }
     },
-    "id": "sc233"
+    "id": "sc233",
+    "numMods": 0
   },
   "sc354": {
     "name": "드미테르",
@@ -1309,7 +1380,8 @@
         "positions": {}
       }
     },
-    "id": "sc354"
+    "id": "sc354",
+    "numMods": 0
   },
   "sc002": {
     "name": "리자",
@@ -1319,7 +1391,8 @@
         "positions": {}
       }
     },
-    "id": "sc002"
+    "id": "sc002",
+    "numMods": 0
   },
   "sc123": {
     "name": "바포메",
@@ -1329,7 +1402,8 @@
         "positions": {}
       }
     },
-    "id": "sc123"
+    "id": "sc123",
+    "numMods": 0
   },
   "sc365": {
     "name": "리자",
@@ -1347,7 +1421,8 @@
         "positions": {}
       }
     },
-    "id": "sc365"
+    "id": "sc365",
+    "numMods": 0
   },
   "sc013": {
     "name": "아르테미스",
@@ -1357,7 +1432,8 @@
         "positions": {}
       }
     },
-    "id": "sc013"
+    "id": "sc013",
+    "numMods": 0
   },
   "sc266": {
     "name": "호루스",
@@ -1367,7 +1443,8 @@
         "positions": {}
       }
     },
-    "id": "sc266"
+    "id": "sc266",
+    "numMods": 0
   },
   "sc387": {
     "name": "호노카",
@@ -1385,7 +1462,8 @@
         "positions": {}
       }
     },
-    "id": "sc387"
+    "id": "sc387",
+    "numMods": 0
   },
   "sc035": {
     "name": "페르세포네",
@@ -1395,7 +1473,8 @@
         "positions": {}
       }
     },
-    "id": "sc035"
+    "id": "sc035",
+    "numMods": 0
   },
   "sc156": {
     "name": "에르제베트",
@@ -1405,7 +1484,8 @@
         "positions": {}
       }
     },
-    "id": "sc156"
+    "id": "sc156",
+    "numMods": 0
   },
   "sc277": {
     "name": "레우케",
@@ -1415,7 +1495,8 @@
         "positions": {}
       }
     },
-    "id": "sc277"
+    "id": "sc277",
+    "numMods": 0
   },
   "sc398": {
     "id": "sc398",
@@ -1431,7 +1512,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc167": {
     "name": "상아",
@@ -1441,7 +1523,8 @@
         "positions": {}
       }
     },
-    "id": "sc167"
+    "id": "sc167",
+    "numMods": 1
   },
   "sc057": {
     "name": "란페이",
@@ -1451,7 +1534,8 @@
         "positions": {}
       }
     },
-    "id": "sc057"
+    "id": "sc057",
+    "numMods": 1
   },
   "m230": {
     "name": "Cosmic",
@@ -1477,7 +1561,8 @@
         }
       }
     },
-    "id": "m230"
+    "id": "m230",
+    "numMods": 0
   },
   "sc178": {
     "name": "모르가나",
@@ -1495,7 +1580,8 @@
         "positions": {}
       }
     },
-    "id": "sc178"
+    "id": "sc178",
+    "numMods": 0
   },
   "sc299": {
     "name": "산타클로스",
@@ -1505,7 +1591,8 @@
         "positions": {}
       }
     },
-    "id": "sc299"
+    "id": "sc299",
+    "numMods": 0
   },
   "m120": {
     "name": "Assassin",
@@ -1531,7 +1618,8 @@
         }
       }
     },
-    "id": "m120"
+    "id": "m120",
+    "numMods": 0
   },
   "sc068": {
     "name": "암브로시아",
@@ -1541,7 +1629,8 @@
         "positions": {}
       }
     },
-    "id": "sc068"
+    "id": "sc068",
+    "numMods": 0
   },
   "m241": {
     "name": "Spa Lantern",
@@ -1557,7 +1646,8 @@
         }
       }
     },
-    "id": "m241"
+    "id": "m241",
+    "numMods": 0
   },
   "sc189": {
     "name": "크라토스",
@@ -1567,7 +1657,8 @@
         "positions": {}
       }
     },
-    "id": "sc189"
+    "id": "sc189",
+    "numMods": 0
   },
   "m010": {
     "name": "Pudding",
@@ -1593,7 +1684,8 @@
         }
       }
     },
-    "id": "m010"
+    "id": "m010",
+    "numMods": 0
   },
   "m131": {
     "name": "Pop-Up",
@@ -1619,7 +1711,8 @@
         }
       }
     },
-    "id": "m131"
+    "id": "m131",
+    "numMods": 0
   },
   "m021": {
     "name": "Mule",
@@ -1645,7 +1738,8 @@
         }
       }
     },
-    "id": "m021"
+    "id": "m021",
+    "numMods": 0
   },
   "m142": {
     "name": "Red Revenge Girl",
@@ -1672,7 +1766,8 @@
       }
     },
     "id": "m142",
-    "stars": 3
+    "stars": 3,
+    "numMods": 2
   },
   "m263": {
     "id": "m263",
@@ -1688,7 +1783,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "m153": {
     "name": "Manti",
@@ -1714,7 +1810,8 @@
         }
       }
     },
-    "id": "m153"
+    "id": "m153",
+    "numMods": 0
   },
   "m164": {
     "name": "Water Blobbie",
@@ -1740,7 +1837,8 @@
         }
       }
     },
-    "id": "m164"
+    "id": "m164",
+    "numMods": 0
   },
   "m054": {
     "name": "Isaiah",
@@ -1776,7 +1874,8 @@
         }
       }
     },
-    "id": "m054"
+    "id": "m054",
+    "numMods": 0
   },
   "m175": {
     "name": "Wood Star",
@@ -1802,7 +1901,8 @@
         }
       }
     },
-    "id": "m175"
+    "id": "m175",
+    "numMods": 2
   },
   "m065": {
     "name": "Naouf",
@@ -1828,7 +1928,8 @@
         }
       }
     },
-    "id": "m065"
+    "id": "m065",
+    "numMods": 0
   },
   "m186": {
     "name": "Saab",
@@ -1854,7 +1955,8 @@
         }
       }
     },
-    "id": "m186"
+    "id": "m186",
+    "numMods": 0
   },
   "m076": {
     "name": "Cube",
@@ -1880,7 +1982,8 @@
         }
       }
     },
-    "id": "m076"
+    "id": "m076",
+    "numMods": 0
   },
   "m197": {
     "name": "Daron",
@@ -1906,7 +2009,8 @@
         }
       }
     },
-    "id": "m197"
+    "id": "m197",
+    "numMods": 0
   },
   "m087": {
     "name": "Chains",
@@ -1932,7 +2036,8 @@
         }
       }
     },
-    "id": "m087"
+    "id": "m087",
+    "numMods": 0
   },
   "m098": {
     "name": "Ball",
@@ -1958,7 +2063,8 @@
         }
       }
     },
-    "id": "m098"
+    "id": "m098",
+    "numMods": 0
   },
   "sc300": {
     "name": "피에타스",
@@ -1976,7 +2082,8 @@
         "positions": {}
       }
     },
-    "id": "sc300"
+    "id": "sc300",
+    "numMods": 0
   },
   "sc421": {
     "id": "sc421",
@@ -1992,7 +2099,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc311": {
     "name": "케프리",
@@ -2002,7 +2110,8 @@
         "positions": {}
       }
     },
-    "id": "sc311"
+    "id": "sc311",
+    "numMods": 0
   },
   "sc322": {
     "name": "살라딘",
@@ -2020,7 +2129,8 @@
         "positions": {}
       }
     },
-    "id": "sc322"
+    "id": "sc322",
+    "numMods": 0
   },
   "sc223": {
     "name": "에아",
@@ -2030,7 +2140,8 @@
         "positions": {}
       }
     },
-    "id": "sc223"
+    "id": "sc223",
+    "numMods": 0
   },
   "sc344": {
     "name": "이졸데",
@@ -2048,7 +2159,8 @@
         "positions": {}
       }
     },
-    "id": "sc344"
+    "id": "sc344",
+    "numMods": 0
   },
   "sc234": {
     "name": "헤라클레스",
@@ -2058,7 +2170,8 @@
         "positions": {}
       }
     },
-    "id": "sc234"
+    "id": "sc234",
+    "numMods": 0
   },
   "sc355": {
     "name": "상아",
@@ -2068,7 +2181,8 @@
         "positions": {}
       }
     },
-    "id": "sc355"
+    "id": "sc355",
+    "numMods": 0
   },
   "sc003": {
     "name": "다비",
@@ -2078,7 +2192,8 @@
         "positions": {}
       }
     },
-    "id": "sc003"
+    "id": "sc003",
+    "numMods": 0
   },
   "sc124": {
     "name": "이브",
@@ -2088,7 +2203,8 @@
         "positions": {}
       }
     },
-    "id": "sc124"
+    "id": "sc124",
+    "numMods": 0
   },
   "sc366": {
     "name": "데이노",
@@ -2106,7 +2222,8 @@
         "positions": {}
       }
     },
-    "id": "sc366"
+    "id": "sc366",
+    "numMods": 0
   },
   "sc014": {
     "name": "아스트레아",
@@ -2124,7 +2241,8 @@
         "positions": {}
       }
     },
-    "id": "sc014"
+    "id": "sc014",
+    "numMods": 0
   },
   "sc135": {
     "name": "발키리",
@@ -2134,7 +2252,8 @@
         "positions": {}
       }
     },
-    "id": "sc135"
+    "id": "sc135",
+    "numMods": 0
   },
   "sc377": {
     "name": "이피스",
@@ -2152,7 +2271,8 @@
         "positions": {}
       }
     },
-    "id": "sc377"
+    "id": "sc377",
+    "numMods": 0
   },
   "sc267": {
     "name": "클레오파트라",
@@ -2162,7 +2282,8 @@
         "positions": {}
       }
     },
-    "id": "sc267"
+    "id": "sc267",
+    "numMods": 0
   },
   "sc036": {
     "name": "에르메스",
@@ -2172,7 +2293,8 @@
         "positions": {}
       }
     },
-    "id": "sc036"
+    "id": "sc036",
+    "numMods": 0
   },
   "sc047": {
     "name": "헤스티아",
@@ -2182,7 +2304,8 @@
         "positions": {}
       }
     },
-    "id": "sc047"
+    "id": "sc047",
+    "numMods": 0
   },
   "m220": {
     "name": "Core",
@@ -2198,7 +2321,8 @@
         }
       }
     },
-    "id": "m220"
+    "id": "m220",
+    "numMods": 0
   },
   "sc168": {
     "name": "탈리아",
@@ -2216,7 +2340,8 @@
         "positions": {}
       }
     },
-    "id": "sc168"
+    "id": "sc168",
+    "numMods": 0
   },
   "sc289": {
     "name": "듀랜달",
@@ -2226,7 +2351,8 @@
         "positions": {}
       }
     },
-    "id": "sc289"
+    "id": "sc289",
+    "numMods": 0
   },
   "m110": {
     "name": "Wood",
@@ -2252,7 +2378,8 @@
         }
       }
     },
-    "id": "m110"
+    "id": "m110",
+    "numMods": 0
   },
   "sc058": {
     "name": "니르티",
@@ -2262,7 +2389,8 @@
         "positions": {}
       }
     },
-    "id": "sc058"
+    "id": "sc058",
+    "numMods": 1
   },
   "m231": {
     "name": "Cross",
@@ -2288,7 +2416,8 @@
         }
       }
     },
-    "id": "m231"
+    "id": "m231",
+    "numMods": 0
   },
   "m121": {
     "name": "Warrior",
@@ -2314,7 +2443,8 @@
         }
       }
     },
-    "id": "m121"
+    "id": "m121",
+    "numMods": 0
   },
   "sc069": {
     "name": "프타",
@@ -2332,7 +2462,8 @@
         "positions": {}
       }
     },
-    "id": "sc069"
+    "id": "sc069",
+    "numMods": 0
   },
   "m242": {
     "name": "Spa Lantern",
@@ -2348,7 +2479,8 @@
         }
       }
     },
-    "id": "m242"
+    "id": "m242",
+    "numMods": 0
   },
   "m011": {
     "name": "Pudding",
@@ -2374,7 +2506,8 @@
         }
       }
     },
-    "id": "m011"
+    "id": "m011",
+    "numMods": 0
   },
   "m132": {
     "name": "Pop-Up",
@@ -2400,7 +2533,8 @@
         }
       }
     },
-    "id": "m132"
+    "id": "m132",
+    "numMods": 0
   },
   "m253": {
     "name": "Yuki",
@@ -2426,7 +2560,8 @@
         }
       }
     },
-    "id": "m253"
+    "id": "m253",
+    "numMods": 0
   },
   "m022": {
     "name": "Fairy Pup",
@@ -2452,7 +2587,8 @@
         }
       }
     },
-    "id": "m022"
+    "id": "m022",
+    "numMods": 0
   },
   "m143": {
     "name": "Blue Revenge Girl",
@@ -2479,7 +2615,8 @@
       }
     },
     "id": "m143",
-    "stars": 3
+    "stars": 3,
+    "numMods": 2
   },
   "m154": {
     "name": "Gungnir",
@@ -2515,7 +2652,8 @@
         }
       }
     },
-    "id": "m154"
+    "id": "m154",
+    "numMods": 0
   },
   "m165": {
     "name": "Dark Blobbie",
@@ -2541,7 +2679,8 @@
         }
       }
     },
-    "id": "m165"
+    "id": "m165",
+    "numMods": 0
   },
   "m176": {
     "name": "Water Star",
@@ -2567,7 +2706,8 @@
         }
       }
     },
-    "id": "m176"
+    "id": "m176",
+    "numMods": 2
   },
   "m066": {
     "name": "Naouf",
@@ -2593,7 +2733,8 @@
         }
       }
     },
-    "id": "m066"
+    "id": "m066",
+    "numMods": 0
   },
   "m187": {
     "name": "Dagon",
@@ -2619,7 +2760,8 @@
         }
       }
     },
-    "id": "m187"
+    "id": "m187",
+    "numMods": 0
   },
   "m077": {
     "stars": 5,
@@ -2682,7 +2824,8 @@
     "type": "debuffer",
     "id": "m077",
     "element": "light",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 3
   },
   "m198": {
     "name": "Daron",
@@ -2708,7 +2851,8 @@
         }
       }
     },
-    "id": "m198"
+    "id": "m198",
+    "numMods": 0
   },
   "c090": {
     "name": "Vulcanus",
@@ -2744,7 +2888,8 @@
         }
       }
     },
-    "id": "c090"
+    "id": "c090",
+    "numMods": 0
   },
   "sc400": {
     "id": "sc400",
@@ -2760,7 +2905,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc301": {
     "name": "자청비",
@@ -2770,7 +2916,8 @@
         "positions": {}
       }
     },
-    "id": "sc301"
+    "id": "sc301",
+    "numMods": 0
   },
   "sc312": {
     "name": "티르빙",
@@ -2780,7 +2927,8 @@
         "positions": {}
       }
     },
-    "id": "sc312"
+    "id": "sc312",
+    "numMods": 0
   },
   "sc202": {
     "name": "빅트릭스",
@@ -2790,7 +2938,8 @@
         "positions": {}
       }
     },
-    "id": "sc202"
+    "id": "sc202",
+    "numMods": 0
   },
   "sc345": {
     "name": "아네모네",
@@ -2800,7 +2949,8 @@
         "positions": {}
       }
     },
-    "id": "sc345"
+    "id": "sc345",
+    "numMods": 0
   },
   "sc235": {
     "name": "다누",
@@ -2810,7 +2960,8 @@
         "positions": {}
       }
     },
-    "id": "sc235"
+    "id": "sc235",
+    "numMods": 0
   },
   "sc004": {
     "name": "처용",
@@ -2820,7 +2971,8 @@
         "positions": {}
       }
     },
-    "id": "sc004"
+    "id": "sc004",
+    "numMods": 0
   },
   "sc246": {
     "name": "크람푸스",
@@ -2830,7 +2982,8 @@
         "positions": {}
       }
     },
-    "id": "sc246"
+    "id": "sc246",
+    "numMods": 0
   },
   "sc026": {
     "name": "오로라",
@@ -2840,7 +2993,8 @@
         "positions": {}
       }
     },
-    "id": "sc026"
+    "id": "sc026",
+    "numMods": 1
   },
   "sc147": {
     "name": "바알",
@@ -2858,7 +3012,8 @@
         "positions": {}
       }
     },
-    "id": "sc147"
+    "id": "sc147",
+    "numMods": 0
   },
   "sc037": {
     "name": "유다",
@@ -2876,7 +3031,8 @@
         "positions": {}
       }
     },
-    "id": "sc037"
+    "id": "sc037",
+    "numMods": 0
   },
   "sc158": {
     "name": "나이아스",
@@ -2886,7 +3042,8 @@
         "positions": {}
       }
     },
-    "id": "sc158"
+    "id": "sc158",
+    "numMods": 1
   },
   "m100": {
     "name": "Ball",
@@ -2912,7 +3069,8 @@
         }
       }
     },
-    "id": "m100"
+    "id": "m100",
+    "numMods": 0
   },
   "sc048": {
     "name": "네반",
@@ -2922,7 +3080,8 @@
         "positions": {}
       }
     },
-    "id": "sc048"
+    "id": "sc048",
+    "numMods": 1
   },
   "m221": {
     "name": "Core",
@@ -2938,7 +3097,8 @@
         }
       }
     },
-    "id": "m221"
+    "id": "m221",
+    "numMods": 0
   },
   "sc169": {
     "name": "에우로스",
@@ -2948,7 +3108,8 @@
         "positions": {}
       }
     },
-    "id": "sc169"
+    "id": "sc169",
+    "numMods": 0
   },
   "m111": {
     "name": "Fire",
@@ -2974,7 +3135,8 @@
         }
       }
     },
-    "id": "m111"
+    "id": "m111",
+    "numMods": 0
   },
   "m232": {
     "name": "Golden Charrin",
@@ -2990,7 +3152,8 @@
         }
       }
     },
-    "id": "m232"
+    "id": "m232",
+    "numMods": 1
   },
   "m001": {
     "name": "Fire Bat",
@@ -3016,7 +3179,8 @@
         }
       }
     },
-    "id": "m001"
+    "id": "m001",
+    "numMods": 0
   },
   "m243": {
     "name": "Spa Lantern",
@@ -3032,7 +3196,8 @@
         }
       }
     },
-    "id": "m243"
+    "id": "m243",
+    "numMods": 0
   },
   "m012": {
     "name": "Annual",
@@ -3058,7 +3223,8 @@
         }
       }
     },
-    "id": "m012"
+    "id": "m012",
+    "numMods": 0
   },
   "m133": {
     "name": "Pop-Up",
@@ -3084,7 +3250,8 @@
         }
       }
     },
-    "id": "m133"
+    "id": "m133",
+    "numMods": 0
   },
   "m254": {
     "name": "Davi",
@@ -3110,7 +3277,8 @@
         }
       }
     },
-    "id": "m254"
+    "id": "m254",
+    "numMods": 0
   },
   "m023": {
     "name": "Lizard",
@@ -3136,7 +3304,8 @@
         }
       }
     },
-    "id": "m023"
+    "id": "m023",
+    "numMods": 0
   },
   "m144": {
     "name": "Green Revenge Girl",
@@ -3162,7 +3331,8 @@
         }
       }
     },
-    "id": "m144"
+    "id": "m144",
+    "numMods": 2
   },
   "m155": {
     "name": "Fire Drop",
@@ -3188,7 +3358,8 @@
         }
       }
     },
-    "id": "m155"
+    "id": "m155",
+    "numMods": 0
   },
   "m045": {
     "name": "Nymph",
@@ -3224,7 +3395,8 @@
         }
       }
     },
-    "id": "m045"
+    "id": "m045",
+    "numMods": 0
   },
   "m166": {
     "name": "Exp Heart",
@@ -3250,7 +3422,8 @@
         }
       }
     },
-    "id": "m166"
+    "id": "m166",
+    "numMods": 0
   },
   "m056": {
     "stars": 5,
@@ -3293,7 +3466,8 @@
     "type": "attacker",
     "id": "m056",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "m177": {
     "name": "Dark Star",
@@ -3319,7 +3493,8 @@
         }
       }
     },
-    "id": "m177"
+    "id": "m177",
+    "numMods": 2
   },
   "m067": {
     "name": "Food",
@@ -3345,7 +3520,8 @@
         }
       }
     },
-    "id": "m067"
+    "id": "m067",
+    "numMods": 0
   },
   "m188": {
     "name": "Gold Coin",
@@ -3371,7 +3547,8 @@
         }
       }
     },
-    "id": "m188"
+    "id": "m188",
+    "numMods": 0
   },
   "m078": {
     "name": "Cocoon",
@@ -3397,7 +3574,8 @@
         }
       }
     },
-    "id": "m078"
+    "id": "m078",
+    "numMods": 0
   },
   "m199": {
     "name": "Wyvern",
@@ -3423,7 +3601,8 @@
         }
       }
     },
-    "id": "m199"
+    "id": "m199",
+    "numMods": 0
   },
   "m089": {
     "name": "Pack",
@@ -3449,7 +3628,8 @@
         }
       }
     },
-    "id": "m089"
+    "id": "m089",
+    "numMods": 0
   },
   "c091": {
     "name": "Maera",
@@ -3485,7 +3665,8 @@
         }
       }
     },
-    "id": "c091"
+    "id": "c091",
+    "numMods": 2
   },
   "sc324": {
     "name": "모나",
@@ -3495,7 +3676,8 @@
         "positions": {}
       }
     },
-    "id": "sc324"
+    "id": "sc324",
+    "numMods": 0
   },
   "sc214": {
     "name": "주피터",
@@ -3505,7 +3687,8 @@
         "positions": {}
       }
     },
-    "id": "sc214"
+    "id": "sc214",
+    "numMods": 0
   },
   "sc225": {
     "name": "루돌프",
@@ -3515,7 +3698,8 @@
         "positions": {}
       }
     },
-    "id": "sc225"
+    "id": "sc225",
+    "numMods": 0
   },
   "sc346": {
     "name": "트리스탄",
@@ -3533,7 +3717,8 @@
         "positions": {}
       }
     },
-    "id": "sc346"
+    "id": "sc346",
+    "numMods": 0
   },
   "sc115": {
     "name": "소네트",
@@ -3543,7 +3728,8 @@
         "positions": {}
       }
     },
-    "id": "sc115"
+    "id": "sc115",
+    "numMods": 1
   },
   "sc005": {
     "name": "마르스",
@@ -3553,7 +3739,8 @@
         "positions": {}
       }
     },
-    "id": "sc005"
+    "id": "sc005",
+    "numMods": 0
   },
   "sc126": {
     "name": "살마키스",
@@ -3563,7 +3750,8 @@
         "positions": {}
       }
     },
-    "id": "sc126"
+    "id": "sc126",
+    "numMods": 0
   },
   "sc247": {
     "name": "미리나",
@@ -3573,7 +3761,8 @@
         "positions": {}
       }
     },
-    "id": "sc247"
+    "id": "sc247",
+    "numMods": 0
   },
   "sc027": {
     "name": "킨티아",
@@ -3583,7 +3772,8 @@
         "positions": {}
       }
     },
-    "id": "sc027"
+    "id": "sc027",
+    "numMods": 0
   },
   "m200": {
     "name": "Anhk",
@@ -3619,7 +3809,8 @@
         }
       }
     },
-    "id": "m200"
+    "id": "m200",
+    "numMods": 0
   },
   "sc148": {
     "name": "이난나",
@@ -3629,7 +3820,8 @@
         "positions": {}
       }
     },
-    "id": "sc148"
+    "id": "sc148",
+    "numMods": 1
   },
   "sc038": {
     "name": "칼립소",
@@ -3639,7 +3831,8 @@
         "positions": {}
       }
     },
-    "id": "sc038"
+    "id": "sc038",
+    "numMods": 0
   },
   "m211": {
     "name": "Angel",
@@ -3665,7 +3858,8 @@
         }
       }
     },
-    "id": "m211"
+    "id": "m211",
+    "numMods": 0
   },
   "sc159": {
     "name": "세멜레",
@@ -3683,7 +3877,8 @@
         "positions": {}
       }
     },
-    "id": "sc159"
+    "id": "sc159",
+    "numMods": 0
   },
   "m101": {
     "name": "Fire Bloop",
@@ -3709,7 +3904,8 @@
         }
       }
     },
-    "id": "m101"
+    "id": "m101",
+    "numMods": 0
   },
   "sc049": {
     "name": "마아트",
@@ -3719,7 +3915,8 @@
         "positions": {}
       }
     },
-    "id": "sc049"
+    "id": "sc049",
+    "numMods": 0
   },
   "m222": {
     "name": "Core",
@@ -3735,7 +3932,8 @@
         }
       }
     },
-    "id": "m222"
+    "id": "m222",
+    "numMods": 0
   },
   "m112": {
     "name": "Water",
@@ -3761,7 +3959,8 @@
         }
       }
     },
-    "id": "m112"
+    "id": "m112",
+    "numMods": 0
   },
   "m233": {
     "name": "Pancakes",
@@ -3777,7 +3976,8 @@
         }
       }
     },
-    "id": "m233"
+    "id": "m233",
+    "numMods": 0
   },
   "m002": {
     "name": "Ice Bat",
@@ -3803,7 +4003,8 @@
         }
       }
     },
-    "id": "m002"
+    "id": "m002",
+    "numMods": 0
   },
   "m123": {
     "name": "Shade",
@@ -3829,7 +4030,8 @@
         }
       }
     },
-    "id": "m123"
+    "id": "m123",
+    "numMods": 0
   },
   "m244": {
     "name": "Spa Lantern",
@@ -3845,7 +4047,8 @@
         }
       }
     },
-    "id": "m244"
+    "id": "m244",
+    "numMods": 0
   },
   "m013": {
     "name": "Plush Doll",
@@ -3871,7 +4074,8 @@
         }
       }
     },
-    "id": "m013"
+    "id": "m013",
+    "numMods": 0
   },
   "m134": {
     "name": "Pop-Up",
@@ -3897,7 +4101,8 @@
         }
       }
     },
-    "id": "m134"
+    "id": "m134",
+    "numMods": 0
   },
   "m255": {
     "name": "Ampule",
@@ -3923,7 +4128,8 @@
         }
       }
     },
-    "id": "m255"
+    "id": "m255",
+    "numMods": 0
   },
   "m145": {
     "name": "Light Revenge Girl",
@@ -3950,7 +4156,8 @@
       }
     },
     "id": "m145",
-    "stars": 3
+    "stars": 3,
+    "numMods": 2
   },
   "m035": {
     "name": "Americano",
@@ -3976,7 +4183,8 @@
         }
       }
     },
-    "id": "m035"
+    "id": "m035",
+    "numMods": 0
   },
   "m156": {
     "name": "Light Drop",
@@ -4002,7 +4210,8 @@
         }
       }
     },
-    "id": "m156"
+    "id": "m156",
+    "numMods": 0
   },
   "m167": {
     "name": "Fire Heart",
@@ -4028,7 +4237,8 @@
         }
       }
     },
-    "id": "m167"
+    "id": "m167",
+    "numMods": 0
   },
   "m057": {
     "stars": 5,
@@ -4081,7 +4291,8 @@
     "type": "debuffer",
     "id": "m057",
     "element": "water",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 3
   },
   "m178": {
     "name": "Evolution Star",
@@ -4107,7 +4318,8 @@
         }
       }
     },
-    "id": "m178"
+    "id": "m178",
+    "numMods": 0
   },
   "m068": {
     "name": "Food",
@@ -4133,7 +4345,8 @@
         }
       }
     },
-    "id": "m068"
+    "id": "m068",
+    "numMods": 0
   },
   "m189": {
     "name": "Treasure Box",
@@ -4159,7 +4372,8 @@
         }
       }
     },
-    "id": "m189"
+    "id": "m189",
+    "numMods": 0
   },
   "c190": {
     "stars": 4,
@@ -4202,7 +4416,8 @@
     "type": "healer",
     "id": "c190",
     "element": "water",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 1
   },
   "c092": {
     "name": "Armida",
@@ -4226,7 +4441,8 @@
         "positions": {}
       }
     },
-    "id": "c092"
+    "id": "c092",
+    "numMods": 2
   },
   "sc402": {
     "id": "sc402",
@@ -4242,7 +4458,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc336": {
     "id": "sc336",
@@ -4258,7 +4475,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc347": {
     "id": "sc347",
@@ -4274,7 +4492,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc127": {
     "name": "바스테트",
@@ -4284,7 +4503,8 @@
         "positions": {}
       }
     },
-    "id": "sc127"
+    "id": "sc127",
+    "numMods": 0
   },
   "sc017": {
     "name": "왕군이",
@@ -4294,7 +4514,8 @@
         "positions": {}
       }
     },
-    "id": "sc017"
+    "id": "sc017",
+    "numMods": 0
   },
   "sc028": {
     "name": "레다",
@@ -4304,7 +4525,8 @@
         "positions": {}
       }
     },
-    "id": "sc028"
+    "id": "sc028",
+    "numMods": 1
   },
   "m201": {
     "name": "Bazookaman맨",
@@ -4340,7 +4562,8 @@
         }
       }
     },
-    "id": "m201"
+    "id": "m201",
+    "numMods": 0
   },
   "sc149": {
     "name": "루살카",
@@ -4350,7 +4573,8 @@
         "positions": {}
       }
     },
-    "id": "sc149"
+    "id": "sc149",
+    "numMods": 1
   },
   "sc039": {
     "name": "모리유",
@@ -4360,7 +4584,8 @@
         "positions": {}
       }
     },
-    "id": "sc039"
+    "id": "sc039",
+    "numMods": 0
   },
   "m212": {
     "name": "Rune",
@@ -4386,7 +4611,8 @@
         }
       }
     },
-    "id": "m212"
+    "id": "m212",
+    "numMods": 0
   },
   "m102": {
     "name": "Water Bloop",
@@ -4412,7 +4638,8 @@
         }
       }
     },
-    "id": "m102"
+    "id": "m102",
+    "numMods": 1
   },
   "m223": {
     "name": "Gift Bag",
@@ -4438,7 +4665,8 @@
         }
       }
     },
-    "id": "m223"
+    "id": "m223",
+    "numMods": 0
   },
   "m113": {
     "name": "Dark",
@@ -4464,7 +4692,8 @@
         }
       }
     },
-    "id": "m113"
+    "id": "m113",
+    "numMods": 0
   },
   "m234": {
     "name": "Golden Charinn",
@@ -4480,7 +4709,8 @@
         }
       }
     },
-    "id": "m234"
+    "id": "m234",
+    "numMods": 1
   },
   "m003": {
     "name": "Dragonfly",
@@ -4506,7 +4736,8 @@
         }
       }
     },
-    "id": "m003"
+    "id": "m003",
+    "numMods": 0
   },
   "m124": {
     "name": "Watcher",
@@ -4532,7 +4763,8 @@
         }
       }
     },
-    "id": "m124"
+    "id": "m124",
+    "numMods": 0
   },
   "m245": {
     "name": "Creature",
@@ -4558,7 +4790,8 @@
         }
       }
     },
-    "id": "m245"
+    "id": "m245",
+    "numMods": 0
   },
   "m256": {
     "name": "Auroramin King",
@@ -4574,7 +4807,8 @@
         }
       }
     },
-    "id": "m256"
+    "id": "m256",
+    "numMods": 1
   },
   "m025": {
     "name": "Berry",
@@ -4600,7 +4834,8 @@
         }
       }
     },
-    "id": "m025"
+    "id": "m025",
+    "numMods": 0
   },
   "m146": {
     "name": "Dark Revenge Gil",
@@ -4627,7 +4862,8 @@
       }
     },
     "id": "m146",
-    "stars": 3
+    "stars": 3,
+    "numMods": 2
   },
   "m036": {
     "name": "Communicator",
@@ -4653,7 +4889,8 @@
         }
       }
     },
-    "id": "m036"
+    "id": "m036",
+    "numMods": 0
   },
   "m157": {
     "name": "Wood Drop",
@@ -4679,7 +4916,8 @@
         }
       }
     },
-    "id": "m157"
+    "id": "m157",
+    "numMods": 0
   },
   "m047": {
     "name": "Egg",
@@ -4705,7 +4943,8 @@
         }
       }
     },
-    "id": "m047"
+    "id": "m047",
+    "numMods": 0
   },
   "m168": {
     "name": "Light Heart",
@@ -4731,7 +4970,8 @@
         }
       }
     },
-    "id": "m168"
+    "id": "m168",
+    "numMods": 0
   },
   "m069": {
     "name": "Food",
@@ -4757,7 +4997,8 @@
         }
       }
     },
-    "id": "m069"
+    "id": "m069",
+    "numMods": 0
   },
   "c290": {
     "stars": 5,
@@ -4800,7 +5041,8 @@
     "type": "tank",
     "id": "c290",
     "element": "fire",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 1
   },
   "c180": {
     "stars": 5,
@@ -4843,7 +5085,8 @@
     "type": "tank",
     "id": "c180",
     "element": "grass",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 6
   },
   "c070": {
     "name": "Yui",
@@ -4879,7 +5122,8 @@
         }
       }
     },
-    "id": "c070"
+    "id": "c070",
+    "numMods": 0
   },
   "c191": {
     "name": "Sekhmet",
@@ -4915,7 +5159,8 @@
         }
       }
     },
-    "id": "c191"
+    "id": "c191",
+    "numMods": 2
   },
   "c081": {
     "name": "Themis",
@@ -4951,7 +5196,8 @@
         }
       }
     },
-    "id": "c081"
+    "id": "c081",
+    "numMods": 0
   },
   "sc403": {
     "id": "sc403",
@@ -4967,7 +5213,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "sc304": {
     "name": "네뷸라",
@@ -4985,7 +5232,8 @@
         "positions": {}
       }
     },
-    "id": "sc304"
+    "id": "sc304",
+    "numMods": 0
   },
   "sc205": {
     "name": "멀린",
@@ -4995,7 +5243,8 @@
         "positions": {}
       }
     },
-    "id": "sc205"
+    "id": "sc205",
+    "numMods": 0
   },
   "sc216": {
     "name": "워울프",
@@ -5005,7 +5254,8 @@
         "positions": {}
       }
     },
-    "id": "sc216"
+    "id": "sc216",
+    "numMods": 0
   },
   "sc106": {
     "name": "메데이아",
@@ -5023,7 +5273,8 @@
         "positions": {}
       }
     },
-    "id": "sc106"
+    "id": "sc106",
+    "numMods": 0
   },
   "sc227": {
     "name": "마프데트",
@@ -5033,7 +5284,8 @@
         "positions": {}
       }
     },
-    "id": "sc227"
+    "id": "sc227",
+    "numMods": 0
   },
   "sc348": {
     "name": "마스",
@@ -5043,7 +5295,8 @@
         "positions": {}
       }
     },
-    "id": "sc348"
+    "id": "sc348",
+    "numMods": 0
   },
   "sc117": {
     "name": "야가",
@@ -5053,7 +5306,8 @@
         "positions": {}
       }
     },
-    "id": "sc117"
+    "id": "sc117",
+    "numMods": 0
   },
   "sc238": {
     "name": "메브",
@@ -5063,7 +5317,8 @@
         "positions": {}
       }
     },
-    "id": "sc238"
+    "id": "sc238",
+    "numMods": 0
   },
   "sc007": {
     "name": "포이닉스",
@@ -5073,7 +5328,8 @@
         "positions": {}
       }
     },
-    "id": "sc007"
+    "id": "sc007",
+    "numMods": 0
   },
   "sc018": {
     "name": "코라",
@@ -5083,7 +5339,8 @@
         "positions": {}
       }
     },
-    "id": "sc018"
+    "id": "sc018",
+    "numMods": 0
   },
   "sc139": {
     "name": "포모나",
@@ -5093,7 +5350,8 @@
         "positions": {}
       }
     },
-    "id": "sc139"
+    "id": "sc139",
+    "numMods": 0
   },
   "sc029": {
     "name": "셀레네",
@@ -5103,7 +5361,8 @@
         "positions": {}
       }
     },
-    "id": "sc029"
+    "id": "sc029",
+    "numMods": 1
   },
   "m202": {
     "name": "Bazooka Rambo",
@@ -5139,7 +5398,8 @@
         }
       }
     },
-    "id": "m202"
+    "id": "m202",
+    "numMods": 0
   },
   "m103": {
     "name": "Light Bloop",
@@ -5165,7 +5425,8 @@
         }
       }
     },
-    "id": "m103"
+    "id": "m103",
+    "numMods": 0
   },
   "m224": {
     "name": "Apep",
@@ -5201,7 +5462,8 @@
         }
       }
     },
-    "id": "m224"
+    "id": "m224",
+    "numMods": 0
   },
   "m114": {
     "name": "Light",
@@ -5227,7 +5489,8 @@
         }
       }
     },
-    "id": "m114"
+    "id": "m114",
+    "numMods": 0
   },
   "m235": {
     "name": "Jalkoring",
@@ -5243,7 +5506,8 @@
         }
       }
     },
-    "id": "m235"
+    "id": "m235",
+    "numMods": 1
   },
   "m004": {
     "name": "Dragonfly",
@@ -5269,7 +5533,8 @@
         }
       }
     },
-    "id": "m004"
+    "id": "m004",
+    "numMods": 0
   },
   "m125": {
     "name": "Watcher",
@@ -5295,7 +5560,8 @@
         }
       }
     },
-    "id": "m125"
+    "id": "m125",
+    "numMods": 0
   },
   "m015": {
     "name": "Desert Fox",
@@ -5321,7 +5587,8 @@
         }
       }
     },
-    "id": "m015"
+    "id": "m015",
+    "numMods": 0
   },
   "m136": {
     "name": "Lady",
@@ -5357,7 +5624,8 @@
         }
       }
     },
-    "id": "m136"
+    "id": "m136",
+    "numMods": 4
   },
   "m026": {
     "name": "Chick",
@@ -5383,7 +5651,8 @@
         }
       }
     },
-    "id": "m026"
+    "id": "m026",
+    "numMods": 0
   },
   "m037": {
     "name": "Chaser",
@@ -5409,7 +5678,8 @@
         }
       }
     },
-    "id": "m037"
+    "id": "m037",
+    "numMods": 0
   },
   "m158": {
     "name": "Water Drop",
@@ -5435,7 +5705,8 @@
         }
       }
     },
-    "id": "m158"
+    "id": "m158",
+    "numMods": 0
   },
   "m048": {
     "name": "Bunny",
@@ -5461,7 +5732,8 @@
         }
       }
     },
-    "id": "m048"
+    "id": "m048",
+    "numMods": 0
   },
   "m169": {
     "name": "Wood Heart",
@@ -5487,7 +5759,8 @@
         }
       }
     },
-    "id": "m169"
+    "id": "m169",
+    "numMods": 0
   },
   "m059": {
     "name": "Bazookaman",
@@ -5523,7 +5796,8 @@
         }
       }
     },
-    "id": "m059"
+    "id": "m059",
+    "numMods": 0
   },
   "c390": {
     "name": "Ohad",
@@ -5569,7 +5843,8 @@
         }
       }
     },
-    "id": "c390"
+    "id": "c390",
+    "numMods": 6
   },
   "c280": {
     "name": "Tyche",
@@ -5595,7 +5870,8 @@
         }
       }
     },
-    "id": "c280"
+    "id": "c280",
+    "numMods": 2
   },
   "c060": {
     "name": "Tisiphone",
@@ -5631,7 +5907,8 @@
         }
       }
     },
-    "id": "c060"
+    "id": "c060",
+    "numMods": 1
   },
   "c082": {
     "stars": 3,
@@ -5674,7 +5951,8 @@
     "type": "attacker",
     "id": "c082",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 0
   },
   "sc404": {
     "id": "sc404",
@@ -5690,7 +5968,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc305": {
     "name": "리타",
@@ -5700,7 +5979,8 @@
         "positions": {}
       }
     },
-    "id": "sc305"
+    "id": "sc305",
+    "numMods": 0
   },
   "sc338": {
     "name": "포모나",
@@ -5718,7 +5998,8 @@
         "positions": {}
       }
     },
-    "id": "sc338"
+    "id": "sc338",
+    "numMods": 0
   },
   "sc107": {
     "name": "아폴론",
@@ -5728,7 +6009,8 @@
         "positions": {}
       }
     },
-    "id": "sc107"
+    "id": "sc107",
+    "numMods": 0
   },
   "sc349": {
     "name": "새턴",
@@ -5738,7 +6020,8 @@
         "positions": {}
       }
     },
-    "id": "sc349"
+    "id": "sc349",
+    "numMods": 0
   },
   "sc008": {
     "name": "프리가",
@@ -5748,7 +6031,8 @@
         "positions": {}
       }
     },
-    "id": "sc008"
+    "id": "sc008",
+    "numMods": 1
   },
   "sc019": {
     "name": "에리스",
@@ -5758,7 +6042,8 @@
         "positions": {}
       }
     },
-    "id": "sc019"
+    "id": "sc019",
+    "numMods": 1
   },
   "m203": {
     "name": "Blademan",
@@ -5794,7 +6079,8 @@
         }
       }
     },
-    "id": "m203"
+    "id": "m203",
+    "numMods": 0
   },
   "m214": {
     "name": "Pumpkin",
@@ -5820,7 +6106,8 @@
         }
       }
     },
-    "id": "m214"
+    "id": "m214",
+    "numMods": 0
   },
   "m104": {
     "name": "Dark Bloop",
@@ -5846,7 +6133,8 @@
         }
       }
     },
-    "id": "m104"
+    "id": "m104",
+    "numMods": 0
   },
   "m225": {
     "name": "Cosmic",
@@ -5872,7 +6160,8 @@
         }
       }
     },
-    "id": "m225"
+    "id": "m225",
+    "numMods": 0
   },
   "m236": {
     "name": "Auroramin King",
@@ -5888,7 +6177,8 @@
         }
       }
     },
-    "id": "m236"
+    "id": "m236",
+    "numMods": 0
   },
   "m005": {
     "name": "YumYum",
@@ -5914,7 +6204,8 @@
         }
       }
     },
-    "id": "m005"
+    "id": "m005",
+    "numMods": 0
   },
   "m126": {
     "name": "Watcher",
@@ -5940,7 +6231,8 @@
         }
       }
     },
-    "id": "m126"
+    "id": "m126",
+    "numMods": 0
   },
   "m137": {
     "name": "Bellboy",
@@ -5976,7 +6268,8 @@
         }
       }
     },
-    "id": "m137"
+    "id": "m137",
+    "numMods": 0
   },
   "m027": {
     "name": "Mandrake",
@@ -6002,7 +6295,8 @@
         }
       }
     },
-    "id": "m027"
+    "id": "m027",
+    "numMods": 0
   },
   "m148": {
     "name": "Won",
@@ -6028,7 +6322,8 @@
         }
       }
     },
-    "id": "m148"
+    "id": "m148",
+    "numMods": 0
   },
   "m038": {
     "stars": 5,
@@ -6091,7 +6386,8 @@
     "type": "tank",
     "id": "m038",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 4
   },
   "m159": {
     "name": "Dark Drop",
@@ -6117,7 +6413,8 @@
         }
       }
     },
-    "id": "m159"
+    "id": "m159",
+    "numMods": 0
   },
   "m049": {
     "name": "Bakje",
@@ -6153,7 +6450,8 @@
         }
       }
     },
-    "id": "m049"
+    "id": "m049",
+    "numMods": 0
   },
   "c270": {
     "name": "Light Pixiet",
@@ -6180,7 +6478,8 @@
       }
     },
     "id": "c270",
-    "stars": 2
+    "stars": 2,
+    "numMods": 1
   },
   "c391": {
     "stars": 5,
@@ -6213,7 +6512,8 @@
     "type": "support",
     "id": "c391",
     "element": "fire",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 3
   },
   "c160": {
     "name": "Sara",
@@ -6249,7 +6549,8 @@
         }
       }
     },
-    "id": "c160"
+    "id": "c160",
+    "numMods": 1
   },
   "c281": {
     "id": "c281",
@@ -6285,7 +6586,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c050": {
     "name": "Ed",
@@ -6301,7 +6603,8 @@
         }
       }
     },
-    "id": "c050"
+    "id": "c050",
+    "numMods": 0
   },
   "c292": {
     "name": "Luin",
@@ -6340,7 +6643,8 @@
     },
     "stars": 5,
     "element": "grass",
-    "type": "debuffer"
+    "type": "debuffer",
+    "numMods": 1
   },
   "c061": {
     "stars": 5,
@@ -6383,7 +6687,8 @@
     "type": "attacker",
     "id": "c061",
     "element": "grass",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 5
   },
   "c072": {
     "stars": 4,
@@ -6426,7 +6731,8 @@
     "type": "attacker",
     "id": "c072",
     "element": "fire",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 3
   },
   "c193": {
     "id": "c193",
@@ -6472,7 +6778,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "c083": {
     "name": "Neith",
@@ -6508,7 +6815,8 @@
         }
       }
     },
-    "id": "c083"
+    "id": "c083",
+    "numMods": 2
   },
   "c095": {
     "name": "Vesta",
@@ -6544,7 +6852,8 @@
         }
       }
     },
-    "id": "c095"
+    "id": "c095",
+    "numMods": 0
   },
   "sc317": {
     "name": "바벨",
@@ -6562,7 +6871,8 @@
         "positions": {}
       }
     },
-    "id": "sc317"
+    "id": "sc317",
+    "numMods": 0
   },
   "sc339": {
     "name": "다비",
@@ -6580,7 +6890,8 @@
         "positions": {}
       }
     },
-    "id": "sc339"
+    "id": "sc339",
+    "numMods": 0
   },
   "sc229": {
     "name": "브라우니",
@@ -6590,7 +6901,8 @@
         "positions": {}
       }
     },
-    "id": "sc229"
+    "id": "sc229",
+    "numMods": 0
   },
   "sc009": {
     "name": "헥토르",
@@ -6600,7 +6912,8 @@
         "positions": {}
       }
     },
-    "id": "sc009"
+    "id": "sc009",
+    "numMods": 0
   },
   "m215": {
     "name": "Auroramim King",
@@ -6646,7 +6959,8 @@
         }
       }
     },
-    "id": "m215"
+    "id": "m215",
+    "numMods": 0
   },
   "m105": {
     "name": "Wood Bloop",
@@ -6672,7 +6986,8 @@
         }
       }
     },
-    "id": "m105"
+    "id": "m105",
+    "numMods": 0
   },
   "m116": {
     "name": "Fire",
@@ -6698,7 +7013,8 @@
         }
       }
     },
-    "id": "m116"
+    "id": "m116",
+    "numMods": 0
   },
   "m237": {
     "name": "Auroramin King",
@@ -6714,7 +7030,8 @@
         }
       }
     },
-    "id": "m237"
+    "id": "m237",
+    "numMods": 1
   },
   "m006": {
     "name": "Big Nose",
@@ -6740,7 +7057,8 @@
         }
       }
     },
-    "id": "m006"
+    "id": "m006",
+    "numMods": 0
   },
   "m127": {
     "name": "Watcher",
@@ -6766,7 +7084,8 @@
         }
       }
     },
-    "id": "m127"
+    "id": "m127",
+    "numMods": 0
   },
   "m017": {
     "name": "Root",
@@ -6792,7 +7111,8 @@
         }
       }
     },
-    "id": "m017"
+    "id": "m017",
+    "numMods": 0
   },
   "m028": {
     "name": "Squall",
@@ -6818,7 +7138,8 @@
         }
       }
     },
-    "id": "m028"
+    "id": "m028",
+    "numMods": 0
   },
   "m149": {
     "name": "Hertz",
@@ -6844,7 +7165,8 @@
         }
       }
     },
-    "id": "m149"
+    "id": "m149",
+    "numMods": 0
   },
   "m039": {
     "name": "Kali Yuga",
@@ -6870,7 +7192,8 @@
         }
       }
     },
-    "id": "m039"
+    "id": "m039",
+    "numMods": 0
   },
   "c370": {
     "name": "Mona",
@@ -6906,7 +7229,8 @@
         }
       }
     },
-    "id": "c370"
+    "id": "c370",
+    "numMods": 3
   },
   "c381": {
     "id": "c381",
@@ -6932,7 +7256,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c271": {
     "name": "Blue Pixie",
@@ -6959,7 +7284,8 @@
       }
     },
     "id": "c271",
-    "stars": 2
+    "stars": 2,
+    "numMods": 1
   },
   "c392": {
     "name": "Davi",
@@ -7005,7 +7331,8 @@
         }
       }
     },
-    "id": "c392"
+    "id": "c392",
+    "numMods": 1
   },
   "c040": {
     "name": "Shamash",
@@ -7041,7 +7368,8 @@
         }
       }
     },
-    "id": "c040"
+    "id": "c040",
+    "numMods": 1
   },
   "c161": {
     "name": "Youth",
@@ -7077,7 +7405,8 @@
         }
       }
     },
-    "id": "c161"
+    "id": "c161",
+    "numMods": 0
   },
   "c051": {
     "stars": 5,
@@ -7160,7 +7489,8 @@
     "type": "attacker",
     "id": "c051",
     "element": "dark",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 4
   },
   "c172": {
     "name": "Yuna",
@@ -7196,7 +7526,8 @@
         }
       }
     },
-    "id": "c172"
+    "id": "c172",
+    "numMods": 1
   },
   "c062": {
     "stars": 4,
@@ -7239,7 +7570,8 @@
     "type": "tank",
     "id": "c062",
     "element": "grass",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 1
   },
   "c183": {
     "stars": 5,
@@ -7282,7 +7614,8 @@
     "type": "tank",
     "id": "c183",
     "element": "light",
-    "tierPVE": 10
+    "tierPVE": 10,
+    "numMods": 8
   },
   "c073": {
     "id": "c073",
@@ -7318,7 +7651,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c194": {
     "stars": 5,
@@ -7361,7 +7695,8 @@
     "type": "attacker",
     "id": "c194",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 1
   },
   "sc406": {
     "id": "sc406",
@@ -7377,7 +7712,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc318": {
     "name": "바리",
@@ -7387,7 +7723,8 @@
         "positions": {}
       }
     },
-    "id": "sc318"
+    "id": "sc318",
+    "numMods": 0
   },
   "sc208": {
     "name": "파이로",
@@ -7397,7 +7734,8 @@
         "positions": {}
       }
     },
-    "id": "sc208"
+    "id": "sc208",
+    "numMods": 0
   },
   "sc219": {
     "name": "이미르",
@@ -7407,7 +7745,8 @@
         "positions": {}
       }
     },
-    "id": "sc219"
+    "id": "sc219",
+    "numMods": 0
   },
   "sc109": {
     "name": "아레투사",
@@ -7425,7 +7764,8 @@
         "positions": {}
       }
     },
-    "id": "sc109"
+    "id": "sc109",
+    "numMods": 0
   },
   "m205": {
     "name": "Barf",
@@ -7451,7 +7791,8 @@
         }
       }
     },
-    "id": "m205"
+    "id": "m205",
+    "numMods": 0
   },
   "m216": {
     "name": "Fairy",
@@ -7477,7 +7818,8 @@
         }
       }
     },
-    "id": "m216"
+    "id": "m216",
+    "numMods": 0
   },
   "m117": {
     "name": "Dummy",
@@ -7503,7 +7845,8 @@
         }
       }
     },
-    "id": "m117"
+    "id": "m117",
+    "numMods": 0
   },
   "m238": {
     "name": "Auroramin King",
@@ -7519,7 +7862,8 @@
         }
       }
     },
-    "id": "m238"
+    "id": "m238",
+    "numMods": 1
   },
   "m007": {
     "name": "Teddy",
@@ -7555,7 +7899,8 @@
         }
       }
     },
-    "id": "m007"
+    "id": "m007",
+    "numMods": 0
   },
   "m128": {
     "name": "Watcher",
@@ -7581,7 +7926,8 @@
         }
       }
     },
-    "id": "m128"
+    "id": "m128",
+    "numMods": 0
   },
   "m018": {
     "name": "Furball",
@@ -7607,7 +7953,8 @@
         }
       }
     },
-    "id": "m018"
+    "id": "m018",
+    "numMods": 0
   },
   "m139": {
     "name": "Alarm",
@@ -7623,7 +7970,8 @@
         }
       }
     },
-    "id": "m139"
+    "id": "m139",
+    "numMods": 0
   },
   "m029": {
     "name": "Hooves",
@@ -7649,7 +7997,8 @@
         }
       }
     },
-    "id": "m029"
+    "id": "m029",
+    "numMods": 0
   },
   "c360": {
     "stars": 5,
@@ -7692,7 +8041,8 @@
     "type": "attacker",
     "id": "c360",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 3
   },
   "c371": {
     "stars": 5,
@@ -7735,7 +8085,8 @@
     "type": "support",
     "id": "c371",
     "element": "grass",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 2
   },
   "c140": {
     "name": "Nodens",
@@ -7751,7 +8102,8 @@
         }
       }
     },
-    "id": "c140"
+    "id": "c140",
+    "numMods": 0
   },
   "c382": {
     "name": "Nemean",
@@ -7777,7 +8129,8 @@
         }
       }
     },
-    "id": "c382"
+    "id": "c382",
+    "numMods": 2
   },
   "c030": {
     "stars": 4,
@@ -7820,7 +8173,8 @@
     "type": "attacker",
     "id": "c030",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 2
   },
   "c272": {
     "name": "Green Pixie",
@@ -7847,7 +8201,8 @@
       }
     },
     "id": "c272",
-    "stars": 2
+    "stars": 2,
+    "numMods": 1
   },
   "c393": {
     "name": "Mona",
@@ -7873,7 +8228,8 @@
         }
       }
     },
-    "id": "c393"
+    "id": "c393",
+    "numMods": 1
   },
   "c041": {
     "name": "Tiamat",
@@ -7909,7 +8265,8 @@
         }
       }
     },
-    "id": "c041"
+    "id": "c041",
+    "numMods": 4
   },
   "c283": {
     "stars": 5,
@@ -7992,7 +8349,8 @@
     "type": "attacker",
     "id": "c283",
     "element": "fire",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 3
   },
   "c052": {
     "name": "Berit",
@@ -8028,7 +8386,8 @@
         }
       }
     },
-    "id": "c052"
+    "id": "c052",
+    "numMods": 0
   },
   "c173": {
     "stars": 5,
@@ -8080,7 +8439,8 @@
     "tierBoss": 10,
     "id": "c173",
     "element": "fire",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 5
   },
   "c294": {
     "name": "Elisabeth",
@@ -8116,7 +8476,8 @@
         }
       }
     },
-    "id": "c294"
+    "id": "c294",
+    "numMods": 5
   },
   "c063": {
     "name": "Freesia",
@@ -8152,7 +8513,8 @@
         }
       }
     },
-    "id": "c063"
+    "id": "c063",
+    "numMods": 3
   },
   "c184": {
     "stars": 4,
@@ -8195,7 +8557,8 @@
     "type": "attacker",
     "id": "c184",
     "element": "water",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 2
   },
   "c074": {
     "name": "Quirinus",
@@ -8231,7 +8594,8 @@
         }
       }
     },
-    "id": "c074"
+    "id": "c074",
+    "numMods": 0
   },
   "c195": {
     "name": "Cybele",
@@ -8277,7 +8641,8 @@
         }
       }
     },
-    "id": "c195"
+    "id": "c195",
+    "numMods": 0
   },
   "c085": {
     "name": "Paris",
@@ -8313,7 +8678,8 @@
         }
       }
     },
-    "id": "c085"
+    "id": "c085",
+    "numMods": 0
   },
   "sc407": {
     "id": "sc407",
@@ -8329,7 +8695,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc308": {
     "name": "쿠바바",
@@ -8347,7 +8714,8 @@
         "positions": {}
       }
     },
-    "id": "sc308"
+    "id": "sc308",
+    "numMods": 0
   },
   "sc319": {
     "name": "버들도령",
@@ -8357,7 +8725,8 @@
         "positions": {}
       }
     },
-    "id": "sc319"
+    "id": "sc319",
+    "numMods": 0
   },
   "sc209": {
     "name": "헤카테",
@@ -8367,7 +8736,8 @@
         "positions": {}
       }
     },
-    "id": "sc209"
+    "id": "sc209",
+    "numMods": 0
   },
   "m206": {
     "name": "Bukududool",
@@ -8393,7 +8763,8 @@
         }
       }
     },
-    "id": "m206"
+    "id": "m206",
+    "numMods": 0
   },
   "m217": {
     "name": "Red Nose",
@@ -8419,7 +8790,8 @@
         }
       }
     },
-    "id": "m217"
+    "id": "m217",
+    "numMods": 0
   },
   "m107": {
     "name": "Food",
@@ -8445,7 +8817,8 @@
         }
       }
     },
-    "id": "m107"
+    "id": "m107",
+    "numMods": 0
   },
   "m228": {
     "name": "Squeak",
@@ -8461,7 +8834,8 @@
         }
       }
     },
-    "id": "m228"
+    "id": "m228",
+    "numMods": 1
   },
   "m118": {
     "name": "Slasher",
@@ -8487,7 +8861,8 @@
         }
       }
     },
-    "id": "m118"
+    "id": "m118",
+    "numMods": 0
   },
   "m239": {
     "id": "m239",
@@ -8503,7 +8878,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "m008": {
     "name": "Gelatin",
@@ -8529,7 +8905,8 @@
         }
       }
     },
-    "id": "m008"
+    "id": "m008",
+    "numMods": 0
   },
   "c350": {
     "stars": 5,
@@ -8572,7 +8949,8 @@
     "type": "support",
     "id": "c350",
     "element": "light",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 1
   },
   "c130": {
     "stars": 3,
@@ -8615,7 +8993,8 @@
     "type": "attacker",
     "id": "c130",
     "element": "dark",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "c251": {
     "name": "Ganymede",
@@ -8651,7 +9030,8 @@
         }
       }
     },
-    "id": "c251"
+    "id": "c251",
+    "numMods": 0
   },
   "c372": {
     "name": "Davi",
@@ -8687,7 +9067,8 @@
         }
       }
     },
-    "id": "c372"
+    "id": "c372",
+    "numMods": 3
   },
   "c020": {
     "stars": 4,
@@ -8730,7 +9111,8 @@
     "type": "support",
     "id": "c020",
     "element": "fire",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 1
   },
   "c141": {
     "name": "Amor",
@@ -8766,7 +9148,8 @@
         }
       }
     },
-    "id": "c141"
+    "id": "c141",
+    "numMods": 0
   },
   "c262": {
     "stars": 5,
@@ -8809,7 +9192,8 @@
     "type": "attacker",
     "id": "c262",
     "element": "grass",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 2
   },
   "c031": {
     "tierPVP": 1,
@@ -8851,7 +9235,8 @@
     "type": "attacker",
     "id": "c031",
     "element": "grass",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 2
   },
   "c152": {
     "name": "Hebe",
@@ -8887,7 +9272,8 @@
         }
       }
     },
-    "id": "c152"
+    "id": "c152",
+    "numMods": 0
   },
   "c394": {
     "id": "c394",
@@ -8913,7 +9299,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c053": {
     "stars": 5,
@@ -8956,7 +9343,8 @@
     "type": "healer",
     "id": "c053",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 0
   },
   "c174": {
     "stars": 5,
@@ -9029,7 +9417,8 @@
     "type": "tank",
     "id": "c174",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "c295": {
     "name": "Teresa",
@@ -9065,7 +9454,8 @@
         }
       }
     },
-    "id": "c295"
+    "id": "c295",
+    "numMods": 1
   },
   "c064": {
     "stars": 5,
@@ -9108,7 +9498,8 @@
     "type": "debuffer",
     "id": "c064",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c185": {
     "name": "Hermod",
@@ -9144,7 +9535,8 @@
         }
       }
     },
-    "id": "c185"
+    "id": "c185",
+    "numMods": 0
   },
   "c075": {
     "name": "Tanha",
@@ -9180,7 +9572,8 @@
         }
       }
     },
-    "id": "c075"
+    "id": "c075",
+    "numMods": 0
   },
   "c196": {
     "stars": 3,
@@ -9223,7 +9616,8 @@
     "type": "attacker",
     "id": "c196",
     "element": "dark",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 3
   },
   "c086": {
     "name": "Goga",
@@ -9259,7 +9653,8 @@
         }
       }
     },
-    "id": "c086"
+    "id": "c086",
+    "numMods": 2
   },
   "sc408": {
     "id": "sc408",
@@ -9275,7 +9670,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc419": {
     "id": "sc419",
@@ -9291,7 +9687,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "m218": {
     "name": "Core",
@@ -9307,7 +9704,8 @@
         }
       }
     },
-    "id": "m218"
+    "id": "m218",
+    "numMods": 0
   },
   "m229": {
     "name": "Cosmic",
@@ -9333,7 +9731,8 @@
         }
       }
     },
-    "id": "m229"
+    "id": "m229",
+    "numMods": 0
   },
   "m119": {
     "name": "Ninja",
@@ -9359,7 +9758,8 @@
         }
       }
     },
-    "id": "m119"
+    "id": "m119",
+    "numMods": 0
   },
   "m009": {
     "name": "Gelatin",
@@ -9385,7 +9785,8 @@
         }
       }
     },
-    "id": "m009"
+    "id": "m009",
+    "numMods": 0
   },
   "c230": {
     "name": "Skuld",
@@ -9421,7 +9822,8 @@
         }
       }
     },
-    "id": "c230"
+    "id": "c230",
+    "numMods": 3
   },
   "c351": {
     "name": "Venus",
@@ -9457,7 +9859,8 @@
         }
       }
     },
-    "id": "c351"
+    "id": "c351",
+    "numMods": 1
   },
   "c120": {
     "name": "Flora",
@@ -9493,7 +9896,8 @@
         }
       }
     },
-    "id": "c120"
+    "id": "c120",
+    "numMods": 0
   },
   "c362": {
     "id": "c362",
@@ -9539,7 +9943,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c010": {
     "stars": 3,
@@ -9582,7 +9987,8 @@
     "type": "healer",
     "id": "c010",
     "element": "fire",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 2
   },
   "c131": {
     "name": "Osiris",
@@ -9618,7 +10024,8 @@
         }
       }
     },
-    "id": "c131"
+    "id": "c131",
+    "numMods": 0
   },
   "c142": {
     "name": "Hypnos",
@@ -9654,7 +10061,8 @@
         }
       }
     },
-    "id": "c142"
+    "id": "c142",
+    "numMods": 0
   },
   "c384": {
     "name": "Neruvi",
@@ -9680,7 +10088,8 @@
         }
       }
     },
-    "id": "c384"
+    "id": "c384",
+    "numMods": 0
   },
   "c032": {
     "stars": 3,
@@ -9723,7 +10132,8 @@
     "type": "healer",
     "id": "c032",
     "element": "dark",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "c153": {
     "stars": 5,
@@ -9766,7 +10176,8 @@
     "type": "support",
     "id": "c153",
     "element": "grass",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 4
   },
   "c274": {
     "stars": 4,
@@ -9809,7 +10220,8 @@
     "type": "attacker",
     "id": "c274",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 3
   },
   "c395": {
     "name": "Eve",
@@ -9835,7 +10247,8 @@
         }
       }
     },
-    "id": "c395"
+    "id": "c395",
+    "numMods": 0
   },
   "c043": {
     "stars": 5,
@@ -9888,7 +10301,8 @@
     "type": "tank",
     "id": "c043",
     "element": "grass",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 8
   },
   "c164": {
     "stars": 4,
@@ -9931,7 +10345,8 @@
     "type": "debuffer",
     "id": "c164",
     "element": "light",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 3
   },
   "c285": {
     "name": "Nautilus",
@@ -9957,7 +10372,8 @@
         }
       }
     },
-    "id": "c285"
+    "id": "c285",
+    "numMods": 1
   },
   "c054": {
     "name": "Legend",
@@ -9994,7 +10410,8 @@
       }
     },
     "id": "c054",
-    "stars": 3
+    "stars": 3,
+    "numMods": 5
   },
   "c175": {
     "stars": 5,
@@ -10037,7 +10454,8 @@
     "type": "tank",
     "id": "c175",
     "element": "dark",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 0
   },
   "c296": {
     "name": "Hildr",
@@ -10073,7 +10491,8 @@
         }
       }
     },
-    "id": "c296"
+    "id": "c296",
+    "numMods": 5
   },
   "c065": {
     "name": "Erato",
@@ -10109,7 +10528,8 @@
         }
       }
     },
-    "id": "c065"
+    "id": "c065",
+    "numMods": 0
   },
   "c087": {
     "name": "Ninuruta",
@@ -10145,7 +10565,8 @@
         }
       }
     },
-    "id": "c087"
+    "id": "c087",
+    "numMods": 0
   },
   "c099": {
     "stars": 4,
@@ -10188,7 +10609,8 @@
     "type": "support",
     "id": "c099",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "m219": {
     "name": "Core",
@@ -10204,7 +10626,8 @@
         }
       }
     },
-    "id": "m219"
+    "id": "m219",
+    "numMods": 0
   },
   "m109": {
     "name": "Food",
@@ -10230,7 +10653,8 @@
         }
       }
     },
-    "id": "m109"
+    "id": "m109",
+    "numMods": 0
   },
   "c330": {
     "name": "Ottoman",
@@ -10246,7 +10670,8 @@
         }
       }
     },
-    "id": "c330"
+    "id": "c330",
+    "numMods": 0
   },
   "c220": {
     "name": "Atropos",
@@ -10282,7 +10707,8 @@
         }
       }
     },
-    "id": "c220"
+    "id": "c220",
+    "numMods": 3
   },
   "c352": {
     "name": "Maestro",
@@ -10298,7 +10724,8 @@
         }
       }
     },
-    "id": "c352"
+    "id": "c352",
+    "numMods": 0
   },
   "c000": {
     "name": "Hero",
@@ -10365,7 +10792,8 @@
       }
     },
     "id": "c000",
-    "stars": false
+    "stars": false,
+    "numMods": 3
   },
   "c121": {
     "name": "Muse",
@@ -10401,7 +10829,8 @@
         }
       }
     },
-    "id": "c121"
+    "id": "c121",
+    "numMods": 0
   },
   "c242": {
     "name": "Ally",
@@ -10437,7 +10866,8 @@
         }
       }
     },
-    "id": "c242"
+    "id": "c242",
+    "numMods": 3
   },
   "c011": {
     "name": "Deino",
@@ -10473,7 +10903,8 @@
         }
       }
     },
-    "id": "c011"
+    "id": "c011",
+    "numMods": 0
   },
   "c132": {
     "stars": 5,
@@ -10536,7 +10967,8 @@
     "type": "debuffer",
     "id": "c132",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "c253": {
     "stars": 5,
@@ -10609,7 +11041,8 @@
     "type": "attacker",
     "id": "c253",
     "element": "grass",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 7
   },
   "c374": {
     "name": "Hildr",
@@ -10635,7 +11068,8 @@
         }
       }
     },
-    "id": "c374"
+    "id": "c374",
+    "numMods": 2
   },
   "c022": {
     "stars": 4,
@@ -10688,7 +11122,8 @@
     "type": "support",
     "id": "c022",
     "element": "water",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 3
   },
   "c385": {
     "stars": 5,
@@ -10751,7 +11186,8 @@
     "type": "tank",
     "id": "c385",
     "element": "grass",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 12
   },
   "c033": {
     "name": "Diana",
@@ -10787,7 +11223,8 @@
         }
       }
     },
-    "id": "c033"
+    "id": "c033",
+    "numMods": 0
   },
   "c154": {
     "name": "Thoth",
@@ -10823,7 +11260,8 @@
         }
       }
     },
-    "id": "c154"
+    "id": "c154",
+    "numMods": 2
   },
   "c396": {
     "id": "c396",
@@ -10849,7 +11287,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c044": {
     "stars": 5,
@@ -10892,7 +11331,8 @@
     "type": "support",
     "id": "c044",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c286": {
     "stars": 5,
@@ -10935,7 +11375,8 @@
     "type": "support",
     "id": "c286",
     "element": "fire",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 0
   },
   "c176": {
     "name": "Eshu",
@@ -10961,7 +11402,8 @@
         }
       }
     },
-    "id": "c176"
+    "id": "c176",
+    "numMods": 1
   },
   "c297": {
     "name": "Red Queen",
@@ -10997,7 +11439,8 @@
         }
       }
     },
-    "id": "c297"
+    "id": "c297",
+    "numMods": 3
   },
   "c066": {
     "name": "Aten",
@@ -11033,7 +11476,8 @@
         }
       }
     },
-    "id": "c066"
+    "id": "c066",
+    "numMods": 0
   },
   "c187": {
     "name": "Thetis",
@@ -11079,7 +11523,8 @@
         }
       }
     },
-    "id": "c187"
+    "id": "c187",
+    "numMods": 3
   },
   "c198": {
     "name": "Zelos",
@@ -11125,7 +11570,8 @@
         }
       }
     },
-    "id": "c198"
+    "id": "c198",
+    "numMods": 1
   },
   "c320": {
     "name": "Yan Zisuka",
@@ -11161,7 +11607,8 @@
         }
       }
     },
-    "id": "c320"
+    "id": "c320",
+    "numMods": 0
   },
   "sm190": {
     "name": "박서",
@@ -11171,7 +11618,8 @@
         "positions": {}
       }
     },
-    "id": "sm190"
+    "id": "sm190",
+    "numMods": 0
   },
   "c210": {
     "name": "Tartarus",
@@ -11207,7 +11655,8 @@
         }
       }
     },
-    "id": "c210"
+    "id": "c210",
+    "numMods": 0
   },
   "c331": {
     "name": "Saladin",
@@ -11223,7 +11672,8 @@
         }
       }
     },
-    "id": "c331"
+    "id": "c331",
+    "numMods": 0
   },
   "c221": {
     "name": "Jana",
@@ -11259,7 +11709,8 @@
         }
       }
     },
-    "id": "c221"
+    "id": "c221",
+    "numMods": 3
   },
   "c232": {
     "name": "Daphne",
@@ -11295,7 +11746,8 @@
         }
       }
     },
-    "id": "c232"
+    "id": "c232",
+    "numMods": 3
   },
   "c353": {
     "stars": 5,
@@ -11338,7 +11790,8 @@
     "type": "attacker",
     "id": "c353",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 2
   },
   "c001": {
     "stars": 3,
@@ -11411,7 +11864,8 @@
     "type": "tank",
     "id": "c001",
     "element": "dark",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 10
   },
   "c122": {
     "name": "Samuel",
@@ -11427,7 +11881,8 @@
         }
       }
     },
-    "id": "c122"
+    "id": "c122",
+    "numMods": 1
   },
   "c364": {
     "stars": 5,
@@ -11460,7 +11915,8 @@
     "type": "support",
     "id": "c364",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 1
   },
   "c012": {
     "name": "Agamemnon",
@@ -11496,7 +11952,8 @@
         }
       }
     },
-    "id": "c012"
+    "id": "c012",
+    "numMods": 0
   },
   "c133": {
     "stars": 4,
@@ -11539,7 +11996,8 @@
     "type": "attacker",
     "id": "c133",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c254": {
     "name": "Summoner Davi",
@@ -11555,7 +12013,8 @@
         }
       }
     },
-    "id": "c254"
+    "id": "c254",
+    "numMods": 3
   },
   "c375": {
     "name": "Botan",
@@ -11571,7 +12030,8 @@
         }
       }
     },
-    "id": "c375"
+    "id": "c375",
+    "numMods": 0
   },
   "c144": {
     "name": "Medea",
@@ -11607,7 +12067,8 @@
         }
       }
     },
-    "id": "c144"
+    "id": "c144",
+    "numMods": 0
   },
   "c386": {
     "stars": 5,
@@ -11670,7 +12131,8 @@
     "type": "attacker",
     "id": "c386",
     "element": "water",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 10
   },
   "c034": {
     "name": "Mnemosyne",
@@ -11706,7 +12168,8 @@
         }
       }
     },
-    "id": "c034"
+    "id": "c034",
+    "numMods": 0
   },
   "c397": {
     "id": "c397",
@@ -11732,7 +12195,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c045": {
     "stars": 5,
@@ -11825,7 +12289,8 @@
     "type": "support",
     "id": "c045",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 3
   },
   "c287": {
     "id": "c287",
@@ -11881,7 +12346,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c056": {
     "name": "Jeanne d'Arc",
@@ -11917,7 +12383,8 @@
         }
       }
     },
-    "id": "c056"
+    "id": "c056",
+    "numMods": 0
   },
   "c067": {
     "stars": 5,
@@ -11960,7 +12427,8 @@
     "type": "attacker",
     "id": "c067",
     "element": "water",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "c188": {
     "name": "Atalanta",
@@ -11996,7 +12464,8 @@
         }
       }
     },
-    "id": "c188"
+    "id": "c188",
+    "numMods": 3
   },
   "c199": {
     "stars": 5,
@@ -12049,7 +12518,8 @@
     "type": "healer",
     "id": "c199",
     "element": "fire",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 0
   },
   "c420": {
     "id": "c420",
@@ -12095,7 +12565,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 3
   },
   "c310": {
     "id": "c310",
@@ -12131,7 +12602,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c200": {
     "name": "Seshet",
@@ -12167,7 +12639,8 @@
         }
       }
     },
-    "id": "c200"
+    "id": "c200",
+    "numMods": 0
   },
   "c321": {
     "stars": 5,
@@ -12200,7 +12673,8 @@
     "type": "support",
     "id": "c321",
     "element": "light",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 1
   },
   "sm191": {
     "name": "키메이라",
@@ -12210,7 +12684,8 @@
         "positions": {}
       }
     },
-    "id": "sm191"
+    "id": "sm191",
+    "numMods": 0
   },
   "c332": {
     "name": "Ganesha",
@@ -12236,7 +12711,8 @@
         }
       }
     },
-    "id": "c332"
+    "id": "c332",
+    "numMods": 1
   },
   "c101": {
     "stars": 5,
@@ -12279,7 +12755,8 @@
     "type": "healer",
     "id": "c101",
     "element": "grass",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 13
   },
   "c222": {
     "stars": 4,
@@ -12322,7 +12799,8 @@
     "type": "tank",
     "id": "c222",
     "element": "fire",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 3
   },
   "c343": {
     "id": "c343",
@@ -12348,7 +12826,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 4
   },
   "c112": {
     "name": "Elias",
@@ -12384,7 +12863,8 @@
         }
       }
     },
-    "id": "c112"
+    "id": "c112",
+    "numMods": 0
   },
   "c233": {
     "stars": 4,
@@ -12427,7 +12907,8 @@
     "type": "debuffer",
     "id": "c233",
     "element": "water",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 4
   },
   "c354": {
     "name": "Demeter",
@@ -12473,7 +12954,8 @@
         }
       }
     },
-    "id": "c354"
+    "id": "c354",
+    "numMods": 3
   },
   "c002": {
     "stars": 3,
@@ -12546,7 +13028,8 @@
     "type": "attacker",
     "id": "c002",
     "element": "water",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 6
   },
   "c123": {
     "stars": 3,
@@ -12589,7 +13072,8 @@
     "type": "tank",
     "id": "c123",
     "element": "water",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "c244": {
     "name": "Chun Li",
@@ -12615,7 +13099,8 @@
         }
       }
     },
-    "id": "c244"
+    "id": "c244",
+    "numMods": 0
   },
   "c365": {
     "stars": 5,
@@ -12648,7 +13133,8 @@
     "type": "attacker",
     "id": "c365",
     "element": "water",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 7
   },
   "c013": {
     "stars": 4,
@@ -12691,7 +13177,8 @@
     "type": "attacker",
     "id": "c013",
     "element": "dark",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 6
   },
   "c255": {
     "name": "Mona",
@@ -12707,7 +13194,8 @@
         }
       }
     },
-    "id": "c255"
+    "id": "c255",
+    "numMods": 1
   },
   "c376": {
     "name": "Ganesha",
@@ -12723,7 +13211,8 @@
         }
       }
     },
-    "id": "c376"
+    "id": "c376",
+    "numMods": 0
   },
   "c024": {
     "name": "Rufus",
@@ -12759,7 +13248,8 @@
         }
       }
     },
-    "id": "c024"
+    "id": "c024",
+    "numMods": 0
   },
   "c266": {
     "stars": 5,
@@ -12802,7 +13292,8 @@
     "type": "debuffer",
     "id": "c266",
     "element": "light",
-    "tierPVE": 3
+    "tierPVE": 3,
+    "numMods": 2
   },
   "c387": {
     "stars": 5,
@@ -12855,7 +13346,8 @@
     "type": "healer",
     "id": "c387",
     "element": "fire",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 10
   },
   "c035": {
     "name": "Persephone",
@@ -12891,7 +13383,8 @@
         }
       }
     },
-    "id": "c035"
+    "id": "c035",
+    "numMods": 0
   },
   "c156": {
     "stars": 5,
@@ -12934,7 +13427,8 @@
     "type": "attacker",
     "id": "c156",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 3
   },
   "c277": {
     "stars": 3,
@@ -12977,7 +13471,8 @@
     "type": "support",
     "id": "c277",
     "element": "light",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 5
   },
   "c398": {
     "id": "c398",
@@ -13013,7 +13508,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c167": {
     "stars": 5,
@@ -13076,7 +13572,8 @@
     "type": "support",
     "id": "c167",
     "element": "water",
-    "tierPVE": 10
+    "tierPVE": 10,
+    "numMods": 11
   },
   "c057": {
     "stars": 5,
@@ -13119,7 +13616,8 @@
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 0
   },
   "c178": {
     "stars": 3,
@@ -13162,7 +13660,8 @@
     "type": "support",
     "id": "c178",
     "element": "light",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 3
   },
   "c299": {
     "stars": 5,
@@ -13205,7 +13704,8 @@
     "type": "debuffer",
     "id": "c299",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 0
   },
   "c068": {
     "name": "Ambrosia",
@@ -13241,7 +13741,8 @@
         }
       }
     },
-    "id": "c068"
+    "id": "c068",
+    "numMods": 2
   },
   "c189": {
     "name": "Kratos",
@@ -13277,7 +13778,8 @@
         }
       }
     },
-    "id": "c189"
+    "id": "c189",
+    "numMods": 1
   },
   "c410": {
     "id": "c410",
@@ -13313,7 +13815,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "c300": {
     "name": "Pietas",
@@ -13339,7 +13842,8 @@
         }
       }
     },
-    "id": "c300"
+    "id": "c300",
+    "numMods": 1
   },
   "c421": {
     "id": "c421",
@@ -13365,7 +13869,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 3
   },
   "c311": {
     "stars": 5,
@@ -13418,7 +13923,8 @@
     "type": "attacker",
     "id": "c311",
     "element": "dark",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 7
   },
   "c322": {
     "name": "Pandragon",
@@ -13464,7 +13970,8 @@
         }
       }
     },
-    "id": "c322"
+    "id": "c322",
+    "numMods": 0
   },
   "sm192": {
     "name": "혈룡",
@@ -13474,7 +13981,8 @@
         "positions": {}
       }
     },
-    "id": "sm192"
+    "id": "sm192",
+    "numMods": 0
   },
   "c223": {
     "name": "Ea",
@@ -13511,7 +14019,8 @@
       }
     },
     "id": "c223",
-    "stars": 5
+    "stars": 5,
+    "numMods": 2
   },
   "c344": {
     "name": "Isolde",
@@ -13557,7 +14066,8 @@
         }
       }
     },
-    "id": "c344"
+    "id": "c344",
+    "numMods": 7
   },
   "c113": {
     "name": "Kuma",
@@ -13573,7 +14083,8 @@
         }
       }
     },
-    "id": "c113"
+    "id": "c113",
+    "numMods": 0
   },
   "c234": {
     "stars": 4,
@@ -13626,7 +14137,8 @@
     "type": "tank",
     "id": "c234",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c355": {
     "stars": 5,
@@ -13659,7 +14171,8 @@
     "type": "attacker",
     "id": "c355",
     "element": "grass",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 3
   },
   "c003": {
     "stars": 3,
@@ -13782,7 +14295,8 @@
     "type": "attacker",
     "id": "c003",
     "element": "fire",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 11
   },
   "c124": {
     "stars": 5,
@@ -13855,7 +14369,8 @@
     "type": "attacker",
     "id": "c124",
     "element": "dark",
-    "tierPVE": 10
+    "tierPVE": 10,
+    "numMods": 6
   },
   "c245": {
     "name": "Cammy",
@@ -13881,7 +14396,8 @@
         }
       }
     },
-    "id": "c245"
+    "id": "c245",
+    "numMods": 0
   },
   "c366": {
     "name": "Deino",
@@ -13907,7 +14423,8 @@
         }
       }
     },
-    "id": "c366"
+    "id": "c366",
+    "numMods": 1
   },
   "c014": {
     "name": "Astrea",
@@ -13943,7 +14460,8 @@
         }
       }
     },
-    "id": "c014"
+    "id": "c014",
+    "numMods": 0
   },
   "c135": {
     "name": "Valkyrie",
@@ -13979,7 +14497,8 @@
         }
       }
     },
-    "id": "c135"
+    "id": "c135",
+    "numMods": 2
   },
   "c256": {
     "name": "Lisa",
@@ -13995,7 +14514,8 @@
         }
       }
     },
-    "id": "c256"
+    "id": "c256",
+    "numMods": 0
   },
   "c377": {
     "name": "Iphis",
@@ -14061,7 +14581,8 @@
         }
       }
     },
-    "id": "c377"
+    "id": "c377",
+    "numMods": 3
   },
   "c267": {
     "stars": 5,
@@ -14144,7 +14665,8 @@
     "type": "attacker",
     "id": "c267",
     "element": "light",
-    "tierPVE": 10
+    "tierPVE": 10,
+    "numMods": 10
   },
   "c388": {
     "stars": 5,
@@ -14177,7 +14699,8 @@
     "type": "attacker",
     "id": "c388",
     "element": "fire",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 1
   },
   "c036": {
     "stars": 5,
@@ -14230,7 +14753,8 @@
     "type": "support",
     "id": "c036",
     "element": "fire",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 7
   },
   "c278": {
     "id": "c278",
@@ -14246,7 +14770,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c399": {
     "name": "Mona",
@@ -14262,7 +14787,8 @@
         }
       }
     },
-    "id": "c399"
+    "id": "c399",
+    "numMods": 0
   },
   "c047": {
     "stars": 5,
@@ -14305,7 +14831,8 @@
     "type": "attacker",
     "id": "c047",
     "element": "fire",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 1
   },
   "c168": {
     "name": "Thalia",
@@ -14341,7 +14868,8 @@
         }
       }
     },
-    "id": "c168"
+    "id": "c168",
+    "numMods": 0
   },
   "c289": {
     "stars": 5,
@@ -14394,7 +14922,8 @@
     "type": "support",
     "id": "c289",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 0
   },
   "c058": {
     "stars": 5,
@@ -14437,7 +14966,8 @@
     "type": "debuffer",
     "id": "c058",
     "element": "light",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 6
   },
   "c069": {
     "name": "Ptah",
@@ -14473,7 +15003,8 @@
         }
       }
     },
-    "id": "c069"
+    "id": "c069",
+    "numMods": 0
   },
   "c400": {
     "id": "c400",
@@ -14499,7 +15030,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c411": {
     "id": "c411",
@@ -14515,7 +15047,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c301": {
     "name": "Jacheongbi",
@@ -14541,7 +15074,8 @@
         }
       }
     },
-    "id": "c301"
+    "id": "c301",
+    "numMods": 0
   },
   "sm050": {
     "name": "단두대",
@@ -14551,7 +15085,8 @@
         "positions": {}
       }
     },
-    "id": "sm050"
+    "id": "sm050",
+    "numMods": 0
   },
   "c312": {
     "name": "Tyrfing",
@@ -14587,7 +15122,8 @@
         }
       }
     },
-    "id": "c312"
+    "id": "c312",
+    "numMods": 3
   },
   "c202": {
     "stars": 4,
@@ -14630,7 +15166,8 @@
     "type": "attacker",
     "id": "c202",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 3
   },
   "sm193": {
     "name": "털뭉치",
@@ -14640,7 +15177,8 @@
         "positions": {}
       }
     },
-    "id": "sm193"
+    "id": "sm193",
+    "numMods": 0
   },
   "c224": {
     "name": "Loki",
@@ -14666,7 +15204,8 @@
         }
       }
     },
-    "id": "c224"
+    "id": "c224",
+    "numMods": 0
   },
   "c345": {
     "stars": 5,
@@ -14709,7 +15248,8 @@
     "type": "support",
     "id": "c345",
     "element": "water",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 7
   },
   "c235": {
     "name": "Danu",
@@ -14745,7 +15285,8 @@
         }
       }
     },
-    "id": "c235"
+    "id": "c235",
+    "numMods": 2
   },
   "c004": {
     "stars": 3,
@@ -14788,7 +15329,8 @@
     "type": "attacker",
     "id": "c004",
     "element": "light",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 0
   },
   "c125": {
     "name": "Altice",
@@ -14814,7 +15356,8 @@
         }
       }
     },
-    "id": "c125"
+    "id": "c125",
+    "numMods": 0
   },
   "c246": {
     "tierPVP": 7,
@@ -14896,7 +15439,8 @@
     "type": "attacker",
     "id": "c246",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 5
   },
   "c015": {
     "name": "Helena",
@@ -14912,7 +15456,8 @@
         }
       }
     },
-    "id": "c015"
+    "id": "c015",
+    "numMods": 0
   },
   "c257": {
     "name": "Carlos",
@@ -14938,7 +15483,8 @@
         }
       }
     },
-    "id": "c257"
+    "id": "c257",
+    "numMods": 0
   },
   "c026": {
     "stars": 3,
@@ -14981,7 +15527,8 @@
     "type": "attacker",
     "id": "c026",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 0
   },
   "c147": {
     "name": "Baal",
@@ -15017,7 +15564,8 @@
         }
       }
     },
-    "id": "c147"
+    "id": "c147",
+    "numMods": 0
   },
   "c389": {
     "name": "Iphis",
@@ -15053,7 +15601,8 @@
         }
       }
     },
-    "id": "c389"
+    "id": "c389",
+    "numMods": 0
   },
   "c037": {
     "name": "Judas",
@@ -15089,7 +15638,8 @@
         }
       }
     },
-    "id": "c037"
+    "id": "c037",
+    "numMods": 0
   },
   "c158": {
     "stars": 5,
@@ -15142,7 +15692,8 @@
     "type": "support",
     "id": "c158",
     "element": "water",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 7
   },
   "c279": {
     "id": "c279",
@@ -15188,7 +15739,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "c048": {
     "stars": 4,
@@ -15231,7 +15783,8 @@
     "type": "debuffer",
     "id": "c048",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c169": {
     "stars": 3,
@@ -15274,7 +15827,8 @@
     "type": "support",
     "id": "c169",
     "element": "water",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 3
   },
   "c401": {
     "stars": 5,
@@ -15301,7 +15855,8 @@
     "type": "support",
     "id": "c401",
     "element": "water",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "sm150": {
     "name": "해트트릭",
@@ -15311,7 +15866,8 @@
         "positions": {}
       }
     },
-    "id": "sm150"
+    "id": "sm150",
+    "numMods": 0
   },
   "c412": {
     "id": "c412",
@@ -15367,7 +15923,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sm040": {
     "name": "체인킬러",
@@ -15377,7 +15934,8 @@
         "positions": {}
       }
     },
-    "id": "sm040"
+    "id": "sm040",
+    "numMods": 0
   },
   "c302": {
     "id": "c302",
@@ -15403,7 +15961,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c423": {
     "id": "c423",
@@ -15429,7 +15988,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "sm051": {
     "name": "하데스",
@@ -15439,7 +15999,8 @@
         "positions": {}
       }
     },
-    "id": "sm051"
+    "id": "sm051",
+    "numMods": 0
   },
   "c324": {
     "name": "Mona",
@@ -15475,7 +16036,8 @@
         }
       }
     },
-    "id": "c324"
+    "id": "c324",
+    "numMods": 9
   },
   "sm194": {
     "name": "다론",
@@ -15485,7 +16047,8 @@
         "positions": {}
       }
     },
-    "id": "sm194"
+    "id": "sm194",
+    "numMods": 0
   },
   "c214": {
     "stars": 5,
@@ -15538,7 +16101,8 @@
     "type": "debuffer",
     "id": "c214",
     "element": "fire",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 3
   },
   "c225": {
     "stars": 4,
@@ -15581,7 +16145,8 @@
     "type": "support",
     "id": "c225",
     "element": "fire",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 1
   },
   "c346": {
     "stars": 4,
@@ -15614,7 +16179,8 @@
     "type": "attacker",
     "id": "c346",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 1
   },
   "c115": {
     "name": "Sonnet",
@@ -15650,7 +16216,8 @@
         }
       }
     },
-    "id": "c115"
+    "id": "c115",
+    "numMods": 0
   },
   "c357": {
     "id": "c357",
@@ -15676,7 +16243,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c005": {
     "stars": 5,
@@ -15719,7 +16287,8 @@
     "type": "tank",
     "id": "c005",
     "element": "water",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 4
   },
   "c126": {
     "name": "Salmacis",
@@ -15755,7 +16324,8 @@
         }
       }
     },
-    "id": "c126"
+    "id": "c126",
+    "numMods": 0
   },
   "c247": {
     "stars": 5,
@@ -15798,7 +16368,8 @@
     "type": "support",
     "id": "c247",
     "element": "water",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 4
   },
   "c258": {
     "name": "Red Pixie",
@@ -15825,7 +16396,8 @@
       }
     },
     "id": "c258",
-    "stars": 2
+    "stars": 2,
+    "numMods": 0
   },
   "c027": {
     "name": "Cynthia",
@@ -15861,7 +16433,8 @@
         }
       }
     },
-    "id": "c027"
+    "id": "c027",
+    "numMods": 0
   },
   "c148": {
     "stars": 4,
@@ -15924,7 +16497,8 @@
     "type": "attacker",
     "id": "c148",
     "element": "dark",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 5
   },
   "c269": {
     "name": "Dark Pixie",
@@ -15951,7 +16525,8 @@
       }
     },
     "id": "c269",
-    "stars": 2
+    "stars": 2,
+    "numMods": 1
   },
   "c038": {
     "stars": 5,
@@ -16004,7 +16579,8 @@
     "type": "attacker",
     "id": "c038",
     "element": "water",
-    "tierPVE": 5
+    "tierPVE": 5,
+    "numMods": 5
   },
   "c159": {
     "name": "Semele",
@@ -16040,7 +16616,8 @@
         }
       }
     },
-    "id": "c159"
+    "id": "c159",
+    "numMods": 1
   },
   "c049": {
     "stars": 5,
@@ -16093,7 +16670,8 @@
     "type": "healer",
     "id": "c049",
     "element": "light",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 13
   },
   "sm261": {
     "id": "sm261",
@@ -16109,7 +16687,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c402": {
     "id": "c402",
@@ -16145,7 +16724,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "sm151": {
     "name": "암즈",
@@ -16155,7 +16735,8 @@
         "positions": {}
       }
     },
-    "id": "sm151"
+    "id": "sm151",
+    "numMods": 0
   },
   "c413": {
     "id": "c413",
@@ -16181,7 +16762,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c424": {
     "id": "c424",
@@ -16197,7 +16779,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "sm052": {
     "name": "바실리",
@@ -16207,7 +16790,8 @@
         "positions": {}
       }
     },
-    "id": "sm052"
+    "id": "sm052",
+    "numMods": 0
   },
   "c314": {
     "name": "Mona",
@@ -16223,7 +16807,8 @@
         }
       }
     },
-    "id": "c314"
+    "id": "c314",
+    "numMods": 0
   },
   "sm063": {
     "name": "앰플",
@@ -16233,7 +16818,8 @@
         "positions": {}
       }
     },
-    "id": "sm063"
+    "id": "sm063",
+    "numMods": 0
   },
   "c325": {
     "name": "John",
@@ -16259,7 +16845,8 @@
         }
       }
     },
-    "id": "c325"
+    "id": "c325",
+    "numMods": 0
   },
   "sm195": {
     "name": "다론",
@@ -16269,7 +16856,8 @@
         "positions": {}
       }
     },
-    "id": "sm195"
+    "id": "sm195",
+    "numMods": 0
   },
   "c215": {
     "name": "Surtr",
@@ -16285,7 +16873,8 @@
         }
       }
     },
-    "id": "c215"
+    "id": "c215",
+    "numMods": 0
   },
   "c336": {
     "id": "c336",
@@ -16321,7 +16910,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c226": {
     "name": "Ragnar",
@@ -16337,7 +16927,8 @@
         }
       }
     },
-    "id": "c226"
+    "id": "c226",
+    "numMods": 0
   },
   "c347": {
     "id": "c347",
@@ -16363,7 +16954,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c116": {
     "name": "Pluto",
@@ -16399,7 +16991,8 @@
         }
       }
     },
-    "id": "c116"
+    "id": "c116",
+    "numMods": 0
   },
   "c237": {
     "name": "Typhon",
@@ -16435,7 +17028,8 @@
         }
       }
     },
-    "id": "c237"
+    "id": "c237",
+    "numMods": 0
   },
   "c358": {
     "name": "Hatsune Miku",
@@ -16466,7 +17060,8 @@
     "element": "water",
     "type": "support",
     "tierPVP": 6,
-    "tierBoss": 8
+    "tierBoss": 8,
+    "numMods": 3
   },
   "c127": {
     "stars": 5,
@@ -16519,7 +17114,8 @@
     "type": "attacker",
     "id": "c127",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 6
   },
   "c369": {
     "name": "Grandma",
@@ -16535,7 +17131,8 @@
         }
       }
     },
-    "id": "c369"
+    "id": "c369",
+    "numMods": 0
   },
   "c017": {
     "name": "Cu Sith",
@@ -16571,7 +17168,8 @@
         }
       }
     },
-    "id": "c017"
+    "id": "c017",
+    "numMods": 0
   },
   "c028": {
     "stars": 4,
@@ -16624,7 +17222,8 @@
     "type": "support",
     "id": "c028",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 7
   },
   "c149": {
     "stars": 5,
@@ -16667,7 +17266,8 @@
     "type": "healer",
     "id": "c149",
     "element": "water",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c039": {
     "stars": 4,
@@ -16710,7 +17310,8 @@
     "type": "attacker",
     "id": "c039",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "sm141": {
     "name": "할로윈",
@@ -16720,7 +17321,8 @@
         "positions": {}
       }
     },
-    "id": "sm141"
+    "id": "sm141",
+    "numMods": 0
   },
   "c403": {
     "id": "c403",
@@ -16746,7 +17348,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "sm152": {
     "name": "파이터",
@@ -16756,7 +17359,8 @@
         "positions": {}
       }
     },
-    "id": "sm152"
+    "id": "sm152",
+    "numMods": 0
   },
   "c414": {
     "id": "c414",
@@ -16812,7 +17416,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 3
   },
   "c304": {
     "name": "Nebula",
@@ -16838,7 +17443,8 @@
         }
       }
     },
-    "id": "c304"
+    "id": "c304",
+    "numMods": 0
   },
   "sm053": {
     "name": "히드라",
@@ -16856,7 +17462,8 @@
         "positions": {}
       }
     },
-    "id": "sm053"
+    "id": "sm053",
+    "numMods": 0
   },
   "c315": {
     "name": "Methuselah",
@@ -16882,7 +17489,8 @@
         }
       }
     },
-    "id": "c315"
+    "id": "c315",
+    "numMods": 0
   },
   "c205": {
     "name": "Merlin",
@@ -16918,7 +17526,8 @@
         }
       }
     },
-    "id": "c205"
+    "id": "c205",
+    "numMods": 1
   },
   "c326": {
     "name": "Valla",
@@ -16934,7 +17543,8 @@
         }
       }
     },
-    "id": "c326"
+    "id": "c326",
+    "numMods": 0
   },
   "sm196": {
     "name": "다론",
@@ -16944,7 +17554,8 @@
         "positions": {}
       }
     },
-    "id": "sm196"
+    "id": "sm196",
+    "numMods": 0
   },
   "c216": {
     "stars": 5,
@@ -16987,7 +17598,8 @@
     "type": "support",
     "id": "c216",
     "element": "dark",
-    "tierPVE": 4
+    "tierPVE": 4,
+    "numMods": 5
   },
   "c106": {
     "stars": 3,
@@ -17020,7 +17632,8 @@
     "type": "attacker",
     "id": "c106",
     "element": "dark",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "c227": {
     "stars": 5,
@@ -17063,7 +17676,8 @@
     "type": "attacker",
     "id": "c227",
     "element": "light",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 7
   },
   "c348": {
     "stars": 5,
@@ -17116,7 +17730,8 @@
     "type": "attacker",
     "id": "c348",
     "element": "dark",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 1
   },
   "c117": {
     "name": "Yaga",
@@ -17152,7 +17767,8 @@
         }
       }
     },
-    "id": "c117"
+    "id": "c117",
+    "numMods": 0
   },
   "c238": {
     "stars": 5,
@@ -17205,7 +17821,8 @@
     "type": "attacker",
     "id": "c238",
     "element": "fire",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 2
   },
   "c359": {
     "name": "Snow Miku",
@@ -17236,7 +17853,8 @@
     "element": "grass",
     "type": "support",
     "tierPVP": 7,
-    "tierBoss": 8
+    "tierBoss": 8,
+    "numMods": 0
   },
   "c007": {
     "stars": 3,
@@ -17279,7 +17897,8 @@
     "type": "tank",
     "id": "c007",
     "element": "fire",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 0
   },
   "c128": {
     "name": "Galatea",
@@ -17315,7 +17934,8 @@
         }
       }
     },
-    "id": "c128"
+    "id": "c128",
+    "numMods": 0
   },
   "c018": {
     "name": "Korra",
@@ -17351,7 +17971,8 @@
         }
       }
     },
-    "id": "c018"
+    "id": "c018",
+    "numMods": 0
   },
   "c139": {
     "stars": 5,
@@ -17394,7 +18015,8 @@
     "type": "healer",
     "id": "c139",
     "element": "light",
-    "tierPVE": 10
+    "tierPVE": 10,
+    "numMods": 0
   },
   "c029": {
     "stars": 4,
@@ -17437,7 +18059,8 @@
     "type": "healer",
     "id": "c029",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 4
   },
   "sm142": {
     "name": "레드",
@@ -17447,7 +18070,8 @@
         "positions": {}
       }
     },
-    "id": "sm142"
+    "id": "sm142",
+    "numMods": 0
   },
   "c404": {
     "name": "Nine",
@@ -17473,7 +18097,8 @@
         }
       }
     },
-    "id": "c404"
+    "id": "c404",
+    "numMods": 2
   },
   "sm153": {
     "name": "멘티",
@@ -17483,7 +18108,8 @@
         "positions": {}
       }
     },
-    "id": "sm153"
+    "id": "sm153",
+    "numMods": 0
   },
   "c415": {
     "id": "c415",
@@ -17519,7 +18145,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c305": {
     "stars": 5,
@@ -17572,7 +18199,8 @@
     "type": "debuffer",
     "id": "c305",
     "element": "dark",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 5
   },
   "sm054": {
     "name": "고모라",
@@ -17590,7 +18218,8 @@
         "positions": {}
       }
     },
-    "id": "sm054"
+    "id": "sm054",
+    "numMods": 0
   },
   "c316": {
     "name": "Botan",
@@ -17626,7 +18255,8 @@
         }
       }
     },
-    "id": "c316"
+    "id": "c316",
+    "numMods": 1
   },
   "c327": {
     "name": "Guard",
@@ -17642,7 +18272,8 @@
         }
       }
     },
-    "id": "c327"
+    "id": "c327",
+    "numMods": 0
   },
   "sm197": {
     "name": "다론",
@@ -17652,7 +18283,8 @@
         "positions": {}
       }
     },
-    "id": "sm197"
+    "id": "sm197",
+    "numMods": 0
   },
   "c338": {
     "stars": 5,
@@ -17685,7 +18317,8 @@
     "type": "healer",
     "id": "c338",
     "element": "light",
-    "tierPVE": 9
+    "tierPVE": 9,
+    "numMods": 1
   },
   "c107": {
     "stars": 3,
@@ -17728,7 +18361,8 @@
     "type": "healer",
     "id": "c107",
     "element": "water",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "c349": {
     "stars": 5,
@@ -17771,7 +18405,8 @@
     "type": "attacker",
     "id": "c349",
     "element": "dark",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 2
   },
   "c008": {
     "name": "Frigga",
@@ -17812,7 +18447,8 @@
     "tierPVP": 5,
     "tierPVE": 5,
     "tierRaid": 5,
-    "tierBoss": 5
+    "tierBoss": 5,
+    "numMods": 3
   },
   "c129": {
     "name": "Nike",
@@ -17848,7 +18484,8 @@
         }
       }
     },
-    "id": "c129"
+    "id": "c129",
+    "numMods": 2
   },
   "c019": {
     "stars": 3,
@@ -17891,7 +18528,8 @@
     "type": "tank",
     "id": "c019",
     "element": "grass",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 2
   },
   "sm143": {
     "name": "블루",
@@ -17901,7 +18539,8 @@
         "positions": {}
       }
     },
-    "id": "sm143"
+    "id": "sm143",
+    "numMods": 0
   },
   "c405": {
     "id": "c405",
@@ -17947,7 +18586,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "c416": {
     "id": "c416",
@@ -17983,7 +18623,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "c317": {
     "name": "Babel",
@@ -18019,7 +18660,8 @@
         }
       }
     },
-    "id": "c317"
+    "id": "c317",
+    "numMods": 0
   },
   "c328": {
     "name": "Guard",
@@ -18035,7 +18677,8 @@
         }
       }
     },
-    "id": "c328"
+    "id": "c328",
+    "numMods": 0
   },
   "sm077": {
     "name": "모아",
@@ -18045,7 +18688,8 @@
         "positions": {}
       }
     },
-    "id": "sm077"
+    "id": "sm077",
+    "numMods": 0
   },
   "sm198": {
     "name": "다론",
@@ -18055,7 +18699,8 @@
         "positions": {}
       }
     },
-    "id": "sm198"
+    "id": "sm198",
+    "numMods": 0
   },
   "c339": {
     "name": "Davi",
@@ -18081,7 +18726,8 @@
         }
       }
     },
-    "id": "c339"
+    "id": "c339",
+    "numMods": 1
   },
   "c229": {
     "stars": 5,
@@ -18134,7 +18780,8 @@
     "type": "support",
     "id": "c229",
     "element": "grass",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 1
   },
   "c009": {
     "name": "Hector",
@@ -18175,7 +18822,8 @@
     "tierPVP": 5,
     "tierPVE": 5,
     "tierRaid": 5,
-    "tierBoss": 5
+    "tierBoss": 5,
+    "numMods": 0
   },
   "sm144": {
     "name": "그린",
@@ -18185,7 +18833,8 @@
         "positions": {}
       }
     },
-    "id": "sm144"
+    "id": "sm144",
+    "numMods": 0
   },
   "c406": {
     "id": "c406",
@@ -18211,7 +18860,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 2
   },
   "c417": {
     "id": "c417",
@@ -18257,7 +18907,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 8
   },
   "sm045": {
     "name": "정령",
@@ -18267,7 +18918,8 @@
         "positions": {}
       }
     },
-    "id": "sm045"
+    "id": "sm045",
+    "numMods": 0
   },
   "sm056": {
     "name": "아바돈",
@@ -18277,7 +18929,8 @@
         "positions": {}
       }
     },
-    "id": "sm056"
+    "id": "sm056",
+    "numMods": 0
   },
   "c318": {
     "stars": 5,
@@ -18350,7 +19003,8 @@
     "type": "attacker",
     "id": "c318",
     "element": "water",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "numMods": 10
   },
   "c208": {
     "stars": 3,
@@ -18393,7 +19047,8 @@
     "type": "attacker",
     "id": "c208",
     "element": "fire",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "numMods": 1
   },
   "sm199": {
     "name": "수룡",
@@ -18403,7 +19058,8 @@
         "positions": {}
       }
     },
-    "id": "sm199"
+    "id": "sm199",
+    "numMods": 0
   },
   "c219": {
     "name": "Ymir",
@@ -18439,7 +19095,8 @@
         }
       }
     },
-    "id": "c219"
+    "id": "c219",
+    "numMods": 1
   },
   "c109": {
     "name": "Arethusa",
@@ -18465,7 +19122,8 @@
         }
       }
     },
-    "id": "c109"
+    "id": "c109",
+    "numMods": 0
   },
   "sc090": {
     "name": "불카누스",
@@ -18483,7 +19141,8 @@
         "positions": {}
       }
     },
-    "id": "sc090"
+    "id": "sc090",
+    "numMods": 0
   },
   "sm200": {
     "name": "앙크",
@@ -18501,7 +19160,8 @@
         "positions": {}
       }
     },
-    "id": "sm200"
+    "id": "sm200",
+    "numMods": 0
   },
   "sm211": {
     "name": "엔젤롯",
@@ -18519,7 +19179,8 @@
         "positions": {}
       }
     },
-    "id": "sm211"
+    "id": "sm211",
+    "numMods": 0
   },
   "sm255": {
     "name": "앰플",
@@ -18537,7 +19198,8 @@
         "positions": {}
       }
     },
-    "id": "sm255"
+    "id": "sm255",
+    "numMods": 0
   },
   "sm145": {
     "name": "라이트",
@@ -18547,7 +19209,8 @@
         "positions": {}
       }
     },
-    "id": "sm145"
+    "id": "sm145",
+    "numMods": 0
   },
   "c407": {
     "id": "c407",
@@ -18573,7 +19236,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "c418": {
     "id": "c418",
@@ -18599,7 +19263,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 3
   },
   "c308": {
     "stars": 5,
@@ -18652,7 +19317,8 @@
     "type": "attacker",
     "id": "c308",
     "element": "dark",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "numMods": 1
   },
   "sm057": {
     "name": "월아",
@@ -18662,7 +19328,8 @@
         "positions": {}
       }
     },
-    "id": "sm057"
+    "id": "sm057",
+    "numMods": 0
   },
   "c319": {
     "name": "Bachelor",
@@ -18698,7 +19365,8 @@
         }
       }
     },
-    "id": "c319"
+    "id": "c319",
+    "numMods": 1
   },
   "sm189": {
     "name": "보물상자",
@@ -18708,7 +19376,8 @@
         "positions": {}
       }
     },
-    "id": "sm189"
+    "id": "sm189",
+    "numMods": 0
   },
   "c209": {
     "name": "Hecate",
@@ -18744,7 +19413,8 @@
         }
       }
     },
-    "id": "c209"
+    "id": "c209",
+    "numMods": 0
   },
   "sc190": {
     "name": "이시스",
@@ -18754,7 +19424,8 @@
         "positions": {}
       }
     },
-    "id": "sc190"
+    "id": "sc190",
+    "numMods": 0
   },
   "sc091": {
     "name": "마이라",
@@ -18772,7 +19443,8 @@
         "positions": {}
       }
     },
-    "id": "sc091"
+    "id": "sc091",
+    "numMods": 0
   },
   "sm201": {
     "name": "바주카맨",
@@ -18782,7 +19454,8 @@
         "positions": {}
       }
     },
-    "id": "sm201"
+    "id": "sm201",
+    "numMods": 0
   },
   "sm212": {
     "name": "룬",
@@ -18792,7 +19465,8 @@
         "positions": {}
       }
     },
-    "id": "sm212"
+    "id": "sm212",
+    "numMods": 0
   },
   "sm223": {
     "name": "선물꾸러미",
@@ -18802,7 +19476,8 @@
         "positions": {}
       }
     },
-    "id": "sm223"
+    "id": "sm223",
+    "numMods": 0
   },
   "sm003": {
     "name": "염룡",
@@ -18812,7 +19487,8 @@
         "positions": {}
       }
     },
-    "id": "sm003"
+    "id": "sm003",
+    "numMods": 0
   },
   "sm124": {
     "name": "주시자",
@@ -18822,7 +19498,8 @@
         "positions": {}
       }
     },
-    "id": "sm124"
+    "id": "sm124",
+    "numMods": 0
   },
   "sm245": {
     "name": "크리처",
@@ -18840,7 +19517,8 @@
         "positions": {}
       }
     },
-    "id": "sm245"
+    "id": "sm245",
+    "numMods": 0
   },
   "sm146": {
     "name": "퍼플",
@@ -18850,7 +19528,8 @@
         "positions": {}
       }
     },
-    "id": "sm146"
+    "id": "sm146",
+    "numMods": 0
   },
   "c408": {
     "id": "c408",
@@ -18876,7 +19555,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sm036": {
     "name": "전달자",
@@ -18886,7 +19566,8 @@
         "positions": {}
       }
     },
-    "id": "sm036"
+    "id": "sm036",
+    "numMods": 0
   },
   "c419": {
     "id": "c419",
@@ -18912,7 +19593,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 1
   },
   "sc290": {
     "name": "브리지드",
@@ -18930,7 +19612,8 @@
         "positions": {}
       }
     },
-    "id": "sc290"
+    "id": "sc290",
+    "numMods": 0
   },
   "sc180": {
     "name": "맘몬",
@@ -18940,7 +19623,8 @@
         "positions": {}
       }
     },
-    "id": "sc180"
+    "id": "sc180",
+    "numMods": 0
   },
   "sc070": {
     "name": "유이",
@@ -18958,7 +19642,8 @@
         "positions": {}
       }
     },
-    "id": "sc070"
+    "id": "sc070",
+    "numMods": 0
   },
   "sc191": {
     "name": "세크메트",
@@ -18968,7 +19653,8 @@
         "positions": {}
       }
     },
-    "id": "sc191"
+    "id": "sc191",
+    "numMods": 0
   },
   "sc081": {
     "name": "테미스",
@@ -18986,7 +19672,8 @@
         "positions": {}
       }
     },
-    "id": "sc081"
+    "id": "sc081",
+    "numMods": 0
   },
   "sm202": {
     "name": "바주람보",
@@ -18996,7 +19683,8 @@
         "positions": {}
       }
     },
-    "id": "sm202"
+    "id": "sm202",
+    "numMods": 0
   },
   "sm224": {
     "name": "아펩",
@@ -19014,7 +19702,8 @@
         "positions": {}
       }
     },
-    "id": "sm224"
+    "id": "sm224",
+    "numMods": 0
   },
   "sm004": {
     "name": "염룡",
@@ -19024,7 +19713,8 @@
         "positions": {}
       }
     },
-    "id": "sm004"
+    "id": "sm004",
+    "numMods": 0
   },
   "sm125": {
     "name": "주시자",
@@ -19034,7 +19724,8 @@
         "positions": {}
       }
     },
-    "id": "sm125"
+    "id": "sm125",
+    "numMods": 0
   },
   "sm136": {
     "name": "레이디",
@@ -19044,7 +19735,8 @@
         "positions": {}
       }
     },
-    "id": "sm136"
+    "id": "sm136",
+    "numMods": 0
   },
   "c409": {
     "name": "?",
@@ -19071,7 +19763,8 @@
         }
       }
     },
-    "id": "c409"
+    "id": "c409",
+    "numMods": 4
   },
   "sm037": {
     "name": "추격자",
@@ -19081,7 +19774,8 @@
         "positions": {}
       }
     },
-    "id": "sm037"
+    "id": "sm037",
+    "numMods": 0
   },
   "sc390": {
     "name": "오하드",
@@ -19099,7 +19793,8 @@
         "positions": {}
       }
     },
-    "id": "sc390"
+    "id": "sc390",
+    "numMods": 0
   },
   "sm059": {
     "name": "바주카",
@@ -19109,7 +19804,8 @@
         "positions": {}
       }
     },
-    "id": "sm059"
+    "id": "sm059",
+    "numMods": 0
   },
   "sc280": {
     "name": "티케",
@@ -19127,7 +19823,8 @@
         "positions": {}
       }
     },
-    "id": "sc280"
+    "id": "sc280",
+    "numMods": 0
   },
   "sc060": {
     "name": "티시포네",
@@ -19137,7 +19834,8 @@
         "positions": {}
       }
     },
-    "id": "sc060"
+    "id": "sc060",
+    "numMods": 1
   },
   "sc082": {
     "name": "칼카스",
@@ -19147,7 +19845,8 @@
         "positions": {}
       }
     },
-    "id": "sc082"
+    "id": "sc082",
+    "numMods": 0
   },
   "m090": {
     "name": "Pack",
@@ -19173,7 +19872,8 @@
         }
       }
     },
-    "id": "m090"
+    "id": "m090",
+    "numMods": 0
   },
   "sm203": {
     "name": "브레맨",
@@ -19183,7 +19883,8 @@
         "positions": {}
       }
     },
-    "id": "sm203"
+    "id": "sm203",
+    "numMods": 0
   },
   "sm126": {
     "name": "주시자",
@@ -19193,7 +19894,8 @@
         "positions": {}
       }
     },
-    "id": "sm126"
+    "id": "sm126",
+    "numMods": 0
   },
   "sm137": {
     "name": "벨보이",
@@ -19203,7 +19905,8 @@
         "positions": {}
       }
     },
-    "id": "sm137"
+    "id": "sm137",
+    "numMods": 0
   },
   "sm148": {
     "name": "원",
@@ -19213,7 +19916,8 @@
         "positions": {}
       }
     },
-    "id": "sm148"
+    "id": "sm148",
+    "numMods": 0
   },
   "sm038": {
     "name": "디아블로",
@@ -19223,7 +19927,8 @@
         "positions": {}
       }
     },
-    "id": "sm038"
+    "id": "sm038",
+    "numMods": 0
   },
   "sm049": {
     "name": "박제",
@@ -19233,7 +19938,8 @@
         "positions": {}
       }
     },
-    "id": "sm049"
+    "id": "sm049",
+    "numMods": 0
   },
   "sc391": {
     "name": "메브",
@@ -19251,7 +19957,8 @@
         "positions": {}
       }
     },
-    "id": "sc391"
+    "id": "sc391",
+    "numMods": 0
   },
   "sc160": {
     "name": "사라",
@@ -19261,7 +19968,8 @@
         "positions": {}
       }
     },
-    "id": "sc160"
+    "id": "sc160",
+    "numMods": 1
   },
   "sc292": {
     "name": "루인",
@@ -19271,7 +19979,8 @@
         "positions": {}
       }
     },
-    "id": "sc292"
+    "id": "sc292",
+    "numMods": 0
   },
   "sc061": {
     "name": "세이렌",
@@ -19281,7 +19990,8 @@
         "positions": {}
       }
     },
-    "id": "sc061"
+    "id": "sc061",
+    "numMods": 2
   },
   "sc072": {
     "name": "펜릴",
@@ -19291,7 +20001,8 @@
         "positions": {}
       }
     },
-    "id": "sc072"
+    "id": "sc072",
+    "numMods": 0
   },
   "sc083": {
     "name": "네이드",
@@ -19301,7 +20012,8 @@
         "positions": {}
       }
     },
-    "id": "sc083"
+    "id": "sc083",
+    "numMods": 1
   },
   "m190": {
     "name": "Boxer",
@@ -19327,7 +20039,8 @@
         }
       }
     },
-    "id": "m190"
+    "id": "m190",
+    "numMods": 0
   },
   "m080": {
     "name": "Cocoon",
@@ -19353,7 +20066,8 @@
         }
       }
     },
-    "id": "m080"
+    "id": "m080",
+    "numMods": 0
   },
   "sm127": {
     "name": "주시자",
@@ -19363,7 +20077,8 @@
         "positions": {}
       }
     },
-    "id": "sm127"
+    "id": "sm127",
+    "numMods": 0
   },
   "sm149": {
     "name": "헤르츠",
@@ -19373,7 +20088,8 @@
         "positions": {}
       }
     },
-    "id": "sm149"
+    "id": "sm149",
+    "numMods": 0
   },
   "sc370": {
     "name": "모나",
@@ -19391,7 +20107,8 @@
         "positions": {}
       }
     },
-    "id": "sc370"
+    "id": "sc370",
+    "numMods": 0
   },
   "sm039": {
     "name": "리유가",
@@ -19401,7 +20118,8 @@
         "positions": {}
       }
     },
-    "id": "sm039"
+    "id": "sm039",
+    "numMods": 0
   },
   "v002": {
     "id": "v002",
@@ -19417,7 +20135,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc381": {
     "id": "sc381",
@@ -19433,7 +20152,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc392": {
     "name": "다비",
@@ -19451,7 +20171,8 @@
         "positions": {}
       }
     },
-    "id": "sc392"
+    "id": "sc392",
+    "numMods": 0
   },
   "sc040": {
     "name": "샤마시",
@@ -19461,7 +20182,8 @@
         "positions": {}
       }
     },
-    "id": "sc040"
+    "id": "sc040",
+    "numMods": 1
   },
   "sc051": {
     "name": "프레이",
@@ -19471,7 +20193,8 @@
         "positions": {}
       }
     },
-    "id": "sc051"
+    "id": "sc051",
+    "numMods": 0
   },
   "sc172": {
     "name": "유나",
@@ -19481,7 +20204,8 @@
         "positions": {}
       }
     },
-    "id": "sc172"
+    "id": "sc172",
+    "numMods": 0
   },
   "sc062": {
     "name": "에우로페",
@@ -19491,7 +20215,8 @@
         "positions": {}
       }
     },
-    "id": "sc062"
+    "id": "sc062",
+    "numMods": 0
   },
   "sc183": {
     "name": "다나",
@@ -19501,7 +20226,8 @@
         "positions": {}
       }
     },
-    "id": "sc183"
+    "id": "sc183",
+    "numMods": 0
   },
   "sc194": {
     "name": "아슈토레스",
@@ -19511,7 +20237,8 @@
         "positions": {}
       }
     },
-    "id": "sc194"
+    "id": "sc194",
+    "numMods": 0
   },
   "sc095": {
     "name": "베스타",
@@ -19521,7 +20248,8 @@
         "positions": {}
       }
     },
-    "id": "sc095"
+    "id": "sc095",
+    "numMods": 0
   },
   "m070": {
     "name": "Chains",
@@ -19547,7 +20275,8 @@
         }
       }
     },
-    "id": "m070"
+    "id": "m070",
+    "numMods": 0
   },
   "m191": {
     "name": "Chimaera",
@@ -19583,7 +20312,8 @@
         }
       }
     },
-    "id": "m191"
+    "id": "m191",
+    "numMods": 0
   },
   "m081": {
     "name": "Cocoon",
@@ -19609,7 +20339,8 @@
         }
       }
     },
-    "id": "m081"
+    "id": "m081",
+    "numMods": 0
   },
   "m092": {
     "name": "Syringe",
@@ -19635,7 +20366,8 @@
         }
       }
     },
-    "id": "m092"
+    "id": "m092",
+    "numMods": 0
   },
   "sm205": {
     "name": "발프",
@@ -19653,7 +20385,8 @@
         "positions": {}
       }
     },
-    "id": "sm205"
+    "id": "sm205",
+    "numMods": 0
   },
   "sm216": {
     "name": "페어리",
@@ -19663,7 +20396,8 @@
         "positions": {}
       }
     },
-    "id": "sm216"
+    "id": "sm216",
+    "numMods": 0
   },
   "sm007": {
     "name": "테디",
@@ -19673,7 +20407,8 @@
         "positions": {}
       }
     },
-    "id": "sm007"
+    "id": "sm007",
+    "numMods": 0
   },
   "sm128": {
     "name": "주시자",
@@ -19683,7 +20418,8 @@
         "positions": {}
       }
     },
-    "id": "sm128"
+    "id": "sm128",
+    "numMods": 0
   },
   "sc360": {
     "name": "마아트",
@@ -19701,7 +20437,8 @@
         "positions": {}
       }
     },
-    "id": "sc360"
+    "id": "sc360",
+    "numMods": 0
   },
   "sc371": {
     "name": "리자",
@@ -19719,7 +20456,8 @@
         "positions": {}
       }
     },
-    "id": "sc371"
+    "id": "sc371",
+    "numMods": 0
   },
   "sc382": {
     "name": "네반",
@@ -19737,7 +20475,8 @@
         "positions": {}
       }
     },
-    "id": "sc382"
+    "id": "sc382",
+    "numMods": 0
   },
   "sc030": {
     "name": "소녀탐정",
@@ -19747,7 +20486,8 @@
         "positions": {}
       }
     },
-    "id": "sc030"
+    "id": "sc030",
+    "numMods": 0
   },
   "sc393": {
     "name": "모나",
@@ -19765,7 +20505,8 @@
         "positions": {}
       }
     },
-    "id": "sc393"
+    "id": "sc393",
+    "numMods": 0
   },
   "sc041": {
     "name": "티아마트",
@@ -19775,7 +20516,8 @@
         "positions": {}
       }
     },
-    "id": "sc041"
+    "id": "sc041",
+    "numMods": 0
   },
   "sc283": {
     "name": "모건",
@@ -19785,7 +20527,8 @@
         "positions": {}
       }
     },
-    "id": "sc283"
+    "id": "sc283",
+    "numMods": 0
   },
   "sc052": {
     "name": "베리트",
@@ -19795,7 +20538,8 @@
         "positions": {}
       }
     },
-    "id": "sc052"
+    "id": "sc052",
+    "numMods": 0
   },
   "sc173": {
     "name": "디나시",
@@ -19805,7 +20549,8 @@
         "positions": {}
       }
     },
-    "id": "sc173"
+    "id": "sc173",
+    "numMods": 0
   },
   "sc294": {
     "name": "바토리",
@@ -19815,7 +20560,8 @@
         "positions": {}
       }
     },
-    "id": "sc294"
+    "id": "sc294",
+    "numMods": 0
   },
   "sc063": {
     "name": "프리지아",
@@ -19825,7 +20571,8 @@
         "positions": {}
       }
     },
-    "id": "sc063"
+    "id": "sc063",
+    "numMods": 0
   },
   "sc184": {
     "name": "엘리시온",
@@ -19835,7 +20582,8 @@
         "positions": {}
       }
     },
-    "id": "sc184"
+    "id": "sc184",
+    "numMods": 0
   },
   "sc074": {
     "name": "키리누스",
@@ -19845,7 +20593,8 @@
         "positions": {}
       }
     },
-    "id": "sc074"
+    "id": "sc074",
+    "numMods": 0
   },
   "sc195": {
     "name": "키벨레",
@@ -19855,7 +20604,8 @@
         "positions": {}
       }
     },
-    "id": "sc195"
+    "id": "sc195",
+    "numMods": 1
   },
   "sc085": {
     "name": "파리스",
@@ -19873,7 +20623,8 @@
         "positions": {}
       }
     },
-    "id": "sc085"
+    "id": "sc085",
+    "numMods": 0
   },
   "m170": {
     "name": "Water Heart",
@@ -19899,7 +20650,8 @@
         }
       }
     },
-    "id": "m170"
+    "id": "m170",
+    "numMods": 0
   },
   "m071": {
     "name": "Chains",
@@ -19925,7 +20677,8 @@
         }
       }
     },
-    "id": "m071"
+    "id": "m071",
+    "numMods": 0
   },
   "m192": {
     "name": "Wyvern",
@@ -19951,7 +20704,8 @@
         }
       }
     },
-    "id": "m192"
+    "id": "m192",
+    "numMods": 0
   },
   "m082": {
     "name": "Cocoon",
@@ -19977,7 +20731,8 @@
         }
       }
     },
-    "id": "m082"
+    "id": "m082",
+    "numMods": 0
   },
   "m093": {
     "name": "Syringe",
@@ -20003,7 +20758,8 @@
         }
       }
     },
-    "id": "m093"
+    "id": "m093",
+    "numMods": 0
   },
   "sm206": {
     "name": "부꾸두들",
@@ -20013,7 +20769,8 @@
         "positions": {}
       }
     },
-    "id": "sm206"
+    "id": "sm206",
+    "numMods": 0
   },
   "sm217": {
     "name": "레드노즈",
@@ -20023,7 +20780,8 @@
         "positions": {}
       }
     },
-    "id": "sm217"
+    "id": "sm217",
+    "numMods": 0
   },
   "sc350": {
     "name": "넵튠",
@@ -20033,7 +20791,8 @@
         "positions": {}
       }
     },
-    "id": "sc350"
+    "id": "sc350",
+    "numMods": 0
   },
   "sc130": {
     "name": "게니우스",
@@ -20051,7 +20810,8 @@
         "positions": {}
       }
     },
-    "id": "sc130"
+    "id": "sc130",
+    "numMods": 0
   },
   "sc372": {
     "name": "다비",
@@ -20069,7 +20829,8 @@
         "positions": {}
       }
     },
-    "id": "sc372"
+    "id": "sc372",
+    "numMods": 0
   },
   "sc020": {
     "name": "포르투나",
@@ -20079,7 +20840,8 @@
         "positions": {}
       }
     },
-    "id": "sc020"
+    "id": "sc020",
+    "numMods": 0
   },
   "sc141": {
     "name": "아모르",
@@ -20089,7 +20851,8 @@
         "positions": {}
       }
     },
-    "id": "sc141"
+    "id": "sc141",
+    "numMods": 0
   },
   "sc262": {
     "name": "다프니스",
@@ -20099,7 +20862,8 @@
         "positions": {}
       }
     },
-    "id": "sc262"
+    "id": "sc262",
+    "numMods": 0
   },
   "sc031": {
     "name": "프레이야",
@@ -20109,7 +20873,8 @@
         "positions": {}
       }
     },
-    "id": "sc031"
+    "id": "sc031",
+    "numMods": 0
   },
   "sc152": {
     "name": "헤베",
@@ -20127,7 +20892,8 @@
         "positions": {}
       }
     },
-    "id": "sc152"
+    "id": "sc152",
+    "numMods": 0
   },
   "sc394": {
     "id": "sc394",
@@ -20143,7 +20909,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc053": {
     "name": "메티스",
@@ -20153,7 +20920,8 @@
         "positions": {}
       }
     },
-    "id": "sc053"
+    "id": "sc053",
+    "numMods": 0
   },
   "sc174": {
     "name": "A.I",
@@ -20163,7 +20931,8 @@
         "positions": {}
       }
     },
-    "id": "sc174"
+    "id": "sc174",
+    "numMods": 1
   },
   "sc295": {
     "name": "언노운",
@@ -20181,7 +20950,8 @@
         "positions": {}
       }
     },
-    "id": "sc295"
+    "id": "sc295",
+    "numMods": 0
   },
   "sc064": {
     "name": "메두사",
@@ -20191,7 +20961,8 @@
         "positions": {}
       }
     },
-    "id": "sc064"
+    "id": "sc064",
+    "numMods": 0
   },
   "sc185": {
     "name": "헤르모드",
@@ -20209,7 +20980,8 @@
         "positions": {}
       }
     },
-    "id": "sc185"
+    "id": "sc185",
+    "numMods": 0
   },
   "sc196": {
     "name": "이둔",
@@ -20219,7 +20991,8 @@
         "positions": {}
       }
     },
-    "id": "sc196"
+    "id": "sc196",
+    "numMods": 1
   },
   "sc086": {
     "name": "고가",
@@ -20237,7 +21010,8 @@
         "positions": {}
       }
     },
-    "id": "sc086"
+    "id": "sc086",
+    "numMods": 1
   },
   "m160": {
     "name": "Evolution Blobbie",
@@ -20263,7 +21037,8 @@
         }
       }
     },
-    "id": "m160"
+    "id": "m160",
+    "numMods": 0
   },
   "m050": {
     "name": "Guillotine",
@@ -20299,7 +21074,8 @@
         }
       }
     },
-    "id": "m050"
+    "id": "m050",
+    "numMods": 0
   },
   "m171": {
     "name": "Dark Heart",
@@ -20325,7 +21101,8 @@
         }
       }
     },
-    "id": "m171"
+    "id": "m171",
+    "numMods": 0
   },
   "m061": {
     "name": "Syringe",
@@ -20351,7 +21128,8 @@
         }
       }
     },
-    "id": "m061"
+    "id": "m061",
+    "numMods": 0
   },
   "m072": {
     "name": "Chains",
@@ -20377,7 +21155,8 @@
         }
       }
     },
-    "id": "m072"
+    "id": "m072",
+    "numMods": 0
   },
   "m193": {
     "name": "Furball",
@@ -20403,7 +21182,8 @@
         }
       }
     },
-    "id": "m193"
+    "id": "m193",
+    "numMods": 0
   },
   "m083": {
     "name": "Cocoon",
@@ -20429,7 +21209,8 @@
         }
       }
     },
-    "id": "m083"
+    "id": "m083",
+    "numMods": 0
   },
   "sc230": {
     "name": "스쿨드",
@@ -20439,7 +21220,8 @@
         "positions": {}
       }
     },
-    "id": "sc230"
+    "id": "sc230",
+    "numMods": 1
   },
   "sc351": {
     "name": "비너스",
@@ -20449,7 +21231,8 @@
         "positions": {}
       }
     },
-    "id": "sc351"
+    "id": "sc351",
+    "numMods": 0
   },
   "sc120": {
     "name": "플로라",
@@ -20459,7 +21242,8 @@
         "positions": {}
       }
     },
-    "id": "sc120"
+    "id": "sc120",
+    "numMods": 0
   },
   "sc362": {
     "id": "sc362",
@@ -20475,7 +21259,8 @@
           }
         }
       }
-    }
+    },
+    "numMods": 0
   },
   "sc010": {
     "name": "드미테르",
@@ -20485,7 +21270,8 @@
         "positions": {}
       }
     },
-    "id": "sc010"
+    "id": "sc010",
+    "numMods": 0
   },
   "sc142": {
     "name": "히프노스",
@@ -20495,7 +21281,8 @@
         "positions": {}
       }
     },
-    "id": "sc142"
+    "id": "sc142",
+    "numMods": 0
   },
   "sc032": {
     "name": "알렉토",
@@ -20513,7 +21300,8 @@
         "positions": {}
       }
     },
-    "id": "sc032"
+    "id": "sc032",
+    "numMods": 0
   },
   "sc153": {
     "name": "에포나",
@@ -20523,7 +21311,8 @@
         "positions": {}
       }
     },
-    "id": "sc153"
+    "id": "sc153",
+    "numMods": 0
   },
   "sc274": {
     "name": "바스트",
@@ -20533,7 +21322,8 @@
         "positions": {}
       }
     },
-    "id": "sc274"
+    "id": "sc274",
+    "numMods": 0
   },
   "sc395": {
     "name": "이브",
@@ -20551,7 +21341,8 @@
         "positions": {}
       }
     },
-    "id": "sc395"
+    "id": "sc395",
+    "numMods": 0
   },
   "sc043": {
     "name": "헤라",
@@ -20561,7 +21352,8 @@
         "positions": {}
       }
     },
-    "id": "sc043"
+    "id": "sc043",
+    "numMods": 1
   },
   "sc164": {
     "name": "이슈타르",
@@ -20571,7 +21363,8 @@
         "positions": {}
       }
     },
-    "id": "sc164"
+    "id": "sc164",
+    "numMods": 0
   },
   "sc285": {
     "name": "나탈리스",
@@ -20589,7 +21382,8 @@
         "positions": {}
       }
     },
-    "id": "sc285"
+    "id": "sc285",
+    "numMods": 0
   },
   "sc054": {
     "name": "레전드",
@@ -20607,7 +21401,8 @@
         "positions": {}
       }
     },
-    "id": "sc054"
+    "id": "sc054",
+    "numMods": 0
   },
   "sc175": {
     "name": "레드크로스",
@@ -20617,7 +21412,8 @@
         "positions": {}
       }
     },
-    "id": "sc175"
+    "id": "sc175",
+    "numMods": 0
   },
   "sc296": {
     "name": "힐드",
@@ -20627,7 +21423,8 @@
         "positions": {}
       }
     },
-    "id": "sc296"
+    "id": "sc296",
+    "numMods": 0
   },
   "sc065": {
     "name": "에라토",
@@ -20645,7 +21442,8 @@
         "positions": {}
       }
     },
-    "id": "sc065"
+    "id": "sc065",
+    "numMods": 0
   },
   "m150": {
     "name": "Hat-Trick",
@@ -20671,7 +21469,8 @@
         }
       }
     },
-    "id": "m150"
+    "id": "m150",
+    "numMods": 0
   },
   "m040": {
     "name": "Chain Killer",
@@ -20707,7 +21506,8 @@
         }
       }
     },
-    "id": "m040"
+    "id": "m040",
+    "numMods": 0
   },
   "m161": {
     "name": "Fire Blobbie",
@@ -20733,7 +21533,8 @@
         }
       }
     },
-    "id": "m161"
+    "id": "m161",
+    "numMods": 0
   },
   "m051": {
     "stars": 5,
@@ -20786,7 +21587,8 @@
     "type": "tank",
     "id": "m051",
     "element": "fire",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "numMods": 5
   },
   "m172": {
     "name": "Evolution Heart",
@@ -20812,7 +21614,8 @@
         }
       }
     },
-    "id": "m172"
+    "id": "m172",
+    "numMods": 0
   },
   "m062": {
     "name": "Syringe",
@@ -20838,7 +21641,8 @@
         }
       }
     },
-    "id": "m062"
+    "id": "m062",
+    "numMods": 0
   },
   "m073": {
     "name": "Cube",
@@ -20864,7 +21668,8 @@
         }
       }
     },
-    "id": "m073"
+    "id": "m073",
+    "numMods": 0
   },
   "m194": {
     "name": "Daron",
@@ -20890,7 +21695,8 @@
         }
       }
     },
-    "id": "m194"
+    "id": "m194",
+    "numMods": 0
   },
   "m084": {
     "name": "Cube",
@@ -20916,7 +21722,8 @@
         }
       }
     },
-    "id": "m084"
+    "id": "m084",
+    "numMods": 0
   },
   "m095": {
     "name": "Syringe",
@@ -20942,6 +21749,7 @@
         }
       }
     },
-    "id": "m095"
+    "id": "m095",
+    "numMods": 0
   }
 }
