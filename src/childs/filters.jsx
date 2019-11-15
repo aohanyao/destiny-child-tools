@@ -14,6 +14,7 @@ const Filters = ({
   type,
   view,
   sort,
+  numMods,
   asc,
   filter,
   setFilter
@@ -56,6 +57,15 @@ const Filters = ({
           <MenuItem value={'support'}>Support</MenuItem>
           <MenuItem value={'debuffer'}>Debuffer</MenuItem>
         </Filter>
+        <Filter label="Mods" value={numMods} name="numMods">
+          <MenuItem value={false}>Any Number</MenuItem>
+          <MenuItem value={'none'}>0 Mods</MenuItem>
+          <MenuItem value={'>0'}>At Least 1</MenuItem>
+          <MenuItem value={'>10'}>At Least 10</MenuItem>
+          <MenuItem value={'<5'}>Less than 5</MenuItem>
+          <MenuItem value={'nsfw'}>NSFW</MenuItem>
+          <MenuItem value={'sfw'}>Safe FW</MenuItem>
+        </Filter>
         <div style={{whiteSpace: 'nowrap', display: 'inline-block'}}>
           {view != 'table' &&
             <Filter label="Sort By" value={sort} name="sort">
@@ -68,6 +78,7 @@ const Filters = ({
               <MenuItem value={'tierPVE'}>Tier PVE</MenuItem>
               <MenuItem value={'tierRaid'}>Tier Raid</MenuItem>
               <MenuItem value={'tierBoss'}>Tier Boss</MenuItem>
+              <MenuItem value={'numMods'}>Number of Mods</MenuItem>
             </Filter>
           }
           {view != 'table' &&
@@ -99,6 +110,7 @@ export default connect(
       view: childList.get('view'),
       sort: childList.get('sort'),
       asc: childList.get('asc'),
+      numMods: childList.get('numMods'),
       filter: childList.get('filter'),
     }
   },

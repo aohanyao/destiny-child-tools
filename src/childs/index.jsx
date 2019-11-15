@@ -24,6 +24,7 @@ const Childs = ({
   element,
   type,
   view,
+  numMods,
   filter,
   setPage,
   setFilter
@@ -41,6 +42,24 @@ const Childs = ({
     childs = childs.filter(child =>
       (child.get('name').toLowerCase() + child.get('id')).match(filter.toLowerCase())
     )
+  }
+  if(numMods) {
+    childs = childs.filter(child => {
+      switch(numMods) {
+        case 'none':
+          return child.get('numMods') == 0
+        case '>0':
+          return child.get('numMods') > 0
+        case '>10':
+          return child.get('numMods') >= 10
+        case '<5':
+          return child.get('numMods') < 5
+        case 'nsfw':
+          return child.get('numModsNSFW') > 0
+        case 'sfw':
+          return child.get('numMods') - child.get('numModsNSFW') > 0
+      }
+    })
   }
   if(!asc) childs = childs.reverse()
   const numChilds = childs.size
@@ -86,6 +105,7 @@ export default connect(
       element: childList.get('element'),
       type: childList.get('type'),
       view: childList.get('view'),
+      numMods: childList.get('numMods'),
       filter: childList.get('filter'),
     }
   },

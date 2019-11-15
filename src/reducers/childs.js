@@ -1,4 +1,4 @@
-import {fromJS, Map} from 'immutable'
+import {fromJS} from 'immutable'
 import childs from '../../docs/data/childs.json'
 
 export default (state = fromJS(childs), action) => {

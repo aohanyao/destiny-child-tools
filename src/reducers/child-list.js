@@ -21,6 +21,7 @@ const defaultState = fromJS({
   stars: load('stars', false),
   type: load('type', false),
   view: load('view', 'cards'),
+  numMods: load('numMods', false),
   filter: ''
 })
 

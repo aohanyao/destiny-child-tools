@@ -86,6 +86,9 @@ const ChildCard = ({child}) => {
               <Box>
                 <Tier child={child} type="Boss" />
               </Box>
+              <Box mt={1}>
+                <Typography>Mods: {child.get('numMods')} {child.get('numModsNSFW') > 0 ? `(${child.get('numModsNSFW')} nsfw)` : ''}</Typography>
+              </Box>
             </Box>
           </Grid>
         </Grid>

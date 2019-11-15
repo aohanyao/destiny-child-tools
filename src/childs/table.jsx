@@ -68,6 +68,8 @@ const ChildsTable = ({
             <Sortable name="tierRaid">Tier Raid</Sortable>
             <Sortable name="tierBoss">Tier Boss</Sortable>
             <Sortable name="variants">Variants</Sortable>
+            <Sortable name="numMods">Mods</Sortable>
+            <Sortable name="numModsNSFW">NSFW</Sortable>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -113,6 +115,12 @@ const ChildsTable = ({
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
                   {child.get('variants').size}
+                </TableChildCellLink>
+                <TableChildCellLink child={child}>
+                  {child.get('numMods')}
+                </TableChildCellLink>
+                <TableChildCellLink child={child}>
+                  {child.get('numModsNSFW')}
                 </TableChildCellLink>
               </TableRow>
             )
