@@ -7,6 +7,8 @@
  */
 
 import React, {useState}  from 'react'
+import RNFetchBlob from 'rn-fetch-blob'
+import RNFS from 'react-native-fs'
 import {
   SafeAreaView,
   StyleSheet,
@@ -14,7 +16,8 @@ import {
   View,
   Text,
   StatusBar,
-  Dimensions
+  Dimensions,
+  PermissionsAndroid
 } from 'react-native'
 import {
   Header,
@@ -31,11 +34,83 @@ const stringify = mod =>
   mod.modder.toLowerCase().replace(/\s/g, '_') + '-' +
   mod.name.toLowerCase().replace(/\s/g, '_')
 
+const getStoragePermission = () => new Promise((resolve) => {
+  PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE).then(result => {
+    if(result == PermissionsAndroid.RESULTS.GRANTED) {
+      PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE).then(result => {
+        if(result == PermissionsAndroid.RESULTS.GRANTED) {
+          resolve()
+        }
+        else {
+          alert('This app needs to be able to write to your external storage to be able to install Destiny Child mods.')
+        }
+      })
+    }
+    else {
+      alert('This app needs to be able to read your external storage to know what version of Destiny Child you have installed.')
+    }
+  })
+})
+const globalPath = '/sdcard/Android/data/com.linegames.dcglobal/files/asset/'
+
+const installMod = path => {
+  getStoragePermission().then(() => {
+    RNFS.readDir(globalPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+      .then((result) => {
+        // alert(JSON.stringify(result, null, 2))
+        RNFetchBlob
+          .config({
+            path: globalPath + 'character/c227_02.pck'
+          })
+          .fetch('GET', path)
+        // RNFetchBlob.fetch('GET', 'http://www.example.com/images/img1.png')
+          .then((res) => {
+            let status = res.info().status;
+            
+            if(status == 200) alert('Mod installed.\n\nRestart Destiny Child if it\'s running.')
+            else {
+              alert('There may have been a problem downloading. Got status code ' + status)
+            }
+          })
+          // Something went wrong:
+          .catch((errorMessage, statusCode) => {
+            alert(errorMessage)
+            // error handling
+          })
+    })
+  })
+}
+// installMod('https://lokicoder.github.io/destiny-child-tools/live2d/assets/c227_02-loki-swimsuit2_based_on_eljoseto/c227_02.pck')
+
+async function requestCameraPermission() {
+  try {
+    const granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.CAMERA,
+      {
+        title: 'Cool Photo App Camera Permission',
+        message:
+          'Cool Photo App needs access to your camera ' +
+          'so you can take awesome pictures.',
+        buttonNeutral: 'Ask Me Later',
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      },
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('You can use the camera');
+    } else {
+      console.log('Camera permission denied');
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+}
 
 const App: () => React$Node = () => {
   const [childs, setData] = useState(),
         [mods, setMods] = useState()
   if(!childs) {
+    
     fetch('https://lokicoder.github.io/destiny-child-tools/data/childs.json')
       .then((response) => response.json())
       .then((childs) => {
@@ -60,7 +135,8 @@ const App: () => React$Node = () => {
     <View style={{flex: 1, backgroundColor: '#424242'}}>
       <StatusBar barStyle="dark-content" />
       <ScrollView>
-        <View style={{
+        
+        {/* <View style={{
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center'
@@ -82,7 +158,7 @@ const App: () => React$Node = () => {
                 uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
               />
             ))}
-          </View>
+          </View> */}
       </ScrollView>
     </View>
   )
