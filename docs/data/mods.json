@@ -5017,5 +5017,12 @@
     "child": "c202",
     "modder": "Eljoseto",
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c426",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
