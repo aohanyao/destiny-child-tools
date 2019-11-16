@@ -1,12 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
-import React, {useState}  from 'react'
+import React from 'react'
 import RNFetchBlob from 'rn-fetch-blob'
 import RNFS from 'react-native-fs'
 import {
@@ -26,13 +18,11 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
+import {Provider} from 'react-redux'
 import ScaledImage from './scaled-image'
+import store from './src/store.js'
+import Index from './src/index.js'
 
-const stringify = mod =>
-  mod.child + '_' +
-  mod.variant + '-' +
-  mod.modder.toLowerCase().replace(/\s/g, '_') + '-' +
-  mod.name.toLowerCase().replace(/\s/g, '_')
 
 const getStoragePermission = () => new Promise((resolve) => {
   PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE).then(result => {
@@ -82,85 +72,16 @@ const installMod = path => {
 }
 // installMod('https://lokicoder.github.io/destiny-child-tools/live2d/assets/c227_02-loki-swimsuit2_based_on_eljoseto/c227_02.pck')
 
-async function requestCameraPermission() {
-  try {
-    const granted = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.CAMERA,
-      {
-        title: 'Cool Photo App Camera Permission',
-        message:
-          'Cool Photo App needs access to your camera ' +
-          'so you can take awesome pictures.',
-        buttonNeutral: 'Ask Me Later',
-        buttonNegative: 'Cancel',
-        buttonPositive: 'OK',
-      },
-    );
-    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      console.log('You can use the camera');
-    } else {
-      console.log('Camera permission denied');
-    }
-  } catch (err) {
-    console.warn(err);
-  }
-}
-
 const App: () => React$Node = () => {
-  const [childs, setData] = useState(),
-        [mods, setMods] = useState()
-  if(!childs) {
-    
-    fetch('https://lokicoder.github.io/destiny-child-tools/data/childs.json')
-      .then((response) => response.json())
-      .then((childs) => {
-        setData(childs)
-      })
-      .catch((error) => {
-        alert(error)
-      })
-  }
-  if(!mods) {
-    fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
-      .then((response) => response.json())
-      .then((mods) => {
-        setMods(mods)
-      })
-      .catch((error) => {
-        alert(error)
-      })
-  }
+ 
   const id = 'c001'
   return (
-    <View style={{flex: 1, backgroundColor: '#424242'}}>
-      <StatusBar barStyle="dark-content" />
-      <ScrollView>
-        
-        {/* <View style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center'
-          }}>
-            {childs && Object.keys(childs[id].variants).map(vId => (
-              <ScaledImage
-                key={`${id}_${vId}`}
-                height={Dimensions.get('window').height * .9}
-                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png`}
-              />
-            ))}
-            {mods && mods.reduce((acc, mod) => { 
-              if(mod.child == id) acc.push(mod)
-              return acc
-            }, []).map(mod => (
-              <ScaledImage
-                key={`${stringify(mod)}}}`}
-                height={Dimensions.get('window').height * .9}
-                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
-              />
-            ))}
-          </View> */}
-      </ScrollView>
-    </View>
+    <Provider store={store}>
+      <View style={{flex: 1, backgroundColor: '#424242'}}>
+        <StatusBar barStyle="dark-content" />
+        <Index />
+      </View>
+    </Provider>
   )
 }
 
