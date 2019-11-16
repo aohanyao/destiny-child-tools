@@ -8,6 +8,7 @@ import {
   Text
 } from 'react-native'
 import {goBack} from './actions/view.js'
+import {WebView} from 'react-native-webview'
 
 const Live2D = ({id, goBack}) => {
   return (
@@ -17,8 +18,8 @@ const Live2D = ({id, goBack}) => {
         onPress={() => goBack('Childs')} />
       <Text>{id}</Text>
       <WebView
-        source={{uri: 'https://github.com/facebook/react-native'}}
-        style={{marginTop: 20}}
+        source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/viewer.html?mN=${id}&size=1000&background=%23424242`}}
+        height={900}
       />
     </>
   )

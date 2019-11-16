@@ -43,13 +43,17 @@ const Child = ({child, setView, goBack, mods}) => {
                   source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
               )
             })}
-            {mods.sortBy(mod => mod.get('variant') + mod.get('modder')).toArray().map(mod => (
-              <Image
-                key={stringify(mod)}
-                height={Dimensions.get('window').height * .8}
-                width={Dimensions.get('window').width * .8}
-                source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}} />
-            ))}
+            {mods.sortBy(mod => mod.get('variant') + mod.get('modder')).toArray().map(mod => {
+              const key = stringify(mod)
+              return (
+                <Image
+                  key={key}
+                  onPress={() => setView('Live2D', key)}
+                  height={Dimensions.get('window').height * .8}
+                  width={Dimensions.get('window').width * .8}
+                  source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
+              )
+            })}
           </View>
       </ScrollView>
     </>
