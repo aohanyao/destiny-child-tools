@@ -22518,6 +22518,52 @@
     "element": "dark",
     "tierPVE": 7
   },
+  "c426": {
+    "id": "c426",
+    "name": "?",
+    "variants": {
+      "00": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    },
+    "numMods": 1,
+    "numModsNSFW": [
+      {
+        "name": "Topless",
+        "variant": "01",
+        "child": "c426",
+        "modder": "KDG",
+        "nsfw": true
+      }
+    ]
+  },
   "sm054": {
     "name": "고모라",
     "variants": {
@@ -26704,51 +26750,5 @@
     "id": "m095",
     "numMods": 0,
     "numModsNSFW": []
-  },
-  "c426": {
-    "id": "c426",
-    "name": "?",
-    "variants": {
-      "00": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "01": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      },
-      "02": {
-        "title": "",
-        "positions": {
-          "home": {
-            "x": -15,
-            "y": -75,
-            "scale": 0.75
-          }
-        }
-      }
-    },
-    "numMods": 1,
-    "numModsNSFW": [
-      {
-        "name": "Topless",
-        "variant": "01",
-        "child": "c426",
-        "modder": "KDG",
-        "nsfw": true
-      }
-    ]
   }
 }
