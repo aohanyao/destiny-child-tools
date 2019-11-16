@@ -22,7 +22,7 @@ const Child = ({child, setView, goBack, mods}) => {
     <>
       <Button
         title={"Back"}
-        onPress={() => setView('Childs')} />
+        onPress={() => goBack()} />
       <ScrollView>
         <Image
           height={400} // height will be calculated automatically
@@ -46,12 +46,15 @@ const Child = ({child, setView, goBack, mods}) => {
             {mods.sortBy(mod => mod.get('variant') + mod.get('modder')).toArray().map(mod => {
               const key = stringify(mod)
               return (
-                <Image
-                  key={key}
-                  onPress={() => setView('Live2D', key)}
-                  height={Dimensions.get('window').height * .8}
-                  width={Dimensions.get('window').width * .8}
-                  source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
+                <>
+                  <Text>{key}</Text>
+                  <Image
+                    key={key}
+                    onPress={() => setView('Live2D', key)}
+                    height={Dimensions.get('window').height * .8}
+                    width={Dimensions.get('window').width * .8}
+                    source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
+                </>
               )
             })}
           </View>
@@ -70,33 +73,6 @@ export default connect(
   },
   dispatch => ({
     setView: (name, id) => dispatch(setView(name, id)),
-    goBack
+    goBack: () => dispatch(goBack())
   })
 )(Child)
-
-
-{/* <ScrollView>
-        <View style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center'
-          }}>
-            {childs && Object.keys(childs[id].variants).map(vId => (
-              <ScaledImage
-                key={`${id}_${vId}`}
-                height={Dimensions.get('window').height * .9}
-                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}_${vId}/preview-424242.png`}
-              />
-            ))}
-            {mods && mods.reduce((acc, mod) => { 
-              if(mod.child == id) acc.push(mod)
-              return acc
-            }, []).map(mod => (
-              <ScaledImage
-                key={`${stringify(mod)}}}`}
-                height={Dimensions.get('window').height * .9}
-                uri={`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${stringify(mod)}/preview-424242.png`}
-              />
-            ))}
-          </View>
-      </ScrollView> */}

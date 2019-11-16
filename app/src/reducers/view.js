@@ -1,7 +1,7 @@
 import {fromJS} from 'immutable'
 import {VIEW_SET, VIEW_GO_BACK} from '../actions/view.js'
 
-const history = [fromJS({name: 'Childs'})]
+export const history = [fromJS({name: 'Childs'})]
 
 export default (state = history[0], action = {}) => {
   if(action.type == VIEW_SET) {

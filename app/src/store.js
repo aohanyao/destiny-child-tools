@@ -2,8 +2,11 @@ import {fromJS} from 'immutable'
 import {combineReducers} from 'redux-immutable'
 import {createStore} from 'redux'
 import view from './reducers/view.js'
+import {BackHandler} from 'react-native'
 import data from './reducers/data.js'
 import {setChilds, setMods} from './actions/data.js'
+import {history} from './reducers/view.js'
+import {goBack} from './actions/view.js'
 
 const store = createStore(combineReducers({
   data,
@@ -27,6 +30,18 @@ fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
   .catch((error) => {
     alert(error)
   })
+
+BackHandler.addEventListener('hardwareBackPress', function() {
+  // this.onMainScreen and this.goBack are just examples, you need to use your own implementation here
+  // Typically you would use the navigator here to go to the last state.
+
+  if(history.length > 1) {
+    store.dispatch(goBack())
+    return true;
+  }
+  return false;
+});
+  
 
 
 export default store
