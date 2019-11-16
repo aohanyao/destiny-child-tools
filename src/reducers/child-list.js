@@ -19,6 +19,7 @@ const defaultState = fromJS({
   page: 0,
   element: load('element', false),
   stars: load('stars', false),
+  category: load('category', false),
   type: load('type', false),
   view: load('view', 'cards'),
   numMods: load('numMods', false),

@@ -22,6 +22,7 @@ const Childs = ({
   page,
   stars,
   element,
+  category,
   type,
   view,
   numMods,
@@ -42,6 +43,20 @@ const Childs = ({
     childs = childs.filter(child =>
       (child.get('name').toLowerCase() + child.get('id')).match(filter.toLowerCase())
     )
+  }
+  if(category) {
+    switch(category) {
+      case 'childs':
+        childs = childs.filter(child => child.get('id').match(/^c\d\d\d/))
+        break
+      case 'monsters':
+        childs = childs.filter(child => child.get('id').match(/^m\d\d\d/))
+        break
+      case 'spa':
+        childs = childs.filter(child => child.get('id').match(/^sc\d\d\d/))
+        break
+    }
+
   }
   if(numMods) {
     childs = childs.filter(child => {
@@ -102,6 +117,7 @@ export default connect(
       asc: childList.get('asc'),
       page: childList.get('page'),
       stars: childList.get('stars'),
+      category: childList.get('category'),
       element: childList.get('element'),
       type: childList.get('type'),
       view: childList.get('view'),

@@ -14,6 +14,7 @@ const Filters = ({
   type,
   view,
   sort,
+  category,
   numMods,
   asc,
   filter,
@@ -32,6 +33,12 @@ const Filters = ({
           <MenuItem value={50}>50 Childs</MenuItem>
           <MenuItem value={100}>100 Childs</MenuItem>
           <MenuItem value={200}>200 Childs</MenuItem>
+        </Filter>
+        <Filter label="Category" value={category} name="category">
+          <MenuItem value={false}>Any Category</MenuItem>
+          <MenuItem value={'childs'}>Childs</MenuItem>
+          <MenuItem value={'monsters'}>Monsters</MenuItem>
+          <MenuItem value={'spa'}>Spa</MenuItem>
         </Filter>
         <Filter label="Stars" value={stars} name="stars">
           <MenuItem value={false}>Any Stars</MenuItem>
@@ -110,6 +117,7 @@ export default connect(
       view: childList.get('view'),
       sort: childList.get('sort'),
       asc: childList.get('asc'),
+      category: childList.get('category'),
       numMods: childList.get('numMods'),
       filter: childList.get('filter'),
     }
