@@ -2,50 +2,41 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {
   Text,
-  View,
-  PermissionsAndroid
+  View
 } from 'react-native'
+import {getStoragePermission} from './lib/permissions.js'
+import {globalAssetPath, krAssetPath} from './lib/paths.js'
 import {Title, Button} from 'react-native-paper'
 import RNFetchBlob from 'rn-fetch-blob'
 import RNFS from 'react-native-fs'
 import {goBack} from './actions/view.js'
 import {WebView} from 'react-native-webview'
 
-const getStoragePermission = () => new Promise((resolve) => {
-  PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE).then(result => {
-    if(result == PermissionsAndroid.RESULTS.GRANTED) {
-      PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE).then(result => {
-        if(result == PermissionsAndroid.RESULTS.GRANTED) {
-          resolve()
-        }
-        else {
-          alert('This app needs to be able to write to your external storage to be able to install Destiny Child mods.')
-        }
-      })
-    }
-    else {
-      alert('This app needs to be able to read your external storage to know what version of Destiny Child you have installed.')
-    }
-  })
-})
-
-const globalPath = '/sdcard/Android/data/com.linegames.dcglobal/files/asset/'
-
 const installMod = (path, pckName) => {
   getStoragePermission().then(() => {
-    RNFS.readDir(globalPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+    RNFS.readDir(globalAssetPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
       .then((result) => {
         // alert(JSON.stringify(result, null, 2))
         RNFetchBlob
           .config({
-            path: globalPath + `character/${pckName}.pck`
+            //path: globalAssetPath + `character/${pckName}.pck`
+            fileCache : true
           })
           .fetch('GET', path)
         // RNFetchBlob.fetch('GET', 'http://www.example.com/images/img1.png')
           .then((res) => {
             let status = res.info().status;
             
-            if(status == 200) alert('Mod installed.\n\nRestart Destiny Child if it\'s running.')
+            if(status == 200) {
+              Promise.all([
+                RNFS.copyFile(res.path(), krAssetPath + `character/${pckName}.pck`),
+                RNFS.copyFile(res.path(), globalAssetPath + `character/${pckName}.pck`)
+              ]).then(() => {
+                RNFS.unlink(res.path()).then(() => {
+                  alert('Mod installed.\n\nRestart Destiny Child if it\'s running.')
+                })
+              })
+            }
             else {
               alert('There may have been a problem downloading. Got status code ' + status)
             }
