@@ -3,11 +3,10 @@ import {connect} from 'react-redux'
 import {
   ScrollView,
   View,
-  Button,
-  Text
+  Button
 } from 'react-native'
 import { Dimensions } from 'react-native'
-import {Title, Surface} from 'react-native-paper'
+import {Title, Text} from 'react-native-paper'
 import Image from 'react-native-scalable-image'
 import {setView, goBack} from './actions/view.js'
 
@@ -34,29 +33,38 @@ const Child = ({child, setView, goBack, mods}) => {
             {child.get('variants').sortBy((_, vId) => vId).toArray().map(([vId, variant]) => {
               const key = `${id}_${vId}`
               return (
-                <Image
-                  key={key}
-                  onPress={() => setView('Live2D', key)}
-                  height={Dimensions.get('window').height * .8}
-                  width={Dimensions.get('window').width * .8}
-                  source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
+                <View paddingTop={20}>
+                  <Image
+                    key={key}
+                    onPress={() => setView('Live2D', key)}
+                    height={Dimensions.get('window').height * .6}
+                    width={Dimensions.get('window').width * .6}
+                    source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
+                </View>
               )
             })}
             {mods.sortBy(mod => mod.get('variant') + mod.get('modder')).toArray().map(mod => {
               const key = stringify(mod)
               return (
-                <>
+                <View paddingTop={20}>
                   <Text>{key}</Text>
                   <Image
                     key={key}
                     onPress={() => setView('Live2D', key)}
-                    height={Dimensions.get('window').height * .8}
-                    width={Dimensions.get('window').width * .8}
+                    height={Dimensions.get('window').height * .6}
+                    width={Dimensions.get('window').width * .6}
                     source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
-                </>
+                </View>
               )
             })}
           </View>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
+          <Text></Text>
       </ScrollView>
     </View>
   )

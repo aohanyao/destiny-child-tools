@@ -1,11 +1,12 @@
+
+import {Map} from 'immutable'
 import React, {useState} from 'react'
 import {connect} from 'react-redux'
-import {Title} from 'react-native-paper'
-import {Button, View, TouchableOpacity, Keyboard} from 'react-native'
+import {Title, Chip, TextInput} from 'react-native-paper'
+import {View, ScrollView, TouchableOpacity} from 'react-native'
 import Childs from './childs.js'
 import Child from './child.js'
 import Live2D from './live2d.js'
-import Autocomplete from 'react-native-autocomplete-input'
 import {setView} from './actions/view.js'
 
 const views = {
@@ -20,31 +21,28 @@ const Index = ({childs, setView}) => {
           ? childs
             .filter(c => (c.get('name') + c.get('id')).match(query))
             .sortBy(c => c.get('id'))
-            .map(c => c.get('name'))
-            .toArray()
-          : []
+          : Map()
   return (
     <>
-      <View style={{width: '100%'}} zIndex={999} position="absolute" top={80} paddingLeft={20} paddingRight={20}>
+      <View style={{width: '100%'}} padding={20}>
         <Title>Search by name or ID</Title>
-        <Autocomplete
-          data={data}
-          defaultValue={query}
+        <TextInput
           onChangeText={text => setQuery(text)}
-          keyExtractor={(item) => item[0]}
-          renderItem={({ item, i }) => (
-            <TouchableOpacity key={item[0]}>
-              <Button
-                title={item[0] + ' - ' + item[1]}
-                onPress={e => {
-                  setQuery('')
-                  Keyboard.dismiss()
-                  setView('Child', item[0])
-                }} />
-            </TouchableOpacity>
-          )}/>
+          type="flat" />
+         <ScrollView>
+          {data.take(20).toArray().map(([id, child], i) => {
+            return (
+              <View key={id} marginTop={20}>
+                <TouchableOpacity onPress={() => setView('Child', id)}>
+                  <Chip padding={20}>
+                    {id} - {child.get('name')}
+                  </Chip>
+                </TouchableOpacity>
+              </View>
+            );
+          })}
+          </ScrollView>
       </View>
-      <View style={{height: 60}}></View>
     </>
   )
 }

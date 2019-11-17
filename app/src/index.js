@@ -5,13 +5,15 @@ import Childs from './childs.js'
 import Child from './child.js'
 import Live2D from './live2d.js'
 import Search from './search.js'
+import Settings from './settings.js'
 import {goBack, setView} from './actions/view.js'
 
 const views = {
   Childs,
   Child,
   Live2D,
-  Search
+  Search,
+  Settings
 }
 
 const Index = ({childs, view, goBack, setView}) => {
@@ -22,9 +24,10 @@ const Index = ({childs, view, goBack, setView}) => {
   return (
     <>
       <Appbar.Header>
-        {viewName != 'Childs' && <Appbar.BackAction onPress={goBack} />}
+        {view.get('index') > 0 && <Appbar.BackAction onPress={goBack} />}
         <Appbar.Content title="DC Toold & Mods"/>
         {viewName !== 'Search' && <Appbar.Action icon="account-search" onPress={() => setView('Search')} />}
+        {viewName !== 'Settings' && <Appbar.Action icon="settings" onPress={() => setView('Settings')} />}
       </Appbar.Header>
       <PageView />
     </>
