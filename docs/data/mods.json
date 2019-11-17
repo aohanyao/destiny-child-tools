@@ -5024,5 +5024,12 @@
     "child": "c426",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "10",
+    "child": "c393",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]

@@ -9593,6 +9593,16 @@
   "c393": {
     "name": "Mona",
     "variants": {
+      "10": {
+        "title": "Photonic",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -13,
+            "scale": 0.87
+          }
+        }
+      },
       "01": {
         "title": "White",
         "positions": {
@@ -9615,11 +9625,18 @@
       }
     },
     "id": "c393",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": [
       {
         "name": "Topless",
         "variant": "01",
+        "child": "c393",
+        "modder": "KDG",
+        "nsfw": true
+      },
+      {
+        "name": "Sheer",
+        "variant": "10",
         "child": "c393",
         "modder": "KDG",
         "nsfw": true
