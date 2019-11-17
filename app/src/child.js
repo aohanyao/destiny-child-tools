@@ -46,7 +46,7 @@ const Child = ({child, setView, goBack, mods}) => {
             {mods.sortBy(mod => mod.get('variant') + mod.get('modder')).toArray().map(mod => {
               const key = stringify(mod)
               return (
-                <View paddingTop={20}>
+                <View paddingTop={20} key={key}>
                   <Text>{key}</Text>
                   <Image
                     key={key}

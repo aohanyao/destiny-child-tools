@@ -10,8 +10,8 @@ const Settings = ({globalInstalled, krInstalled}) => {
       <Title>Settings</Title>
       <Text>Coming soon</Text>
       <Text></Text>
-      <Text>Global: {globalInstalled ? 'NOT' : ''} installed</Text>
-      <Text>KR: {krInstalled ? 'NOT' : ''} installed</Text>
+      <Text>Global: {globalInstalled ? '' : 'NOT'} installed</Text>
+      <Text>KR: {krInstalled ? '' : 'NOT'} installed</Text>
       <Text></Text>
       <Text>Version {packageJSON.version}</Text>
     </ScrollView>

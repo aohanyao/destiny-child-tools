@@ -38,10 +38,10 @@ fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
   })
 
   getStoragePermission().then(() => {
-    RNFS.readDir(globalPath + 'd') // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+    RNFS.readDir(globalPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
       .then(() => store.dispatch(setSetting('globalInstalled', true)))
       .catch(() => store.dispatch(setSetting('globalInstalled', false)))
-    RNFS.readDir(krPath + 'd') // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+    RNFS.readDir(krPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
       .then(() => store.dispatch(setSetting('krInstalled', true)))
       .catch(() => store.dispatch(setSetting('krInstalled', false)))
   })
