@@ -5031,5 +5031,43 @@
     "child": "c393",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Swap G41",
+    "variant": "01",
+    "child": "c053",
+    "modder": "Heather"
+  },
+  {
+    "name": "Swap G41",
+    "variant": "02",
+    "child": "c053",
+    "modder": "Heather"
+  },
+  {
+    "name": "Swap Hanyang",
+    "variant": "01",
+    "child": "c283",
+    "modder": "Heather"
+  },
+  {
+    "name": "Swap Hanyang Topless",
+    "variant": "02",
+    "child": "c283",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Hanyang",
+    "variant": "02",
+    "child": "c283",
+    "modder": "Heather"
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c267",
+    "modder": "蠟燭炭",
+    "nsfw": true
   }
 ]

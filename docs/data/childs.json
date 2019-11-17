@@ -9722,6 +9722,13 @@
         "child": "c283",
         "modder": "KDG",
         "nsfw": true
+      },
+      {
+        "name": "Swap Hanyang Topless",
+        "variant": "02",
+        "child": "c283",
+        "modder": "Heather",
+        "nsfw": true
       }
     ],
     "variants": {
@@ -9797,7 +9804,7 @@
       }
     },
     "tierBoss": 9,
-    "numMods": 3,
+    "numMods": 6,
     "type": "attacker",
     "id": "c283",
     "element": "fire",
@@ -10970,7 +10977,7 @@
       }
     },
     "tierBoss": 3,
-    "numMods": 0,
+    "numMods": 2,
     "type": "healer",
     "id": "c053",
     "element": "dark",
@@ -17994,6 +18001,13 @@
         "child": "c267",
         "modder": "Anubis",
         "nsfw": true
+      },
+      {
+        "name": "Nude",
+        "variant": "10",
+        "child": "c267",
+        "modder": "蠟燭炭",
+        "nsfw": true
       }
     ],
     "variants": {
@@ -18069,7 +18083,7 @@
       }
     },
     "tierBoss": 10,
-    "numMods": 10,
+    "numMods": 11,
     "type": "attacker",
     "id": "c267",
     "element": "light",
