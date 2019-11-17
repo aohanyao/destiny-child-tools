@@ -10,6 +10,7 @@ import WebpackDevServer from 'webpack-dev-server'
 import httpProxy from 'http-proxy'
 import config from '../webpack.config.js'
 import {renderHtml} from './html.js'
+import { string } from 'postcss-selector-parser'
 
 const app = express(),
       port = 3000,
@@ -109,12 +110,20 @@ app.post('/api/mod', function(req, res) {
   if(req.body.nsfw == 'nsfw') mod.nsfw = true
 
   function run(cmd) {
+    console.log('RUNNING: ' + cmd)
     return new Promise((resolve, reject) => {
-      exec(cmd, (error, stdout, stderr) => {
-        if(error) {
-          console.warn(error)
-        }
-        resolve(stdout ? stdout : stderr)
+      const ls = exec(cmd)
+      ls.stdout.on('data', function (data) {
+        console.log('stdout: ' + data.toString());
+      })
+      ls.stderr.on('data', function (data) {
+        console.log('stderr: ' + data.toString())
+        reject(data.toString())
+      })
+      ls.on('exit', function (code) {
+        console.log('child process exited with code ' + code.toString());
+        if(code) reject() 
+        else resolve()
       })
     })
   }
@@ -164,9 +173,16 @@ app.post('/api/mod', function(req, res) {
     .then(() => run(`rm -rf ${pckPath}${name}.pck`))
     .then(() => {
       const mods = JSON.parse(fs.readFileSync(modsDataPath))
-      mods.push(mod)
-      fs.writeFileSync(modsDataPath, JSON.stringify(mods, null, 2))
+      if(!mods.find(m => stringify(m) == stringify(mod))) {
+        mods.push(mod)
+        fs.writeFileSync(modsDataPath, JSON.stringify(mods, null, 2))
+      }
     })
+    .then(() => {
+      fs.writeFileSync(path.resolve(__dirname, '../missing-previews.json'), JSON.stringify([stringify(mod)]))
+    })
+    .then(() => run('npx cypress run --spec=cypress/integration/previews.spec.js'))
+    .then(() => run('yarn auto-crop'))
     .then(() => res.redirect(req.body.backUrl))
 })
 
