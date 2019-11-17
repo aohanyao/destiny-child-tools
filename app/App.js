@@ -16,19 +16,33 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 import {Provider} from 'react-redux'
+import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
 import ScaledImage from './scaled-image'
 import store from './src/store.js'
 import Index from './src/index.js'
+
+const theme = {
+  ...DefaultTheme,
+  dark: true,
+  colors: {
+    ...DefaultTheme.colors,
+    // primary: 'tomato',
+    // accent: 'yellow',
+    text: 'white'
+  },
+};
 
 const App: () => React$Node = () => {
  
   const id = 'c001'
   return (
     <Provider store={store}>
-      <View style={{flex: 1, backgroundColor: '#424242'}}>
-        <StatusBar barStyle="dark-content" />
-        <Index />
-      </View>
+      <PaperProvider theme={theme}>
+        <View style={{flex: 1, backgroundColor: '#424242', height: '100%'}}>
+          <StatusBar barStyle="dark-content" />
+          <Index />
+        </View>
+      </PaperProvider>
     </Provider>
   )
 }

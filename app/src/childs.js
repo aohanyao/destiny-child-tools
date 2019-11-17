@@ -12,22 +12,22 @@ import {setView} from './actions/view.js'
 const Childs = ({childs, setView}) => {
   return (
     <>
-      <ScrollView>
-      {
-        childs.sortBy(child => child.get('id')).take(20).toArray().map(([id, child], i) => {
-          return (
-            <View key={id}>
-              <Button
-                title={`${child.get('name')} - ${id}`}
-                onPress={() => setView('Child', id)} />
-            </View>
-          );
-        })
-      }
-      </ScrollView>
     </>
   )
 }
+      // <ScrollView>
+      // {
+      //   childs.sortBy(child => child.get('id')).take(20).toArray().map(([id, child], i) => {
+      //     return (
+      //       <View key={id}>
+      //         <Button
+      //           title={`${child.get('name')} - ${id}`}
+      //           onPress={() => setView('Child', id)} />
+      //       </View>
+      //     );
+      //   })
+      // }
+      // </ScrollView>
 
 export default connect(
   state => ({

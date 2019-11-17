@@ -1,10 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {
-  Button,
   Text,
+  View,
   PermissionsAndroid
 } from 'react-native'
+import {Title, Button} from 'react-native-paper'
 import RNFetchBlob from 'rn-fetch-blob'
 import RNFS from 'react-native-fs'
 import {goBack} from './actions/view.js'
@@ -61,19 +62,19 @@ const installMod = (path, pckName) => {
 const Live2D = ({id, goBack}) => {
   const pckName = id.match(/[a-z]{1,2}\d{3}_\d{2}/)[0]
   return (
-    <>
-      <Button
-        title={"Back"}
-        onPress={() => goBack('Childs')} />
-      <Text>{id}</Text>
+    <View padding={20} height={500}>
+      <Title>{id}</Title>
       <WebView
         source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/viewer.html?mN=${id}&size=1000&background=%23424242`}}
         height={900}
       />
       <Button
-        title="Install"
-        onPress={() => installMod(`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}/${pckName}.pck`, pckName)} />
-    </>
+        mode="contained"
+        icon="cloud-download"
+        onPress={() => installMod(`https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}/${pckName}.pck`, pckName)} >
+        Install This Mod
+      </Button>
+    </View>
   )
 }
 

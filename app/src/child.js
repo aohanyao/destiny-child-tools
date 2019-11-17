@@ -7,6 +7,7 @@ import {
   Text
 } from 'react-native'
 import { Dimensions } from 'react-native'
+import {Title, Surface} from 'react-native-paper'
 import Image from 'react-native-scalable-image'
 import {setView, goBack} from './actions/view.js'
 
@@ -19,13 +20,11 @@ const stringify = mod =>
 const Child = ({child, setView, goBack, mods}) => {
   const id = child.get('id')
   return (
-    <>
-      <Button
-        title={"Back"}
-        onPress={() => goBack()} />
-      <ScrollView>
+    <View zIndex={1}>
+      <ScrollView padding={20}>
+        <Title>{child.get('name')}</Title>
         <Image
-          height={400} // height will be calculated automatically
+          height={200} // height will be calculated automatically
           source={{uri: `https://lokicoder.github.io/destiny-child-tools/img/childs/portraits/${id}_01.png`}} />
         <View style={{
           flex: 1,
@@ -59,7 +58,7 @@ const Child = ({child, setView, goBack, mods}) => {
             })}
           </View>
       </ScrollView>
-    </>
+    </View>
   )
 }
 
