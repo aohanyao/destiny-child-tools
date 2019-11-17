@@ -8,12 +8,7 @@ export const createHistory = url => {
   history = (typeof __HTML__ !== 'undefined' && __HTML__)
     ? createMemoryHistory()
     : createBrowserHistory()
-  history.listen((location, action) => {
-    // location is an object like window.location
-    console.log(action, location.pathname, location.state);
-    // throw new Error('')
-  });
-  // if(typeof window == 'undefined') history.push(location)
+  if(typeof window == 'undefined') history.push(location)
   return history
 }
 
