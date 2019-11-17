@@ -1,4 +1,5 @@
 import React from 'react'
+import debounce from 'debounce'
 import {connect} from 'react-redux'
 import Box from '@material-ui/core/Box'
 import Paper from '@material-ui/core/Paper'
@@ -6,6 +7,9 @@ import MenuItem from '@material-ui/core/MenuItem'
 import TextField from '@material-ui/core/TextField'
 import Filter from './filter.jsx'
 import {setFilter} from '../actions/child-list.js'
+import {pushQueryParams} from '../history.js'
+
+const debouncedPushQueryParams = debounce(pushQueryParams, 1000, false)
 
 const Filters = ({
   numToShow,
@@ -98,7 +102,10 @@ const Filters = ({
         <TextField
           label="Filter by name or ID"
           value={filter}
-          onChange={e => setFilter('filter', e.target.value)}
+          onChange={e => {
+            setFilter('filter', e.target.value)
+            debouncedPushQueryParams({filter: e.target.value})
+          }}
           margin="normal"
         />
       </Box>

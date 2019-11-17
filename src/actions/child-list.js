@@ -1,3 +1,5 @@
+import routes from '../routes.js'
+
 export const setNumToShow = numToShow => ({
   type: 'CHILD_LIST_SET_NUM_TO_SHOW',
   numToShow
@@ -16,7 +18,6 @@ export const setSort = (sort, asc = true) => ({
 
 export const setFilter = (filter, value) =>
   dispatch => {
-    localStorage.setItem('child-list-filter-' + filter, value)
     dispatch({
       type: 'CHILD_LIST_SET_FILTER',
       filter,

@@ -1,3 +1,4 @@
+import queryString from 'query-string'
 import {createBrowserHistory, createMemoryHistory, createLocation} from 'history'
 import routes from './routes.js'
 
@@ -7,7 +8,12 @@ export const createHistory = url => {
   history = (typeof __HTML__ !== 'undefined' && __HTML__)
     ? createMemoryHistory()
     : createBrowserHistory()
-  if(typeof window == 'undefined') history.push(location)
+  history.listen((location, action) => {
+    // location is an object like window.location
+    console.log(action, location.pathname, location.state);
+    // throw new Error('')
+  });
+  // if(typeof window == 'undefined') history.push(location)
   return history
 }
 
@@ -19,4 +25,14 @@ export const pushRoute = (route, params) => {
       return acc.replace(':' + param, params[param])
     }, routes[route])
   )
+}
+
+export const pushQueryParams = params => {
+  const parsed = Object.assign({}, queryString.parse(location.search), params)
+  // console.log(parsed)
+  // history.push(location.pathname + '?' + queryString.stringify(parsed))
+  history.push({
+    pathname: location.path,
+    search: '?' + queryString.stringify(parsed)
+  });
 }

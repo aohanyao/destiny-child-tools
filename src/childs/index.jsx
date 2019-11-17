@@ -13,6 +13,7 @@ import Filters from './filters.jsx'
 import EditButton from '../edit-button.jsx'
 import {setPage, setFilter} from '../actions/child-list.js'
 import routes from '../routes.js'
+import {pushQueryParams} from '../history.js'
 
 const Childs = ({
   childs,
@@ -79,6 +80,18 @@ const Childs = ({
   if(!asc) childs = childs.reverse()
   const numChilds = childs.size
   childs = childs.slice(numToShow * page, numToShow * page + numToShow)
+  const Pagination = () => (
+    <Paper>
+      <TablePagination
+        component="div"
+        rowsPerPageOptions={[10, 20, 50, 100, 200]}
+        page={parseInt(page)}
+        rowsPerPage={numToShow}
+        count={numChilds}
+        onChangeRowsPerPage={e => pushQueryParams({numToShow: e.target.value})}
+        onChangePage={(e, newPage) => pushQueryParams({page: newPage})} />
+    </Paper>
+  )
   return (
     <div>
       <Box mb={2}>
@@ -89,20 +102,16 @@ const Childs = ({
         </Breadcrumbs>
       </Box>
       <Filters />
+      <Box mt={2}>
+        <Pagination />
+      </Box>
       {view == 'table'
         ? <ChildsTable childs={childs} numChilds={numChilds} />
         : <ChildCards childs={childs} />
       }
-      <Paper>
-        <TablePagination
-          component="div"
-          rowsPerPageOptions={[10, 20, 50, 100, 200]}
-          page={page}
-          rowsPerPage={numToShow}
-          count={numChilds}
-          onChangeRowsPerPage={e => setFilter('numToShow', e.target.value)}
-          onChangePage={(e, newPage) => setPage(newPage)} />
-      </Paper>
+      <Box mt={2}>
+        <Pagination />
+      </Box>
     </div>
   )
 }
@@ -112,10 +121,10 @@ export default connect(
     const childList = state.get('childList')
     return {
       childs: state.get('childs'),
-      numToShow: childList.get('numToShow'),
+      numToShow: parseInt(childList.get('numToShow')),
       sort: childList.get('sort'),
       asc: childList.get('asc'),
-      page: childList.get('page'),
+      page: parseInt(childList.get('page')),
       stars: childList.get('stars'),
       category: childList.get('category'),
       element: childList.get('element'),

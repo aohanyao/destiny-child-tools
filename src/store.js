@@ -11,12 +11,14 @@ import page from './reducers/page.js'
 import mods from './reducers/mods.js'
 import routes from './routes.js'
 import {createHistory} from './history.js'
+import queryString from 'query-string'
 
 export const createBrowserStore = (url) => {
   const history = createHistory(url)
   const {reducer, middleware, enhancer} = connectRoutes(routes, {
     createHistory: () => history,
-    location: state => state.get('location')
+    location: state => state.get('location'),
+    querySerializer: queryString
   })
 
   const rootReducer = combineReducers({

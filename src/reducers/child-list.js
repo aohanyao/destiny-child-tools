@@ -17,12 +17,12 @@ const defaultState = fromJS({
   asc: true,
   sort: 'id',
   page: 0,
-  element: load('element', false),
-  stars: load('stars', false),
-  category: load('category', false),
-  type: load('type', false),
-  view: load('view', 'cards'),
-  numMods: load('numMods', false),
+  element: false,
+  stars: false,
+  category: false,
+  type: false,
+  view: 'cards',
+  numMods: false,
   filter: ''
 })
 
@@ -47,6 +47,11 @@ export default function(state = defaultState, action) {
   }
   if(action.type == 'CHILD_LIST_SET_FILTER') {
     state = state.set(action.filter, action.value)
+  }
+  if(action.type == 'CHILDS' && action.meta.query) {
+    Object.keys(action.meta.query).forEach(key => {
+      if(typeof state.get(key) != 'unefined') state = state.set(key, action.meta.query[key])
+    })
   }
   return state
 }
