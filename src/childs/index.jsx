@@ -123,7 +123,7 @@ export default connect(
       childs: state.get('childs'),
       numToShow: parseInt(childList.get('numToShow')),
       sort: childList.get('sort'),
-      asc: childList.get('asc'),
+      asc: childList.get('asc').toString() == 'true',
       page: parseInt(childList.get('page')),
       stars: childList.get('stars'),
       category: childList.get('category'),
