@@ -28,7 +28,8 @@ const theme = {
     ...DefaultTheme.colors,
     // primary: 'tomato',
     // accent: 'yellow',
-    text: 'white'
+    text: 'white',
+    background: '#222'
   },
 };
 
