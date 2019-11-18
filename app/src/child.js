@@ -33,9 +33,8 @@ const Child = ({child, setView, goBack, mods}) => {
             {child.get('variants').sortBy((_, vId) => vId).toArray().map(([vId, variant]) => {
               const key = `${id}_${vId}`
               return (
-                <View paddingTop={20}>
+                <View paddingTop={20} key={key}>
                   <Image
-                    key={key}
                     onPress={() => setView('Live2D', key)}
                     height={Dimensions.get('window').height * .6}
                     width={Dimensions.get('window').width * .6}
@@ -49,7 +48,6 @@ const Child = ({child, setView, goBack, mods}) => {
                 <View paddingTop={20} key={key}>
                   <Text>{key}</Text>
                   <Image
-                    key={key}
                     onPress={() => setView('Live2D', key)}
                     height={Dimensions.get('window').height * .6}
                     width={Dimensions.get('window').width * .6}
