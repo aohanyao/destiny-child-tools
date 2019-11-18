@@ -7,6 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 import ImageIcon from '@material-ui/icons/Image'
 import FaceIcon from '@material-ui/icons/Face'
 import BuildIcon from '@material-ui/icons/Build'
+import StorageIcon from '@material-ui/icons/Storage'
 import ComputerIcon from '@material-ui/icons/Computer'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew'
 import ExtensionIcon from '@material-ui/icons/Extension'
@@ -42,6 +43,10 @@ const Home = () => (
         text="GitHub Sourcecode"
         href="https://github.com/LokiCoder/destiny-child-tools"
         Icon={ComputerIcon} />
+      <ListLink
+        text="Anubis' All-In-One Collection"
+        href="https://mega.nz/#F!Rj5ESaDA!DgKHJfyMdZ-usnwWdpf1Pw"
+        Icon={StorageIcon} />
       <ListLink
         text="Original PCK files (outdated?)"
         href="https://drive.google.com/drive/u/0/folders/1ZgUD3gnXgyb5Vtu-3yD5pb0kM2ZUTugT"
