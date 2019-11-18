@@ -29,7 +29,8 @@ const theme = {
     // primary: 'tomato',
     // accent: 'yellow',
     text: 'white',
-    background: '#222'
+    background: '#222',
+    surface: '#424242'
   },
 };
 
