@@ -3,12 +3,12 @@ import {connect} from 'react-redux'
 import {
   ScrollView,
   View,
-  Button
+  Dimensions
 } from 'react-native'
-import { Dimensions } from 'react-native'
 import {Title, Text} from 'react-native-paper'
 import Image from 'react-native-scalable-image'
 import {setView, goBack} from './actions/view.js'
+import defaultVariant from './lib/default-variant.js'
 
 const stringify = mod =>
   mod.get('child') + '_' +
@@ -24,7 +24,7 @@ const Child = ({child, setView, goBack, mods}) => {
         <Title>{child.get('name')}</Title>
         <Image
           height={200} // height will be calculated automatically
-          source={{uri: `https://lokicoder.github.io/destiny-child-tools/img/childs/portraits/${id}_01.png`}} />
+          source={{uri: `https://lokicoder.github.io/destiny-child-tools/img/childs/portraits/${id}_${defaultVariant(child)}.png`}} />
         <View style={{
           flex: 1,
           justifyContent: 'center',
