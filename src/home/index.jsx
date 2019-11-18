@@ -48,6 +48,10 @@ const Home = () => (
         href="https://mega.nz/#F!Rj5ESaDA!DgKHJfyMdZ-usnwWdpf1Pw"
         Icon={StorageIcon} />
       <ListLink
+        text="Discord Google Drive"
+        href="https://drive.google.com/drive/folders/0BwMBdCPOVYu0WEs0VVBhNG9ZZms"
+        Icon={StorageIcon} />
+      <ListLink
         text="Original PCK files (outdated?)"
         href="https://drive.google.com/drive/u/0/folders/1ZgUD3gnXgyb5Vtu-3yD5pb0kM2ZUTugT"
         Icon={ExtensionIcon} />
