@@ -1,20 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {ScrollView, View, Linking} from 'react-native'
+import {ScrollView, View} from 'react-native'
 import {Title, Text, Button} from 'react-native-paper'
 import {clientPaths} from './lib/paths.js'
 import packageJSON from '../package.json'
 import theme from './theme.js'
-
-const openUrl = url => Linking.canOpenURL(url).then(supported => {
-  if(supported) Linking.openURL(url)
-  else alert('Unable to open URL:\n\n' + url)
-})
-
-const downloadLatest = (latestVersion) => {
-  const url = `https://github.com/LokiCoder/destiny-child-tools/releases/tag/v` + latestVersion
-  openUrl(url)
-}
+import openUrl from './lib/open-url.js'
+import downloadAndInstall from './lib/download-and-install.js'
 
 const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = theme.colors.text}) => (
   <View style={{marginTop: 20}}>
@@ -44,9 +36,12 @@ const Settings = props => {
       )}
       <Text></Text>
       <Text>App Version: v{packageJSON.version} {hasLatestVersion && '(latest)'}</Text>
-      <Text></Text>
       {!hasLatestVersion && 
-        <LinkButton icon="download" mode="contained" onPress={() => downloadLatest(latestVersion)} color={theme.colors.primary}>
+        <LinkButton 
+          icon="download" 
+          mode="contained" 
+          onPress={() => downloadAndInstall(latestVersion)} 
+          color={theme.colors.primary}>
           Download Latest (v{latestVersion})
         </LinkButton>
       }
