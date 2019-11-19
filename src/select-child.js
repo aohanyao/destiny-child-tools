@@ -241,7 +241,7 @@ const components = {
 function IntegrationReactSelect({childs}) {
   const data = childs
     .toList()
-    .sortBy(child => child.get('name'))
+    .sortBy(child => child.get('id'))
     .map(child => ({
       label: child.get('name') + ' (' + child.get('id') + ')',
       value: child.get('id')
