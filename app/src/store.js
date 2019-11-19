@@ -19,6 +19,11 @@ const store = createStore(combineReducers({
   settings
 }))
 
+fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/app/package.json')
+  .then(response => response.json())
+  .then(({version}) => store.dispatch(setSetting('latestVersion', version)))
+  .catch(error => alert(error))
+
 fetch('https://lokicoder.github.io/destiny-child-tools/data/childs.json')
   .then((response) => response.json())
   .then((childs) => {

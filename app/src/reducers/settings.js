@@ -2,8 +2,7 @@ import {fromJS} from 'immutable'
 import {SETTINGS_SET_SETTING} from '../actions/settings.js'
 
 const defaultState = fromJS({
-  globalInstalled: false,
-  krInstalled: false
+  latestVersion: false
 })
 
 export default (state = defaultState, action = {}) => {
