@@ -103,6 +103,7 @@ app.post('/api/mod', function(req, res) {
 
   const mod = {
     name: req.body.name.replace(/^\s+/m, '').replace(/\s+$/m, ''),
+    swap: req.body.swap.replace(/^\s+/m, '').replace(/\s+$/m, ''),
     variant: name.replace(/^.+_/, ''),
     child: name.replace(/_.+$/, ''),
     modder: req.body.modder.replace(/^\s+/m, '').replace(/\s+$/m, '')

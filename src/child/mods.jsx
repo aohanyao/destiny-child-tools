@@ -175,6 +175,7 @@ const Mods = ({child, mods, mode, setModDetails}) => {
               <p>Modder: <input type="text" name="modder" /></p>
               <p>Name: <input type="text" name="name" /></p>
               <p>NSFW? <input type="checkbox" name="nsfw" value="nsfw" /></p>
+              <p>Swap: <input type="text" name="swap" /></p>
               <p>
                 PCK file:
                 {' '}
