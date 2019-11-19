@@ -26,8 +26,9 @@ const Index = ({childs, view, goBack, setView}) => {
       <Appbar.Header>
         {view.get('index') > 0 && <Appbar.BackAction onPress={goBack} />}
         <Appbar.Content title="DC Tools & Mods"/>
-        {viewName !== 'Search' && <Appbar.Action icon="account-search" onPress={() => setView('Search')} />}
-        {viewName !== 'Settings' && <Appbar.Action icon="settings" onPress={() => setView('Settings')} />}
+        <Appbar.Action icon="account-multiple" onPress={() => viewName !== 'Childs' && setView('Childs')} />
+        <Appbar.Action icon="account-search" onPress={() => viewName !== 'Search' && setView('Search')} />
+        <Appbar.Action icon="settings" onPress={() => viewName !== 'Settings' && setView('Settings')} />
       </Appbar.Header>
       <PageView />
     </>

@@ -11,13 +11,12 @@ export const history = [fromJS({
 
 export default (state = history[0], action = {}) => {
   if(action.type == VIEW_SET) {
-    const view = fromJS({
-      name: action.name,
+    state = state.merge({name: action.name,
       id: action.id,
       index: history.length
     })
-    history.push(view)
-    return view
+    history.push(state)
+    return state
   }
   if(action.type == VIEW_CHILDS_SET_PAGE) {
     state = state.set('index', history.length)
