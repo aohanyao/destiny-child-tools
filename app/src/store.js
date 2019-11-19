@@ -10,7 +10,7 @@ import {setChilds, setMods} from './actions/data.js'
 import {history} from './reducers/view.js'
 import {goBack} from './actions/view.js'
 import {setSetting} from './actions/settings.js'
-import {globalPath, krPath} from './lib/paths.js'
+import {storagePaths, clientPaths, globalPath, krPath} from './lib/paths.js'
 import {getStoragePermission} from './lib/permissions.js'
 
 const store = createStore(combineReducers({
@@ -38,12 +38,17 @@ fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
   })
 
   getStoragePermission().then(() => {
-    RNFS.readDir(globalPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
-      .then(() => store.dispatch(setSetting('globalInstalled', true)))
-      .catch(() => store.dispatch(setSetting('globalInstalled', false)))
-    RNFS.readDir(krPath) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
-      .then(() => store.dispatch(setSetting('krInstalled', true)))
-      .catch(() => store.dispatch(setSetting('krInstalled', false)))
+    storagePaths.forEach(storagePath => {
+      Object.keys(clientPaths).forEach(clientKey => {
+        const clientPathSetting = clientKey + 'Path'
+        if(!store.getState().get('settings').get(clientPathSetting)) {
+          RNFS.readDir(storagePath + clientPaths[clientKey]) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+            .then(() => store.dispatch(setSetting(clientPathSetting, storagePath + clientPaths[clientKey])))
+            .catch(() => {/* do nothing */})
+        }
+      })
+    })
+    // RNFS.readDi  => store.dispatch(setSetting('krInstalled', false)))
   })
 
 BackHandler.addEventListener('hardwareBackPress', function() {
