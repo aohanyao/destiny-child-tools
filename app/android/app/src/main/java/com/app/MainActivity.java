@@ -1,4 +1,4 @@
-package com.app;
+package com.lokicoder.dcmods;
 
 import com.facebook.react.ReactActivity;
 

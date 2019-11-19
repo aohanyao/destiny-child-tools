@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.lokicoder.dctools"
+        applicationId "com.lokicoder.dcmods"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

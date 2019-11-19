@@ -1,4 +1,4 @@
-package com.app;
+package com.lokicoder.dcmods;
 
 import android.app.Application;
 import android.content.Context;
