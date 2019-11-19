@@ -5090,5 +5090,12 @@
     "child": "c153",
     "modder": "LobsterWithBoots",
     "swap": "c316_02"
+  },
+  {
+    "name": "Clearer Glasses",
+    "swap": "",
+    "variant": "02",
+    "child": "c316",
+    "modder": "Bugs Bunnay"
   }
 ]
