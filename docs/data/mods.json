@@ -5083,5 +5083,12 @@
     "child": "c222",
     "modder": "Heather",
     "nsfw": true
+  },
+  {
+    "name": "Swap Botan",
+    "variant": "02",
+    "child": "c153",
+    "modder": "LobsterWithBoots",
+    "swap": "c316_02"
   }
 ]
