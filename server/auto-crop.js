@@ -5,6 +5,8 @@ import jimp from 'jimp'
 const screenshotsDir = path.resolve(__dirname, '../cypress/screenshots/previews.spec.js/'),
       assetsDir = path.resolve(__dirname, '../docs/live2d/assets/')
 
+fs.mkdirSync(screenshotsDir, {recursive: true, force: true})
+
 const missingPreviews = fs.readdirSync(assetsDir).filter(file =>
   !fs.existsSync(path.join(assetsDir, file, 'preview-424242.png'))
 )
