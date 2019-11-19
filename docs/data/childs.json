@@ -15402,6 +15402,20 @@
         "child": "c222",
         "modder": "Anubis",
         "nsfw": true
+      },
+      {
+        "name": "Nude",
+        "variant": "01",
+        "child": "c222",
+        "modder": "Heather",
+        "nsfw": true
+      },
+      {
+        "name": "Nude",
+        "variant": "02",
+        "child": "c222",
+        "modder": "Heather",
+        "nsfw": true
       }
     ],
     "variants": {
@@ -15437,7 +15451,7 @@
       }
     },
     "tierBoss": 4,
-    "numMods": 3,
+    "numMods": 5,
     "type": "tank",
     "id": "c222",
     "element": "fire",

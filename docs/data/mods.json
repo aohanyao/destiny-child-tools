@@ -5069,5 +5069,19 @@
     "child": "c267",
     "modder": "蠟燭炭",
     "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c222",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c222",
+    "modder": "Heather",
+    "nsfw": true
   }
 ]
