@@ -2,7 +2,8 @@ import React, {useState, useRef} from 'react'
 import {connect} from 'react-redux'
 import {
   ScrollView,
-  View
+  View,
+  Picker
 } from 'react-native'
 import Image from 'react-native-scalable-image'
 import {setView, setViewChilds} from './actions/view.js'
@@ -12,20 +13,50 @@ import {
   Text,
   TextInput,
   IconButton,
-  Title
+  Title,
+  Provider,
+  Menu,
+  Button,
+  Divider
 } from 'react-native-paper'
 import defaultVariant from './lib/default-variant.js'
 
-const Childs = ({childs, setView, page, setViewChilds, filter = ''}) => {
-  const [numPerPage, setNumPerPage] = useState(10),
-        filteredChilds = childs.toList()
-          .filter(child => (child.get('id') + child.get('name')).toLowerCase().match(filter.toLowerCase())),
-        numberOfPages = Math.ceil(filteredChilds.count() / numPerPage),
+const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category}) => {
+  childs = childs.toList()
+    .filter(child => (child.get('id') + child.get('name')).toLowerCase().match(filter.toLowerCase()))
+  const numPerPage = 10,
+        [sortOpen, setFilterOpen] = useState(false),
+        numberOfPages = Math.ceil(childs.count() / numPerPage),
         scrollViewRef = useRef(null),
         onPageChange = page => {
           scrollViewRef.current.scrollTo({x: 0, y: 0, animated: false})
           setViewChilds('page', page)
         }
+  switch(sort) {
+    case 'id':
+      childs = childs.sortBy(child => child.get('id'));
+      break;
+    case 'name':
+      childs = childs.sortBy(child => child.get('name') != '?' ? child.get('name') : 'z');
+      break;
+    default:
+      childs = childs.sortBy(child => child.get(sort) || (order != 'desc' ? Infinity : -1 * Infinity))
+  }
+  if(category) {
+    switch(category) {
+      case 'childs':
+        childs = childs.filter(child => child.get('id').match(/^c\d\d\d/))
+        break
+      case 'monsters':
+        childs = childs.filter(child => child.get('id').match(/^m\d\d\d/))
+        break
+      case 'spa':
+        childs = childs.filter(child => child.get('id').match(/^sc\d\d\d/))
+        break
+    }
+
+  }
+  if(order == 'desc') childs = childs.reverse()
   return (
     <>
       <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex'}} keyboardShouldPersistTaps="handled">
@@ -52,6 +83,33 @@ const Childs = ({childs, setView, page, setViewChilds, filter = ''}) => {
               />
             </View>
           }
+          <View style={{display: 'flex', flexDirection:'row', justifyContent: 'flex-end', flexGrow: 1}}>
+            <Picker
+                selectedValue={category}
+                style={{color: 'white', minWidth: 130}}
+                onValueChange={value => setViewChilds('category', value)}>
+              <Picker.Item label="All" value={null} />
+              <Picker.Item label="Child" value="childs" />
+              <Picker.Item label="Monster" value="monsters" />
+              <Picker.Item label="Spa" value="spa" />
+            </Picker>
+            <Picker
+              selectedValue={sort}
+              style={{color: 'white', minWidth: 150}}
+              onValueChange={value => {
+                setViewChilds('sort', value)
+                if(value == 'lastModAdded' || value == 'numMods') setViewChilds('order', 'desc')
+                else setViewChilds('order', 'asc')
+              }}>
+              <Picker.Item label="ID" value="id" />
+              <Picker.Item label="Name" value="name" />
+              <Picker.Item label="Mods" value="numMods" />
+              <Picker.Item label="Newest mods" value="lastModAdded" />
+            </Picker>
+            <IconButton
+              icon={`sort-${order == 'desc' ? 'de' : 'a'}scending`} 
+              onPress={() => setViewChilds('order', order == 'desc' ? 'asc' : 'desc')} />
+          </View>
         </View>
         {numberOfPages > 1 && 
           <DataTable.Pagination {...{
@@ -62,8 +120,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = ''}) => {
           }} />
         }
         <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-          {filteredChilds
-            .sortBy(child => child.get('id'))
+          {childs
             .slice(page * numPerPage, page * numPerPage + numPerPage)
             .toArray().map((child, i) => {
               const id = child.get('id'),
@@ -77,9 +134,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = ''}) => {
                   <Card.Content style={{flexDirection:'row', flexWrap:'wrap'}}>
                     <View style={{width: 140}}>
                       <Image
-                        // height={200}
                         width={120}
-                        // width={Dimensions.get('window').width * .6}
                         source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${key}/preview-424242.png`}} />
                     </View>
                     <View>
@@ -108,7 +163,10 @@ export default connect(
   state => ({
     childs: state.get('data').get('childs'),
     page: state.get('view').get('childs').get('page'),
-    filter: state.get('view').get('childs').get('filter')
+    filter: state.get('view').get('childs').get('filter'),
+    order: state.get('view').get('childs').get('order'),
+    sort: state.get('view').get('childs').get('sort'),
+    category: state.get('view').get('childs').get('category')
   }),
   {setView, setViewChilds}
 )(Childs)
