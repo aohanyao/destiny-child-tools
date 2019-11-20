@@ -1,5 +1,5 @@
 import {fromJS} from 'immutable'
-import {VIEW_SET, VIEW_GO_BACK, VIEW_CHILDS_SET_PAGE} from '../actions/view.js'
+import {VIEW_SET, VIEW_GO_BACK, VIEW_CHILDS_SET} from '../actions/view.js'
 
 export const history = [fromJS({
   name: 'Childs', 
@@ -18,9 +18,9 @@ export default (state = history[0], action = {}) => {
     history.push(state)
     return state
   }
-  if(action.type == VIEW_CHILDS_SET_PAGE) {
+  if(action.type == VIEW_CHILDS_SET) {
     state = state.set('index', history.length)
-    state = state.set('childs', state.get('childs').set('page', action.page))
+    state = state.set('childs', state.get('childs').set(action.setting, action.value))
     history.push(state)
     return state
   }

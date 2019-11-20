@@ -1,6 +1,6 @@
 export const VIEW_SET = 'VIEW_SET'
 export const VIEW_GO_BACK = 'VIEW_GO_BACK'
-export const VIEW_CHILDS_SET_PAGE = 'VIEW_CHILDS_SET_PAGE'
+export const VIEW_CHILDS_SET = 'VIEW_CHILDS_SET'
 
 export const setView = (name, id) => ({
   type: VIEW_SET,
@@ -8,9 +8,10 @@ export const setView = (name, id) => ({
   id
 })
 
-export const setViewChildsPage = page => ({
-  type: VIEW_CHILDS_SET_PAGE,
-  page
+export const setViewChilds = (setting, value) => ({
+  type: VIEW_CHILDS_SET,
+  setting,
+  value
 })
 
 export const goBack = () => ({
