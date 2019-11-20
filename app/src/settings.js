@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {ScrollView, View} from 'react-native'
-import {Title, Text, Button} from 'react-native-paper'
+import {Title, Text, Button, Subheading} from 'react-native-paper'
 import {clientPaths} from './lib/paths.js'
 import packageJSON from '../package.json'
 import theme from './theme.js'
@@ -24,7 +24,7 @@ const Settings = props => {
       <Title>Settings</Title>
       <Text>Coming soon</Text>
       <Text></Text>
-      <Text>Installed Clients:</Text>
+      <Subheading>Installed Clients:</Subheading>
       <Text></Text>
       {Object.keys(clientPaths).map(client => 
         <View key={client}>
