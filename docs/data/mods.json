@@ -5104,5 +5104,12 @@
     "variant": "02",
     "child": "c049",
     "modder": "Schlusse1"
+  },
+  {
+    "name": "Swap Female",
+    "swap": "c000_10",
+    "variant": "01",
+    "child": "c000",
+    "modder": "Uber"
   }
 ]
