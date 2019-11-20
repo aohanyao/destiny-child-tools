@@ -106,7 +106,8 @@ app.post('/api/mod', function(req, res) {
     swap: req.body.swap.replace(/^\s+/m, '').replace(/\s+$/m, ''),
     variant: name.replace(/^.+_/, ''),
     child: name.replace(/_.+$/, ''),
-    modder: req.body.modder.replace(/^\s+/m, '').replace(/\s+$/m, '')
+    modder: req.body.modder.replace(/^\s+/m, '').replace(/\s+$/m, ''),
+    added: Date.now()
   }
   if(req.body.nsfw == 'nsfw') mod.nsfw = true
 
@@ -167,6 +168,9 @@ app.post('/api/mod', function(req, res) {
     // create unitersal
     .then(() => run(`rm -rf ${pckPath}${name}`))
     .then(() => run('./pckmanager/PCK.exe /R /U ./pckmanager/' + name + '.pck'))
+    // .then(() => fs.readdirSync(path.resolve(__dirname, '../pckmanager/' + name).reduce((acc, file) => {
+    //   console.log(acc)
+    // }, false)))
     .then(() => run(`mv ${pckPath}${name}.pck.newUnencrypted ${assetPath}${stringify(mod)}/${name}.pck`))
     .then(() => run(`rm -rf ${pckPath}${name}.pck.newUnencrypted`))
     .then(() => run(`rm -rf ${pckPath}${name}`))

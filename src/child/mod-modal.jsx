@@ -5,10 +5,7 @@ import {makeStyles} from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
-import ListItemText from '@material-ui/core/ListItemText'
-import ListItem from '@material-ui/core/ListItem'
 import Paper from '@material-ui/core/Paper'
-import Divider from '@material-ui/core/Divider'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
@@ -16,6 +13,7 @@ import Typography from '@material-ui/core/Typography'
 import CloseIcon from '@material-ui/icons/Close'
 import Slide from '@material-ui/core/Slide'
 import {setModDetails} from '../actions/child.js'
+import stringifyMod from '../lib/stringify-mod'
 
 const useStyles = makeStyles(theme => ({
   appBar: {
@@ -31,12 +29,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />
 })
 
-const stringify = mod =>
-  mod.get('child') + '_' +
-  mod.get('variant') + '-' +
-  mod.get('modder').toLowerCase().replace(/\s/g, '_') + '-' +
-  mod.get('name').toLowerCase().replace(/\s/g, '_')
-
 const copy = text => {
   if(copyToClipoard(text)) {
     alert('The following was coppied to your clipboard: \n\n' + text)
@@ -51,7 +43,7 @@ const ModModal = ({mod, setModDetails, child}) => {
   const handleClose = () => {
     setModDetails(null)
   }
-  const modPath = stringify(mod),
+  const modPath = stringifyMod(mod),
         modelInfo = JSON.stringify(mod.get('modelInfo'), null, 2)
   return (
     <div>

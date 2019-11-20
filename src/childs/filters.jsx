@@ -90,6 +90,7 @@ const Filters = ({
               <MenuItem value={'tierRaid'}>Tier Raid</MenuItem>
               <MenuItem value={'tierBoss'}>Tier Boss</MenuItem>
               <MenuItem value={'numMods'}>Number of Mods</MenuItem>
+              <MenuItem value={'added'}>Date Added</MenuItem>
             </Filter>
           }
           {view != 'table' &&
