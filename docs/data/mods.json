@@ -5097,5 +5097,12 @@
     "variant": "02",
     "child": "c316",
     "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Recolor",
+    "swap": "",
+    "variant": "02",
+    "child": "c049",
+    "modder": "Schlusse1"
   }
 ]
