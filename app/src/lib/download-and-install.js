@@ -1,5 +1,4 @@
 import RNFetchBlob from 'rn-fetch-blob'
-import openUrl from './open-url.js'
 
 export default version =>
   RNFetchBlob

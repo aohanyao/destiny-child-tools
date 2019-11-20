@@ -65,14 +65,16 @@ fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
     alert(error)
   })
 
+  const found = {}
   getStoragePermission().then(() => {
     storagePaths.forEach(storagePath => {
       Object.keys(clientPaths).forEach(clientKey => {
         const clientPathSetting = clientKey + 'Path'
-        if(!store.getState().get('settings').get(clientPathSetting)) {
+        if(!found[clientKey]) {
           RNFS.readDir(storagePath + clientPaths[clientKey]) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
             .then(() => store.dispatch(setSetting(clientPathSetting, storagePath + clientPaths[clientKey])))
             .catch(() => {/* do nothing */})
+          found[clientKey] = true
         }
       })
     })
