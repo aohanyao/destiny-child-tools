@@ -1,3 +1,4 @@
+import {Alert} from 'react-native'
 import RNFS from 'react-native-fs'
 import {fromJS} from 'immutable'
 import {combineReducers} from 'redux-immutable'
@@ -12,6 +13,9 @@ import {goBack} from './actions/view.js'
 import {setSetting} from './actions/settings.js'
 import {storagePaths, clientPaths, globalPath, krPath} from './lib/paths.js'
 import {getStoragePermission} from './lib/permissions.js'
+import openUrl from './lib/open-url.js'
+import packageJSON from '../package.json'
+import downloadAndInstall from './lib/download-and-install.js'
 
 const store = createStore(combineReducers({
   data,
@@ -19,9 +23,28 @@ const store = createStore(combineReducers({
   settings
 }))
 
+const showDownloadPrompt = version => Alert.alert(
+  'New Version Available', 
+  `Would you like to update to ${version} now?`,
+  [
+    {text: 'View Changelog', onPress: () => {
+      showDownloadPrompt(version)
+      openUrl(`https://github.com/LokiCoder/destiny-child-tools/releases`)
+    }},
+    {text: 'Cancel', style: 'cancel'},
+    {text: 'OK', onPress: () => downloadAndInstall(version)},
+  ],
+  {cancelable: false}
+)
+
 fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/app/package.json')
   .then(response => response.json())
-  .then(({version}) => store.dispatch(setSetting('latestVersion', version)))
+  .then(({version}) => {
+    store.dispatch(setSetting('latestVersion', version))
+    if(packageJSON.version != version) {
+      showDownloadPrompt(version)
+    }
+  })
   .catch(error => alert(error))
 
 fetch('https://lokicoder.github.io/destiny-child-tools/data/childs.json')

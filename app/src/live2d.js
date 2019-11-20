@@ -47,11 +47,6 @@ const installMod = props => {
           alert('There may have been a problem downloading. Got status code ' + status)
         }
       }).catch(errorMessage => alert(errorMessage))
-      // Something went wrong:
-      .catch((errorMessage, statusCode) => {
-        alert(errorMessage)
-        // error handling
-      })
   })
 }
 

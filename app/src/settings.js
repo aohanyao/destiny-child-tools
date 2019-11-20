@@ -38,11 +38,11 @@ const Settings = props => {
       <Text>App Version: v{packageJSON.version} {hasLatestVersion && '(latest)'}</Text>
       {!hasLatestVersion && 
         <LinkButton 
-          icon="download" 
+          icon="briefcase-download" 
           mode="contained" 
           onPress={() => downloadAndInstall(latestVersion)} 
           color={theme.colors.primary}>
-          Download Latest (v{latestVersion})
+          Install Latest (v{latestVersion})
         </LinkButton>
       }
       <LinkButton icon="bug" url={'https://github.com/LokiCoder/destiny-child-tools/issues'}>
