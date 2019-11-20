@@ -24,7 +24,7 @@ const Settings = props => {
       <Title>Settings</Title>
       <Text>Coming soon</Text>
       <Text></Text>
-      <Subheading>Installed Clients:</Subheading>
+      <Subheading >Installed Clients:</Subheading  >
       <Text></Text>
       {Object.keys(clientPaths).map(client => 
         <View key={client}>
@@ -54,6 +54,14 @@ const Settings = props => {
       <LinkButton icon="github-circle" url={'https://github.com/LokiCoder/destiny-child-tools'}>
         Source Code on GitHub
       </LinkButton>
+      <View style={{marginTop: 40}}>
+        <Subheading>Credits:</Subheading>
+        <Text>Android App by LokiCoder</Text>
+        <Text>Powered by https://lokicoder.github.io/destiny-child-tools/</Text>
+        <Text>App icon from Eljoseto's Summoner Davi ahegao mod ❤️</Text>
+        <Text>Mod creators are listed on each mod, though there is no guarantee that they did not borrow from or borrow on other people's work.</Text>
+        <Text>This app and the site that powers it would not be possible without all the work and investigation of those that came before like the authors of the PCKTools package, the wonderful Discord modding communities, programmers like Arsylk, and many others.</Text>
+      </View>
     </ScrollView>
   )
 }
