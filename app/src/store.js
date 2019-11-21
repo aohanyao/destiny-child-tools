@@ -69,21 +69,37 @@ fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
     alert(error)
   })
 
-  const found = {}
-  getStoragePermission().then(() => {
-    storagePaths.forEach(storagePath => {
-      Object.keys(clientPaths).forEach(clientKey => {
-        const clientPathSetting = clientKey + 'Path'
-        if(!found[clientKey]) {
-          RNFS.readDir(storagePath + clientPaths[clientKey]) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
-            .then(() => store.dispatch(setSetting(clientPathSetting, storagePath + clientPaths[clientKey])))
-            .catch(() => {/* do nothing */})
-          found[clientKey] = true
-        }
+let clientIndex = 0,
+    storageIndex = 0
+
+const found = {},
+      clients = Object.keys(clientPaths)
+const checkNextClientPath = () => {
+  const next = () => {
+    storageIndex++
+    if(storageIndex == storagePaths.length) {
+      storageIndex = 0
+      clientIndex++
+      if(clientIndex < clients.length) checkNextClientPath()
+    }
+    else checkNextClientPath()
+  }
+  const client = clients[clientIndex],
+        storagePath = storagePaths[storageIndex],
+        pathToCheck = storagePath + clientPaths[client]
+  if(!found[client]) {
+    RNFS.readDir(pathToCheck) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
+      .then(() => {
+        store.dispatch(setSetting(client + 'Path', pathToCheck))
+        found[client] = true
+        next()
       })
-    })
-    // RNFS.readDi  => store.dispatch(setSetting('krInstalled', false)))
-  })
+      .catch(next)
+  }
+  else next()
+}
+getStoragePermission().then(checkNextClientPath)
+
 
 BackHandler.addEventListener('hardwareBackPress', function() {
   // this.onMainScreen and this.goBack are just examples, you need to use your own implementation here

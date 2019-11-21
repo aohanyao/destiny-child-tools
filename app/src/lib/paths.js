@@ -7,10 +7,13 @@ export const krAssetPath = krPath + 'files/asset/'
 
 
 export const storagePaths = [
+  '/sdcard',
+  '/storage',
   RNFetchBlob.fs.dirs.SDCardDir,
   '/storage/emulated/0', 
   '/storage/emulated/1',
-  '/sdcard',
+  '/storage/emulator/0/',
+  '/storage/emulator/1/'
 ]
 export const clientPaths = {
   Global: '/Android/data/com.linegames.dcglobal/',
