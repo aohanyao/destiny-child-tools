@@ -9,7 +9,7 @@ import childView from './reducers/child-view.js'
 import modsView from './reducers/mods-view.js'
 import {BackHandler} from 'react-native'
 import data from './reducers/data.js'
-import {setChilds, setMods} from './actions/data.js'
+import {setData} from './actions/data.js'
 import {history} from './reducers/view.js'
 import {goBack} from './actions/view.js'
 import {setSetting} from './actions/settings.js'
@@ -41,6 +41,7 @@ const showDownloadPrompt = version => Alert.alert(
   {cancelable: false}
 )
 
+// fetch version
 fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/app/package.json')
   .then(response => response.json())
   .then(({version}) => {
@@ -51,23 +52,16 @@ fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/ap
   })
   .catch(error => alert(error))
 
-fetch('https://lokicoder.github.io/destiny-child-tools/data/childs.json')
-  .then((response) => response.json())
-  .then((childs) => {
-    store.dispatch(setChilds(fromJS(childs)))
-  })
-  .catch((error) => {
-    alert(error)
-  })
+const fetchData = (file, key) =>
+  fetch(`https://lokicoder.github.io/destiny-child-tools/data/${file}.json`)
+    .then(response => response.json())
+    .then(data => store.dispatch(setData(file, data)))
+    .catch(alert)
 
-fetch('https://lokicoder.github.io/destiny-child-tools/data/mods.json')
-  .then((response) => response.json())
-  .then((mods) => {
-    store.dispatch(setMods(fromJS(mods)))
-  })
-  .catch((error) => {
-    alert(error)
-  })
+fetchData('childs')
+fetchData('mods')
+fetchData('model_info.global')
+fetchData('model_info.kr')
 
 let clientIndex = 0,
     storageIndex = 0

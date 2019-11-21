@@ -1,12 +1,10 @@
-export const DATA_SET_CHILDS = 'DATA_SET_CHILDS'
-export const DATA_SET_MODS = 'DATA_SET_MODS'
+import {fromJS} from "immutable"
 
-export const setChilds = (childs) => ({
-  type: DATA_SET_CHILDS,
-  childs
-})
+export const DATA_SET = 'DATA_SET'
 
-export const setMods = (mods) => ({
-  type: DATA_SET_MODS,
-  mods
+
+export const setData = (key, data) => ({
+  type: DATA_SET,
+  key,
+  data: typeof data.toJS == 'function' ? data : fromJS(data)
 })
