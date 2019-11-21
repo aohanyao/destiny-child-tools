@@ -7057,7 +7057,7 @@
     "tierPVP": 4,
     "name": "Fenrir",
     "tierRaid": 6,
-    "numModsNSFW": 3,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -7092,7 +7092,7 @@
     },
     "tierBoss": 7,
     "lastModAdded": 1574086042710,
-    "numMods": 3,
+    "numMods": 2,
     "type": "attacker",
     "id": "c072",
     "element": "fire",
