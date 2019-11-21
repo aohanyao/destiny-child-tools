@@ -12,7 +12,7 @@ const Live2D = props => {
         newIssueBody = encodeURIComponent(
           `[enter details about the issue with ${child.get('name')} here]\n\n` +
           `Leave this Mod ID here: ${id}\n\n` +
-          `Leave this link here: http://localhost:3000/destiny-child-tools/childs/${child.get('id')}/`)
+          `Leave this link here: https://lokicoder.github.io/destiny-child-tools/childs/${child.get('id')}/`)
   return (
     <ScrollView padding={20}>
       <Title>{id}</Title>
