@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import {connect} from 'react-redux'
 import {Appbar, Button} from 'react-native-paper'
-import Childs from './childs.js'
-import Child from './child.js'
-import Live2D from './live2d.js'
-import Settings from './settings.js'
+import Childs from './views/childs.js'
+import Child from './views/child.js'
+import Live2D from './views/live2d.js'
+import Settings from './views/settings.js'
 import {goBack, setView} from './actions/view.js'
 
 const views = {

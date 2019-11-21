@@ -2,11 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {ScrollView, View} from 'react-native'
 import {Title, Text, Button, Subheading} from 'react-native-paper'
-import {clientPaths} from './lib/paths.js'
-import packageJSON from '../package.json'
-import theme from './theme.js'
-import openUrl from './lib/open-url.js'
-import downloadAndInstall from './lib/download-and-install.js'
+import {clientPaths} from '../lib/paths.js'
+import packageJSON from '../../package.json'
+import theme from '../theme.js'
+import openUrl from '../lib/open-url.js'
+import downloadAndInstall from '../lib/download-and-install.js'
 
 const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = theme.colors.text}) => (
   <View style={{marginTop: 20}}>

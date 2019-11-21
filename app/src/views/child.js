@@ -7,10 +7,10 @@ import {
 } from 'react-native'
 import {IconButton, Card, Text, Title, Button} from 'react-native-paper'
 import Image from 'react-native-scalable-image'
-import {setChildView} from './actions/child-view.js'
-import defaultVariant from './lib/default-variant.js'
-import ModCard from './mod-card.js'
-import stringifyMod from './lib/stringify-mod.js'
+import {setChildView} from '../actions/child-view.js'
+import defaultVariant from '../lib/default-variant.js'
+import ModCard from '../mod-card.js'
+import stringifyMod from '../lib/stringify-mod.js'
 
 const ToggleButton = ({children, on, onPress}) => {
   return (

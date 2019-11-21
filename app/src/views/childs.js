@@ -7,7 +7,7 @@ import {
   Dimensions
 } from 'react-native'
 import Image from 'react-native-scalable-image'
-import {setView, setViewChilds} from './actions/view.js'
+import {setView, setViewChilds} from '../actions/view.js'
 import {
   Card,
   DataTable,
@@ -16,7 +16,7 @@ import {
   IconButton,
   Title
 } from 'react-native-paper'
-import defaultVariant from './lib/default-variant.js'
+import defaultVariant from '../lib/default-variant.js'
 
 const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category}) => {
   childs = childs.toList()

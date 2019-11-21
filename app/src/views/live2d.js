@@ -3,8 +3,8 @@ import {connect} from 'react-redux'
 import {View, ScrollView} from 'react-native'
 import {Title, Button, Text} from 'react-native-paper'
 import {WebView} from 'react-native-webview'
-import openUrl from './lib/open-url.js'
-import installMod from './lib/install-mod.js'
+import openUrl from '../lib/open-url.js'
+import installMod from '../lib/install-mod.js'
 
 const Live2D = props => {
   const {id, pckName, child} = props,
