@@ -5826,5 +5826,13 @@
     "child": "c038",
     "modder": "Loki",
     "added": 1574342420407
+  },
+  {
+    "name": "Swap female",
+    "swap": "c214_10",
+    "variant": "01",
+    "child": "c214",
+    "modder": "Loki",
+    "added": 1574376509933
   }
 ]
