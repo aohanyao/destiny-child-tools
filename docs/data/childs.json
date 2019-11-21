@@ -11275,7 +11275,7 @@
     "numModsNSFW": 0
   },
   "c000": {
-    "name": "Hero",
+    "name": "Master",
     "variants": {
       "10": {
         "title": "Questionable",
@@ -11342,7 +11342,7 @@
     "stars": false,
     "numMods": 4,
     "numModsNSFW": 2,
-    "lastModAdded": 1574223668000
+    "lastModAdded": 1574333703933
   },
   "c121": {
     "name": "Muse",

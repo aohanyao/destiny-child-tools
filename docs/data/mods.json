@@ -5817,14 +5817,6 @@
     "added": 1574220726250
   },
   {
-    "name": "Swap Female",
-    "swap": "c000_10",
-    "variant": "01",
-    "child": "c000",
-    "modder": "Uber",
-    "added": 1574223668000
-  },
-  {
     "name": "Nude Template",
     "swap": "",
     "variant": "88",
@@ -5832,5 +5824,13 @@
     "modder": "Punkster",
     "added": 1574308408027,
     "nsfw": true
+  },
+  {
+    "name": "Female Swap",
+    "swap": "c000_10",
+    "variant": "01",
+    "child": "c000",
+    "modder": "Loki",
+    "added": 1574333703933
   }
 ]
