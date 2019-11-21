@@ -5832,5 +5832,13 @@
     "child": "c000",
     "modder": "Loki",
     "added": 1574333703933
+  },
+  {
+    "name": "Shorter Skirt and Camel toe",
+    "swap": "",
+    "variant": "00",
+    "child": "c038",
+    "modder": "Loki",
+    "added": 1574342420407
   }
 ]
