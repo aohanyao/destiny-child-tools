@@ -15291,7 +15291,7 @@
     "tierPVP": 9,
     "name": "Cleopatra",
     "tierRaid": 10,
-    "numModsNSFW": 8,
+    "numModsNSFW": 9,
     "variants": {
       "10": {
         "title": "Favored",
@@ -15365,8 +15365,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574096813280,
-    "numMods": 11,
+    "lastModAdded": 1574308408027,
+    "numMods": 12,
     "type": "attacker",
     "id": "c267",
     "element": "light",
@@ -20983,7 +20983,7 @@
     "numModsNSFW": 0
   },
   "sc061": {
-    "name": "세이렌",
+    "name": "Siren hot spring",
     "variants": {
       "01": {
         "title": "온천의",

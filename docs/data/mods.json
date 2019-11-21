@@ -5823,5 +5823,14 @@
     "child": "c000",
     "modder": "Uber",
     "added": 1574223668000
+  },
+  {
+    "name": "Nude Template",
+    "swap": "",
+    "variant": "88",
+    "child": "c267",
+    "modder": "Punkster",
+    "added": 1574308408027,
+    "nsfw": true
   }
 ]
