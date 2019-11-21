@@ -52,16 +52,16 @@ fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/ap
   })
   .catch(error => alert(error))
 
-const fetchData = (file, key) =>
+const fetchData = (file, useImmutable = true) =>
   fetch(`https://lokicoder.github.io/destiny-child-tools/data/${file}.json`)
     .then(response => response.json())
-    .then(data => store.dispatch(setData(file, data)))
+    .then(data => store.dispatch(setData(file, useImmutable ? fromJS(data) : data)))
     .catch(alert)
 
 fetchData('childs')
 fetchData('mods')
-fetchData('model_info.global')
-fetchData('model_info.kr')
+fetchData('model_info.global', false)
+fetchData('model_info.kr', false)
 
 let clientIndex = 0,
     storageIndex = 0
