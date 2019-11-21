@@ -26,18 +26,21 @@ const ToggleButton = ({children, on, onPress}) => {
   )
 }
 
-const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order}) => {
+const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order, variant}) => {
   const id = child.get('id'),
         modCards = []
+  if(variant) mods = mods.filter(m => m.get('variant') == variant)
   mods = mods.sortBy(mod => sort == 'variant' 
     ? mod.get('variant') + mod.get('author')
     : mod.get(sort)
   )
   if(order == 'desc') mods = mods.reverse()
   if(original) {
-    modCards.concat(child.get('variants').sortBy((_, vId) => vId).toArray().forEach(([vId, variant]) => {
-      const pck = `${id}_${vId}`
-      modCards.push(<ModCard pck={pck} key={pck} />)
+    modCards.concat(child.get('variants').sortBy((_, vId) => vId).toArray().forEach(([vId]) => {
+      if(!variant || vId == variant) {
+        const pck = `${id}_${vId}`
+        modCards.push(<ModCard pck={pck} key={pck} />)
+      }
     }))
   }
   mods.forEach(mod => {
@@ -71,6 +74,15 @@ const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order}) =>
           </Card.Content>
         </Card>
         <View style={{display: 'flex', flexDirection:'row', justifyContent: 'flex-end', flexGrow: 1}}>
+          <Picker
+            selectedValue={variant}
+            style={{color: 'white', minWidth: 100}}
+            onValueChange={value => setChildView('variant', value)}>
+            <Picker.Item label="All" value={false} />
+            {Object.keys(child.get('variants').toJS()).sort().map(variant =>
+              <Picker.Item label={variant} value={variant} />
+            )}
+          </Picker>
           <Picker
             selectedValue={sort}
             style={{color: 'white', minWidth: 180}}
@@ -109,6 +121,7 @@ export default connect(
       sfw: state.get('childView').get('sfw'),
       sort: state.get('childView').get('sort'),
       order: state.get('childView').get('order'),
+      variant: state.get('childView').get('variant'),
       mods: state.get('data').get('mods').filter(mod => mod.get('child') == child.get('id'))
     }
   },

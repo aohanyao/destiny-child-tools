@@ -6,7 +6,8 @@ const defaultState = fromJS({
   nsfw: true,
   sfw: true,
   sort: 'variant',
-  order: 'asc'
+  order: 'asc',
+  variant: false
 })
 
 export default (state = defaultState, action = {}) => {
