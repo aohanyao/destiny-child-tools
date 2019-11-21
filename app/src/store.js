@@ -5,6 +5,7 @@ import {combineReducers} from 'redux-immutable'
 import {createStore} from 'redux'
 import view from './reducers/view.js'
 import settings from './reducers/settings.js'
+import childView from './reducers/child-view.js'
 import {BackHandler} from 'react-native'
 import data from './reducers/data.js'
 import {setChilds, setMods} from './actions/data.js'
@@ -20,7 +21,8 @@ import downloadAndInstall from './lib/download-and-install.js'
 const store = createStore(combineReducers({
   data,
   view,
-  settings
+  settings,
+  childView
 }))
 
 const showDownloadPrompt = version => Alert.alert(

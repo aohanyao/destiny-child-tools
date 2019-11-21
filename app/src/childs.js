@@ -3,7 +3,8 @@ import {connect} from 'react-redux'
 import {
   ScrollView,
   View,
-  Picker
+  Picker,
+  Dimensions
 } from 'react-native'
 import Image from 'react-native-scalable-image'
 import {setView, setViewChilds} from './actions/view.js'
@@ -13,11 +14,7 @@ import {
   Text,
   TextInput,
   IconButton,
-  Title,
-  Provider,
-  Menu,
-  Button,
-  Divider
+  Title
 } from 'react-native-paper'
 import defaultVariant from './lib/default-variant.js'
 
@@ -38,6 +35,12 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
       break;
     case 'name':
       childs = childs.sortBy(child => child.get('name') != '?' ? child.get('name') : 'z');
+      break;
+    case 'numModsSFW':
+      childs = childs.sortBy(child => {
+        const numSfw = child.get('numMods') - child.get('numModsNSFW')
+        return numSfw || (order != 'desc' ? Infinity : -1 * Infinity)
+      })
       break;
     default:
       childs = childs.sortBy(child => child.get(sort) || (order != 'desc' ? Infinity : -1 * Infinity))
@@ -98,12 +101,14 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
               style={{color: 'white', minWidth: 150}}
               onValueChange={value => {
                 setViewChilds('sort', value)
-                if(value == 'lastModAdded' || value == 'numMods') setViewChilds('order', 'desc')
+                if(value.match(/(lastModAdded|numMods)/)) setViewChilds('order', 'desc')
                 else setViewChilds('order', 'asc')
               }}>
               <Picker.Item label="ID" value="id" />
               <Picker.Item label="Name" value="name" />
-              <Picker.Item label="Mods" value="numMods" />
+              <Picker.Item label="Total Mods" value="numMods" />
+              <Picker.Item label="NSFW Mods" value="numModsNSFW" />
+              <Picker.Item label="SFW Mods" value="numModsSFW" />
               <Picker.Item label="Newest mods" value="lastModAdded" />
             </Picker>
             <IconButton
@@ -119,7 +124,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
             onPageChange
           }} />
         }
-        <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+        <View style={{flexDirection:'row', flexWrap:'wrap', marginLeft: 20, marginRight: 20}}>
           {childs
             .slice(page * numPerPage, page * numPerPage + numPerPage)
             .toArray().map((child, i) => {
@@ -129,7 +134,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
                 <Card key={id} onPress={() => setView('Child', id)} style={{
                   marginRight: 20, 
                   marginBottom: 20,
-                  minWidth: 400
+                  minWidth: Dimensions.get('window').width - 40
                 }}>
                   <Card.Content style={{flexDirection:'row', flexWrap:'wrap'}}>
                     <View style={{width: 140}}>
@@ -139,7 +144,18 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
                     </View>
                     <View>
                       <Title>{child.get('name')} ({child.get('id')})</Title>
-                      <Text>Mods: {child.get('numMods')}</Text>
+                      <Text>Original Variants: {child.get('variants').count()}</Text>
+                      <Text></Text>
+                      <Text>Total Mods: {child.get('numMods')}</Text>
+                      <Text>SFW Mods: {child.get('numMods') - child.get('numModsNSFW')}</Text>
+                      <Text>NSFW Mods: {child.get('numModsNSFW')}</Text>
+                      <Text></Text>
+                      {child.get('lastModAdded') && 
+                        <>
+                          <Text>Latest Mod:</Text>
+                          <Text>{(new Date(child.get('lastModAdded'))).toLocaleDateString(null)}</Text>
+                        </>
+                      }
                     </View>
                   </Card.Content>
                 </Card>

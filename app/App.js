@@ -28,7 +28,7 @@ const App: () => React$Node = () => {
   return (
     <Provider store={store}>
       <PaperProvider theme={theme}>
-        <View style={{flex: 1, backgroundColor: '#424242', height: '100%'}}>
+        <View style={{flex: 1, backgroundColor: '#282828', height: '100%'}}>
           <StatusBar barStyle="dark-content" />
           <Index />
         </View>

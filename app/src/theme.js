@@ -10,7 +10,7 @@ export default {
     text: 'white',
     onBackground: 'white',
     placeholder: '#aaa',
-    background: '#252525',
+    background: '#424242',
     surface: '#424242'
   },
 }

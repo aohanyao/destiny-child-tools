@@ -1,5 +1,5 @@
 import {fromJS} from 'immutable'
-import {VIEW_SET, VIEW_GO_BACK, VIEW_CHILDS_SET} from '../actions/view.js'
+import {VIEW_SET, VIEW_GO_BACK, VIEW_CHILDS_SET, VIEW_CHILD_SET} from '../actions/view.js'
 
 export const history = [fromJS({
   name: 'Childs', 
