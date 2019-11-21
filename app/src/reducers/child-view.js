@@ -5,9 +5,10 @@ const defaultState = fromJS({
   original: false,
   nsfw: true,
   sfw: true,
-  sort: 'variant',
-  order: 'asc',
-  variant: false
+  type: 'any',
+  sort: 'added',
+  order: 'desc',
+  variant: false,
 })
 
 export default (state = defaultState, action = {}) => {

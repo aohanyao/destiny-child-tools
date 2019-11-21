@@ -5,7 +5,9 @@ export const history = [fromJS({
   name: 'Childs', 
   index: 0,
   childs: {
-    page: 0
+    page: 0,
+    sort: 'lastModAdded',
+    order: 'desc'
   }
 })]
 

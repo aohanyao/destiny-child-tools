@@ -109,7 +109,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
               <Picker.Item label="Total Mods" value="numMods" />
               <Picker.Item label="NSFW Mods" value="numModsNSFW" />
               <Picker.Item label="SFW Mods" value="numModsSFW" />
-              <Picker.Item label="Newest mods" value="lastModAdded" />
+              <Picker.Item label="Latest Mod" value="lastModAdded" />
             </Picker>
             <IconButton
               icon={`sort-${order == 'desc' ? 'de' : 'a'}scending`} 

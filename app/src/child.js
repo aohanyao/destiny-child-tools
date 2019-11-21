@@ -26,10 +26,15 @@ const ToggleButton = ({children, on, onPress}) => {
   )
 }
 
-const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order, variant}) => {
+const isSwap = mod => mod.get('name').toLowerCase().match(/\bswap\b/) || mod.get('swap')
+
+const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, order, variant}) => {
   const id = child.get('id'),
         modCards = []
   if(variant) mods = mods.filter(m => m.get('variant') == variant)
+  if(type != 'all') {
+    mods = mods.filter(m => type == 'swaps' ? isSwap(m) : !isSwap(m))
+  }
   mods = mods.sortBy(mod => sort == 'variant' 
     ? mod.get('variant') + mod.get('author')
     : mod.get(sort)
@@ -53,14 +58,13 @@ const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order, var
     <View zIndex={1}>
       <ScrollView padding={20}>
         <Card>
+          <Card.Title title={child.get('name')} />
           <Card.Content style={{flexDirection: 'row', flexWrap:'wrap'}}>
             <Image
               height={200} // height will be calculated automatically
               style={{marginRight: 20}}
               source={{uri: `https://lokicoder.github.io/destiny-child-tools/img/childs/portraits/${id}_${defaultVariant(child)}.png`}} />
             <View>
-              <Title>{child.get('name')}</Title>
-              <Text></Text>
               <ToggleButton on={original} onPress={() => setChildView('original', !original)}>
                 Original ({child.get('variants').count()}){'    '}
               </ToggleButton>
@@ -70,6 +74,14 @@ const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order, var
               <ToggleButton on={nsfw} onPress={() => setChildView('nsfw', !nsfw)}>
                 NSFW Mods ({child.get('numModsNSFW')})
               </ToggleButton>
+              <Picker
+                selectedValue={type}
+                style={{color: 'white', minWidth: 180}}
+                onValueChange={value => setChildView('type', value)}>
+                <Picker.Item label="Mods &amp; Swaps" value="any" />
+                <Picker.Item label="Mods Only" value="mods" />
+                <Picker.Item label="Swaps Only" value="swaps" />
+              </Picker>
             </View>
           </Card.Content>
         </Card>
@@ -98,7 +110,25 @@ const Child = ({child, original, nsfw, sfw, mods, setChildView, sort, order, var
             icon={`sort-${order == 'desc' ? 'de' : 'a'}scending`} 
             onPress={() => setChildView('order', order == 'desc' ? 'asc' : 'desc')} />
         </View>
-        {modCards}
+        {modCards.length > 0
+          ? modCards
+          : <View style={{justifyContent: 'center', marginTop: 60}}>
+            <Text style={{textAlign: 'center'}}>Noting found matching your filters.</Text>
+            <Text></Text>
+            <Button 
+              mode="contained" 
+              icon="nuke"
+              onPress={() => {{
+                setChildView('original', true)
+                setChildView('nsfw', true)
+                setChildView('sfw', true)
+                setChildView('swaps', 'all')
+                setChildView('variant', false)
+              }}}>
+              Clear All Filters
+            </Button>
+          </View>
+        }
         <Text></Text>
         <Text></Text>
         <Text></Text>
@@ -117,6 +147,7 @@ export default connect(
     return {
       child,
       original: state.get('childView').get('original'),
+      type: state.get('childView').get('type'),
       nsfw: state.get('childView').get('nsfw'),
       sfw: state.get('childView').get('sfw'),
       sort: state.get('childView').get('sort'),
