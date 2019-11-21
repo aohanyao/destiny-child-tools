@@ -15291,7 +15291,7 @@
     "tierPVP": 9,
     "name": "Cleopatra",
     "tierRaid": 10,
-    "numModsNSFW": 9,
+    "numModsNSFW": 8,
     "variants": {
       "10": {
         "title": "Favored",
@@ -15366,7 +15366,7 @@
     },
     "tierBoss": 10,
     "lastModAdded": 1574308408027,
-    "numMods": 12,
+    "numMods": 11,
     "type": "attacker",
     "id": "c267",
     "element": "light",
