@@ -19,6 +19,13 @@ import {
 import defaultVariant from '../lib/default-variant.js'
 
 const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category}) => {
+  if(!childs.count()) {
+    return (
+      <View style={{margin: 20}}>
+        <Text>Loading ...</Text>
+      </View>
+    )
+  }
   childs = childs.toList()
     .filter(child => (child.get('id') + child.get('name')).toLowerCase().match(filter.toLowerCase()))
   const numPerPage = 10,
@@ -65,7 +72,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
       <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex'}} keyboardShouldPersistTaps="handled">
         <View style={{paddingLeft: 20, paddingRight: 20, paddingTop: 20, paddingBottom: 10}}>
           <TextInput
-            label="Filter by name or ID"
+            label="Filter characters by name or ID"
             mode="flat"
             value={filter}
             selectionColor="white"

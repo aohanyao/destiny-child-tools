@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {Appbar, Button} from 'react-native-paper'
 import Childs from './views/childs.js'
 import Child from './views/child.js'
+import Mods from './views/mods.js'
 import Live2D from './views/live2d.js'
 import Settings from './views/settings.js'
 import {goBack, setView} from './actions/view.js'
@@ -11,7 +12,8 @@ const views = {
   Childs,
   Child,
   Live2D,
-  Settings
+  Settings,
+  Mods
 }
 
 const Index = ({childs, view, goBack, setView}) => {
@@ -24,6 +26,7 @@ const Index = ({childs, view, goBack, setView}) => {
       <Appbar.Header>
         {view.get('index') > 0 && <Appbar.BackAction onPress={goBack} />}
         <Appbar.Content title="DC Mods"/>
+        <Appbar.Action icon="puzzle" onPress={() => viewName !== 'Mods' && setView('Mods')} />
         <Appbar.Action icon="account-search" onPress={() => viewName !== 'Childs' && setView('Childs')} />
         <Appbar.Action icon="settings" onPress={() => viewName !== 'Settings' && setView('Settings')} />
       </Appbar.Header>

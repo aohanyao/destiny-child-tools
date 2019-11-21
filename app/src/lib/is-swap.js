@@ -1,0 +1,1 @@
+export default mod => mod.get('name').toLowerCase().match(/\bswap\b/) || mod.get('swap')

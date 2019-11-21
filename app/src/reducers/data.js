@@ -2,7 +2,8 @@ import {fromJS} from 'immutable'
 import {DATA_SET_CHILDS, DATA_SET_MODS} from '../actions/data.js'
 
 const defaultState = fromJS({
-  childs: {}
+  childs: {},
+  mods: []
 })
 
 export default ((state = defaultState, action = {}) => {

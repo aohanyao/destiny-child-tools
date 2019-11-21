@@ -11,6 +11,9 @@ import {setChildView} from '../actions/child-view.js'
 import defaultVariant from '../lib/default-variant.js'
 import ModCard from '../mod-card.js'
 import stringifyMod from '../lib/stringify-mod.js'
+import isSwap from '../lib/is-swap.js'
+import ModTypePicker from './shared/mod-type-picker.js'
+import ModSort from './shared/mod-sort.js'
 
 const ToggleButton = ({children, on, onPress}) => {
   return (
@@ -25,8 +28,6 @@ const ToggleButton = ({children, on, onPress}) => {
     </View>
   )
 }
-
-const isSwap = mod => mod.get('name').toLowerCase().match(/\bswap\b/) || mod.get('swap')
 
 const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, order, variant}) => {
   const id = child.get('id'),
@@ -74,14 +75,7 @@ const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, orde
               <ToggleButton on={nsfw} onPress={() => setChildView('nsfw', !nsfw)}>
                 NSFW Mods ({child.get('numModsNSFW')})
               </ToggleButton>
-              <Picker
-                selectedValue={type}
-                style={{color: 'white', minWidth: 180}}
-                onValueChange={value => setChildView('type', value)}>
-                <Picker.Item label="Mods &amp; Swaps" value="any" />
-                <Picker.Item label="Mods Only" value="mods" />
-                <Picker.Item label="Swaps Only" value="swaps" />
-              </Picker>
+              <ModTypePicker />
             </View>
           </Card.Content>
         </Card>
@@ -95,20 +89,7 @@ const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, orde
               <Picker.Item label={variant} value={variant} />
             )}
           </Picker>
-          <Picker
-            selectedValue={sort}
-            style={{color: 'white', minWidth: 180}}
-            onValueChange={value => {
-              setChildView('sort', value)
-              if(value.match(/(added)/)) setChildView('order', 'desc')
-              else setChildView('order', 'asc')
-            }}>
-            <Picker.Item label="Variant, Author" value="variant" />
-            <Picker.Item label="Date added" value="added" />
-          </Picker>
-          <IconButton
-            icon={`sort-${order == 'desc' ? 'de' : 'a'}scending`} 
-            onPress={() => setChildView('order', order == 'desc' ? 'asc' : 'desc')} />
+          <ModSort />
         </View>
         {modCards.length > 0
           ? modCards
