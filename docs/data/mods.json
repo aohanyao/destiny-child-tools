@@ -4062,7 +4062,8 @@
     "child": "c041",
     "modder": "Heather",
     "nsfw": true,
-    "added": 1574086041520
+    "added": 1574086041520,
+    "swap": "c343_02"
   },
   {
     "name": "Swap Torn Dress",
@@ -5834,5 +5835,21 @@
     "child": "c214",
     "modder": "Loki",
     "added": 1574376509933
+  },
+  {
+    "name": "Black Dress",
+    "swap": "",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Heather",
+    "added": 1574388824881
+  },
+  {
+    "name": "Green Dress",
+    "swap": "",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Heather",
+    "added": 1574389085155
   }
 ]
