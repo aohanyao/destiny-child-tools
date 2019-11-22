@@ -1,8 +1,11 @@
 import RNFetchBlob from 'rn-fetch-blob'
 import RNFS from 'react-native-fs'
+import deepmerge from 'deepmerge'
 import {clientPaths} from './paths.js'
 import stringifyMod from './stringify-mod.js'
 import store from '../store.js'
+
+console.log(deepmerge)
 
 export default mod => {
   const id = typeof mod == 'string' ? mod : stringifyMod(mod),
@@ -55,7 +58,7 @@ export default mod => {
                   catch(e) {
                     alert(e + '\n\n Consider restoring your model_info.json file in the settings view.')
                   }
-                  data[pckName] = modelInfo
+                  data[pckName] = deepmerge(data[pckName], modelInfo)
                   RNFS.writeFile(paths[client] + 'files/asset/character/model_info.json', data)
                     .catch(alert)
                 })
