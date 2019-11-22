@@ -5851,5 +5851,341 @@
     "child": "c343",
     "modder": "Heather",
     "added": 1574389085155
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c005_00",
+    "variant": "01",
+    "child": "c005",
+    "modder": "Heather",
+    "added": 1574390681098
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c008_00",
+    "variant": "01",
+    "child": "c008",
+    "modder": "Heather",
+    "added": 1574390789394
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c010_00",
+    "variant": "01",
+    "child": "c010",
+    "modder": "Heather",
+    "added": 1574390852242
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c013_00",
+    "variant": "01",
+    "child": "c013",
+    "modder": "Heather",
+    "added": 1574390915722
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c017_00",
+    "variant": "01",
+    "child": "c017",
+    "modder": "Heather",
+    "added": 1574390960736
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c019_00",
+    "variant": "01",
+    "child": "c019",
+    "modder": "Heather",
+    "added": 1574391004923
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c026_00",
+    "variant": "01",
+    "child": "c026",
+    "modder": "Heather",
+    "added": 1574391277696
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c028_00",
+    "variant": "10",
+    "child": "c028",
+    "modder": "Heather",
+    "added": 1574391442396
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c029_00",
+    "variant": "01",
+    "child": "c029",
+    "modder": "Heather",
+    "added": 1574391512269
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c030_00",
+    "variant": "01",
+    "child": "c030",
+    "modder": "Heather",
+    "added": 1574391552546
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c031_00",
+    "variant": "01",
+    "child": "c031",
+    "modder": "Heather",
+    "added": 1574391586179
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c032_00",
+    "variant": "01",
+    "child": "c032",
+    "modder": "Heather",
+    "added": 1574391647900
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c034_00",
+    "variant": "02",
+    "child": "c034",
+    "modder": "Heather",
+    "added": 1574391700593
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c035_00",
+    "variant": "01",
+    "child": "c035",
+    "modder": "Heather",
+    "added": 1574391738843
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c036_00",
+    "variant": "01",
+    "child": "c036",
+    "modder": "Heather",
+    "added": 1574391774811
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c038_00",
+    "variant": "01",
+    "child": "c038",
+    "modder": "Heather",
+    "added": 1574391825903
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c039_00",
+    "variant": "02",
+    "child": "c039",
+    "modder": "Heather",
+    "added": 1574391896478
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c040_00",
+    "variant": "01",
+    "child": "c040",
+    "modder": "Heather",
+    "added": 1574391940773
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c041_00",
+    "variant": "01",
+    "child": "c041",
+    "modder": "Heather",
+    "added": 1574391974177
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c044_00",
+    "variant": "01",
+    "child": "c044",
+    "modder": "Heather",
+    "added": 1574392018868
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c045_00",
+    "variant": "01",
+    "child": "c045",
+    "modder": "Heather",
+    "added": 1574393281810
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c0049_00",
+    "variant": "01",
+    "child": "c049",
+    "modder": "Heather",
+    "added": 1574393327368
+  },
+  {
+    "name": "Swap Cursed Costume",
+    "swap": "c051_21",
+    "variant": "01",
+    "child": "c051",
+    "modder": "Heather",
+    "added": 1574393531125
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c035_00",
+    "variant": "01",
+    "child": "c053",
+    "modder": "Heather",
+    "added": 1574393692933
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c054_00",
+    "variant": "01",
+    "child": "c054",
+    "modder": "Heather",
+    "added": 1574393730351
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c056_01",
+    "variant": "01",
+    "child": "c056",
+    "modder": "Heather",
+    "added": 1574393778307
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c057_00",
+    "variant": "01",
+    "child": "c057",
+    "modder": "Heather",
+    "added": 1574394538048
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c060_00",
+    "variant": "01",
+    "child": "c060",
+    "modder": "Heather",
+    "added": 1574394572844
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c061_01",
+    "variant": "01",
+    "child": "c061",
+    "modder": "Heather",
+    "added": 1574394812436
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c062_00",
+    "variant": "01",
+    "child": "c062",
+    "modder": "Heather",
+    "added": 1574394881715
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c063_00",
+    "variant": "01",
+    "child": "c063",
+    "modder": "Heather",
+    "added": 1574394913597
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c064_00",
+    "variant": "01",
+    "child": "c064",
+    "modder": "Heather",
+    "added": 1574394967054
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c066_00",
+    "variant": "01",
+    "child": "c066",
+    "modder": "Heather",
+    "added": 1574394998231
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c070_00",
+    "variant": "01",
+    "child": "c070",
+    "modder": "Heather",
+    "added": 1574395027734
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c072_00",
+    "variant": "01",
+    "child": "c072",
+    "modder": "Heather",
+    "added": 1574395058902
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c074_00",
+    "variant": "01",
+    "child": "c074",
+    "modder": "Heather",
+    "added": 1574395088633
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c081_00",
+    "variant": "01",
+    "child": "c081",
+    "modder": "Heather",
+    "added": 1574395134812
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c082_00",
+    "variant": "01",
+    "child": "c082",
+    "modder": "Heather",
+    "added": 1574395164093
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c083_00",
+    "variant": "01",
+    "child": "c083",
+    "modder": "Heather",
+    "added": 1574395202620
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c086_00",
+    "variant": "02",
+    "child": "c086",
+    "modder": "Heather",
+    "added": 1574395249931
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c090_00",
+    "variant": "01",
+    "child": "c090",
+    "modder": "Heather",
+    "added": 1574395289706
+  },
+  {
+    "name": "Swap Pactmaker",
+    "swap": "c099_00",
+    "variant": "01",
+    "child": "c099",
+    "modder": "Heather",
+    "added": 1574395326466
   }
 ]

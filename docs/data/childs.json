@@ -3051,8 +3051,9 @@
       }
     },
     "id": "c090",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574395289706
   },
   "sc400": {
     "id": "sc400",
@@ -5407,8 +5408,9 @@
       }
     },
     "id": "c070",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574395027734
   },
   "c191": {
     "name": "Sekhmet",
@@ -5484,8 +5486,9 @@
       }
     },
     "id": "c081",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574395134812
   },
   "sc403": {
     "id": "sc403",
@@ -6232,9 +6235,9 @@
       }
     },
     "id": "c060",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574096812890
+    "lastModAdded": 1574394572844
   },
   "c082": {
     "stars": 3,
@@ -6275,11 +6278,12 @@
       }
     },
     "tierBoss": 7,
-    "numMods": 0,
+    "numMods": 1,
     "type": "attacker",
     "id": "c082",
     "element": "light",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "lastModAdded": 1574395164093
   },
   "sc404": {
     "id": "sc404",
@@ -7045,8 +7049,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574086042430,
-    "numMods": 5,
+    "lastModAdded": 1574394812436,
+    "numMods": 6,
     "type": "attacker",
     "id": "c061",
     "element": "grass",
@@ -7091,8 +7095,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574086042710,
-    "numMods": 2,
+    "lastModAdded": 1574395058902,
+    "numMods": 3,
     "type": "attacker",
     "id": "c072",
     "element": "fire",
@@ -7182,9 +7186,9 @@
       }
     },
     "id": "c083",
-    "numMods": 2,
+    "numMods": 3,
     "numModsNSFW": 1,
-    "lastModAdded": 1574086042820
+    "lastModAdded": 1574395202620
   },
   "c095": {
     "name": "Vesta",
@@ -7760,9 +7764,9 @@
       }
     },
     "id": "c040",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574086041480
+    "lastModAdded": 1574391940773
   },
   "c161": {
     "name": "Youth",
@@ -7881,8 +7885,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574086042140,
-    "numMods": 4,
+    "lastModAdded": 1574393531125,
+    "numMods": 5,
     "type": "attacker",
     "id": "c051",
     "element": "dark",
@@ -7966,8 +7970,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574086042450,
-    "numMods": 1,
+    "lastModAdded": 1574394881715,
+    "numMods": 2,
     "type": "tank",
     "id": "c062",
     "element": "grass",
@@ -8599,8 +8603,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096812740,
-    "numMods": 2,
+    "lastModAdded": 1574391552546,
+    "numMods": 3,
     "type": "attacker",
     "id": "c030",
     "element": "light",
@@ -8710,9 +8714,9 @@
       }
     },
     "id": "c041",
-    "numMods": 4,
+    "numMods": 5,
     "numModsNSFW": 2,
-    "lastModAdded": 1574086041540
+    "lastModAdded": 1574391974177
   },
   "c283": {
     "stars": 5,
@@ -8967,9 +8971,9 @@
       }
     },
     "id": "c063",
-    "numMods": 3,
+    "numMods": 4,
     "numModsNSFW": 3,
-    "lastModAdded": 1574096812910
+    "lastModAdded": 1574394913597
   },
   "c184": {
     "stars": 4,
@@ -9052,8 +9056,9 @@
       }
     },
     "id": "c074",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574395088633
   },
   "c195": {
     "name": "Cybele",
@@ -9717,8 +9722,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574086041220,
-    "numMods": 2,
+    "lastModAdded": 1574391586179,
+    "numMods": 3,
     "type": "attacker",
     "id": "c031",
     "element": "grass",
@@ -9829,8 +9834,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574086042220,
-    "numMods": 2,
+    "lastModAdded": 1574393692933,
+    "numMods": 3,
     "type": "healer",
     "id": "c053",
     "element": "dark",
@@ -9990,8 +9995,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574086042510,
-    "numMods": 2,
+    "lastModAdded": 1574394967054,
+    "numMods": 3,
     "type": "debuffer",
     "id": "c064",
     "element": "dark",
@@ -10154,9 +10159,9 @@
       }
     },
     "id": "c086",
-    "numMods": 2,
+    "numMods": 3,
     "numModsNSFW": 2,
-    "lastModAdded": 1574096812920
+    "lastModAdded": 1574395249931
   },
   "sc408": {
     "id": "sc408",
@@ -10499,8 +10504,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574086040730,
-    "numMods": 2,
+    "lastModAdded": 1574390852242,
+    "numMods": 3,
     "type": "healer",
     "id": "c010",
     "element": "fire",
@@ -10649,8 +10654,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574096812750,
-    "numMods": 1,
+    "lastModAdded": 1574391647900,
+    "numMods": 2,
     "type": "healer",
     "id": "c032",
     "element": "dark",
@@ -10943,9 +10948,9 @@
     },
     "id": "c054",
     "stars": 3,
-    "numMods": 5,
+    "numMods": 6,
     "numModsNSFW": 5,
-    "lastModAdded": 1574096812860
+    "lastModAdded": 1574393730351
   },
   "c175": {
     "stars": 5,
@@ -11146,8 +11151,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096812930,
-    "numMods": 4,
+    "lastModAdded": 1574395326466,
+    "numMods": 5,
     "type": "support",
     "id": "c099",
     "element": "dark",
@@ -11896,8 +11901,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574086041690,
-    "numMods": 2,
+    "lastModAdded": 1574392018868,
+    "numMods": 3,
     "type": "support",
     "id": "c044",
     "element": "dark",
@@ -12051,8 +12056,9 @@
       }
     },
     "id": "c066",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574394998231
   },
   "c187": {
     "name": "Thetis",
@@ -12773,8 +12779,9 @@
       }
     },
     "id": "c034",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574391700593
   },
   "c397": {
     "id": "c397",
@@ -12894,8 +12901,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574086041730,
-    "numMods": 3,
+    "lastModAdded": 1574393281810,
+    "numMods": 4,
     "type": "support",
     "id": "c045",
     "element": "light",
@@ -12995,8 +13002,9 @@
       }
     },
     "id": "c056",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574393778307
   },
   "c067": {
     "stars": 5,
@@ -13819,8 +13827,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574086040830,
-    "numMods": 6,
+    "lastModAdded": 1574390915722,
+    "numMods": 7,
     "type": "attacker",
     "id": "c013",
     "element": "dark",
@@ -14038,8 +14046,9 @@
       }
     },
     "id": "c035",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574391738843
   },
   "c156": {
     "stars": 5,
@@ -14276,11 +14285,12 @@
       }
     },
     "tierBoss": 5,
-    "numMods": 0,
+    "numMods": 1,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
-    "tierPVE": 8
+    "tierPVE": 8,
+    "lastModAdded": 1574394538048
   },
   "c178": {
     "stars": 3,
@@ -15457,8 +15467,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096812770,
-    "numMods": 7,
+    "lastModAdded": 1574391774811,
+    "numMods": 8,
     "type": "support",
     "id": "c036",
     "element": "fire",
@@ -16263,11 +16273,12 @@
       }
     },
     "tierBoss": 6,
-    "numMods": 0,
+    "numMods": 1,
     "type": "attacker",
     "id": "c026",
     "element": "light",
-    "tierPVE": 6
+    "tierPVE": 6,
+    "lastModAdded": 1574391277696
   },
   "c147": {
     "name": "Baal",
@@ -17055,8 +17066,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574086040640,
-    "numMods": 4,
+    "lastModAdded": 1574390681098,
+    "numMods": 5,
     "type": "tank",
     "id": "c005",
     "element": "water",
@@ -17358,8 +17369,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574342420407,
-    "numMods": 6,
+    "lastModAdded": 1574391825903,
+    "numMods": 7,
     "type": "attacker",
     "id": "c038",
     "element": "water",
@@ -17453,8 +17464,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574220726250,
-    "numMods": 14,
+    "lastModAdded": 1574393327368,
+    "numMods": 15,
     "type": "healer",
     "id": "c049",
     "element": "light",
@@ -17980,8 +17991,9 @@
       }
     },
     "id": "c017",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574390960736
   },
   "c028": {
     "stars": 4,
@@ -18032,8 +18044,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574096812710,
-    "numMods": 7,
+    "lastModAdded": 1574391442396,
+    "numMods": 8,
     "type": "support",
     "id": "c028",
     "element": "light",
@@ -18124,8 +18136,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096812780,
-    "numMods": 4,
+    "lastModAdded": 1574391896478,
+    "numMods": 5,
     "type": "attacker",
     "id": "c039",
     "element": "dark",
@@ -18904,8 +18916,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574096812730,
-    "numMods": 4,
+    "lastModAdded": 1574391512269,
+    "numMods": 5,
     "type": "healer",
     "id": "c029",
     "element": "grass",
@@ -19354,8 +19366,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574086040700,
-    "numMods": 3,
+    "lastModAdded": 1574390789394,
+    "numMods": 4,
     "id": "c008",
     "tierPVE": 5
   },
@@ -19437,8 +19449,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574096812690,
-    "numMods": 2,
+    "lastModAdded": 1574391004923,
+    "numMods": 3,
     "type": "tank",
     "id": "c019",
     "element": "grass",
