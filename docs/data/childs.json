@@ -8560,9 +8560,9 @@
       }
     },
     "id": "c382",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574086051780
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1574637784327
   },
   "c030": {
     "stars": 4,
@@ -9105,8 +9105,9 @@
       }
     },
     "id": "c195",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1574637738107
   },
   "c085": {
     "name": "Paris",
@@ -17325,7 +17326,7 @@
     "tierPVP": 5,
     "name": "Calypso",
     "tierRaid": 6,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Water Amarin",
@@ -17369,8 +17370,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574391825903,
-    "numMods": 7,
+    "lastModAdded": 1574637599475,
+    "numMods": 8,
     "type": "attacker",
     "id": "c038",
     "element": "water",
@@ -18521,8 +18522,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574096813240,
-    "numMods": 7,
+    "lastModAdded": 1574636932488,
+    "numMods": 8,
     "type": "attacker",
     "id": "c227",
     "element": "light",
@@ -19106,9 +19107,9 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086054210
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1574637667822
   },
   "sm054": {
     "name": "고모라",
