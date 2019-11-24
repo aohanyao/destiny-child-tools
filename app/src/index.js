@@ -5,6 +5,7 @@ import Childs from './views/childs.js'
 import Child from './views/child.js'
 import Mods from './views/mods.js'
 import Live2D from './views/live2d.js'
+import Variant from './views/variant.js'
 import Settings from './views/settings.js'
 import {goBack, setView} from './actions/view.js'
 
@@ -13,7 +14,8 @@ const views = {
   Child,
   Live2D,
   Settings,
-  Mods
+  Mods,
+  Variant
 }
 
 const Index = ({childs, view, goBack, setView}) => {

@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'react-native-scalable-image'
 import {connect} from 'react-redux'
 import {View, Dimensions} from 'react-native'
-import {Text, Card, IconButton} from 'react-native-paper'
+import {Text, Card, IconButton, Button} from 'react-native-paper'
 import {setView} from './actions/view.js'
 import stringifyMod from './lib/stringify-mod.js'
 import installMod from './lib/install-mod.js'
+import theme from './theme'
 
 const ModCard = ({mod, pck, setView}) => {
   if(!pck) pck = mod.get('child') + '_' + mod.get('variant')
@@ -25,16 +26,29 @@ const ModCard = ({mod, pck, setView}) => {
         } />
       <Card.Content>
         <View style={{flexDirection: 'row', flexWrap:'wrap', alignContent: 'center'}}>
-          {mod && <View style={{marginRight: 20}}>
+          {mod && 
+            <View style={{marginRight: 20}}>
               <View style={{flex: 1, alignItems: 'center'}}>
                 <Image
-                  onPress={() => setView('Live2D', pck)}
+                  onPress={() => 'Child' && setView('Variant', pck)}
                   height={100}
                   widtht={100}
                   style={{marginBottom: 10}}
                   source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${pck}/preview-424242.png`}} />
-                <Text>{pck}</Text>
-                <IconButton icon="subdirectory-arrow-right" />
+                <Button 
+                  onPress={() => 'Child' && setView('Variant', pck)}
+                  color={theme.colors.secondary}
+                  style={{marginTop: -10}}>
+                  {pck}
+                </Button>
+                <IconButton icon="subdirectory-arrow-right" style={{marginTop: -5}} />
+                <Button 
+                  onPress={() => 'Child' && setView('Variant', mod.get('swap'))}
+                  color={theme.colors.secondary}
+                  style={{marginTop: -15}}>
+                  {mod.get('swap')}
+                </Button>
+                <Text style={{marginTop: -10}}></Text>
                 <Text></Text>
                 <Text>by</Text>
                 <Text>{mod && mod.get('modder')}</Text>
