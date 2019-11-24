@@ -82,8 +82,8 @@ const Settings = ({latestVersion, installPaths, installedClients, restoreModelIn
           <Text>Android App by LokiCoder</Text>
           <Text>Powered by https://lokicoder.github.io/destiny-child-tools/</Text>
           <Text>App icon from Eljoseto's Summoner Davi ahegao mod ❤️</Text>
-          <Text>Mod creators are listed on each mod, though there is no guarantee that they did not borrow from or borrow on other people's work.</Text>
-          <Text>This app and the site that powers it would not be possible without all the work and investigation of those that came before like the authors of the PCKTools package, the wonderful Discord modding communities, programmers like Arsylk, and many others.</Text>
+          <Text>Mod creators are listed on each mod, though there is no guarantee that they did not borrow from or build on other people's work.</Text>
+          <Text>This app and the site that powers it would not be possible without all the work and investigation of those that came before like the authors of the PCKTools package, the wonderful Discord modding communities, security experts like Falzar, programmers like Arsylk, and many others.</Text>
         </View>
       </ScrollView>
     </View>
