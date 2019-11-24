@@ -138,44 +138,21 @@ app.post('/api/mod', function(req, res) {
         modsDataPath = path.join(__dirname, '../docs/data/mods.json')
 
   run(`rm -rf ${pckPath}${name}`)
-    .then(() => run('./pckmanager/PCK.exe /L ./pckmanager/' + name + '.pck'))
-    // try to extract live2d (kr/jp only)
-    .then(() => run(`rm -rf ${assetPath}${stringify(mod)}`))
+    .then(() => run('python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + name + '.pck')) // try KR key
     .then(() => {
-      if(fs.existsSync(`${pckPath}${name}/MOC.${name}.json`)) {
-        // copy extracted live2d to assets
-        console.log('Live2d successfully extracted')
-        return run(`mv ${pckPath}${name} ${assetPath}${stringify(mod)}`)
+      const stillEncrypted = fs.readdirSync(path.resolve(__dirname, '../pckmanager/' + name)).reduce((acc, file) => {
+        return file.match(/00000000|00000001|00000002/) || acc
+      }, false)
+      if(stillEncrypted) { // try global key if kr key didn't work
+        return run('KEY_REGION=global python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + name + '.pck')
       }
-      else {
-        // copy extracted live2d to assets
-        console.log('Copying existing path')
-        return run(`cp -r ${assetPath}${name} ${assetPath}${stringify(mod)}`)
-          .then(() => {
-            let origPngName, newPngName
-            fs.readdirSync(`${pckPath}${name}/`).forEach(function(file) {
-              if(file.match(/.png$/)) origPngName = file
-            })
-            fs.readdirSync(`${assetPath}${stringify(mod)}/`).forEach(function(file) {
-              if(file.match(/.png$/)) newPngName = file
-            })
-            return run(`cp ${pckPath}${name}/${origPngName}  ${assetPath}${stringify(mod)}/${newPngName}`)
-          })
-      }
+      else return true
     })
-    // // name json file for live2d
-    .then(() => run(`mv ${assetPath}${stringify(mod)}/MOC.${name}.json ${assetPath}${stringify(mod)}/MOC.${stringify(mod)}.json`))
-    // create unitersal
-    .then(() => run(`rm -rf ${pckPath}${name}`))
-    .then(() => run('./pckmanager/PCK.exe /R /U ./pckmanager/' + name + '.pck'))
-    // .then(() => fs.readdirSync(path.resolve(__dirname, '../pckmanager/' + name).reduce((acc, file) => {
-    //   console.log(acc)
-    // }, false)))
-    .then(() => run(`mv ${pckPath}${name}.pck.newUnencrypted ${assetPath}${stringify(mod)}/${name}.pck`))
-    .then(() => run(`rm -rf ${pckPath}${name}.pck.newUnencrypted`))
-    .then(() => run(`rm -rf ${pckPath}${name}`))
-    .then(() => run(`rm -rf ${pckPath}${name}`))
-    .then(() => run(`rm -rf ${pckPath}${name}.pck`))
+    .then(() => run(`python3 ./tools/pck-tools/pckexe.py -p ${pckPath}${name}/_header`))
+    .then(() => run(`mv ${pckPath}${name}/model.json ${pckPath}${name}/MOC.${stringify(mod)}.json`)) // name json file for live2d
+    .then(() => run(`rm -rf ${assetPath}${stringify(mod)}`))  // delete existing mod folder if it exists
+    .then(() => run(`mv ${pckPath}${name} ${assetPath}${stringify(mod)}`)) // move extracted files to new mod folder
+    .then(() => run(`unlink ./pckmanager/${name}.pck`))
     .then(() => {
       const mods = JSON.parse(fs.readFileSync(modsDataPath))
       if(!mods.find(m => stringify(m) == stringify(mod))) {
