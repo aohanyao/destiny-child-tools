@@ -8,6 +8,7 @@ export default {
     // primary: 'tomato',
     // accent: 'yellow',
     text: 'white',
+    secondary: '#00818a',
     onBackground: 'white',
     placeholder: '#aaa',
     background: '#424242',

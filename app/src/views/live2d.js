@@ -5,9 +5,11 @@ import {Title, Button, Text} from 'react-native-paper'
 import {WebView} from 'react-native-webview'
 import openUrl from '../lib/open-url.js'
 import installMod from '../lib/install-mod.js'
+import BreadCrumbs from './shared/breadcrumbs'
 
 const Live2D = props => {
   const {id, pckName, child} = props,
+        variantId = id.replace(/-.+$/, ''),
         newIssueTitle = encodeURIComponent(child.get('name') + ' mod issue for ' + id),
         newIssueBody = encodeURIComponent(
           `[enter details about the issue with ${child.get('name')} here]\n\n` +
@@ -15,7 +17,16 @@ const Live2D = props => {
           `Leave this link here: https://lokicoder.github.io/destiny-child-tools/childs/${child.get('id')}/`)
   return (
     <ScrollView padding={20}>
-      <Title>{id}</Title>
+      <BreadCrumbs>
+        <BreadCrumbs.Crumb view="Childs">
+          Childs
+        </BreadCrumbs.Crumb>
+        <BreadCrumbs.Crumb view="Child" id={child.get('id')}>
+          {child.get('name')}
+        </BreadCrumbs.Crumb>
+        <BreadCrumbs.Crumb view="Variant" id={variantId}>{variantId}</BreadCrumbs.Crumb>
+        <BreadCrumbs.Crumb>Mod</BreadCrumbs.Crumb>
+      </BreadCrumbs>
       <View height={400}>
         <WebView
           source={{uri: `https://lokicoder.github.io/destiny-child-tools/live2d/viewer.html?mN=${id}&size=2000&background=%23424242`}}

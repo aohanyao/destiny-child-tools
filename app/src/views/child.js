@@ -13,6 +13,7 @@ import ModCard from '../mod-card.js'
 import stringifyMod from '../lib/stringify-mod.js'
 import isSwap from '../lib/is-swap.js'
 import ModTypePicker from './shared/mod-type-picker.js'
+import BreadCrumbs from './shared/breadcrumbs'
 import ModSort from './shared/mod-sort.js'
 
 const ToggleButton = ({children, on, onPress}) => {
@@ -58,6 +59,12 @@ const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, orde
   return (
     <View zIndex={1}>
       <ScrollView padding={20}>
+        <BreadCrumbs>
+          <BreadCrumbs.Crumb view="Childs">
+            Childs
+          </BreadCrumbs.Crumb>
+          <BreadCrumbs.Crumb>{child.get('name')}</BreadCrumbs.Crumb>
+        </BreadCrumbs>
         <Card>
           <Card.Title title={child.get('name')} />
           <Card.Content style={{flexDirection: 'row', flexWrap:'wrap'}}>
