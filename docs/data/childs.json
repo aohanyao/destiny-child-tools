@@ -6278,12 +6278,12 @@
       }
     },
     "tierBoss": 7,
+    "lastModAdded": 1574395164093,
     "numMods": 1,
     "type": "attacker",
     "id": "c082",
     "element": "light",
-    "tierPVE": 7,
-    "lastModAdded": 1574395164093
+    "tierPVE": 7
   },
   "sc404": {
     "id": "sc404",
@@ -11280,7 +11280,7 @@
     "numModsNSFW": 0
   },
   "c000": {
-    "name": "Master",
+    "name": "Hero",
     "variants": {
       "10": {
         "title": "Questionable",
@@ -14285,12 +14285,12 @@
       }
     },
     "tierBoss": 5,
+    "lastModAdded": 1574394538048,
     "numMods": 1,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
-    "tierPVE": 8,
-    "lastModAdded": 1574394538048
+    "tierPVE": 8
   },
   "c178": {
     "stars": 3,
@@ -16273,12 +16273,12 @@
       }
     },
     "tierBoss": 6,
+    "lastModAdded": 1574391277696,
     "numMods": 1,
     "type": "attacker",
     "id": "c026",
     "element": "light",
-    "tierPVE": 6,
-    "lastModAdded": 1574391277696
+    "tierPVE": 6
   },
   "c147": {
     "name": "Baal",
