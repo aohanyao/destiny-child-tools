@@ -23,8 +23,6 @@ import Index from './src/index.js'
 import theme from './src/theme.js'
 
 const App: () => React$Node = () => {
- 
-  const id = 'c001'
   return (
     <Provider store={store}>
       <PaperProvider theme={theme}>

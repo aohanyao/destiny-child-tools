@@ -1,46 +1,37 @@
 import RNFetchBlob from 'rn-fetch-blob'
 import RNFS from 'react-native-fs'
-import deepmerge from 'deepmerge'
-import {clientPaths} from './paths.js'
+import {Alert} from 'react-native'
 import stringifyMod from './stringify-mod.js'
 import store from '../store.js'
+import deepDiff from 'deep-diff'
+import {readModelInfo} from '../actions/model-info'
 
-export default mod => {
-  const modData = getModData(mod),
-        {pckName, paths, origInfo, swapInfo} = modData
+const getInstalledClients = () =>
+  store.getState().get('data').get('installedClients').toJS()
+
+const positions = ['home', 'talk', 'ally', 'enemy', 'talk_zoom', 'drive']
+
+const getInstallPath = client => store.getState().get('settings').get(client + 'Path')
+
+async function installMod(mod) {
+  const modData = await getModData(mod),
+        {pckName, changedModelInfo, modelDiff} = modData,
+        installedClients = getInstalledClients()
   fetchApk(modData).then(res => {
     const installs = [],
-          installedClients = []
-    Object.keys(paths).forEach(client => {
-      if(paths[client]) {
-        installs.push(RNFS.copyFile(res.path(), paths[client] + `files/asset/character/${pckName}.pck`))
-        const modelInfo = swapInfo[client] || swapInfo.KR || origInfo[client] || origInfo.KR
-        installedClients.push(client + ' ' + (
-          swapInfo[client] 
-            ? 'postion swap from ' + client + ' ' + swap
-            : swapInfo.KR
-              ? 'postion swap from KR ' + swap
-              : origInfo[client]
-                ? 'position from ' + client + ' ' + pckName
-                : origInfo.KR
-                  ? 'position from KR ' + pckName
-                  : 'no position update'
+          modelInfoMessages = []
+    installedClients.forEach(client => {
+      installs.push(RNFS.copyFile(res.path(), getInstallPath(client) + `files/asset/character/${pckName}.pck`))
+      if(modelDiff[client]) {
+        modelInfoMessages.push(client + ':\n' + (
+          modelDiff[client].reduce((acc, d) => {
+            if(d.path[0] != 'selectRect' && d.kind == 'E') {
+              acc.push(`${d.path.join('.')}:   ${d.lhs} ➜ ${d.rhs}`)
+            }
+            else if(d.path[0] != 'selectRect') JSON.stringify(d, null, 2)
+            return acc
+          }, []).sort().join('\n')
         ))
-        if(modelInfo) {
-          installs.push(
-            RNFS.readFile(paths[client] + 'files/asset/character/model_info.json').then(data => {
-              try {
-                data = JSON.parse(data)
-              }
-              catch(e) {
-                alert(e + '\n\n Consider restoring your model_info.json file in the settings view.')
-              }
-              data[pckName] = deepmerge(data[pckName], modelInfo)
-              RNFS.writeFile(paths[client] + 'files/asset/character/model_info.json', data)
-                .catch(alert)
-            })
-          )
-        }
       }
     })
     if(installs.length == 0) {
@@ -48,37 +39,85 @@ export default mod => {
     }
     Promise.all(installs).then(() => {
       RNFS.unlink(res.path()).then(() => {
-        alert(
-          `Mod installed to ${pckName} for:\n\n` +
-          installedClients.join('\n') +
-          `\n\nRestart Destiny Child if it\'s running.`
+        const positionChanged = modelInfoMessages.length > 0
+        Alert.alert('Mod Successfully Installed', 
+          `Don't forget to restart Destiny Child if it\'s running.\n\n` +
+          (positionChanged
+            ? `Do you want to write the following recommended positioning changes to your model_info.json:\n\n` +
+              modelInfoMessages.join('\n\n')
+            : ''),
+            positionChanged
+              ?  [
+                {text: 'Do Nothing', style: 'cancel'},
+                {text: 'Apply Changes', onPress: () => {
+                  Object.keys(modelDiff).forEach(client => {
+                    if(modelDiff[client]) {
+                      const modelInfo = store.getState().get('data').get('modelInfo').get(client)
+                      console.log('local', client, modelInfo[pckName].ally)
+                      modelInfo[pckName] = changedModelInfo[client]
+                      const modelInfoPath = store.getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json',
+                            backPath = store.getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json.bak'
+                      // RNFS.copyFile(modelInfoMessages), backPath)
+                      RNFS.writeFile(modelInfoPath, modelInfo, 'utf8')
+                        .then(() => readModelInfo(client))
+                        .catch(alert)
+                    }
+                  })
+                }},
+              ]
+              : null,
+            {cancelable: false}
         )
       })
     })
   
   }).catch(errorMessage => alert(errorMessage))
 }
+export default installMod
 
-const getModData = mod => {
-  const id = typeof mod == 'string' ? mod : stringifyMod(mod),
+const getPaths = () => 
+  clients.reduce((acc, client) => {
+    const path = store.getState().get('settings').get(client + 'Path')
+    if(path) acc[client] = path
+    return acc
+  }, {})
+
+
+
+async function getModData(mod) {
+  const installedClients = getInstalledClients(),
+        id = typeof mod == 'string' ? mod : stringifyMod(mod),
         matches = id.match(/([a-z]{1,2}\d{3})_\d{2}/),
         pckName = matches[0],
-        paths = Object.keys(clientPaths).reduce((acc, client) => {
-          const path = store.getState().get('settings').get(client + 'Path')
-          if(path) acc[client] = path
-          return acc
-        }, {}),
         data = store.getState().get('data'),
-        origInfo = {
+        swap = mod.get && mod.get('swap'),
+        defaultModelInfo = {
           Global: data.get('model_info.global')[pckName],
           KR: data.get('model_info.kr')[pckName]
         },
-        swap = mod.get && mod.get('swap'),
-        swapInfo = {
+        localModelInfo = {
+          Global: store.getState().get('data').get('modelInfo').get('Global')[pckName],
+          KR: store.getState().get('data').get('modelInfo').get('KR')[pckName]
+        },
+        swapModelInfo = {
           Global: swap && data.get('model_info.global')[swap],
           KR: swap && data.get('model_info.kr')[swap]
+        },
+        newModelInfo = {
+          Global: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR)),
+          KR: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR))
+        },
+        modelDiff = {
+          Global: deepDiff(localModelInfo.Global, newModelInfo.Global) || false,
+          KR: deepDiff(localModelInfo.KR, newModelInfo.KR) || false
+        },
+        changedModelInfo = {
+          Global: modelDiff.Global ? newModelInfo.Global : false,
+          KR: modelDiff.KR ? newModelInfo.KR : false
         }
-  return {id, pckName, paths, origInfo, swapInfo}
+  return new Promise(resolve => {
+    resolve({id, pckName, swap, changedModelInfo, modelDiff})
+  })
 }
 
 const fetchApk = ({id, pckName}) =>

@@ -1,15 +1,16 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import RNFetchBlob from 'rn-fetch-blob'
 import {ScrollView, View} from 'react-native'
-import {Title, Text, Button, Subheading} from 'react-native-paper'
+import {Title, Text, Button, Subheading, Card, IconButton} from 'react-native-paper'
 import {clientPaths} from '../lib/paths.js'
 import packageJSON from '../../package.json'
 import theme from '../theme.js'
+import store from '../store.js'
 import openUrl from '../lib/open-url.js'
+import {restoreModelInfo} from '../actions/model-info'
 import downloadAndInstall from '../lib/download-and-install.js'
 
-const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = theme.colors.text}) => (
+const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = theme.colors.text,}) => (
   <View style={{marginTop: 20}}>
     <Button icon={icon} mode={mode} color={color} onPress={() => onPress && onPress() || openUrl(url)}>
       {children}
@@ -17,39 +18,45 @@ const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = th
   </View>
 )
 
-const restoreModelInfo = (props, client) => {
-  RNFetchBlob
-    .config({path: props[client + 'Path'] + 'files/asset/character/model_info.json'})
-    .fetch('GET', `https://lokicoder.github.io/destiny-child-tools/data/model_info.${client.toLowerCase()}.json`)
-    .then(() => alert('Successfully restored'))
-    .catch(alert)
-}
-
-const Settings = props => {
-  const {latestVersion} = props,
-        hasLatestVersion = packageJSON.version == latestVersion
+const Settings = ({latestVersion, installPaths, installedClients, restoreModelInfo}) => {
+  const hasLatestVersion = packageJSON.version == latestVersion
   return (
     <View padding={20}>
       <ScrollView>
         <Title>Settings</Title>
         <Text>Coming soon</Text>
         <Text></Text>
-        <Subheading >Installed Clients:</Subheading  >
+        <Subheading>Installed Clients:</Subheading>
         <Text></Text>
-        {Object.keys(clientPaths).map(client => 
-          <View key={client}>
-            <Text>
-              {client}: {props[client + 'Path'] || 'not installed'} 
-            </Text>
-            <Button 
-              mode="contained" 
-              color="white"
-              onPress={() => restoreModelInfo(props, client)}>
-              Restore {client} model_info.json
-            </Button>
-            <Text></Text>
-          </View>
-        )}
+        {installedClients.map(client => {
+          const installedPath = installPaths.get(client)
+          return <Card key={client} style={{marginBottom: 20}}>
+            <Card.Title title={`Destiny Child ${client}`} /> 
+            <Card.Content>
+              <Text style={{marginBottom: 20}}>{installedPath || 'not installed'}</Text>
+              <Title style={{marginBottom: 10}}>
+                model_info.json (positioning)
+              </Title>
+              {installedPath &&
+                <>
+                  <Button 
+                    mode="contained" 
+                    color="white"
+                    onPress={() => restoreModelInfo(client)}
+                    style={{marginBottom: 10}}>
+                    Download from GitHub
+                  </Button>
+                  {/* <Button 
+                    mode="contained" 
+                    color="white"
+                    onPress={() => createModelInfoBackup(props, client)}>
+                    Create Local Backup
+                  </Button> */}
+                </>
+              }
+            </Card.Content>
+          </Card>
+        })}
         <Text></Text>
         <Text>App Version: v{packageJSON.version} {hasLatestVersion && '(latest)'}</Text>
         {!hasLatestVersion && 
@@ -70,7 +77,7 @@ const Settings = props => {
         <LinkButton icon="github-circle" url={'https://github.com/LokiCoder/destiny-child-tools'}>
           Source Code on GitHub
         </LinkButton>
-        <View style={{marginTop: 40}}>
+        <View style={{marginTop: 40, marginBottom: 80}}>
           <Subheading>Credits:</Subheading>
           <Text>Android App by LokiCoder</Text>
           <Text>Powered by https://lokicoder.github.io/destiny-child-tools/</Text>
@@ -85,13 +92,13 @@ const Settings = props => {
 
 export default connect(
   state => {
-    const props = {
-      latestVersion: state.get('settings').get('latestVersion')
+    const installedClients = state.get('data').get('installedClients')
+    return {
+      latestVersion: state.get('settings').get('latestVersion'),
+      installedClients,
+      installPaths: state.get('data').get('installPaths')
     }
-    Object.keys(clientPaths).forEach(client => {
-      props[client + 'Path'] = state.get('settings').get(client + 'Path')
-    })
-    return props
-  }
+  },
+  {restoreModelInfo}
 )(Settings)
 

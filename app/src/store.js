@@ -2,22 +2,26 @@ import {Alert} from 'react-native'
 import RNFS from 'react-native-fs'
 import {fromJS} from 'immutable'
 import {combineReducers} from 'redux-immutable'
-import {createStore} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
 import view from './reducers/view.js'
 import settings from './reducers/settings.js'
 import childView from './reducers/child-view.js'
 import modsView from './reducers/mods-view.js'
 import {BackHandler} from 'react-native'
 import data from './reducers/data.js'
-import {setData} from './actions/data.js'
+import {setData, setClientData} from './actions/data.js'
 import {history} from './reducers/view.js'
 import {goBack} from './actions/view.js'
 import {setSetting} from './actions/settings.js'
-import {storagePaths, clientPaths, globalPath, krPath} from './lib/paths.js'
+import {storagePaths, clientPaths} from './lib/paths.js'
 import {getStoragePermission} from './lib/permissions.js'
 import openUrl from './lib/open-url.js'
+import {readModelInfo} from './actions/model-info'
 import packageJSON from '../package.json'
 import downloadAndInstall from './lib/download-and-install.js'
+
+const clients = Object.keys(clientPaths)
 
 const store = createStore(combineReducers({
   data,
@@ -25,7 +29,7 @@ const store = createStore(combineReducers({
   settings,
   childView,
   modsView
-}))
+}), applyMiddleware(thunk))
 
 const showDownloadPrompt = version => Alert.alert(
   'New Version Available', 
@@ -66,8 +70,7 @@ fetchData('model_info.kr', false)
 let clientIndex = 0,
     storageIndex = 0
 
-const found = {},
-      clients = Object.keys(clientPaths)
+const found = {}
 const checkNextClientPath = () => {
   const next = () => {
     storageIndex++
@@ -84,7 +87,9 @@ const checkNextClientPath = () => {
   if(!found[client]) {
     RNFS.readDir(pathToCheck) // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
       .then(() => {
+        store.dispatch(setClientData('installPaths', client, pathToCheck))
         store.dispatch(setSetting(client + 'Path', pathToCheck))
+        store.dispatch(readModelInfo(client))
         found[client] = true
         next()
       })
