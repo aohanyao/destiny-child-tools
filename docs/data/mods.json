@@ -5116,11 +5116,13 @@
     "child": "c154",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c378_01",
     "added": 1574086044210
   },
   {
     "name": "Swap Pallas Topless",
     "variant": "01",
+    "swap": "c378_01",
     "child": "c154",
     "modder": "Heather",
     "nsfw": true,
@@ -5130,6 +5132,7 @@
     "name": "Swap Pallas Topless",
     "variant": "01",
     "child": "c067",
+    "swap": "c378_01",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042570
@@ -5138,6 +5141,7 @@
     "name": "Swap Pallas Topless",
     "variant": "02",
     "child": "c067",
+    "swap": "c378_01",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042610
@@ -6093,5 +6097,354 @@
     "child": "m057",
     "modder": "Loki",
     "added": 1574679546747
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "88",
+    "child": "c267",
+    "modder": "unknown",
+    "added": 1574700965431,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c285",
+    "modder": "unknown",
+    "added": 1574701025164,
+    "nsfw": true
+  },
+  {
+    "name": "no arms",
+    "swap": "",
+    "variant": "02",
+    "child": "c297",
+    "modder": "unknown",
+    "added": 1574701121272
+  },
+  {
+    "name": "gstring",
+    "swap": "",
+    "variant": "02",
+    "child": "c305",
+    "modder": "unknown",
+    "added": 1574701274168
+  },
+  {
+    "name": "no snakes",
+    "swap": "",
+    "variant": "10",
+    "child": "c305",
+    "modder": "unknown",
+    "added": 1574701348256
+  },
+  {
+    "name": "young",
+    "swap": "",
+    "variant": "02",
+    "child": "c308",
+    "modder": "unknown",
+    "added": 1574701454587
+  },
+  {
+    "name": "short skirt",
+    "swap": "",
+    "variant": "01",
+    "child": "c312",
+    "modder": "unknown",
+    "added": 1574701536174
+  },
+  {
+    "name": "no pants",
+    "swap": "",
+    "variant": "02",
+    "child": "c317",
+    "modder": "unknown",
+    "added": 1574701600075
+  },
+  {
+    "name": "wet pussy",
+    "swap": "",
+    "variant": "10",
+    "child": "c318",
+    "modder": "unknown",
+    "added": 1574701670426,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c320",
+    "modder": "unknown",
+    "added": 1574701778342,
+    "nsfw": true
+  },
+  {
+    "name": "recolor",
+    "swap": "",
+    "variant": "01",
+    "child": "c338",
+    "modder": "unknown",
+    "added": 1574701835410
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c338",
+    "modder": "unknown",
+    "added": 1574701885787,
+    "nsfw": true
+  },
+  {
+    "name": "recolor",
+    "swap": "",
+    "variant": "00",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1574701964017
+  },
+  {
+    "name": "recolor yellow",
+    "swap": "",
+    "variant": "02",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1574702192538
+  },
+  {
+    "name": "cleavage",
+    "swap": "",
+    "variant": "10",
+    "child": "c348",
+    "modder": "unknown",
+    "added": 1574702261462
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c354",
+    "modder": "unknown",
+    "added": 1574702314013,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c364",
+    "modder": "unknown",
+    "added": 1574702703274,
+    "nsfw": true
+  },
+  {
+    "name": "swap a-e rank",
+    "swap": "c366_01",
+    "variant": "02",
+    "child": "c366",
+    "modder": "unknown",
+    "added": 1574702809290
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "01",
+    "child": "c371",
+    "modder": "unknown",
+    "added": 1574702896896,
+    "nsfw": true
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "10",
+    "child": "c371",
+    "modder": "unknown",
+    "added": 1574702939041,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c378",
+    "modder": "Heather",
+    "added": 1574703524313,
+    "nsfw": true
+  },
+  {
+    "name": "Nipple Chain",
+    "swap": "",
+    "variant": "01",
+    "child": "c378",
+    "modder": "Heather",
+    "added": 1574703608921,
+    "nsfw": true
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "01",
+    "child": "c372",
+    "modder": "unknown",
+    "added": 1574703850041,
+    "nsfw": true
+  },
+  {
+    "name": "pink sheer",
+    "swap": "",
+    "variant": "01",
+    "child": "c372",
+    "modder": "unknown",
+    "added": 1574703941637,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c374",
+    "modder": "unknown",
+    "added": 1574704015545,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c374",
+    "modder": "unknown",
+    "added": 1574704077722,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c376",
+    "modder": "unknown",
+    "added": 1574704170650,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "10",
+    "child": "c377",
+    "modder": "unknown",
+    "added": 1574704541085,
+    "nsfw": true
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "10",
+    "child": "c377",
+    "modder": "unknown",
+    "added": 1574704598936,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "89",
+    "child": "c377",
+    "modder": "unknown",
+    "added": 1574704640158,
+    "nsfw": true
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "89",
+    "child": "c377",
+    "modder": "uknown",
+    "added": 1574704678609,
+    "nsfw": true
+  },
+  {
+    "name": "No bottom",
+    "swap": "",
+    "variant": "10",
+    "child": "c392",
+    "modder": "unknown",
+    "added": 1574704762573,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "89",
+    "child": "c392",
+    "modder": "unknown",
+    "added": 1574704865324,
+    "nsfw": true
+  },
+  {
+    "name": "white goo",
+    "swap": "",
+    "variant": "10",
+    "child": "m051",
+    "modder": "unknown",
+    "added": 1574704961929,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "01",
+    "child": "sc013",
+    "modder": "unknown",
+    "added": 1574705196129,
+    "nsfw": true
+  },
+  {
+    "name": "dreaming of Bari",
+    "swap": "",
+    "variant": "01",
+    "child": "m117",
+    "modder": "unknown",
+    "added": 1574705264309,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "01",
+    "child": "sc320",
+    "modder": "unknown",
+    "added": 1574705327540,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "01",
+    "child": "sc345",
+    "modder": "unknown",
+    "added": 1574705450023,
+    "nsfw": true
+  },
+  {
+    "name": "topless 2",
+    "swap": "",
+    "variant": "01",
+    "child": "sc345",
+    "modder": "unknown",
+    "added": 1574705571093,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c017",
+    "modder": "unknown",
+    "added": 1574705764241,
+    "nsfw": true
   }
 ]
