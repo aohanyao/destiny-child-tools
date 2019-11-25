@@ -5,7 +5,7 @@ import {setClientData} from './data'
 
 export const readModelInfo = client =>
   (dispatch, getState) =>
-    RNFS.readFile(getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json')
+    RNFS.readFile(getState().get('data').get('installPaths').get(client) + 'files/asset/character/model_info.json')
       .then(data => {
         try {
           data = JSON.parse(data)
@@ -19,7 +19,7 @@ export const readModelInfo = client =>
 export const restoreModelInfo = client => 
   (dispatch, getState) => 
     RNFetchBlob
-      .config({path: getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json'})
+      .config({path: getState().get('data').get('installPaths').get(client) + 'files/asset/character/model_info.json'})
       .fetch('GET', `https://lokicoder.github.io/destiny-child-tools/data/model_info.${client.toLowerCase()}.json`)
       .then(() => {
         alert('Successfully restored')

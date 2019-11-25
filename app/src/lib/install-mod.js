@@ -78,15 +78,6 @@ async function installMod(mod) {
 }
 export default installMod
 
-const getPaths = () => 
-  clients.reduce((acc, client) => {
-    const path = store.getState().get('settings').get(client + 'Path')
-    if(path) acc[client] = path
-    return acc
-  }, {})
-
-
-
 async function getModData(mod) {
   const installedClients = getInstalledClients(),
         id = typeof mod == 'string' ? mod : stringifyMod(mod),

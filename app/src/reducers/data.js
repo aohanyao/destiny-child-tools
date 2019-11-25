@@ -22,9 +22,6 @@ export default ((state = defaultState, action = {}) => {
     return state.set(action.key, action.data)
   }
   if(action.type == DATA_SET_CLIENT_DATA) {
-    if(action.key == 'modelInfo') {
-      console.log(action.type, action.key, action.client, action.data.c000_01)
-    }
     if(action.key == 'installPaths') {
       state = state.set('installedClients', state.get('installedClients').push(action.client))
     }
