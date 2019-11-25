@@ -58,8 +58,12 @@ async function installMod(mod) {
                       const modelInfo = store.getState().get('data').get('modelInfo').get(client)
                       modelInfo[pckName] = changedModelInfo[client]
                       const modelInfoPath = getInstallPath(client) + 'files/asset/character/model_info.json'
-                      RNFS.writeFile(modelInfoPath, modelInfo, 'utf8')
-                        .then(() => readModelInfo(client))
+                      RNFS.unlink(modelInfoPath)
+                        .then(() => 
+                          RNFS.writeFile(modelInfoPath, JSON.stringify(modelInfo, null, 2), 'utf8')
+                            .then(() => readModelInfo(client))
+                            .catch(alert)
+                        )
                         .catch(alert)
                     }
                   })
