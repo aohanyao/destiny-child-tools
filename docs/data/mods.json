@@ -48,6 +48,7 @@
     "variant": "01",
     "child": "m056",
     "modder": "Ahegao",
+    "swap": "m051_10",
     "nsfw": true,
     "added": 1574086054830
   },
@@ -184,6 +185,7 @@
     "variant": "02",
     "child": "c229",
     "modder": "ljoseto",
+    "swap": "c229_10",
     "added": 1574086046190
   },
   {
@@ -795,6 +797,7 @@
     "variant": "01",
     "child": "m057",
     "modder": "Heather",
+    "swap": "cm038_10",
     "added": 1574086054890
   },
   {
@@ -802,6 +805,7 @@
     "variant": "02",
     "child": "m057",
     "modder": "Heather",
+    "nsfw": true,
     "added": 1574086054930,
     "swap": "m038_11"
   },
@@ -2360,6 +2364,7 @@
     "child": "m056",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "m051_10",
     "added": 1574086054840
   },
   {
@@ -2383,6 +2388,7 @@
     "variant": "01",
     "child": "m056",
     "modder": "Heather",
+    "swap": "c140_01",
     "nsfw": true,
     "added": 1574086054850
   },
@@ -2391,6 +2397,7 @@
     "variant": "02",
     "child": "m056",
     "modder": "Heather",
+    "swap": "c140_01",
     "nsfw": true,
     "added": 1574086054870
   },
@@ -3217,6 +3224,7 @@
     "child": "c266",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c129_02",
     "added": 1574086047060
   },
   {
@@ -3224,6 +3232,7 @@
     "variant": "02",
     "child": "c266",
     "modder": "Heather",
+    "swap": "c129_02",
     "nsfw": true,
     "added": 1574086047070
   },
@@ -4072,6 +4081,7 @@
     "variant": "02",
     "child": "c041",
     "modder": "Heather",
+    "swap": "c343_02",
     "added": 1574086041540
   },
   {
@@ -4213,6 +4223,7 @@
     "variant": "01",
     "child": "c041",
     "modder": "Bugs Bunnay",
+    "swap": "c343_02",
     "added": 1574086041510
   },
   {
@@ -5014,6 +5025,7 @@
     "child": "c355",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c320_02",
     "added": 1574086050810
   },
   {
@@ -5022,6 +5034,7 @@
     "child": "c355",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c230_02",
     "added": 1574086050770
   },
   {
@@ -5222,6 +5235,7 @@
     "child": "c277",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c277_00",
     "added": 1574086047500
   },
   {
@@ -5229,6 +5243,7 @@
     "variant": "02",
     "child": "c277",
     "modder": "Heather",
+    "swap": "c277_00",
     "nsfw": true,
     "added": 1574086047520
   },
