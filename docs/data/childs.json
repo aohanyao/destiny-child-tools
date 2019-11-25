@@ -3873,9 +3873,9 @@
       }
     },
     "id": "c091",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574086042920
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1574641827199
   },
   "sc324": {
     "name": "모나",
@@ -13097,7 +13097,7 @@
     "tierPVP": 7,
     "name": "Aurora",
     "tierRaid": 7,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -13141,11 +13141,12 @@
       }
     },
     "tierBoss": 6,
-    "numMods": 0,
+    "numMods": 1,
     "type": "healer",
     "id": "c199",
     "element": "fire",
-    "tierPVE": 7
+    "tierPVE": 7,
+    "lastModAdded": 1574642123386
   },
   "c420": {
     "id": "c420",
@@ -14252,7 +14253,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -14286,8 +14287,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574394538048,
-    "numMods": 1,
+    "lastModAdded": 1574641526560,
+    "numMods": 2,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
@@ -15101,8 +15102,9 @@
       }
     },
     "id": "c245",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1574643665859
   },
   "c366": {
     "name": "Deino",
@@ -15302,7 +15304,7 @@
     "tierPVP": 9,
     "name": "Cleopatra",
     "tierRaid": 10,
-    "numModsNSFW": 8,
+    "numModsNSFW": 9,
     "variants": {
       "10": {
         "title": "Favored",
@@ -15376,8 +15378,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574308408027,
-    "numMods": 11,
+    "lastModAdded": 1574644161321,
+    "numMods": 12,
     "type": "attacker",
     "id": "c267",
     "element": "light",
@@ -15468,8 +15470,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574391774811,
-    "numMods": 8,
+    "lastModAdded": 1574641349303,
+    "numMods": 9,
     "type": "support",
     "id": "c036",
     "element": "fire",
@@ -15655,7 +15657,7 @@
     "tierPVP": 8,
     "name": "Nirrti",
     "tierRaid": 7,
-    "numModsNSFW": 6,
+    "numModsNSFW": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -15689,8 +15691,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574096812890,
-    "numMods": 6,
+    "lastModAdded": 1574641615099,
+    "numMods": 7,
     "type": "debuffer",
     "id": "c058",
     "element": "light",
@@ -16108,7 +16110,7 @@
     "tierPVP": 7,
     "name": "Krampus",
     "tierRaid": 9,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -16182,8 +16184,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574096813270,
-    "numMods": 5,
+    "lastModAdded": 1574643858105,
+    "numMods": 6,
     "type": "attacker",
     "id": "c246",
     "element": "grass",
@@ -17412,9 +17414,9 @@
       }
     },
     "id": "c159",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574086044380
+    "lastModAdded": 1574641934005
   },
   "c049": {
     "stars": 5,
