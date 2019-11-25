@@ -5945,5 +5945,32 @@
     "modder": "KDG",
     "added": 1574637784327,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c195",
+    "modder": "unknown",
+    "added": 1574639054165,
+    "nsfw": true
+  },
+  {
+    "name": "Nip Slip",
+    "swap": "",
+    "variant": "02",
+    "child": "c195",
+    "modder": "unknown",
+    "added": 1574639166933,
+    "nsfw": true
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "02",
+    "child": "c002",
+    "modder": "unknown",
+    "added": 1574639298854,
+    "nsfw": true
   }
 ]

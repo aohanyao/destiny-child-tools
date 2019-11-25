@@ -9105,9 +9105,9 @@
       }
     },
     "id": "c195",
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574637738107
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1574639166933
   },
   "c085": {
     "name": "Paris",
@@ -13608,7 +13608,7 @@
     "tierPVP": 6,
     "name": "Lisa",
     "tierRaid": 7,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "10": {
         "title": "Beach",
@@ -13672,8 +13672,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574161936650,
-    "numMods": 6,
+    "lastModAdded": 1574639298854,
+    "numMods": 7,
     "type": "attacker",
     "id": "c002",
     "element": "water",
