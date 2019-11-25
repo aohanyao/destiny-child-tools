@@ -6058,5 +6058,13 @@
     "modder": "unknown",
     "added": 1574644161321,
     "nsfw": true
+  },
+  {
+    "name": "Diablo Special SFW",
+    "swap": "m038_11",
+    "variant": "02",
+    "child": "m057",
+    "modder": "Loki",
+    "added": 1574679546747
   }
 ]
