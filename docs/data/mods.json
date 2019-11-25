@@ -6491,5 +6491,40 @@
     "modder": "unknown",
     "added": 1574706760162,
     "nsfw": true
+  },
+  {
+    "name": "No presents",
+    "swap": "",
+    "variant": "10",
+    "child": "c253",
+    "modder": "unknown",
+    "added": 1574707253448
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c057",
+    "modder": "unknown",
+    "added": 1574709311385,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c057",
+    "modder": "unknown",
+    "added": 1574709341133,
+    "nsfw": true
+  },
+  {
+    "name": "topless no nipples",
+    "swap": "",
+    "variant": "01",
+    "child": "c099",
+    "modder": "unknown",
+    "added": 1574709602351,
+    "nsfw": true
   }
 ]

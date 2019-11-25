@@ -11122,7 +11122,7 @@
     "tierPVP": 6,
     "name": "Melpomene",
     "tierRaid": 7,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "00": {
         "title": "Human",
@@ -11156,8 +11156,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574395326466,
-    "numMods": 5,
+    "lastModAdded": 1574709602351,
+    "numMods": 6,
     "type": "support",
     "id": "c099",
     "element": "dark",
@@ -11604,8 +11604,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574086046900,
-    "numMods": 7,
+    "lastModAdded": 1574707253448,
+    "numMods": 8,
     "type": "attacker",
     "id": "c253",
     "element": "grass",
@@ -14259,7 +14259,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 3,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -14293,8 +14293,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574706760162,
-    "numMods": 4,
+    "lastModAdded": 1574709341133,
+    "numMods": 6,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
