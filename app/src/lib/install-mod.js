@@ -11,7 +11,7 @@ const getInstalledClients = () =>
 
 const positions = ['home', 'talk', 'ally', 'enemy', 'talk_zoom', 'drive']
 
-const getInstallPath = client => store.getState().get('settings').get(client + 'Path')
+const getInstallPath = client => store.getState().get('data').get('installPaths').get(client)
 
 async function installMod(mod) {
   const modData = await getModData(mod),
@@ -25,7 +25,10 @@ async function installMod(mod) {
       if(modelDiff[client]) {
         modelInfoMessages.push(client + ':\n' + (
           modelDiff[client].reduce((acc, d) => {
-            if(d.path[0] != 'selectRect' && d.kind == 'E') {
+            if(d.kind == 'N') {
+              acc.push(`Adding ${JSON.stringify(d.rhs, null, 2)}`)
+            }
+            else if(d.path[0] != 'selectRect' && d.kind == 'E') {
               acc.push(`${d.path.join('.')}:   ${d.lhs} ➜ ${d.rhs}`)
             }
             else if(d.path[0] != 'selectRect') JSON.stringify(d, null, 2)
@@ -53,11 +56,8 @@ async function installMod(mod) {
                   Object.keys(modelDiff).forEach(client => {
                     if(modelDiff[client]) {
                       const modelInfo = store.getState().get('data').get('modelInfo').get(client)
-                      console.log('local', client, modelInfo[pckName].ally)
                       modelInfo[pckName] = changedModelInfo[client]
-                      const modelInfoPath = store.getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json',
-                            backPath = store.getState().get('settings').get(client + 'Path') + 'files/asset/character/model_info.json.bak'
-                      // RNFS.copyFile(modelInfoMessages), backPath)
+                      const modelInfoPath = getInstallPath(client) + 'files/asset/character/model_info.json'
                       RNFS.writeFile(modelInfoPath, modelInfo, 'utf8')
                         .then(() => readModelInfo(client))
                         .catch(alert)
@@ -70,7 +70,6 @@ async function installMod(mod) {
         )
       })
     })
-  
   }).catch(errorMessage => alert(errorMessage))
 }
 export default installMod

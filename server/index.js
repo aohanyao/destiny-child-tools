@@ -160,6 +160,7 @@ app.post('/api/mod', function(req, res) {
         fs.writeFileSync(modsDataPath, JSON.stringify(mods, null, 2))
       }
     })
+    
     .then(() => {
       fs.writeFileSync(path.resolve(__dirname, '../missing-previews.json'), JSON.stringify([stringify(mod)]))
     })
