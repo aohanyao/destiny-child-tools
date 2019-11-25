@@ -6446,5 +6446,50 @@
     "modder": "unknown",
     "added": 1574705764241,
     "nsfw": true
+  },
+  {
+    "name": "nude 2",
+    "swap": "",
+    "variant": "02",
+    "child": "c091",
+    "modder": "unknown",
+    "added": 1574705975509,
+    "nsfw": true
+  },
+  {
+    "name": "topless2",
+    "swap": "",
+    "variant": "01",
+    "child": "c049",
+    "modder": "unknown",
+    "added": 1574706615420,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c049",
+    "modder": "unknown",
+    "added": 1574706659564,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c057",
+    "modder": "unknown",
+    "added": 1574706720906,
+    "nsfw": true
+  },
+  {
+    "name": "topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c057",
+    "modder": "unknown",
+    "added": 1574706760162,
+    "nsfw": true
   }
 ]

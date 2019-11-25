@@ -3876,9 +3876,9 @@
       }
     },
     "id": "c091",
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574641827199
+    "numMods": 4,
+    "numModsNSFW": 4,
+    "lastModAdded": 1574705975509
   },
   "sc324": {
     "name": "모나",
@@ -14259,7 +14259,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 1,
+    "numModsNSFW": 3,
     "variants": {
       "00": {
         "title": "Human",
@@ -14293,8 +14293,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574641526560,
-    "numMods": 2,
+    "lastModAdded": 1574706760162,
+    "numMods": 4,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
@@ -17468,7 +17468,7 @@
     "tierPVP": 9,
     "name": "Maat",
     "tierRaid": 9,
-    "numModsNSFW": 9,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Inspiring",
@@ -17512,8 +17512,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574393327368,
-    "numMods": 15,
+    "lastModAdded": 1574706659564,
+    "numMods": 17,
     "type": "healer",
     "id": "c049",
     "element": "light",
@@ -18039,9 +18039,9 @@
       }
     },
     "id": "c017",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1574390960736
+    "numMods": 2,
+    "numModsNSFW": 1,
+    "lastModAdded": 1574705764241
   },
   "c028": {
     "stars": 4,
