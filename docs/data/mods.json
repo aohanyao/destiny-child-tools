@@ -371,13 +371,6 @@
     "added": 1574086044160
   },
   {
-    "name": "Special swap",
-    "variant": "02",
-    "child": "c153",
-    "modder": "HongChina",
-    "added": 1574086044180
-  },
-  {
     "name": "Ahegao face",
     "variant": "01",
     "child": "c173",
@@ -713,6 +706,7 @@
     "name": "Special swap",
     "variant": "02",
     "child": "c238",
+    "swap": "c238_10",
     "modder": "Bugs Bunnay",
     "added": 1574086046430
   },
@@ -925,6 +919,7 @@
     "name": "Story Metis swap",
     "variant": "01",
     "child": "c183",
+    "swap": "c053_00",
     "modder": "Ahegao",
     "added": 1574086045020
   },
@@ -2110,6 +2105,7 @@
     "name": "Swap Maera",
     "variant": "01",
     "child": "c235",
+    "swap": "c091_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086046380
@@ -2118,6 +2114,7 @@
     "name": "Swap Maera",
     "variant": "02",
     "child": "c235",
+    "swap": "c091_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086046390
@@ -2157,6 +2154,7 @@
     "name": "BiMoa swap topless",
     "variant": "01",
     "child": "c132",
+    "swap": "m261_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086043810
@@ -2165,6 +2163,7 @@
     "name": "BiMoa swap sheer top",
     "variant": "02",
     "child": "c132",
+    "swap": "m261_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086043840
@@ -2903,6 +2902,7 @@
     "name": "Swap Arges lewd",
     "variant": "01",
     "child": "c183",
+    "swap": "c233_00",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086045050
@@ -2911,6 +2911,7 @@
     "name": "Swap Arges lewd",
     "variant": "02",
     "child": "c183",
+    "swap": "c233_00",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086045090
@@ -3332,6 +3333,7 @@
     "name": "Swap",
     "variant": "01",
     "child": "c167",
+    "swap": "c167_11",
     "modder": "Bugs Bunnay",
     "added": 1574086044480
   },
@@ -3340,6 +3342,7 @@
     "variant": "01",
     "child": "c000",
     "modder": "Bugs Bunnay",
+    "swap": "c000_14",
     "added": 1574086040120
   },
   {
@@ -3519,6 +3522,7 @@
     "variant": "02",
     "child": "c072",
     "modder": "Heather",
+    "swap": "c041_00",
     "nsfw": true,
     "added": 1574086042710
   },
@@ -3795,6 +3799,7 @@
     "variant": "01",
     "child": "c295",
     "modder": "KDG",
+    "swap": "c295_00",
     "added": 1574086048050
   },
   {
@@ -3816,6 +3821,7 @@
     "name": "Swap",
     "variant": "01",
     "child": "c049",
+    "swap": "c417_00",
     "modder": "Bugs Bunnay",
     "added": 1574086041840
   },
@@ -3992,6 +3998,7 @@
     "name": "Story Swap Sheer",
     "variant": "01",
     "child": "c038",
+    "swap": "c038_00",
     "modder": "KDG",
     "nsfw": true,
     "added": 1574086041390
@@ -4017,6 +4024,7 @@
     "variant": "02",
     "child": "c061",
     "modder": "Heather",
+    "swap": "c414_00",
     "nsfw": true,
     "added": 1574086042420
   },
@@ -4024,6 +4032,7 @@
     "name": "Swap Tamamo Nude",
     "variant": "01",
     "child": "c061",
+    "swap": "c414_00",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042390
@@ -4374,6 +4383,7 @@
     "name": "Swap Hildr",
     "variant": "02",
     "child": "c101",
+    "swap": "c374_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086043230
@@ -4382,6 +4392,7 @@
     "name": "Swap Wedding Hildr",
     "variant": "01",
     "child": "c101",
+    "swap": "c374_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086043090
@@ -4415,6 +4426,7 @@
     "variant": "02",
     "child": "c049",
     "modder": "Heather",
+    "swap": "c338_01",
     "added": 1574086042010
   },
   {
@@ -4422,6 +4434,7 @@
     "variant": "01",
     "child": "c049",
     "modder": "Heather",
+    "swap": "c338_01",
     "added": 1574086041860
   },
   {
@@ -4946,6 +4959,7 @@
     "child": "c022",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c349_00",
     "added": 1574086040950
   },
   {
@@ -4953,6 +4967,7 @@
     "variant": "01",
     "child": "c022",
     "modder": "Heather",
+    "swap": "c349_00",
     "nsfw": true,
     "added": 1574086040940
   },
@@ -5040,6 +5055,7 @@
   {
     "name": "Swap Skin Diver Mona",
     "variant": "02",
+    "swap": "c370_02",
     "child": "c036",
     "modder": "Heather",
     "nsfw": true,
@@ -5048,6 +5064,7 @@
   {
     "name": "Swap Skin Diver Mona",
     "variant": "01",
+    "swap": "c370_02",
     "child": "c036",
     "modder": "Heather",
     "nsfw": true,
@@ -5129,6 +5146,7 @@
     "name": "Swap Anemone Nude",
     "variant": "02",
     "child": "c067",
+    "swap": "c354_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042600
@@ -5137,6 +5155,7 @@
     "name": "Swap Anemone Nude",
     "variant": "01",
     "child": "c067",
+    "swap": "c354_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042550
@@ -5161,6 +5180,7 @@
     "name": "Swap Leuce",
     "variant": "02",
     "child": "c044",
+    "swap": "c277_00",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086041690
@@ -5168,6 +5188,7 @@
   {
     "name": "Swap Leuce",
     "variant": "01",
+    "swap": "c277_00",
     "child": "c044",
     "modder": "Heather",
     "nsfw": true,
@@ -5284,12 +5305,14 @@
     "name": "Swap Special Topless",
     "variant": "02",
     "child": "c148",
+    "swap": "c148_10",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086044030
   },
   {
     "name": "Swap Special Topless",
+    "swap": "c148_11",
     "variant": "01",
     "child": "c148",
     "modder": "Heather",
@@ -5326,12 +5349,14 @@
     "child": "c051",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c277_00",
     "added": 1574086042110
   },
   {
     "name": "Swap Leuce",
     "variant": "02",
     "child": "c051",
+    "swap": "c277_00",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042140
@@ -5342,12 +5367,14 @@
     "child": "c051",
     "modder": "Heather",
     "nsfw": true,
+    "swap": "c387_02",
     "added": 1574086042120
   },
   {
     "name": "Swap Honoka",
     "variant": "01",
     "child": "c051",
+    "swap": "c387_02",
     "modder": "Heather",
     "nsfw": true,
     "added": 1574086042090
