@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs, {existsSync} from 'fs'
 import path from 'path'
 import childs from '../docs/data/childs.json'
 import {execSync} from 'child_process'
@@ -27,13 +27,15 @@ fs.readdirSync(path.resolve(__dirname, '../import/character')).forEach(file => {
         positions: {home: {x: -15, y: -75, scale: 0.75}}
       }
     }
-    console.log(`\nExtracing Live2d data for ${file} ${childs[id].name}`)
-    run('./pckmanager/PCK.exe /L ./import/character/' + file)
-    run(`rm -rf ./docs/live2d/assets/${id}_${variant}`)
-    run(`mv -f ./import/character/${id}_${variant} ./docs/live2d/assets/${id}_${variant}`)
-    run('./pckmanager/PCK.exe /R /U /C ./import/character/' + file)
-    run(`rm -rf ./import/character/${id}_${variant}`)
-    run(`mv -f ./import/character/${file}.newCompressedUnencrypted ./docs/live2d/assets/${id}_${variant}/${file}`)
+    if(!existsSync(`./docs/live2d/assets/${id}_${variant}`)) {
+      console.log(`\nExtracing Live2d data for ${file} ${childs[id].name}`)
+      run('./pckmanager/PCK.exe /L ./import/character/' + file)
+      run(`rm -rf ./docs/live2d/assets/${id}_${variant}`)
+      run(`mv -f ./import/character/${id}_${variant} ./docs/live2d/assets/${id}_${variant}`)
+      run('./pckmanager/PCK.exe /R /U /C ./import/character/' + file)
+      run(`rm -rf ./import/character/${id}_${variant}`)
+      run(`mv -f ./import/character/${file}.newCompressedUnencrypted ./docs/live2d/assets/${id}_${variant}/${file}`)
+    }
     run('rm ./import/character/' + file)
   }
 })
