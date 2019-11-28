@@ -9060,9 +9060,9 @@
       }
     },
     "id": "c074",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1574395088633
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1574912433771
   },
   "c195": {
     "name": "Cybele",
@@ -10419,8 +10419,9 @@
       }
     },
     "id": "c120",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1574911914200
   },
   "c362": {
     "id": "c362",
@@ -12494,7 +12495,7 @@
     "tierPVP": 7,
     "name": "Sitri",
     "tierRaid": 7,
-    "numModsNSFW": 1,
+    "numModsNSFW": 3,
     "variants": {
       "01": {
         "title": "Sweet",
@@ -12518,8 +12519,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574702703274,
-    "numMods": 2,
+    "lastModAdded": 1574911664185,
+    "numMods": 4,
     "type": "support",
     "id": "c364",
     "element": "light",
@@ -14193,7 +14194,7 @@
     "tierPVP": 10,
     "name": "Chang'e",
     "tierRaid": 10,
-    "numModsNSFW": 5,
+    "numModsNSFW": 7,
     "variants": {
       "10": {
         "title": "Banyan",
@@ -14247,8 +14248,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574096813040,
-    "numMods": 11,
+    "lastModAdded": 1574911425835,
+    "numMods": 13,
     "type": "support",
     "id": "c167",
     "element": "water",
@@ -14571,7 +14572,7 @@
     "tierPVP": 8,
     "name": "Khepri",
     "tierRaid": 8,
-    "numModsNSFW": 6,
+    "numModsNSFW": 7,
     "variants": {
       "89": {
         "title": "Vicious",
@@ -14615,8 +14616,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574086048970,
-    "numMods": 7,
+    "lastModAdded": 1574912517100,
+    "numMods": 8,
     "type": "attacker",
     "id": "c311",
     "element": "dark",
@@ -15524,7 +15525,7 @@
     "tierPVP": 8,
     "name": "Hestia",
     "tierRaid": 8,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -15558,8 +15559,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574096812810,
-    "numMods": 1,
+    "lastModAdded": 1574912266370,
+    "numMods": 2,
     "type": "attacker",
     "id": "c047",
     "element": "fire",
@@ -15959,7 +15960,7 @@
     "tierPVP": 7,
     "name": "Anemone",
     "tierRaid": 7,
-    "numModsNSFW": 6,
+    "numModsNSFW": 7,
     "variants": {
       "10": {
         "title": "Sunrise",
@@ -15993,8 +15994,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574702192538,
-    "numMods": 9,
+    "lastModAdded": 1574911740552,
+    "numMods": 10,
     "type": "support",
     "id": "c345",
     "element": "water",
@@ -19932,7 +19933,7 @@
     "tierPVP": 7,
     "name": "Bari",
     "tierRaid": 7,
-    "numModsNSFW": 10,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Afterlife",
@@ -19996,8 +19997,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574701670426,
-    "numMods": 11,
+    "lastModAdded": 1574911353539,
+    "numMods": 12,
     "type": "attacker",
     "id": "c318",
     "element": "water",
@@ -22703,7 +22704,7 @@
     "tierPVP": 6,
     "name": "Hades",
     "tierRaid": 6,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Dead End",
@@ -22747,8 +22748,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574704961929,
-    "numMods": 6,
+    "lastModAdded": 1574912192484,
+    "numMods": 7,
     "type": "tank",
     "id": "m051",
     "element": "fire",

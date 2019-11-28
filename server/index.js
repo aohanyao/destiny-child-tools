@@ -10,7 +10,22 @@ import WebpackDevServer from 'webpack-dev-server'
 import httpProxy from 'http-proxy'
 import config from '../webpack.config.js'
 import {renderHtml} from './html.js'
-import { string } from 'postcss-selector-parser'
+import mods from '../docs/data/mods.json'
+import childs from '../docs/data/childs.json'
+import LZUTF8 from 'lzutf8'
+import stringifyMod from '../src/lib/stringify-mod'
+
+const modStr = mods.map((m, i) => i).join(','),
+      compressed = LZUTF8.compress(modStr, {outputEncoding: 'Base64'}),
+      decompressed = LZUTF8.decompress(compressed, {inputEncoding: 'Base64'})
+
+
+
+console.log('childs', Object.keys(childs).length)
+console.log('mods', mods.length)
+console.log(modStr.length, 'VS', compressed.length, 'back to', decompressed.length)
+// console.log(modStr)
+// console.log(encodeURIComponent(compressed))
 
 const app = express(),
       port = 3000,

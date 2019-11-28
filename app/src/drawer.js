@@ -66,7 +66,8 @@ const Index = ({childs, view, goBack, setView, drawerOpen, setDrawerOpen}) => {
             </View>
             <ScrollView>
               <DrawerItem label="Characters" icon="account-search" view="Childs" />
-              <DrawerItem label="Mod List" icon="puzzle" view="Mods" />
+              <DrawerItem label="Mods" icon="puzzle" view="Mods" />
+              <DrawerItem label="Mod Lists" icon="account-group" view="Mods" />
               <DrawerItem label="Settings" icon="settings" view="Settings" />
               <Drawer.Section title="Project Resources">
                 <Drawer.Item label="Release notes" icon="note-text" onPress={() => openUrl('https://github.com/LokiCoder/destiny-child-tools/releases')} />
