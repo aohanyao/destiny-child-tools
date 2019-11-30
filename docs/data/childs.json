@@ -23238,8 +23238,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575081122940
   },
   "c430": {
     "id": "c430",
@@ -23286,8 +23287,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575080945832
   },
   "m227": {
     "id": "m227",

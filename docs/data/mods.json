@@ -6633,5 +6633,40 @@
     "modder": "unknown",
     "added": 1574912517100,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c430",
+    "modder": "KDG",
+    "added": 1575080945832,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c429",
+    "modder": "KDG",
+    "added": 1575081040821,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "88",
+    "child": "c429",
+    "modder": "KDG",
+    "added": 1575081077082,
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "swap": "",
+    "variant": "01",
+    "child": "c429",
+    "modder": "KDG",
+    "added": 1575081122940
   }
 ]
