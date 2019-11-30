@@ -6668,5 +6668,14 @@
     "child": "c429",
     "modder": "KDG",
     "added": 1575081122940
+  },
+  {
+    "name": "Topless lazy edit",
+    "swap": "",
+    "variant": "89",
+    "child": "c045",
+    "modder": "luculluslanguish",
+    "added": 1575081931915,
+    "nsfw": true
   }
 ]

@@ -12914,7 +12914,7 @@
     "tierPVP": 7,
     "name": "Aria",
     "tierRaid": 7,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -12998,8 +12998,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574393281810,
-    "numMods": 4,
+    "lastModAdded": 1575081931915,
+    "numMods": 5,
     "type": "support",
     "id": "c045",
     "element": "light",
