@@ -5,14 +5,17 @@ const defaultState = fromJS({
   childs: {},
   mods: [],
   'model_info.kr': {},
+  'model_info.jp': {},
   'model_info.global': {},
   modelInfo: {
     Global: {},
-    KR: {}
+    KR: {},
+    JP: {}
   },
   installPaths: {
     Global: false,
     KR: false,
+    JP: false,
   },
   installedClients: []
 })

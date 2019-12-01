@@ -87,27 +87,33 @@ async function getModData(mod) {
         swap = mod.get && mod.get('swap'),
         defaultModelInfo = {
           Global: data.get('model_info.global')[pckName],
-          KR: data.get('model_info.kr')[pckName]
+          KR: data.get('model_info.kr')[pckName],
+          JP: data.get('model_info.jp')[pckName]
         },
         localModelInfo = {
           Global: store.getState().get('data').get('modelInfo').get('Global')[pckName],
-          KR: store.getState().get('data').get('modelInfo').get('KR')[pckName]
+          KR: store.getState().get('data').get('modelInfo').get('KR')[pckName],
+          JP: store.getState().get('data').get('modelInfo').get('JP')[pckName]
         },
         swapModelInfo = {
           Global: swap && data.get('model_info.global')[swap],
-          KR: swap && data.get('model_info.kr')[swap]
+          KR: swap && data.get('model_info.kr')[swap],
+          JP: swap && data.get('model_info.jp')[swap]
         },
         newModelInfo = {
-          Global: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR)),
-          KR: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR))
+          Global: Object.assign({}, localModelInfo.Global, (swapModelInfo.Global || swapModelInfo.KR || defaultModelInfo.KR)),
+          KR: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR)),
+          JP: Object.assign({}, localModelInfo.JP, (swapModelInfo.JP || defaultModelInfo.JP))
         },
         modelDiff = {
           Global: deepDiff(localModelInfo.Global, newModelInfo.Global) || false,
-          KR: deepDiff(localModelInfo.KR, newModelInfo.KR) || false
+          KR: deepDiff(localModelInfo.KR, newModelInfo.KR) || false,
+          JP: deepDiff(localModelInfo.JP, newModelInfo.JP) || false
         },
         changedModelInfo = {
           Global: modelDiff.Global ? newModelInfo.Global : false,
-          KR: modelDiff.KR ? newModelInfo.KR : false
+          KR: modelDiff.KR ? newModelInfo.KR : false,
+          JP: modelDiff.JP ? newModelInfo.JP : false
         }
   return new Promise(resolve => {
     resolve({id, pckName, swap, changedModelInfo, modelDiff})

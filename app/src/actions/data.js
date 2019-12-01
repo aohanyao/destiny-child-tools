@@ -1,11 +1,27 @@
 import {fromJS} from "immutable"
 import RNFS from 'react-native-fs'
+import RNFetchBlob from 'rn-fetch-blob'
 import {readModelInfo} from './model-info'
-import {storagePaths, clientPaths} from '../lib/paths.js'
 import {getStoragePermission} from '../lib/permissions.js'
 
 export const DATA_SET = 'DATA_SET'
 export const DATA_SET_CLIENT_DATA = 'DATA_SET_CLIENT_DATA'
+
+const clientPaths = {
+        Global: '/Android/data/com.linegames.dcglobal/',
+        KR: '/Android/data/com.NextFloor.DestinyChild/',
+        JP: '/Android/Data/com.stairs.destinychild/'
+      }
+
+const storagePaths = [
+  '/sdcard',
+  '/storage',
+  RNFetchBlob.fs.dirs.SDCardDir,
+  '/storage/emulated/0', 
+  '/storage/emulated/1',
+  '/storage/emulator/0/',
+  '/storage/emulator/1/'
+]
 
 export const setData = (key, data) => ({
   type: DATA_SET,
