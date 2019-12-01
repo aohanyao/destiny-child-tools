@@ -12914,7 +12914,7 @@
     "tierPVP": 7,
     "name": "Aria",
     "tierRaid": 7,
-    "numModsNSFW": 3,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -12998,8 +12998,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575081931915,
-    "numMods": 5,
+    "lastModAdded": 1575158783239,
+    "numMods": 8,
     "type": "support",
     "id": "c045",
     "element": "light",
@@ -18682,7 +18682,7 @@
     "tierPVP": 9,
     "name": "Dark Mars",
     "tierRaid": 9,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "10": {
         "title": "Sweet Darling",
@@ -18726,8 +18726,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574702261462,
-    "numMods": 2,
+    "lastModAdded": 1575158576961,
+    "numMods": 3,
     "type": "attacker",
     "id": "c348",
     "element": "dark",

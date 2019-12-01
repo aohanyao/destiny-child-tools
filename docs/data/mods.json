@@ -6677,5 +6677,41 @@
     "modder": "luculluslanguish",
     "added": 1575081931915,
     "nsfw": true
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "01",
+    "child": "c348",
+    "modder": "luculluslanguish",
+    "added": 1575158576961,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "13",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575158670024,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "11",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575158719769,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "89",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575158783239,
+    "nsfw": true
   }
 ]
