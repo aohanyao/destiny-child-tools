@@ -11,6 +11,7 @@ import StorageIcon from '@material-ui/icons/Storage'
 import ComputerIcon from '@material-ui/icons/Computer'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew'
 import ExtensionIcon from '@material-ui/icons/Extension'
+import AndroidIcon from '@material-ui/icons/Android'
 import Divider from '@material-ui/core/Divider'
 import RouterLink from '../link.jsx'
 
@@ -30,6 +31,10 @@ const Home = () => (
         <ListItemText primary="Childs &amp; Mods Database" />
       </ListItem>
       <Divider />
+      <ListLink 
+        text="DC Mods Manager Android App"
+        href="https://github.com/lokicoder/destiny-child-tools/releases" 
+        Icon={AndroidIcon} />
       <ListLink text="Live2D Viewer" href="./live2d/" Icon={ImageIcon} />
       <ListLink
         text="Arsylk's dctools"
