@@ -30,13 +30,15 @@ export const addModToList = (mod, list) =>
   (dispatch, getState) => {
     console.log('mod', mod)
     const lists = getState().get('data').get('modLists'),
-          characterId = mod.get('child') + '_' + mod.get('variant')
+          characterId = typeof mod == 'string' ? mod : mod.get('child') + '_' + mod.get('variant')
     lists[list] = lists[list].reduce((acc, modKey) => {
       if(!modKey.match(new RegExp('^' + characterId))) acc.push(modKey)
       return acc
     }, [])
-    lists[list].push(stringifyMod(mod))
-    lists[list].sort()
+    if(typeof mod == 'object' || (typeof mod == 'string' && mod.match(/^\w{1,2}\d{3}_\d\d-/))) {
+      lists[list].push(typeof mod == 'string' ? mod : stringifyMod(mod))
+      lists[list].sort()
+    }
     RNFS.unlink(listsFile)
       .then(() => {
         RNFS.writeFile(listsFile, JSON.stringify(lists, null, 2), 'utf8')

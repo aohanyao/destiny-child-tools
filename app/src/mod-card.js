@@ -10,8 +10,10 @@ import {installMod} from './actions/mods.js'
 import theme from './theme'
 
 const ModCard = ({mod, pck, setView, installMod}) => {
-  if(typeof mod == 'string') mod = getModFromKey(mod)
-  console.log('mod/', mod)
+  if(typeof mod == 'string') {
+    pck = mod
+    mod = getModFromKey(mod)
+  }
   if(!pck) pck = mod.get('child') + '_' + mod.get('variant')
   const key = mod ? stringifyMod(mod) : pck
   return (
