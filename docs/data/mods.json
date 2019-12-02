@@ -6748,5 +6748,23 @@
     "child": "c049",
     "modder": "Eljoseto",
     "added": 1575256546304
+  },
+  {
+    "name": "Topless 2",
+    "swap": "",
+    "variant": "11",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575305158355,
+    "nsfw": true
+  },
+  {
+    "name": "Topless 2",
+    "swap": "",
+    "variant": "12",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575305259918,
+    "nsfw": true
   }
 ]
