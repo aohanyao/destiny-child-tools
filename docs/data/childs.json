@@ -12701,9 +12701,9 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575080945832
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575249716609
   },
   "c320": {
     "name": "Yan Zisuka",
@@ -13395,7 +13395,7 @@
     "tierPVP": 7,
     "name": "Aria",
     "tierRaid": 7,
-    "numModsNSFW": 6,
+    "numModsNSFW": 8,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -13479,8 +13479,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575158783239,
-    "numMods": 8,
+    "lastModAdded": 1575249596500,
+    "numMods": 10,
     "type": "support",
     "id": "c045",
     "element": "light",

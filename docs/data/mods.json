@@ -6713,5 +6713,32 @@
     "modder": "Anubis",
     "added": 1575158783239,
     "nsfw": true
+  },
+  {
+    "name": "Topless 2",
+    "swap": "",
+    "variant": "10",
+    "child": "c045",
+    "modder": "Anubis",
+    "added": 1575249087875,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "89",
+    "child": "c045",
+    "modder": "Heather",
+    "added": 1575249596500,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c430",
+    "modder": "KDG",
+    "added": 1575249716609,
+    "nsfw": true
   }
 ]
