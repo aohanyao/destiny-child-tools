@@ -6740,5 +6740,13 @@
     "modder": "KDG",
     "added": 1575249716609,
     "nsfw": true
+  },
+  {
+    "name": "Princess Hibana",
+    "swap": "",
+    "variant": "02",
+    "child": "c049",
+    "modder": "Eljoseto",
+    "added": 1575256546304
   }
 ]
