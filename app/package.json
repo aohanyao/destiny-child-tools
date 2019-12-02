@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "scripts": {
     "apk": "react-native run-android --variant=release",
