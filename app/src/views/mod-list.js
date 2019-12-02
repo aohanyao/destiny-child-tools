@@ -8,7 +8,7 @@ import BreadCrumbs from './shared/breadcrumbs'
 const ModList = ({list = [], id}) => {
   console.log('list', list)
   return (
-    <ScrollView style={{margin: 20, display: 'flex', marginBottom: 60}}>
+    <ScrollView style={{padding: 20, display: 'flex', marginBottom: 58}}>
       <BreadCrumbs>
         <BreadCrumbs.Crumb view="ModLists">
           Mod Lists
@@ -17,6 +17,7 @@ const ModList = ({list = [], id}) => {
       </BreadCrumbs>
       {list.map(modKey => <ModCard mod={modKey} key={modKey} />)}
       <Text>List features like restore all, export, share, etc. coming soon(ish) ...</Text>
+      <Text></Text>
       <Text></Text>
     </ScrollView>
   )

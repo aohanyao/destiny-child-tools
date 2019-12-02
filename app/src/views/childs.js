@@ -69,7 +69,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
   if(order == 'desc') childs = childs.reverse()
   return (
     <>
-      <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex'}} keyboardShouldPersistTaps="handled">
+      <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex', marginBottom: 58}} keyboardShouldPersistTaps="handled">
         <View style={{paddingLeft: 20, paddingRight: 20, paddingTop: 20, paddingBottom: 10}}>
           <TextInput
             label="Filter characters by name or ID"
