@@ -9,6 +9,7 @@ import modsView from './reducers/mods-view.js'
 import {BackHandler} from 'react-native'
 import data from './reducers/data.js'
 import {fetchData} from './actions/data.js'
+import {readModLists} from './actions/mod-lists.js'
 import {history} from './reducers/view.js'
 import {goBack} from './actions/view.js'
 import {setSetting} from './actions/settings.js'
@@ -50,11 +51,12 @@ fetch('https://raw.githubusercontent.com/LokiCoder/destiny-child-tools/master/ap
   })
   .catch(error => alert(error))
 
-store.dispatch(fetchData('childs'))
-store.dispatch(fetchData('mods'))
-store.dispatch(fetchData('model_info.global', false))
-store.dispatch(fetchData('model_info.kr', false))
-store.dispatch(detectInstalledClients())
+  store.dispatch(fetchData('childs'))
+  store.dispatch(fetchData('mods'))
+  store.dispatch(fetchData('model_info.global', false))
+  store.dispatch(fetchData('model_info.kr', false))
+  store.dispatch(detectInstalledClients())
+  store.dispatch(readModLists())
 
 BackHandler.addEventListener('hardwareBackPress', function() {
   // this.onMainScreen and this.goBack are just examples, you need to use your own implementation here

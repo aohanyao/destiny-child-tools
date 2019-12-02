@@ -6,6 +6,8 @@ import Image from 'react-native-scalable-image'
 import Childs from './views/childs.js'
 import Child from './views/child.js'
 import Mods from './views/mods.js'
+import ModLists from './views/mod-lists.js'
+import ModList from './views/mod-list.js'
 import Live2D from './views/live2d.js'
 import Variant from './views/variant.js'
 import Settings from './views/settings.js'
@@ -20,7 +22,9 @@ const views = {
   Live2D,
   Settings,
   Mods,
-  Variant
+  Variant,
+  ModLists,
+  ModList
 }
 
 const Index = ({childs, view, goBack, setView, drawerOpen, setDrawerOpen}) => {

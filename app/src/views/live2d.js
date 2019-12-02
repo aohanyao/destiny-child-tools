@@ -4,11 +4,11 @@ import {View, ScrollView, Dimensions} from 'react-native'
 import {Title, Button, Text} from 'react-native-paper'
 import {WebView} from 'react-native-webview'
 import openUrl from '../lib/open-url.js'
-import installMod from '../lib/install-mod.js'
+import {installMod} from '../actions/mods.js'
 import BreadCrumbs from './shared/breadcrumbs'
 
 const Live2D = props => {
-  const {id, pckName, child} = props,
+  const {id, pckName, child, installMod} = props,
         variantId = id.replace(/-.+$/, ''),
         newIssueTitle = encodeURIComponent(child.get('name') + ' mod issue for ' + id),
         newIssueBody = encodeURIComponent(
@@ -60,5 +60,6 @@ export default connect(
       child: state.get('data').get('childs').get(matches[1])
     }
     return props
-  }
+  },
+  {installMod}
 )(Live2D)

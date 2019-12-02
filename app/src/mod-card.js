@@ -5,10 +5,13 @@ import {View, Dimensions} from 'react-native'
 import {Text, Card, IconButton, Button} from 'react-native-paper'
 import {setView} from './actions/view.js'
 import stringifyMod from './lib/stringify-mod.js'
-import installMod from './lib/install-mod.js'
+import getModFromKey from './lib/get-mod-from-key'
+import {installMod} from './actions/mods.js'
 import theme from './theme'
 
-const ModCard = ({mod, pck, setView}) => {
+const ModCard = ({mod, pck, setView, installMod}) => {
+  if(typeof mod == 'string') mod = getModFromKey(mod)
+  console.log('mod/', mod)
   if(!pck) pck = mod.get('child') + '_' + mod.get('variant')
   const key = mod ? stringifyMod(mod) : pck
   return (
@@ -39,7 +42,7 @@ const ModCard = ({mod, pck, setView}) => {
                   onPress={() => 'Child' && setView('Variant', pck)}
                   color={theme.colors.secondary}
                   style={{marginTop: -10}}>
-                  {pck}
+                  {pck.match(/^\w{1,2}\d{3}_\d\d/)[0]}
                 </Button>
                 <IconButton icon="subdirectory-arrow-right" style={{marginTop: -5}} />
                 <Button 
@@ -74,5 +77,5 @@ const ModCard = ({mod, pck, setView}) => {
 export default connect(
   state => ({
   }),
-  {setView}
+  {setView, installMod}
 )(ModCard)
