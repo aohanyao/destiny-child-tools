@@ -6766,5 +6766,13 @@
     "modder": "Anubis",
     "added": 1575305259918,
     "nsfw": true
+  },
+  {
+    "name": "Female Olga",
+    "swap": "",
+    "variant": "02",
+    "child": "m057",
+    "modder": "Loki",
+    "added": 1575330794965
   }
 ]
