@@ -23,11 +23,16 @@ const storagePaths = [
   '/storage/emulator/1/'
 ]
 
-export const setData = (key, data) => ({
-  type: DATA_SET,
-  key,
-  data
-})
+export const setData = (key, data, nextAction) => 
+  dispatch => {
+    dispatch({
+      type: DATA_SET,
+      key,
+      data
+    })
+    if(nextAction) dispatch(nextAction)
+  }
+
 
 export const setClientData = (key, client, data) => ({
   type: DATA_SET_CLIENT_DATA,

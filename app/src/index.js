@@ -15,6 +15,7 @@ import {goBack, setView, setDrawerOpen} from './actions/view.js'
 import packageJSON from '../package.json'
 import openUrl from './lib/open-url.js'
 import Drawer from './drawer'
+import Loading from './loading'
 
 const views = {
   Childs,
@@ -36,6 +37,7 @@ const Index = ({childs, view, goBack, setView, drawerOpen, setDrawerOpen}) => {
 
   return (
     <View>
+      <Loading />
       <View style={{zIndex: 1}}>
         <Appbar.Header>
           <Appbar.Action icon="menu" onPress={() => setDrawerOpen(true)} />
