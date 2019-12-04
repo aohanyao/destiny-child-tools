@@ -68,7 +68,7 @@ async function doModInstall(mod, showConfirmation, globalOnly) {
 
       const applyPositionChanges = () => {
         Object.keys(modelDiff).forEach(client => {
-          if(modelDiff[client]) {
+          if(installedClients.indexOf(client) > -1 && modelDiff[client]) {
             const modelInfo = store.getState().get('data').get('modelInfo').get(client)
             modelInfo[pckName] = changedModelInfo[client]
             const modelInfoPath = getInstallPath(client) + 'files/asset/character/model_info.json'
