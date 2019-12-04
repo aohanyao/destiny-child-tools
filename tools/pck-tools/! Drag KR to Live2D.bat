@@ -1,1 +1,0 @@
-python3 "%~dp0\pckexe.py" -u -m %*

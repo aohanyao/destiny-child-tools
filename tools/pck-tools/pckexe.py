@@ -51,6 +51,16 @@ for file in files:
                 pck = pck_tools.unpack_pck(file)
                 if format == 1:
                     pck_tools.pck_to_model(pck)
+                    if "00000000" in pck.files[0].path:
+                        print("----------------")
+                        print("PCK appears to be encrypted for Global. Retrying with Global key")
+                        os.environ['KEY_REGION'] = "global"
+                        pck_tools.clean_up(file)
+                        pck = pck_tools.unpack_pck(file)
+                        pck_tools.pck_to_model(pck)
+                        print(pck.files[0].path)
+
+
         else:
             print('Skipping non-file: '+file)
     except Exception as e:
