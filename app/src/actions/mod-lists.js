@@ -15,7 +15,13 @@ export const readModLists = nextAction =>
           dispatch(setData('modLists', data, nextAction))
         }
         catch(e) {
-          alert(e + '\n\n Consider restoring your model_info.json file in the settings view.')
+          console.log(data)
+          RNFS.unlink(listsFile)
+              .then(() => {
+                RNFS.writeFile(listsFile, JSON.stringify({Installed: []}, null, 2))
+                  .then(() => dispatch(readModLists()))
+              })
+          alert(e + '\n\n Error importing mod list data.')
         }
       })
     RNFS.exists(listsFile).then(exists => {
@@ -47,20 +53,24 @@ export const addModToList = (mod, list, nextAction) =>
       })
   }
 
-export const installList = listName => 
+export const installList = (listName, nameOverride, globalOnly) => 
   (dispatch, getState) => {
-    const list = getState().get('data').get('modLists')[listName]
+    
+    const list = typeof listname == 'string' 
+            ? getState().get('data').get('modLists')[listName]
+            : listName,
+          name = nameOverride || listName    
     let i = 0
     const installNext = () => {
-      dispatch(setData('loading', [i, list.length, `${listName == 'Installed' ? 'Re-' : ''}Installing "${listName}"`, list[i]]))
+      dispatch(setData('loading', [i, list.length, `${name == 'Installed' ? 'Re-' : ''}Installing "${name}"`, list[i]]))
       i++
       dispatch(installMod(list[i], false, () => {
         if(i < list.length - 1) installNext()
         else {
           dispatch(setData('loading', false))
-          Alert.alert('Mods successfully installed', `"${listName}" was ${listName == 'Installed' ? 're-' : ''}installed.`)
+          Alert.alert('Mods successfully installed', `"${name}" was ${name == 'Installed' ? 're-' : ''}installed.`)
         }
-      }))
+      }, globalOnly))
     }
     installNext()
   }

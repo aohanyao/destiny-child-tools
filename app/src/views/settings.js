@@ -1,9 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {ScrollView, View} from 'react-native'
+import {ScrollView, View, Alert} from 'react-native'
 import {Title, Text, Button, Subheading, Card, IconButton} from 'react-native-paper'
 import packageJSON from '../../package.json'
 import theme from '../theme.js'
+import {installList} from '../actions/mod-lists'
 import openUrl from '../lib/open-url.js'
 import {restoreModelInfo} from '../actions/model-info'
 import downloadAndInstall from '../lib/download-and-install.js'
@@ -16,8 +17,12 @@ const LinkButton = ({icon, children, url, mode = 'outlined', onPress, color = th
   </View>
 )
 
-const Settings = ({latestVersion, installPaths, installedClients, restoreModelInfo}) => {
-  const hasLatestVersion = packageJSON.version == latestVersion
+const Settings = ({latestVersion, installPaths, installedClients, restoreModelInfo, modelInfoKr, modelInfoGlobal, installList}) => {
+  const hasLatestVersion = packageJSON.version == latestVersion,
+        getUncensorList = () => Object.keys(modelInfoGlobal).reduce((acc, id) => {
+          if(modelInfoKr[id]) acc.push(id)
+          return acc
+        }, [])
   return (
     <View padding={20}>
       <ScrollView>
@@ -32,11 +37,27 @@ const Settings = ({latestVersion, installPaths, installedClients, restoreModelIn
             <Card.Title title={`Destiny Child ${client}`} /> 
             <Card.Content>
               <Text style={{marginBottom: 20}}>{installedPath || 'not installed'}</Text>
-              <Title style={{marginBottom: 10}}>
-                model_info.json (positioning)
-              </Title>
               {installedPath &&
                 <>
+                  {client == 'Global' && <>
+                    <Button 
+                      mode="contained" 
+                      // color="white"
+                      onPress={() => Alert.alert(
+                        'Apply uncensor patch?',
+                        'This will overwrite all characters with the ones from the KR version of the game. Any mods currently installed will be over-written. \n\nNote that this may take a while depending on the speed of your internet connection.',
+                        [
+                          {text: 'Cancel', style: 'cancel'},
+                          {text: 'Apply', onPress: () => installList(getUncensorList(), 'Uncensor Patch', true)}
+                        ]
+                      )}
+                      style={{marginBottom: 20}}>
+                      Apply Uncensor Patch
+                    </Button>
+                  </>}
+                  <Title style={{marginBottom: 10}}>
+                    model_info.json (positioning)
+                  </Title>
                   <Button 
                     mode="contained" 
                     color="white"
@@ -94,9 +115,11 @@ export default connect(
     return {
       latestVersion: state.get('settings').get('latestVersion'),
       installedClients,
-      installPaths: state.get('data').get('installPaths')
+      installPaths: state.get('data').get('installPaths'),
+      modelInfoGlobal: state.get('data').get('model_info.global'),
+      modelInfoKr: state.get('data').get('model_info.kr')
     }
   },
-  {restoreModelInfo}
+  {restoreModelInfo, installList}
 )(Settings)
 

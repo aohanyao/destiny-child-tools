@@ -8,12 +8,12 @@ import deepDiff from 'deep-diff'
 import {readModelInfo} from '../actions/model-info'
 import {addModToList} from './mod-lists'
 
-export const installMod = (mod, showConfirmation = true, nextAction) =>
+export const installMod = (mod, showConfirmation = true, nextAction, globalOnly) =>
   dispatch => {
     if(typeof mod == 'string') mod = getModFromKey(mod) || mod
     if(mod) {
       const finished = []
-      finished.push(doModInstall(mod, showConfirmation))
+      finished.push(doModInstall(mod, showConfirmation, globalOnly))
       finished.push(new Promise(resolve => dispatch(addModToList(mod, 'Installed', () => resolve()))))
       Promise.all(finished).then(() => dispatch(nextAction))
     }
@@ -31,12 +31,18 @@ const positions = ['home', 'talk', 'ally', 'enemy', 'talk_zoom', 'drive']
 
 const getInstallPath = client => store.getState().get('data').get('installPaths').get(client)
 
-async function doModInstall(mod, showConfirmation) {
+async function doModInstall(mod, showConfirmation, globalOnly) {
   return new Promise(async function(resolve) {    
     const modData = await getModData(mod),
           {pckName, changedModelInfo, modelDiff} = modData,
-          installedClients = getInstalledClients()
+          installedClients = globalOnly ? ['Global'] : getInstalledClients()
     fetchApk(modData).then(res => {
+      if(!res) {
+        Alert.alert('Error downloading mod', 'There was an error downloading ' + modData.id, [
+          {text: 'Ok', onPress: resolve}
+        ])
+        return
+      }
       const installs = [],
             modelInfoMessages = []
       installedClients.forEach(client => {
@@ -154,5 +160,6 @@ const fetchApk = ({id, pckName}) =>
     .fetch('GET', `https://lokicoder.github.io/destiny-child-tools/live2d/assets/${id}/${pckName}.pck`)
     .then((res) => {
       if(res.info().status == 200) return res
-      else alert('There may have been a problem downloading. Got status code ' + status)
+      else alert('There may have been a problem downloading. Got status code ' + res.info().status)
+      return false
     })
