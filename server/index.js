@@ -107,8 +107,9 @@ app.post('/api/childs', (req, res) => {
 })
 
 app.post('/api/mod', function(req, res) {
-  req.files.pck.mv(path.join(__dirname, '../pckmanager', req.files.pck.name))
-  const name = req.files.pck.name.replace('.pck', '')
+  const name = req.files.pck.name.replace('.pck', ''),
+        pckName = name.match(/^\w{1,2}\d{3}_\d\d/)[0]
+  req.files.pck.mv(path.join(__dirname, '../pckmanager', pckName + '.pck'))
 
   const stringify = mod =>
     mod.child + '_' +
@@ -119,8 +120,8 @@ app.post('/api/mod', function(req, res) {
   const mod = {
     name: req.body.name.replace(/^\s+/m, '').replace(/\s+$/m, ''),
     swap: req.body.swap.replace(/^\s+/m, '').replace(/\s+$/m, ''),
-    variant: name.replace(/^.+_/, ''),
-    child: name.replace(/_.+$/, ''),
+    variant: pckName.replace(/^.+_/, ''),
+    child: pckName.replace(/_.+$/, ''),
     modder: req.body.modder.replace(/^\s+/m, '').replace(/\s+$/m, ''),
     added: Date.now()
   }
@@ -152,22 +153,22 @@ app.post('/api/mod', function(req, res) {
         assetPath = path.join(__dirname, '../docs/live2d/assets/'),
         modsDataPath = path.join(__dirname, '../docs/data/mods.json')
 
-  run(`rm -rf ${pckPath}${name}`)
-    .then(() => run('python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + name + '.pck')) // try KR key
-    .then(() => {
-      const stillEncrypted = fs.readdirSync(path.resolve(__dirname, '../pckmanager/' + name)).reduce((acc, file) => {
-        return file.match(/00000000|00000001|00000002/) || acc
-      }, false)
-      if(stillEncrypted) { // try global key if kr key didn't work
-        return run('KEY_REGION=global python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + name + '.pck')
-      }
-      else return true
-    })
-    .then(() => run(`python3 ./tools/pck-tools/pckexe.py -p ${pckPath}${name}/_header`))
-    .then(() => run(`mv ${pckPath}${name}/model.json ${pckPath}${name}/MOC.${stringify(mod)}.json`)) // name json file for live2d
+  run(`rm -rf ${pckPath}${pckName}`)
+    .then(() => run('python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + pckName + '.pck')) // try KR key
+    // .then(() => {
+    //   const stillEncrypted = fs.readdirSync(path.resolve(__dirname, '../pckmanager/' + name)).reduce((acc, file) => {
+    //     return file.match(/00000000|00000001|00000002/) || acc
+    //   }, false)
+    //   if(stillEncrypted) { // try global key if kr key didn't work
+    //     return run('KEY_REGION=global python3 ./tools/pck-tools/pckexe.py -u -m ./pckmanager/' + name + '.pck')
+    //   }
+    //   else return true
+    // })
+    .then(() => run(`python3 ./tools/pck-tools/pckexe.py -p ${pckPath}${pckName}/_header`))
+    .then(() => run(`mv ${pckPath}${pckName}/model.json ${pckPath}${pckName}/MOC.${stringify(mod)}.json`)) // name json file for live2d
     .then(() => run(`rm -rf ${assetPath}${stringify(mod)}`))  // delete existing mod folder if it exists
-    .then(() => run(`mv ${pckPath}${name} ${assetPath}${stringify(mod)}`)) // move extracted files to new mod folder
-    .then(() => run(`unlink ./pckmanager/${name}.pck`))
+    .then(() => run(`mv ${pckPath}${pckName} ${assetPath}${stringify(mod)}`)) // move extracted files to new mod folder
+    .then(() => run(`unlink ./pckmanager/${pckName}.pck`))
     .then(() => {
       const mods = JSON.parse(fs.readFileSync(modsDataPath))
       if(!mods.find(m => stringify(m) == stringify(mod))) {
