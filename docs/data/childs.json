@@ -5500,8 +5500,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574086047910,
-    "numMods": 1,
+    "lastModAdded": 1575483298844,
+    "numMods": 2,
     "type": "tank",
     "id": "c290",
     "element": "fire",
@@ -7985,8 +7985,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575485663119
   },
   "c271": {
     "name": "Blue Pixie",
@@ -8439,8 +8440,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096813160,
-    "numMods": 1,
+    "lastModAdded": 1575482603068,
+    "numMods": 2,
     "type": "attacker",
     "id": "c194",
     "element": "light",
@@ -8815,7 +8816,7 @@
     "tierPVP": 5,
     "name": "Liberated Maat",
     "tierRaid": 3,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "10": {
         "title": "Wild",
@@ -8849,8 +8850,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574086050980,
-    "numMods": 3,
+    "lastModAdded": 1575483799590,
+    "numMods": 4,
     "type": "attacker",
     "id": "c360",
     "element": "dark",
@@ -10030,7 +10031,7 @@
     "tierPVP": 8,
     "name": "Daphnis",
     "tierRaid": 8,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "88": {
         "title": "",
@@ -10084,8 +10085,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575474389858,
-    "numMods": 3,
+    "lastModAdded": 1575484472559,
+    "numMods": 4,
     "type": "attacker",
     "id": "c262",
     "element": "grass",
@@ -10346,8 +10347,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575472451555,
-    "numMods": 5,
+    "lastModAdded": 1575481627528,
+    "numMods": 6,
     "type": "tank",
     "id": "c174",
     "element": "dark",
@@ -10388,9 +10389,9 @@
       }
     },
     "id": "c295",
-    "numMods": 2,
-    "numModsNSFW": 0,
-    "lastModAdded": 1575475184674
+    "numMods": 3,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575485039971
   },
   "c064": {
     "stars": 5,
@@ -12484,9 +12485,9 @@
       }
     },
     "id": "c176",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574096813090
+    "lastModAdded": 1575481727620
   },
   "c297": {
     "name": "Red Queen",
@@ -13056,9 +13057,9 @@
       }
     },
     "id": "c122",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574086043440
+    "lastModAdded": 1575479005312
   },
   "c364": {
     "stars": 5,
@@ -14830,8 +14831,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575472202062,
-    "numMods": 13,
+    "lastModAdded": 1575479247422,
+    "numMods": 14,
     "type": "support",
     "id": "c167",
     "element": "water",
@@ -15904,7 +15905,7 @@
     "tierPVP": 9,
     "name": "Cleopatra",
     "tierRaid": 10,
-    "numModsNSFW": 10,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Favored",
@@ -15978,8 +15979,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575474516769,
-    "numMods": 16,
+    "lastModAdded": 1575485337217,
+    "numMods": 17,
     "type": "attacker",
     "id": "c267",
     "element": "light",
@@ -16847,8 +16848,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 4,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575485585796
   },
   "c015": {
     "name": "Helena",
@@ -19137,7 +19139,7 @@
     "tierPVP": 3,
     "name": "Warwolf",
     "tierRaid": 8,
-    "numModsNSFW": 4,
+    "numModsNSFW": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -19171,8 +19173,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575473616030,
-    "numMods": 6,
+    "lastModAdded": 1575484369980,
+    "numMods": 8,
     "type": "support",
     "id": "c216",
     "element": "dark",
@@ -21022,8 +21024,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574701454587,
-    "numMods": 2,
+    "lastModAdded": 1575485458647,
+    "numMods": 3,
     "type": "attacker",
     "id": "c308",
     "element": "dark",
