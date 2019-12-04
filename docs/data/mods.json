@@ -7583,5 +7583,49 @@
     "child": "m154",
     "modder": "Heather",
     "added": 1575475840815
+  },
+  {
+    "name": "Beatless",
+    "swap": "c124_12",
+    "variant": "01",
+    "child": "c124",
+    "modder": "Ahegao",
+    "added": 1575476246537,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c068",
+    "modder": "Artemis",
+    "added": 1575476572902,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c172",
+    "modder": "Artemis",
+    "added": 1575476605776,
+    "nsfw": true
+  },
+  {
+    "name": "Swap fox sheer",
+    "swap": "c396_02",
+    "variant": "01",
+    "child": "c355",
+    "modder": "Aura",
+    "added": 1575476771608,
+    "nsfw": true
+  },
+  {
+    "name": "Swap special bikini",
+    "swap": "c002_10",
+    "variant": "01",
+    "child": "c002",
+    "modder": "Bugs Bunnay",
+    "added": 1575477035804
   }
 ]

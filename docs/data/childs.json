@@ -8265,9 +8265,9 @@
       }
     },
     "id": "c172",
-    "numMods": 2,
-    "numModsNSFW": 0,
-    "lastModAdded": 1575472360888
+    "numMods": 3,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575476605776
   },
   "c062": {
     "stars": 4,
@@ -14261,8 +14261,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574639298854,
-    "numMods": 7,
+    "lastModAdded": 1575477035804,
+    "numMods": 8,
     "type": "attacker",
     "id": "c002",
     "element": "water",
@@ -15010,9 +15010,9 @@
       }
     },
     "id": "c068",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574096812920
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575476572902
   },
   "c189": {
     "name": "Kratos",
@@ -15434,7 +15434,7 @@
     "tierPVP": 7,
     "name": "Guardian Chang'e",
     "tierRaid": 8,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "01": {
         "title": "Ivory",
@@ -15458,8 +15458,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574086050810,
-    "numMods": 3,
+    "lastModAdded": 1575476771608,
+    "numMods": 4,
     "type": "attacker",
     "id": "c355",
     "element": "grass",
@@ -15606,7 +15606,7 @@
     "tierPVP": 10,
     "name": "Eve",
     "tierRaid": 10,
-    "numModsNSFW": 6,
+    "numModsNSFW": 7,
     "variants": {
       "10": {
         "title": "Cyan Rose",
@@ -15670,8 +15670,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575471375259,
-    "numMods": 8,
+    "lastModAdded": 1575476246537,
+    "numMods": 9,
     "type": "attacker",
     "id": "c124",
     "element": "water",
