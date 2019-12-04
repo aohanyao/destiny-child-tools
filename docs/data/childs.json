@@ -12515,9 +12515,9 @@
       }
     },
     "id": "c297",
-    "numMods": 4,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574701121272
+    "numMods": 5,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575428274369
   },
   "c066": {
     "name": "Aten",
@@ -14820,7 +14820,7 @@
     },
     "tierBoss": 10,
     "lastModAdded": 1574911425835,
-    "numMods": 13,
+    "numMods": 12,
     "type": "support",
     "id": "c167",
     "element": "water",
@@ -14831,7 +14831,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -14865,8 +14865,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574709341133,
-    "numMods": 6,
+    "lastModAdded": 1575428893951,
+    "numMods": 7,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
@@ -15458,7 +15458,7 @@
     "tierPVP": 4,
     "name": "Davi",
     "tierRaid": 3,
-    "numModsNSFW": 10,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Beach",
@@ -15582,8 +15582,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574096812680,
-    "numMods": 11,
+    "lastModAdded": 1575428076597,
+    "numMods": 12,
     "type": "attacker",
     "id": "c003",
     "element": "fire",
@@ -18136,7 +18136,7 @@
     "tierPVP": 9,
     "name": "Maat",
     "tierRaid": 9,
-    "numModsNSFW": 11,
+    "numModsNSFW": 12,
     "variants": {
       "10": {
         "title": "Inspiring",
@@ -18180,8 +18180,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575256546304,
-    "numMods": 18,
+    "lastModAdded": 1575428856754,
+    "numMods": 19,
     "type": "healer",
     "id": "c049",
     "element": "light",
@@ -20610,7 +20610,7 @@
     "tierPVP": 7,
     "name": "Bari",
     "tierRaid": 7,
-    "numModsNSFW": 11,
+    "numModsNSFW": 12,
     "variants": {
       "10": {
         "title": "Afterlife",
@@ -20674,8 +20674,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574911353539,
-    "numMods": 12,
+    "lastModAdded": 1575428935403,
+    "numMods": 13,
     "type": "attacker",
     "id": "c318",
     "element": "water",

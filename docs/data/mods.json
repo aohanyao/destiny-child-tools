@@ -3293,13 +3293,6 @@
     "added": 1574086052920
   },
   {
-    "name": "Cleavage v2",
-    "variant": "02",
-    "child": "c167",
-    "modder": "Bugs Bunnay",
-    "added": 1574096813040
-  },
-  {
     "name": "Nude",
     "variant": "01",
     "child": "c160",
@@ -6765,6 +6758,51 @@
     "child": "c045",
     "modder": "Anubis",
     "added": 1575305259918,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c003",
+    "modder": "unknown",
+    "added": 1575428076597,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c297",
+    "modder": "unknown",
+    "added": 1575428274369,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c049",
+    "modder": "cronodoug",
+    "added": 1575428856754,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c057",
+    "modder": "cronodoug",
+    "added": 1575428893951,
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c318",
+    "modder": "cronodoug",
+    "added": 1575428935403,
     "nsfw": true
   }
 ]
