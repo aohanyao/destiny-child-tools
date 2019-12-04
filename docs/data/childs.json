@@ -6461,9 +6461,9 @@
       }
     },
     "id": "c060",
-    "numMods": 2,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574394572844
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575492710374
   },
   "c082": {
     "stars": 3,
@@ -7497,8 +7497,9 @@
       }
     },
     "id": "c095",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575494217943
   },
   "sc317": {
     "name": "바벨",
@@ -8266,9 +8267,9 @@
       }
     },
     "id": "c172",
-    "numMods": 3,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575476605776
+    "numMods": 4,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575494494607
   },
   "c062": {
     "stars": 4,
@@ -8321,7 +8322,7 @@
     "tierPVP": 10,
     "name": "Dana",
     "tierRaid": 8,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -8355,8 +8356,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575472569007,
-    "numMods": 9,
+    "lastModAdded": 1575492899232,
+    "numMods": 10,
     "type": "tank",
     "id": "c183",
     "element": "light",
@@ -9100,9 +9101,9 @@
       }
     },
     "id": "c041",
-    "numMods": 7,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575487961529
+    "numMods": 8,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575492628976
   },
   "c283": {
     "stars": 5,
@@ -9357,16 +9358,16 @@
       }
     },
     "id": "c063",
-    "numMods": 5,
-    "numModsNSFW": 4,
-    "lastModAdded": 1575491705927
+    "numMods": 6,
+    "numModsNSFW": 5,
+    "lastModAdded": 1575494036245
   },
   "c184": {
     "stars": 4,
     "tierPVP": 7,
     "name": "Elysium (Elysion)",
     "tierRaid": 8,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -9400,8 +9401,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575472699392,
-    "numMods": 3,
+    "lastModAdded": 1575494531041,
+    "numMods": 4,
     "type": "attacker",
     "id": "c184",
     "element": "water",
@@ -9442,9 +9443,9 @@
       }
     },
     "id": "c074",
-    "numMods": 3,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574912433771
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575494188638
   },
   "c195": {
     "name": "Cybele",
@@ -10794,9 +10795,9 @@
       }
     },
     "id": "c230",
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574096813250
+    "numMods": 4,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575494687091
   },
   "c351": {
     "name": "Venus",
@@ -10872,9 +10873,9 @@
       }
     },
     "id": "c120",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1574911914200
+    "numMods": 2,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575494313168
   },
   "c362": {
     "id": "c362",
@@ -11071,8 +11072,9 @@
       }
     },
     "id": "c142",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575494459946
   },
   "c384": {
     "name": "Neruvi",
@@ -11558,9 +11560,9 @@
       }
     },
     "id": "c065",
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575489861345
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575494148247
   },
   "c087": {
     "name": "Ninuruta",
@@ -12662,9 +12664,9 @@
       }
     },
     "id": "c198",
-    "numMods": 3,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575473150481
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575494562575
   },
   "c430": {
     "id": "c430",
@@ -12952,7 +12954,7 @@
     "tierPVP": 3,
     "name": "Mona",
     "tierRaid": 3,
-    "numModsNSFW": 7,
+    "numModsNSFW": 8,
     "variants": {
       "10": {
         "title": "",
@@ -13036,8 +13038,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574086040290,
-    "numMods": 10,
+    "lastModAdded": 1575492412600,
+    "numMods": 11,
     "type": "tank",
     "id": "c001",
     "element": "dark",
@@ -13406,7 +13408,7 @@
     "tierPVP": 7,
     "name": "Aria",
     "tierRaid": 7,
-    "numModsNSFW": 10,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -13490,8 +13492,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575305259918,
-    "numMods": 12,
+    "lastModAdded": 1575493267959,
+    "numMods": 13,
     "type": "support",
     "id": "c045",
     "element": "light",
@@ -13685,7 +13687,7 @@
     "tierPVP": 7,
     "name": "Aurora",
     "tierRaid": 7,
-    "numModsNSFW": 2,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -13729,8 +13731,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1575473327649,
-    "numMods": 4,
+    "lastModAdded": 1575494658728,
+    "numMods": 7,
     "type": "healer",
     "id": "c199",
     "element": "fire",
@@ -14341,8 +14343,9 @@
       }
     },
     "id": "c244",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575493036999
   },
   "c365": {
     "stars": 5,
@@ -14845,7 +14848,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 7,
+    "numModsNSFW": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -14879,8 +14882,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1575488599375,
-    "numMods": 8,
+    "lastModAdded": 1575492675190,
+    "numMods": 9,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
@@ -15437,7 +15440,7 @@
     "tierPVP": 7,
     "name": "Guardian Chang'e",
     "tierRaid": 8,
-    "numModsNSFW": 6,
+    "numModsNSFW": 8,
     "variants": {
       "01": {
         "title": "Ivory",
@@ -15461,8 +15464,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575491187136,
-    "numMods": 6,
+    "lastModAdded": 1575494752083,
+    "numMods": 8,
     "type": "attacker",
     "id": "c355",
     "element": "grass",
@@ -15705,9 +15708,9 @@
       }
     },
     "id": "c245",
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574643665859
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575493112497
   },
   "c366": {
     "name": "Deino",
@@ -16568,7 +16571,7 @@
     "tierPVP": 7,
     "name": "Anemone",
     "tierRaid": 7,
-    "numModsNSFW": 9,
+    "numModsNSFW": 11,
     "variants": {
       "10": {
         "title": "Sunrise",
@@ -16602,8 +16605,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575431421324,
-    "numMods": 14,
+    "lastModAdded": 1575493902529,
+    "numMods": 16,
     "type": "support",
     "id": "c345",
     "element": "water",
@@ -16644,9 +16647,9 @@
       }
     },
     "id": "c235",
-    "numMods": 3,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575474091059
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575494722741
   },
   "c004": {
     "stars": 3,
@@ -16726,7 +16729,7 @@
     "tierPVP": 7,
     "name": "Krampus",
     "tierRaid": 9,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -16800,8 +16803,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575474238438,
-    "numMods": 7,
+    "lastModAdded": 1575493416400,
+    "numMods": 8,
     "type": "attacker",
     "id": "c246",
     "element": "grass",
@@ -17817,9 +17820,9 @@
       }
     },
     "id": "c126",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1575471419595
+    "numMods": 2,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575494344519
   },
   "c247": {
     "stars": 5,
@@ -17967,7 +17970,7 @@
     "tierPVP": 7,
     "name": "Inanna",
     "tierRaid": 7,
-    "numModsNSFW": 5,
+    "numModsNSFW": 7,
     "variants": {
       "10": {
         "title": "Purple Diamond",
@@ -18021,8 +18024,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575471870059,
-    "numMods": 6,
+    "lastModAdded": 1575492824063,
+    "numMods": 8,
     "type": "attacker",
     "id": "c148",
     "element": "dark",
@@ -18729,9 +18732,9 @@
       }
     },
     "id": "c017",
-    "numMods": 2,
+    "numMods": 3,
     "numModsNSFW": 1,
-    "lastModAdded": 1574705764241
+    "lastModAdded": 1575493672446
   },
   "c028": {
     "stars": 4,
@@ -19189,7 +19192,7 @@
     "tierPVP": 1,
     "name": "Medeia",
     "tierRaid": 1,
-    "numModsNSFW": 0,
+    "numModsNSFW": 2,
     "variants": {
       "01": {
         "title": "Wizard",
@@ -19213,8 +19216,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574096812960,
-    "numMods": 1,
+    "lastModAdded": 1575494272043,
+    "numMods": 3,
     "type": "attacker",
     "id": "c106",
     "element": "dark",
@@ -19366,7 +19369,7 @@
     "tierPVP": 6,
     "name": "Medb",
     "tierRaid": 9,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "10": {
         "title": "Samhain",
@@ -19410,8 +19413,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575474158220,
-    "numMods": 3,
+    "lastModAdded": 1575493356512,
+    "numMods": 4,
     "type": "attacker",
     "id": "c238",
     "element": "fire",
@@ -19576,7 +19579,7 @@
     "tierPVP": 9,
     "name": "Pomona",
     "tierRaid": 10,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -19610,12 +19613,12 @@
       }
     },
     "tierBoss": 8,
-    "numMods": 1,
+    "numMods": 2,
     "type": "healer",
     "id": "c139",
     "element": "light",
     "tierPVE": 10,
-    "lastModAdded": 1575471657496
+    "lastModAdded": 1575494432987
   },
   "c029": {
     "stars": 4,
@@ -20698,8 +20701,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575428935403,
-    "numMods": 13,
+    "lastModAdded": 1575493828050,
+    "numMods": 14,
     "type": "attacker",
     "id": "c318",
     "element": "water",
@@ -21028,8 +21031,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575490976702,
-    "numMods": 4,
+    "lastModAdded": 1575493509474,
+    "numMods": 5,
     "type": "attacker",
     "id": "c308",
     "element": "dark",
