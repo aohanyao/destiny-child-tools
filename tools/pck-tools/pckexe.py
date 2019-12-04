@@ -58,7 +58,7 @@ for file in files:
                         pck_tools.clean_up(file)
                         pck = pck_tools.unpack_pck(file)
                         pck_tools.pck_to_model(pck)
-                        print(pck.files[0].path)
+                        os.environ['KEY_REGION'] = "kr"
 
 
         else:
