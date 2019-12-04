@@ -7791,5 +7791,41 @@
     "modder": "蠟燭炭",
     "added": 1575485663119,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c013",
+    "modder": "KDG",
+    "added": 1575485980365,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c013",
+    "modder": "KDG",
+    "added": 1575486018985,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c014",
+    "modder": "KDG",
+    "added": 1575486077164,
+    "nsfw": true
+  },
+  {
+    "name": "No bottom",
+    "swap": "",
+    "variant": "01",
+    "child": "c047",
+    "modder": "KDG",
+    "added": 1575486141885,
+    "nsfw": true
   }
 ]
