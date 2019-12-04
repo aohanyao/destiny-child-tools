@@ -13,8 +13,8 @@ export const installMod = (mod, showConfirmation = true, nextAction, globalOnly)
     if(typeof mod == 'string') mod = getModFromKey(mod) || mod
     if(mod) {
       const finished = []
-      finished.push(doModInstall(mod, showConfirmation, globalOnly))
       finished.push(new Promise(resolve => dispatch(addModToList(mod, 'Installed', () => resolve()))))
+      finished.push(doModInstall(mod, showConfirmation, globalOnly))
       Promise.all(finished).then(() => dispatch(nextAction))
     }
     else if(typeof nextAction == 'function') {

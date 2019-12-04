@@ -33,37 +33,53 @@ export const readModLists = nextAction =>
     })
   }
 
+export const removeModFromList = (mod, list, nextAction) => 
+  (dispatch, getState) => {
+    const lists = _removeModFromList(mod, list, getState)
+    _writeLists(lists).then(() => dispatch(readModLists(nextAction)))
+  }
+
+const _removeModFromList = (mod, list, getState) => {
+  const lists = getState().get('data').get('modLists'),
+        characterId = typeof mod == 'string' ? mod : mod.get('child') + '_' + mod.get('variant')
+  lists[list] = lists[list] || []
+  lists[list] = lists[list].reduce((acc, modKey) => {
+    if(!modKey.match(new RegExp('^' + characterId))) acc.push(modKey)
+    return acc
+  }, [])
+  return lists
+}
+
+const _writeLists = lists => new Promise(resolve => {
+  RNFS.unlink(listsFile)
+    .then(() => {
+      RNFS.writeFile(listsFile, JSON.stringify(lists, null, 2), 'utf8')
+        .then(() => resolve())
+        .catch(m => Alert.alert(`Error writing lists file`, m + ''))
+    })
+})
+
 export const addModToList = (mod, list, nextAction) =>
   (dispatch, getState) => {
-    const lists = getState().get('data').get('modLists'),
-          characterId = typeof mod == 'string' ? mod : mod.get('child') + '_' + mod.get('variant')
-    lists[list] = lists[list].reduce((acc, modKey) => {
-      if(!modKey.match(new RegExp('^' + characterId))) acc.push(modKey)
-      return acc
-    }, [])
+    console.log('adding to', list, mod)
+    const lists = _removeModFromList(mod, list, getState)
     if(typeof mod == 'object' || (typeof mod == 'string' && mod.match(/^\w{1,2}\d{3}_\d\d-/))) {
       lists[list].push(typeof mod == 'string' ? mod : stringifyMod(mod))
       lists[list].sort()
     }
-    RNFS.unlink(listsFile)
-      .then(() => {
-        RNFS.writeFile(listsFile, JSON.stringify(lists, null, 2), 'utf8')
-          .then(() => dispatch(readModLists(nextAction)))
-          .catch(m => Alert.alert(`Error writing lists file`, m + ''))
-      })
+    _writeLists(lists).then(() => dispatch(readModLists(nextAction)))
   }
 
 export const installList = (listName, nameOverride, globalOnly) => 
   (dispatch, getState) => {
-    
-    const list = typeof listname == 'string' 
+    const list = typeof listName == 'string' 
             ? getState().get('data').get('modLists')[listName]
             : listName,
           name = nameOverride || listName    
+    console.log('installing', listName, list)
     let i = 0
     const installNext = () => {
       dispatch(setData('loading', [i, list.length, `${name == 'Installed' ? 'Re-' : ''}Installing "${name}"`, list[i]]))
-      i++
       dispatch(installMod(list[i], false, () => {
         if(i < list.length - 1) installNext()
         else {
@@ -71,6 +87,8 @@ export const installList = (listName, nameOverride, globalOnly) =>
           Alert.alert('Mods successfully installed', `"${name}" was ${name == 'Installed' ? 're-' : ''}installed.`)
         }
       }, globalOnly))
+      i++
     }
     installNext()
   }
+

@@ -7,12 +7,14 @@ import {setView} from './actions/view.js'
 import stringifyMod from './lib/stringify-mod.js'
 import getModFromKey from './lib/get-mod-from-key'
 import {installMod} from './actions/mods.js'
+import {addModToList, removeModFromList} from './actions/mod-lists'
 import theme from './theme'
 
-const ModCard = ({mod, pck, setView, installMod}) => {
+const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, removeModFromList}) => {
   if(typeof mod == 'string') mod = getModFromKey(mod)
   if(!pck) pck = mod.get('child') + '_' + mod.get('variant')
-  const key = mod ? stringifyMod(mod) : pck
+  const key = mod ? stringifyMod(mod) : pck,
+        inFavorites = favorites.indexOf(key) > -1
   return (
     <Card style={{
       marginBottom: 20,
@@ -23,6 +25,10 @@ const ModCard = ({mod, pck, setView, installMod}) => {
         right={() => 
           <View style={{flexDirection: 'row', flexWrap:'wrap', alignContent: 'center'}}>
             {/* TODO: Add favorite/list icon */}
+            <IconButton icon={inFavorites ? 'heart' : 'heart-outline'} onPress={() => {
+              if(inFavorites) removeModFromList(mod || pck, 'Favorites')
+              else addModToList(mod || pck, 'Favorites')
+            }} />
             <IconButton icon="download" onPress={() => installMod(mod || pck)} />
           </View>
         } />
@@ -75,6 +81,7 @@ const ModCard = ({mod, pck, setView, installMod}) => {
 
 export default connect(
   state => ({
+    favorites: state.get('data').get('modLists') && state.get('data').get('modLists').Favorites || []
   }),
-  {setView, installMod}
+  {setView, installMod, addModToList, removeModFromList}
 )(ModCard)
