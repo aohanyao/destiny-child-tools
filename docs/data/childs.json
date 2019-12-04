@@ -7953,9 +7953,9 @@
       }
     },
     "id": "c370",
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574086051310
+    "numMods": 4,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575469779884
   },
   "c381": {
     "id": "c381",
@@ -9314,9 +9314,9 @@
       }
     },
     "id": "c294",
-    "numMods": 5,
+    "numMods": 6,
     "numModsNSFW": 5,
-    "lastModAdded": 1574086048030
+    "lastModAdded": 1575469245033
   },
   "c063": {
     "name": "Freesia",
@@ -11310,8 +11310,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574096812800,
-    "numMods": 8,
+    "lastModAdded": 1575468508865,
+    "numMods": 9,
     "type": "tank",
     "id": "c043",
     "element": "grass",
@@ -12097,8 +12097,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574707253448,
-    "numMods": 8,
+    "lastModAdded": 1575468755769,
+    "numMods": 9,
     "type": "attacker",
     "id": "c253",
     "element": "grass",
@@ -14177,9 +14177,9 @@
       }
     },
     "id": "c354",
-    "numMods": 4,
+    "numMods": 5,
     "numModsNSFW": 3,
-    "lastModAdded": 1574702314013
+    "lastModAdded": 1575469577407
   },
   "c002": {
     "stars": 3,
@@ -15143,7 +15143,7 @@
     "tierPVP": 8,
     "name": "Khepri",
     "tierRaid": 8,
-    "numModsNSFW": 7,
+    "numModsNSFW": 8,
     "variants": {
       "89": {
         "title": "Vicious",
@@ -15187,8 +15187,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574912517100,
-    "numMods": 8,
+    "lastModAdded": 1575470477540,
+    "numMods": 9,
     "type": "attacker",
     "id": "c311",
     "element": "dark",
@@ -15290,9 +15290,9 @@
     },
     "id": "c223",
     "stars": 5,
-    "numMods": 2,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086046000
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575468052440
   },
   "c344": {
     "name": "Isolde",
@@ -15594,7 +15594,7 @@
     "tierPVP": 10,
     "name": "Eve",
     "tierRaid": 10,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Cyan Rose",
@@ -15658,8 +15658,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574086043570,
-    "numMods": 6,
+    "lastModAdded": 1575468167192,
+    "numMods": 7,
     "type": "attacker",
     "id": "c124",
     "element": "water",
@@ -15883,9 +15883,9 @@
       }
     },
     "id": "c377",
-    "numMods": 7,
-    "numModsNSFW": 7,
-    "lastModAdded": 1574704678609
+    "numMods": 8,
+    "numModsNSFW": 8,
+    "lastModAdded": 1575470588137
   },
   "c267": {
     "stars": 5,
@@ -15966,8 +15966,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574700965431,
-    "numMods": 13,
+    "lastModAdded": 1575468969338,
+    "numMods": 15,
     "type": "attacker",
     "id": "c267",
     "element": "light",
@@ -18041,7 +18041,7 @@
     "tierPVP": 5,
     "name": "Calypso",
     "tierRaid": 6,
-    "numModsNSFW": 6,
+    "numModsNSFW": 8,
     "variants": {
       "10": {
         "title": "Water Amarin",
@@ -18085,8 +18085,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1574637599475,
-    "numMods": 8,
+    "lastModAdded": 1575468342246,
+    "numMods": 10,
     "type": "attacker",
     "id": "c038",
     "element": "water",

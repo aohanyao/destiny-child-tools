@@ -6855,5 +6855,116 @@
     "modder": "unknown",
     "added": 1575431547417,
     "nsfw": true
+  },
+  {
+    "name": "nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c223",
+    "modder": "Unknown",
+    "added": 1575468052440,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c124",
+    "modder": "Unknown",
+    "added": 1575468167192,
+    "nsfw": true
+  },
+  {
+    "name": "Topless stockings",
+    "swap": "",
+    "variant": "01",
+    "child": "c038",
+    "modder": "Unknown",
+    "added": 1575468317843,
+    "nsfw": true
+  },
+  {
+    "name": "Topless stockings",
+    "swap": "",
+    "variant": "02",
+    "child": "c038",
+    "modder": "Unknown",
+    "added": 1575468342246,
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "swap": "",
+    "variant": "10",
+    "child": "c043",
+    "modder": "Unknown",
+    "added": 1575468508865
+  },
+  {
+    "name": "No presents",
+    "swap": "",
+    "variant": "89",
+    "child": "c253",
+    "modder": "Unknown",
+    "added": 1575468755769
+  },
+  {
+    "name": "Lewd",
+    "swap": "",
+    "variant": "11",
+    "child": "c267",
+    "modder": "Unknown",
+    "added": 1575468855258
+  },
+  {
+    "name": "Lewd",
+    "swap": "",
+    "variant": "88",
+    "child": "c267",
+    "modder": "Unknown",
+    "added": 1575468969338
+  },
+  {
+    "name": "Highres 2048x2048",
+    "swap": "",
+    "variant": "02",
+    "child": "c294",
+    "modder": "Unknown",
+    "added": 1575469245033
+  },
+  {
+    "name": "Pokies",
+    "swap": "",
+    "variant": "10",
+    "child": "c354",
+    "modder": "Unknown",
+    "added": 1575469577407
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "02",
+    "child": "c370",
+    "modder": "Unknown",
+    "added": 1575469779884,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "89",
+    "child": "c311",
+    "modder": "Unknown",
+    "added": 1575470477540,
+    "nsfw": true
+  },
+  {
+    "name": "Nude 2",
+    "swap": "",
+    "variant": "10",
+    "child": "c377",
+    "modder": "Unknown",
+    "added": 1575470588137,
+    "nsfw": true
   }
 ]
