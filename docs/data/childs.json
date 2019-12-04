@@ -3051,7 +3051,7 @@
     "tierPVP": 7,
     "name": "Moa",
     "tierRaid": 3,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "10": {
         "title": "Gloomy",
@@ -3105,8 +3105,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575475799896,
-    "numMods": 4,
+    "lastModAdded": 1575491489220,
+    "numMods": 8,
     "type": "debuffer",
     "id": "m077",
     "element": "light",
@@ -8275,7 +8275,7 @@
     "tierPVP": 5,
     "name": "Europa",
     "tierRaid": 5,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -8309,8 +8309,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1574394881715,
-    "numMods": 2,
+    "lastModAdded": 1575489746272,
+    "numMods": 3,
     "type": "tank",
     "id": "c062",
     "element": "grass",
@@ -8816,7 +8816,7 @@
     "tierPVP": 5,
     "name": "Liberated Maat",
     "tierRaid": 3,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Wild",
@@ -8850,8 +8850,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575483799590,
-    "numMods": 4,
+    "lastModAdded": 1575490569511,
+    "numMods": 5,
     "type": "attacker",
     "id": "c360",
     "element": "dark",
@@ -9100,9 +9100,9 @@
       }
     },
     "id": "c041",
-    "numMods": 5,
+    "numMods": 7,
     "numModsNSFW": 2,
-    "lastModAdded": 1574391974177
+    "lastModAdded": 1575487961529
   },
   "c283": {
     "stars": 5,
@@ -9233,7 +9233,7 @@
     "tierPVP": 7,
     "name": "Diaone Sidhe (Dinashi)",
     "tierRaid": 10,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Danger Zone",
@@ -9277,8 +9277,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575472405691,
-    "numMods": 6,
+    "lastModAdded": 1575490053102,
+    "numMods": 7,
     "id": "c173",
     "element": "fire",
     "tierPVE": 4
@@ -9318,9 +9318,9 @@
       }
     },
     "id": "c294",
-    "numMods": 7,
-    "numModsNSFW": 5,
-    "lastModAdded": 1575475132582
+    "numMods": 8,
+    "numModsNSFW": 6,
+    "lastModAdded": 1575489970789
   },
   "c063": {
     "name": "Freesia",
@@ -9357,9 +9357,9 @@
       }
     },
     "id": "c063",
-    "numMods": 4,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574394913597
+    "numMods": 5,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575491705927
   },
   "c184": {
     "stars": 4,
@@ -9946,7 +9946,7 @@
     "tierPVP": 6,
     "name": "Fortuna",
     "tierRaid": 6,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -9980,8 +9980,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096812690,
-    "numMods": 1,
+    "lastModAdded": 1575490212251,
+    "numMods": 2,
     "type": "support",
     "id": "c020",
     "element": "fire",
@@ -10398,7 +10398,7 @@
     "tierPVP": 6,
     "name": "Medusa",
     "tierRaid": 3,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "88": {
         "title": "",
@@ -10452,8 +10452,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574394967054,
-    "numMods": 3,
+    "lastModAdded": 1575489814431,
+    "numMods": 5,
     "type": "debuffer",
     "id": "c064",
     "element": "dark",
@@ -10617,9 +10617,9 @@
       }
     },
     "id": "c086",
-    "numMods": 3,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574395249931
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575491746132
   },
   "sc408": {
     "id": "sc408",
@@ -10833,9 +10833,9 @@
       }
     },
     "id": "c351",
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086050560
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575491133326
   },
   "c120": {
     "name": "Flora",
@@ -11273,7 +11273,7 @@
     "tierPVP": 6,
     "name": "Hera",
     "tierRaid": 3,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Shooting Star",
@@ -11317,8 +11317,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575468508865,
-    "numMods": 9,
+    "lastModAdded": 1575489121896,
+    "numMods": 10,
     "type": "tank",
     "id": "c043",
     "element": "grass",
@@ -11395,9 +11395,9 @@
       }
     },
     "id": "c285",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574701025164
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575490940432
   },
   "c054": {
     "name": "Legend",
@@ -11519,9 +11519,9 @@
       }
     },
     "id": "c296",
-    "numMods": 6,
-    "numModsNSFW": 5,
-    "lastModAdded": 1575475262303
+    "numMods": 7,
+    "numModsNSFW": 6,
+    "lastModAdded": 1575488692880
   },
   "c065": {
     "name": "Erato",
@@ -11558,8 +11558,9 @@
       }
     },
     "id": "c065",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575489861345
   },
   "c087": {
     "name": "Ninuruta",
@@ -12041,7 +12042,7 @@
     "tierPVP": 8,
     "name": "Nicole",
     "tierRaid": 9,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Nativity",
@@ -12105,8 +12106,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575474332559,
-    "numMods": 10,
+    "lastModAdded": 1575489924469,
+    "numMods": 11,
     "type": "attacker",
     "id": "c253",
     "element": "grass",
@@ -12137,9 +12138,9 @@
       }
     },
     "id": "c374",
-    "numMods": 4,
-    "numModsNSFW": 4,
-    "lastModAdded": 1574704077722
+    "numMods": 5,
+    "numModsNSFW": 5,
+    "lastModAdded": 1575490096116
   },
   "c022": {
     "stars": 4,
@@ -12749,9 +12750,9 @@
       }
     },
     "id": "c320",
-    "numMods": 2,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575475597576
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575486791554
   },
   "sm190": {
     "name": "박서",
@@ -13066,7 +13067,7 @@
     "tierPVP": 7,
     "name": "Sitri",
     "tierRaid": 7,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "01": {
         "title": "Sweet",
@@ -13090,8 +13091,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574911664185,
-    "numMods": 4,
+    "lastModAdded": 1575491227817,
+    "numMods": 5,
     "type": "support",
     "id": "c364",
     "element": "light",
@@ -13367,9 +13368,9 @@
       }
     },
     "id": "c034",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1574391700593
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575490801088
   },
   "c397": {
     "id": "c397",
@@ -13396,9 +13397,9 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086052760
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575487328721
   },
   "c045": {
     "stars": 5,
@@ -14103,7 +14104,7 @@
     "tierPVP": 6,
     "name": "Arges",
     "tierRaid": 3,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -14137,8 +14138,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575473996672,
-    "numMods": 5,
+    "lastModAdded": 1575492155931,
+    "numMods": 6,
     "type": "debuffer",
     "id": "c233",
     "element": "water",
@@ -14274,7 +14275,7 @@
     "tierPVP": 1,
     "name": "Baphomet",
     "tierRaid": 1,
-    "numModsNSFW": 0,
+    "numModsNSFW": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -14308,8 +14309,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1574086043460,
-    "numMods": 1,
+    "lastModAdded": 1575492105616,
+    "numMods": 2,
     "type": "tank",
     "id": "c123",
     "element": "water",
@@ -14348,7 +14349,7 @@
     "tierPVP": 6,
     "name": "Buster Lisa",
     "tierRaid": 4,
-    "numModsNSFW": 7,
+    "numModsNSFW": 8,
     "variants": {
       "01": {
         "title": "DARKSYDE",
@@ -14372,8 +14373,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574086051190,
-    "numMods": 7,
+    "lastModAdded": 1575491273335,
+    "numMods": 8,
     "type": "attacker",
     "id": "c365",
     "element": "water",
@@ -14384,7 +14385,7 @@
     "tierPVP": 7,
     "name": "Artemis",
     "tierRaid": 8,
-    "numModsNSFW": 3,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -14418,8 +14419,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574390915722,
-    "numMods": 7,
+    "lastModAdded": 1575486018985,
+    "numMods": 9,
     "type": "attacker",
     "id": "c013",
     "element": "dark",
@@ -14769,8 +14770,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575487360738
   },
   "c167": {
     "stars": 5,
@@ -14843,7 +14845,7 @@
     "tierPVP": 8,
     "name": "Lan Fei",
     "tierRaid": 6,
-    "numModsNSFW": 6,
+    "numModsNSFW": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -14877,8 +14879,8 @@
       }
     },
     "tierBoss": 5,
-    "lastModAdded": 1575428893951,
-    "numMods": 7,
+    "lastModAdded": 1575488599375,
+    "numMods": 8,
     "type": "debuffer",
     "id": "c057",
     "element": "dark",
@@ -15435,7 +15437,7 @@
     "tierPVP": 7,
     "name": "Guardian Chang'e",
     "tierRaid": 8,
-    "numModsNSFW": 4,
+    "numModsNSFW": 6,
     "variants": {
       "01": {
         "title": "Ivory",
@@ -15459,8 +15461,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575476771608,
-    "numMods": 4,
+    "lastModAdded": 1575491187136,
+    "numMods": 6,
     "type": "attacker",
     "id": "c355",
     "element": "grass",
@@ -15671,7 +15673,7 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575476246537,
+    "lastModAdded": 1575490325256,
     "numMods": 9,
     "type": "attacker",
     "id": "c124",
@@ -15771,8 +15773,9 @@
       }
     },
     "id": "c014",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575486077164
   },
   "c135": {
     "name": "Valkyrie",
@@ -16027,7 +16030,7 @@
     "tierPVP": 6,
     "name": "Hermes",
     "tierRaid": 7,
-    "numModsNSFW": 5,
+    "numModsNSFW": 8,
     "variants": {
       "10": {
         "title": "Collector",
@@ -16071,8 +16074,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574641349303,
-    "numMods": 9,
+    "lastModAdded": 1575492015671,
+    "numMods": 12,
     "type": "support",
     "id": "c036",
     "element": "fire",
@@ -16129,7 +16132,7 @@
     "tierPVP": 8,
     "name": "Hestia",
     "tierRaid": 8,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "00": {
         "title": "Human",
@@ -16163,8 +16166,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574912266370,
-    "numMods": 2,
+    "lastModAdded": 1575486141885,
+    "numMods": 3,
     "type": "attacker",
     "id": "c047",
     "element": "fire",
@@ -16205,9 +16208,9 @@
       }
     },
     "id": "c168",
-    "numMods": 1,
-    "numModsNSFW": 0,
-    "lastModAdded": 1575472300282
+    "numMods": 3,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575488171818
   },
   "c289": {
     "stars": 5,
@@ -16303,8 +16306,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1574641615099,
-    "numMods": 7,
+    "lastModAdded": 1575489211639,
+    "numMods": 8,
     "type": "debuffer",
     "id": "c058",
     "element": "light",
@@ -16650,7 +16653,7 @@
     "tierPVP": 1,
     "name": "Cheoyong",
     "tierRaid": 1,
-    "numModsNSFW": 0,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -16684,11 +16687,12 @@
       }
     },
     "tierBoss": 1,
-    "numMods": 0,
+    "numMods": 2,
     "type": "attacker",
     "id": "c004",
     "element": "light",
-    "tierPVE": 1
+    "tierPVE": 1,
+    "lastModAdded": 1575487769415
   },
   "c125": {
     "name": "Altice",
@@ -16942,7 +16946,7 @@
     "tierPVP": 6,
     "name": "Eos",
     "tierRaid": 6,
-    "numModsNSFW": 0,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Human",
@@ -16976,8 +16980,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574391277696,
-    "numMods": 1,
+    "lastModAdded": 1575491806962,
+    "numMods": 3,
     "type": "attacker",
     "id": "c026",
     "element": "light",
@@ -17737,7 +17741,7 @@
     "tierPVP": 8,
     "name": "Mars",
     "tierRaid": 8,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -17771,8 +17775,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1574390681098,
-    "numMods": 5,
+    "lastModAdded": 1575488560703,
+    "numMods": 6,
     "type": "tank",
     "id": "c005",
     "element": "water",
@@ -18059,7 +18063,7 @@
     "tierPVP": 5,
     "name": "Calypso",
     "tierRaid": 6,
-    "numModsNSFW": 8,
+    "numModsNSFW": 9,
     "variants": {
       "10": {
         "title": "Water Amarin",
@@ -18103,8 +18107,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575468342246,
-    "numMods": 10,
+    "lastModAdded": 1575491648665,
+    "numMods": 11,
     "type": "attacker",
     "id": "c038",
     "element": "water",
@@ -18258,9 +18262,9 @@
         }
       }
     },
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574086052950
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575492216086
   },
   "sm151": {
     "name": "암즈",
@@ -19267,7 +19271,7 @@
     "tierPVP": 9,
     "name": "Dark Mars",
     "tierRaid": 9,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "10": {
         "title": "Sweet Darling",
@@ -19311,8 +19315,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575158576961,
-    "numMods": 3,
+    "lastModAdded": 1575491065365,
+    "numMods": 4,
     "type": "attacker",
     "id": "c348",
     "element": "dark",
@@ -19652,8 +19656,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574391512269,
-    "numMods": 5,
+    "lastModAdded": 1575488408333,
+    "numMods": 6,
     "type": "healer",
     "id": "c029",
     "element": "grass",
@@ -19747,9 +19751,9 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086053620
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575487517577
   },
   "c305": {
     "stars": 5,
@@ -20980,7 +20984,7 @@
     "tierPVP": 7,
     "name": "Kubaba",
     "tierRaid": 6,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "10": {
         "title": "",
@@ -21024,8 +21028,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575485458647,
-    "numMods": 3,
+    "lastModAdded": 1575490976702,
+    "numMods": 4,
     "type": "attacker",
     "id": "c308",
     "element": "dark",

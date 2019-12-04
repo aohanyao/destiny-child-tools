@@ -2304,14 +2304,6 @@
     "added": 1574086048190
   },
   {
-    "name": "",
-    "variant": "01",
-    "child": "c397",
-    "modder": "Arsylk",
-    "nsfw": true,
-    "added": 1574086052760
-  },
-  {
     "name": "Star-Struck",
     "variant": "02",
     "child": "c124",
@@ -7585,15 +7577,6 @@
     "added": 1575475840815
   },
   {
-    "name": "Beatless",
-    "swap": "c124_12",
-    "variant": "01",
-    "child": "c124",
-    "modder": "Ahegao",
-    "added": 1575476246537,
-    "nsfw": true
-  },
-  {
     "name": "Topless",
     "swap": "",
     "variant": "02",
@@ -7826,6 +7809,492 @@
     "child": "c047",
     "modder": "KDG",
     "added": 1575486141885,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c320",
+    "modder": "KDG",
+    "added": 1575486791554,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c397",
+    "modder": "KDG",
+    "added": 1575487281869,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c397",
+    "modder": "KDG",
+    "added": 1575487328721,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c398",
+    "modder": "KDG",
+    "added": 1575487360738,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "00",
+    "child": "c415",
+    "modder": "KDG",
+    "added": 1575487473955,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Pactmaker Topless",
+    "swap": "c415_00",
+    "variant": "01",
+    "child": "c415",
+    "modder": "KDG",
+    "added": 1575487517577,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c004",
+    "modder": "Lotus",
+    "added": 1575487729698,
+    "nsfw": true
+  },
+  {
+    "name": "Swap 01 Topless",
+    "swap": "c004_01",
+    "variant": "02",
+    "child": "c004",
+    "modder": "Lotus",
+    "added": 1575487769415,
+    "nsfw": true
+  },
+  {
+    "name": "Recolor black",
+    "swap": "",
+    "variant": "02",
+    "child": "c041",
+    "modder": "MadDiety",
+    "added": 1575487887532
+  },
+  {
+    "name": "Recolor blue sword",
+    "swap": "",
+    "variant": "02",
+    "child": "c041",
+    "modder": "MadDiety",
+    "added": 1575487961529
+  },
+  {
+    "name": "White Hair",
+    "swap": "",
+    "variant": "02",
+    "child": "c064",
+    "modder": "MadDiety",
+    "added": 1575488023925
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c168",
+    "modder": "Melonfield",
+    "added": 1575488140410,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c168",
+    "modder": "Melonfield",
+    "added": 1575488171818,
+    "nsfw": true
+  },
+  {
+    "name": "Recolor blue",
+    "swap": "",
+    "variant": "02",
+    "child": "c029",
+    "modder": "Momotaro",
+    "added": 1575488408333
+  },
+  {
+    "name": "No panties",
+    "swap": "",
+    "variant": "01",
+    "child": "c005",
+    "modder": "Myiumi",
+    "added": 1575488560703,
+    "nsfw": true
+  },
+  {
+    "name": "No bottom",
+    "swap": "",
+    "variant": "02",
+    "child": "c057",
+    "modder": "Myiumi",
+    "added": 1575488599375,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c296",
+    "modder": "Myiumi",
+    "added": 1575488692880,
+    "nsfw": true
+  },
+  {
+    "name": "Just girl",
+    "swap": "",
+    "variant": "01",
+    "child": "m077",
+    "modder": "Myiumi",
+    "added": 1575488797014
+  },
+  {
+    "name": "Just girl",
+    "swap": "",
+    "variant": "02",
+    "child": "m077",
+    "modder": "Myiumi",
+    "added": 1575488920271
+  },
+  {
+    "name": "Just girl",
+    "swap": "",
+    "variant": "10",
+    "child": "m077",
+    "modder": "Myiumi",
+    "added": 1575489046396
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c043",
+    "modder": "Nakirin",
+    "added": 1575489121896,
+    "nsfw": true
+  },
+  {
+    "name": "White wax",
+    "swap": "",
+    "variant": "02",
+    "child": "c058",
+    "modder": "Nakirin",
+    "added": 1575489211639
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "02",
+    "child": "c062",
+    "modder": "Nakirin",
+    "added": 1575489746272,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c064",
+    "modder": "Nakirin",
+    "added": 1575489814431,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c065",
+    "modder": "Nakirin",
+    "added": 1575489861345,
+    "nsfw": true
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "01",
+    "child": "c253",
+    "modder": "Nakirin",
+    "added": 1575489924469,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c294",
+    "modder": "Nakirin",
+    "added": 1575489970789,
+    "nsfw": true
+  },
+  {
+    "name": "Topless recolor",
+    "swap": "",
+    "variant": "01",
+    "child": "c173",
+    "modder": "Pebble5",
+    "added": 1575490053102,
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "swap": "",
+    "variant": "01",
+    "child": "c374",
+    "modder": "Pebble5",
+    "added": 1575490096116,
+    "nsfw": true
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "01",
+    "child": "c020",
+    "modder": "Ray",
+    "added": 1575490212251,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c026",
+    "modder": "Ray",
+    "added": 1575490250466,
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "02",
+    "child": "c124",
+    "modder": "Ray",
+    "added": 1575490325256,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c360",
+    "modder": "Ray",
+    "added": 1575490569511,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c034",
+    "modder": "Seireko",
+    "added": 1575490640509,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Pactmaker Nude",
+    "swap": "c034_00",
+    "variant": "01",
+    "child": "c034",
+    "modder": "Seireko",
+    "added": 1575490769037,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c034",
+    "modder": "Seireko",
+    "added": 1575490801088,
+    "nsfw": true
+  },
+  {
+    "name": "Bush",
+    "swap": "",
+    "variant": "01",
+    "child": "c036",
+    "modder": "Seireko",
+    "added": 1575490851482,
+    "nsfw": true
+  },
+  {
+    "name": "Bush",
+    "swap": "",
+    "variant": "02",
+    "child": "c036",
+    "modder": "Seireko",
+    "added": 1575490879209,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c285",
+    "modder": "Seireko",
+    "added": 1575490940432,
+    "nsfw": true
+  },
+  {
+    "name": "No panties",
+    "swap": "",
+    "variant": "10",
+    "child": "c308",
+    "modder": "Seireko",
+    "added": 1575490976702,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Pactmaker Nude",
+    "swap": "c348_00",
+    "variant": "02",
+    "child": "c348",
+    "modder": "Seireko",
+    "added": 1575491065365,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Pactmaker Nude",
+    "swap": "c251_00",
+    "variant": "02",
+    "child": "c351",
+    "modder": "Seireko",
+    "added": 1575491133326,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c355",
+    "modder": "Seireko",
+    "added": 1575491165649,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c355",
+    "modder": "Seireko",
+    "added": 1575491187136,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c364",
+    "modder": "Seireko",
+    "added": 1575491227817,
+    "nsfw": true
+  },
+  {
+    "name": "Nude recolor",
+    "swap": "",
+    "variant": "02",
+    "child": "c365",
+    "modder": "Seireko",
+    "added": 1575491273335,
+    "nsfw": true
+  },
+  {
+    "name": "Pussy",
+    "swap": "",
+    "variant": "10",
+    "child": "m077",
+    "modder": "Seraphita",
+    "added": 1575491489220,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c038",
+    "modder": "Snapplemonkey",
+    "added": 1575491648665,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c063",
+    "modder": "SnowWulf",
+    "added": 1575491705927,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c086",
+    "modder": "SnowWulf",
+    "added": 1575491746132,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c026",
+    "modder": "SpookyGhost",
+    "added": 1575491806962,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Ea Nude by Cratil",
+    "swap": "c223_01",
+    "variant": "01",
+    "child": "c036",
+    "modder": "SpookyGhost",
+    "added": 1575492015671,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c123",
+    "modder": "SpookyGhost",
+    "added": 1575492105616,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c233",
+    "modder": "SpookyGhost",
+    "added": 1575492155931,
+    "nsfw": true
+  },
+  {
+    "name": "Sheer KDG Edit",
+    "swap": "",
+    "variant": "01",
+    "child": "c402",
+    "modder": "SpookyGhost",
+    "added": 1575492216086,
     "nsfw": true
   }
 ]
