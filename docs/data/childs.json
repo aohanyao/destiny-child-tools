@@ -13674,7 +13674,7 @@
     "tierPVP": 7,
     "name": "Aurora",
     "tierRaid": 7,
-    "numModsNSFW": 1,
+    "numModsNSFW": 2,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -13718,8 +13718,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1574642123386,
-    "numMods": 1,
+    "lastModAdded": 1575431547417,
+    "numMods": 3,
     "type": "healer",
     "id": "c199",
     "element": "fire",
@@ -16551,7 +16551,7 @@
     "tierPVP": 7,
     "name": "Anemone",
     "tierRaid": 7,
-    "numModsNSFW": 7,
+    "numModsNSFW": 9,
     "variants": {
       "10": {
         "title": "Sunrise",
@@ -16585,8 +16585,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574911740552,
-    "numMods": 10,
+    "lastModAdded": 1575431421324,
+    "numMods": 14,
     "type": "support",
     "id": "c345",
     "element": "water",

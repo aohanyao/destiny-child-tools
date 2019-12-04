@@ -6804,5 +6804,56 @@
     "modder": "cronodoug",
     "added": 1575428935403,
     "nsfw": true
+  },
+  {
+    "name": "no glasses",
+    "swap": "",
+    "variant": "01",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1575430985558
+  },
+  {
+    "name": "sheer",
+    "swap": "",
+    "variant": "01",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1575431047816,
+    "nsfw": true
+  },
+  {
+    "name": "topless no mic",
+    "swap": "",
+    "variant": "01",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1575431248870,
+    "nsfw": true
+  },
+  {
+    "name": "white bikini",
+    "swap": "",
+    "variant": "02",
+    "child": "c345",
+    "modder": "unknown",
+    "added": 1575431421324
+  },
+  {
+    "name": "lewd",
+    "swap": "",
+    "variant": "01",
+    "child": "c199",
+    "modder": "unknown",
+    "added": 1575431516121
+  },
+  {
+    "name": "no bottom",
+    "swap": "",
+    "variant": "02",
+    "child": "c199",
+    "modder": "unknown",
+    "added": 1575431547417,
+    "nsfw": true
   }
 ]
