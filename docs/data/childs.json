@@ -7367,8 +7367,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574395058902,
-    "numMods": 3,
+    "lastModAdded": 1575494893936,
+    "numMods": 4,
     "type": "attacker",
     "id": "c072",
     "element": "fire",
@@ -12488,9 +12488,9 @@
       }
     },
     "id": "c176",
-    "numMods": 2,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575481727620
+    "numMods": 4,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575495024868
   },
   "c297": {
     "name": "Red Queen",
@@ -15308,9 +15308,9 @@
     },
     "id": "c223",
     "stars": 5,
-    "numMods": 4,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575473800004
+    "numMods": 5,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575495065872
   },
   "c344": {
     "name": "Isolde",
@@ -16426,8 +16426,9 @@
       }
     },
     "id": "c301",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575495187101
   },
   "sm050": {
     "name": "단두대",
