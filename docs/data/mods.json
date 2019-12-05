@@ -8739,5 +8739,55 @@
     "child": "m057",
     "modder": "Loki",
     "added": 1575508984883
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "01",
+    "child": "m174",
+    "modder": "Loki",
+    "added": 1575511738042
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "02",
+    "child": "m174",
+    "modder": "Loki",
+    "added": 1575511803112
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "02",
+    "child": "m175",
+    "modder": "Loki",
+    "added": 1575513055525
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "01",
+    "child": "m175",
+    "modder": "Loki",
+    "added": 1575513081625
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c353",
+    "modder": "Davxz",
+    "added": 1575513148057,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c353",
+    "modder": "Davxz",
+    "added": 1575513185178,
+    "nsfw": true
   }
 ]

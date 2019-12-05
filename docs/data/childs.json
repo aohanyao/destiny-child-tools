@@ -1222,9 +1222,9 @@
       }
     },
     "id": "m174",
-    "numMods": 2,
+    "numMods": 4,
     "numModsNSFW": 2,
-    "lastModAdded": 1574086055860
+    "lastModAdded": 1575511803112
   },
   "m064": {
     "name": "Naouf",
@@ -2137,9 +2137,9 @@
       }
     },
     "id": "m175",
-    "numMods": 2,
+    "numMods": 4,
     "numModsNSFW": 2,
-    "lastModAdded": 1574086055890
+    "lastModAdded": 1575513081625
   },
   "m065": {
     "name": "Naouf",
@@ -12908,7 +12908,7 @@
     "tierPVP": 6,
     "name": "Charlotte",
     "tierRaid": 6,
-    "numModsNSFW": 0,
+    "numModsNSFW": 2,
     "variants": {
       "00": {
         "title": "Young",
@@ -12942,8 +12942,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574096813450,
-    "numMods": 2,
+    "lastModAdded": 1575513185178,
+    "numMods": 4,
     "type": "attacker",
     "id": "c353",
     "element": "light",
