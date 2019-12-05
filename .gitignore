@@ -3,3 +3,4 @@ node_modules
 *.lock
 cypress/screenshots/
 missing-previews.json
+docs/live2d/assets/_*

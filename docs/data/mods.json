@@ -8704,5 +8704,40 @@
     "modder": "Unknown",
     "added": 1575495187101,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "10",
+    "child": "c000",
+    "modder": "Anubis",
+    "added": 1575496481028,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "12",
+    "child": "c000",
+    "modder": "Anubis",
+    "added": 1575496558021,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c001",
+    "modder": "Unknown",
+    "added": 1575497587828,
+    "nsfw": true
+  },
+  {
+    "name": "Female Olga",
+    "swap": "",
+    "variant": "02",
+    "child": "m057",
+    "modder": "Loki",
+    "added": 1575508984883
   }
 ]

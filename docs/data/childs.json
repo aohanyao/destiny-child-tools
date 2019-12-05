@@ -4710,8 +4710,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1574679546747,
-    "numMods": 4,
+    "lastModAdded": 1575508984883,
+    "numMods": 5,
     "type": "debuffer",
     "id": "m057",
     "element": "water",
@@ -11853,9 +11853,9 @@
     },
     "id": "c000",
     "stars": false,
-    "numMods": 4,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574333703933
+    "numMods": 6,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575496558021
   },
   "c121": {
     "name": "Muse",
@@ -12954,7 +12954,7 @@
     "tierPVP": 3,
     "name": "Mona",
     "tierRaid": 3,
-    "numModsNSFW": 8,
+    "numModsNSFW": 9,
     "variants": {
       "10": {
         "title": "",
@@ -13038,8 +13038,8 @@
       }
     },
     "tierBoss": 1,
-    "lastModAdded": 1575492412600,
-    "numMods": 11,
+    "lastModAdded": 1575497587828,
+    "numMods": 12,
     "type": "tank",
     "id": "c001",
     "element": "dark",
