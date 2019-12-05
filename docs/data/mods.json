@@ -8789,5 +8789,37 @@
     "modder": "Davxz",
     "added": 1575513185178,
     "nsfw": true
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "02",
+    "child": "m177",
+    "modder": "Loki",
+    "added": 1575550335519
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "01",
+    "child": "m177",
+    "modder": "Loki",
+    "added": 1575550366296
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "02",
+    "child": "m176",
+    "modder": "Loki",
+    "added": 1575551077623
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "01",
+    "child": "m176",
+    "modder": "Loki",
+    "added": 1575551137371
   }
 ]
