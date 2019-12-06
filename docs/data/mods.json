@@ -8746,7 +8746,12 @@
     "variant": "01",
     "child": "m174",
     "modder": "Loki",
-    "added": 1575511738042
+    "added": 1575511738042,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.5
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8754,7 +8759,12 @@
     "variant": "02",
     "child": "m174",
     "modder": "Loki",
-    "added": 1575511803112
+    "added": 1575511803112,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.75
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8762,7 +8772,12 @@
     "variant": "02",
     "child": "m175",
     "modder": "Loki",
-    "added": 1575513055525
+    "added": 1575513055525,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.75
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8770,7 +8785,12 @@
     "variant": "01",
     "child": "m175",
     "modder": "Loki",
-    "added": 1575513081625
+    "added": 1575513081625,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.5
+      }
+    }
   },
   {
     "name": "Topless",
@@ -8796,7 +8816,12 @@
     "variant": "02",
     "child": "m177",
     "modder": "Loki",
-    "added": 1575550335519
+    "added": 1575550335519,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.75
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8804,7 +8829,12 @@
     "variant": "01",
     "child": "m177",
     "modder": "Loki",
-    "added": 1575550366296
+    "added": 1575550366296,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.5
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8812,7 +8842,12 @@
     "variant": "02",
     "child": "m176",
     "modder": "Loki",
-    "added": 1575551077623
+    "added": 1575551077623,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.75
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8820,7 +8855,12 @@
     "variant": "01",
     "child": "m176",
     "modder": "Loki",
-    "added": 1575551137371
+    "added": 1575551137371,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.5
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8828,7 +8868,12 @@
     "variant": "02",
     "child": "m173",
     "modder": "Loki",
-    "added": 1575601449450
+    "added": 1575601449450,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.75
+      }
+    }
   },
   {
     "name": "Slime Girl found on Google",
@@ -8836,6 +8881,11 @@
     "variant": "01",
     "child": "m173",
     "modder": "Loki",
-    "added": 1575601612744
+    "added": 1575601612744,
+    "modelInfo": {
+      "enemy": {
+        "scale": 1.5
+      }
+    }
   }
 ]
