@@ -8749,7 +8749,7 @@
     "added": 1575511738042,
     "modelInfo": {
       "enemy": {
-        "scale": 1.5
+        "scale": 1.3
       }
     }
   },
@@ -8762,7 +8762,7 @@
     "added": 1575511803112,
     "modelInfo": {
       "enemy": {
-        "scale": 1.75
+        "scale": 1.4
       }
     }
   },
@@ -8775,7 +8775,7 @@
     "added": 1575513055525,
     "modelInfo": {
       "enemy": {
-        "scale": 1.75
+        "scale": 1.4
       }
     }
   },
@@ -8788,7 +8788,7 @@
     "added": 1575513081625,
     "modelInfo": {
       "enemy": {
-        "scale": 1.5
+        "scale": 1.3
       }
     }
   },
@@ -8819,7 +8819,7 @@
     "added": 1575550335519,
     "modelInfo": {
       "enemy": {
-        "scale": 1.75
+        "scale": 1.4
       }
     }
   },
@@ -8832,7 +8832,7 @@
     "added": 1575550366296,
     "modelInfo": {
       "enemy": {
-        "scale": 1.5
+        "scale": 1.3
       }
     }
   },
@@ -8845,7 +8845,7 @@
     "added": 1575551077623,
     "modelInfo": {
       "enemy": {
-        "scale": 1.75
+        "scale": 1.4
       }
     }
   },
@@ -8858,7 +8858,7 @@
     "added": 1575551137371,
     "modelInfo": {
       "enemy": {
-        "scale": 1.5
+        "scale": 1.3
       }
     }
   },
@@ -8871,7 +8871,7 @@
     "added": 1575601449450,
     "modelInfo": {
       "enemy": {
-        "scale": 1.75
+        "scale": 1.4
       }
     }
   },
@@ -8884,7 +8884,7 @@
     "added": 1575601612744,
     "modelInfo": {
       "enemy": {
-        "scale": 1.5
+        "scale": 1.3
       }
     }
   }
