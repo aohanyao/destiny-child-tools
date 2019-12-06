@@ -8821,5 +8821,21 @@
     "child": "m176",
     "modder": "Loki",
     "added": 1575551137371
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "02",
+    "child": "m173",
+    "modder": "Loki",
+    "added": 1575601449450
+  },
+  {
+    "name": "Slime Girl found on Google",
+    "swap": "",
+    "variant": "01",
+    "child": "m173",
+    "modder": "Loki",
+    "added": 1575601612744
   }
 ]
