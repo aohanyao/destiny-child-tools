@@ -8887,5 +8887,40 @@
         "scale": 1.3
       }
     }
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c002",
+    "modder": "Unknown",
+    "added": 1575641860814,
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "swap": "",
+    "variant": "14",
+    "child": "c003",
+    "modder": "Unknown",
+    "added": 1575642142114,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "89",
+    "child": "c003",
+    "modder": "Unknown",
+    "added": 1575642235324,
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "swap": "",
+    "variant": "01",
+    "child": "c005",
+    "modder": "Unknown",
+    "added": 1575642404896
   }
 ]
