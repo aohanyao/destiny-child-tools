@@ -9092,5 +9092,85 @@
     "modder": "KDG",
     "added": 1575866370388,
     "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Date.Takenobu",
+    "added": 1575895278983,
+    "nsfw": true
+  },
+  {
+    "name": "Transparency Low",
+    "swap": "",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Date.Takenobu",
+    "added": 1575895326372
+  },
+  {
+    "name": "Transparency High",
+    "swap": "",
+    "variant": "02",
+    "child": "c343",
+    "modder": "Date.Takenobu",
+    "added": 1575895389924,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c393",
+    "modder": "Date.Takenobu",
+    "added": 1575895487724,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c418",
+    "modder": "Date.Takenobu",
+    "added": 1575895809096,
+    "nsfw": true
+  },
+  {
+    "name": "Partially Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c418",
+    "modder": "Date.Takenobu",
+    "added": 1575895897278,
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "swap": "",
+    "variant": "10",
+    "child": "c420",
+    "modder": "Date.Takenobu",
+    "added": 1575896027491,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c423",
+    "modder": "Date.Takenobu",
+    "added": 1575896069512,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "sc394",
+    "modder": "Date.Takenobu",
+    "added": 1575896128935,
+    "nsfw": true
   }
 ]

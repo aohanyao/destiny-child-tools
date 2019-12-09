@@ -9071,9 +9071,9 @@
       }
     },
     "id": "c393",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574086052630
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575895487724
   },
   "c041": {
     "name": "Tiamat",
@@ -13793,9 +13793,9 @@
         }
       }
     },
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574086054060
+    "numMods": 4,
+    "numModsNSFW": 4,
+    "lastModAdded": 1575896027491
   },
   "c310": {
     "id": "c310",
@@ -14068,9 +14068,9 @@
         }
       }
     },
-    "numMods": 6,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574389085155
+    "numMods": 9,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575895389924
   },
   "c112": {
     "name": "Elias",
@@ -17478,9 +17478,9 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1574086054140
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575896069512
   },
   "sm051": {
     "name": "하데스",
@@ -20989,9 +20989,9 @@
         }
       }
     },
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1574086053940
+    "numMods": 5,
+    "numModsNSFW": 5,
+    "lastModAdded": 1575895897278
   },
   "c308": {
     "stars": 5,
@@ -22810,8 +22810,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575896128935
   },
   "sc053": {
     "name": "메티스",
