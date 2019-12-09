@@ -10,7 +10,7 @@ const listsFile = RNFS.DocumentDirectoryPath + 'mod-lists.json'
 export const saveList = listName => 
   (dispatch, getState) => {
     const lists = getState().get('data').get('modLists'),
-          filePath = RNFS.ExternalStorageDirectoryPath + '/dc-mods-list-' + listName.toLowerCase().replace(/\s/g, '-') + '.json'
+          filePath = RNFS.ExternalStorageDirectoryPath + '/Download/dc-mods-list-' + listName.toLowerCase().replace(/\s/g, '-') + '.json'
     RNFS.writeFile(filePath, JSON.stringify(lists[listName], null, 2))
       .then(() => {
         Alert.alert(
@@ -19,7 +19,34 @@ export const saveList = listName =>
         )
       })
       .catch(() => Alert.alert('Error', 'There was an error attempting to write the mod list to ' + filePath))
+  }
 
+export const importList = data =>
+  (dispatch, getState) => {
+    let i = 1
+    const lists = getState().get('data').get('modLists'),
+          name = data.name.replace(/dc-mods-list-/, '').replace(/\.\w+$/, ''),
+          getListName = () => name + (i > 1 ? ' ' + i : '')
+    while(lists[getListName()]) { i++ }
+    RNFS.readFile(data.uri).then(content => {
+      try {
+        const list = JSON.parse(content)
+        lists[getListName()] = list
+        if(lists.length == 0 || !list.forEach) {
+          throw new Error('List appears to be empty or is not an array')
+        }
+        list.forEach(mod => {
+          if(typeof mod != 'string') {
+            throw new Error('All items in the list must be strings')
+          }
+        })
+        _writeLists(lists).then(() => dispatch(readModLists(setView('ModList', getListName()))))
+        Alert.alert('Mod List Imported', 'The mod list "' + getListName() + '" has been successfully imported.')
+      }
+      catch(e) {
+        Alert.alert('Error importing list', 'The file ' + data.name + ' does not appear to be a valid list. It should be a JSON formatted array of mod names.\n\n' + e.message)
+      }
+    }) 
   }
 
 export const setActiveModList = modListName => 
@@ -31,9 +58,7 @@ export const createModList = () =>
     let i = 1,
         getListName = () => 'New List' + (i > 1 ? ' ' + i : '')
 
-    while(lists[getListName()]) {
-      i++
-    }
+    while(lists[getListName()]) { i++}
     lists[getListName()] = []
     _writeLists(lists).then(() => dispatch(readModLists(
       dispatch => {
