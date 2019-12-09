@@ -5382,7 +5382,90 @@
     "child": "m038",
     "modder": "Heather",
     "nsfw": true,
-    "added": 1574086054560
+    "added": 1574086054560,
+    "modelInfo": {
+      "home": {
+        "position": {
+          "x": -10,
+          "y": -125
+        },
+        "scale": 0.9,
+        "flip": false
+      },
+      "talk": {
+        "position": {
+          "x": -120,
+          "y": -120
+        },
+        "scale": 1.95,
+        "flip": false
+      },
+      "ally": {
+        "position": {
+          "x": -15,
+          "y": -185
+        },
+        "scale": 0.9,
+        "flip": false
+      },
+      "enemy": {
+        "position": {
+          "x": -5,
+          "y": 0
+        },
+        "scale": 1.2,
+        "flip": false,
+        "not_fov_scale": true
+      },
+      "talk_zoom": {
+        "position": {
+          "x": -295,
+          "y": -20
+        },
+        "scale": 3.4,
+        "flip": false
+      },
+      "drive": {
+        "position": {
+          "x": -125,
+          "y": -675
+        },
+        "scale": 1.5,
+        "flip": false
+      },
+      "selectRect": [
+        {
+          "top": 0.72625,
+          "right": 0.9479167,
+          "left": 0.577083349,
+          "bottom": 0.585
+        },
+        {
+          "top": 0,
+          "right": 0,
+          "left": 0,
+          "bottom": 0
+        },
+        {
+          "top": 0.5275,
+          "right": 0.660416663,
+          "left": 0.560416639,
+          "bottom": 0.595
+        },
+        {
+          "top": 0.72625,
+          "right": 0.9479167,
+          "left": 0.577083349,
+          "bottom": 0.585
+        },
+        {
+          "top": 0.5275,
+          "right": 0.660416663,
+          "left": 0.560416639,
+          "bottom": 0.595
+        }
+      ]
+    }
   },
   {
     "name": "Swap Lewd Raid",
@@ -5390,7 +5473,90 @@
     "child": "m038",
     "modder": "Heather",
     "nsfw": true,
-    "added": 1574086054530
+    "added": 1574086054530,
+    "modelInfo": {
+      "home": {
+        "position": {
+          "x": -10,
+          "y": -125
+        },
+        "scale": 0.9,
+        "flip": false
+      },
+      "talk": {
+        "position": {
+          "x": -120,
+          "y": -120
+        },
+        "scale": 1.95,
+        "flip": false
+      },
+      "ally": {
+        "position": {
+          "x": -15,
+          "y": -185
+        },
+        "scale": 0.9,
+        "flip": false
+      },
+      "enemy": {
+        "position": {
+          "x": -5,
+          "y": 0
+        },
+        "scale": 1.2,
+        "flip": false,
+        "not_fov_scale": true
+      },
+      "talk_zoom": {
+        "position": {
+          "x": -295,
+          "y": -20
+        },
+        "scale": 3.4,
+        "flip": false
+      },
+      "drive": {
+        "position": {
+          "x": -125,
+          "y": -675
+        },
+        "scale": 1.5,
+        "flip": false
+      },
+      "selectRect": [
+        {
+          "top": 0.72625,
+          "right": 0.9479167,
+          "left": 0.577083349,
+          "bottom": 0.585
+        },
+        {
+          "top": 0,
+          "right": 0,
+          "left": 0,
+          "bottom": 0
+        },
+        {
+          "top": 0.5275,
+          "right": 0.660416663,
+          "left": 0.560416639,
+          "bottom": 0.595
+        },
+        {
+          "top": 0.72625,
+          "right": 0.9479167,
+          "left": 0.577083349,
+          "bottom": 0.585
+        },
+        {
+          "top": 0.5275,
+          "right": 0.660416663,
+          "left": 0.560416639,
+          "bottom": 0.595
+        }
+      ]
+    }
   },
   {
     "name": "Recolor Topless",
@@ -9085,15 +9251,6 @@
     "nsfw": true
   },
   {
-    "name": "Topless",
-    "swap": "",
-    "variant": "01",
-    "child": "c394",
-    "modder": "KDG",
-    "added": 1575866370388,
-    "nsfw": true
-  },
-  {
     "name": "Nude",
     "swap": "",
     "variant": "02",
@@ -9171,6 +9328,33 @@
     "child": "sc394",
     "modder": "Date.Takenobu",
     "added": 1575896128935,
+    "nsfw": true
+  },
+  {
+    "name": "Topless Red",
+    "swap": "",
+    "variant": "01",
+    "child": "c360",
+    "modder": "Heather",
+    "added": 1575896856671,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Armida Nude",
+    "swap": "c092_01",
+    "variant": "01",
+    "child": "c156",
+    "modder": "Heather",
+    "added": 1575897160926,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Armida Nude",
+    "swap": "c092_02",
+    "variant": "02",
+    "child": "c156",
+    "modder": "Heather",
+    "added": 1575897222316,
     "nsfw": true
   }
 ]

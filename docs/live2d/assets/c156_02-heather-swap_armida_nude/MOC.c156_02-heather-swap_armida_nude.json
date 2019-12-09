@@ -2,34 +2,26 @@
   "version": "Sample 1.0.0",
   "model": "character.dat",
   "textures": [
-    "texture_00.png",
-    "texture_01.png"
+    "texture_00.png"
   ],
   "motions": {
     "attack": [
       {
-        "file": "c394_01_attack.mtn",
-        "fade_in": 0,
-        "fade_out": 0
-      }
-    ],
-    "banner": [
-      {
-        "file": "c394_01_banner.mtn",
+        "file": "c156_02_attack.mtn",
         "fade_in": 0,
         "fade_out": 0
       }
     ],
     "hit": [
       {
-        "file": "c394_01_hit.mtn",
+        "file": "c156_02_hit.mtn",
         "fade_in": 0,
         "fade_out": 0
       }
     ],
     "idle": [
       {
-        "file": "c394_01_idle.mtn",
+        "file": "c156_02_idle.mtn",
         "fade_in": 0,
         "fade_out": 0
       }

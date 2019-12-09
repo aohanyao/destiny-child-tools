@@ -8826,7 +8826,7 @@
     "tierPVP": 5,
     "name": "Liberated Maat",
     "tierRaid": 3,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Wild",
@@ -8860,8 +8860,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575490569511,
-    "numMods": 5,
+    "lastModAdded": 1575896856671,
+    "numMods": 6,
     "type": "attacker",
     "id": "c360",
     "element": "dark",
@@ -10239,8 +10239,8 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
+    "numMods": 0,
+    "numModsNSFW": 0,
     "lastModAdded": 1575866370388
   },
   "c053": {
@@ -14661,7 +14661,7 @@
     "tierPVP": 6,
     "name": "Elizabeth",
     "tierRaid": 7,
-    "numModsNSFW": 3,
+    "numModsNSFW": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -14695,8 +14695,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575472074932,
-    "numMods": 4,
+    "lastModAdded": 1575897222316,
+    "numMods": 6,
     "type": "attacker",
     "id": "c156",
     "element": "dark",
