@@ -5,6 +5,7 @@ import stringifyMod from '../lib/stringify-mod.js'
 import getModFromKey from '../lib/get-mod-from-key'
 import store from '../store.js'
 import deepDiff from 'deep-diff'
+import deepmerge from "deepmerge"
 import {readModelInfo} from '../actions/model-info'
 import {addModToList} from './mod-lists'
 
@@ -119,6 +120,7 @@ async function getModData(mod) {
         pckName = matches[0],
         data = store.getState().get('data'),
         swap = mod.get && mod.get('swap'),
+        modelInfoOverride = (mod.get && mod.get('modelInfo')) ? mod.get('modelInfo').toJS() : {},
         defaultModelInfo = {
           Global: data.get('model_info.global')[pckName],
           KR: data.get('model_info.kr')[pckName],
@@ -135,9 +137,18 @@ async function getModData(mod) {
           JP: swap && data.get('model_info.jp')[swap]
         },
         newModelInfo = {
-          Global: Object.assign({}, localModelInfo.Global, (swapModelInfo.Global || swapModelInfo.KR || defaultModelInfo.KR)),
-          KR: Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR)),
-          JP: Object.assign({}, localModelInfo.JP, (swapModelInfo.JP || defaultModelInfo.JP))
+          Global: deepmerge(
+            Object.assign({}, localModelInfo.Global, (swapModelInfo.Global || swapModelInfo.KR || defaultModelInfo.KR)),
+            modelInfoOverride
+          ),
+          KR: deepmerge(
+            Object.assign({}, localModelInfo.KR, (swapModelInfo.KR || defaultModelInfo.KR)),
+            modelInfoOverride
+          ),
+          JP: deepmerge(
+            Object.assign({}, localModelInfo.JP, (swapModelInfo.JP || defaultModelInfo.JP)),
+            modelInfoOverride
+          )
         },
         modelDiff = {
           Global: deepDiff(localModelInfo.Global, newModelInfo.Global) || false,
