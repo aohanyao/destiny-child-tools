@@ -1,25 +1,35 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import {connect} from 'react-redux'
 import {ScrollView, View, Alert} from 'react-native'
-import {Text, Button, IconButton, TextInput} from 'react-native-paper'
+import {Text, DataTable, Button, IconButton, TextInput} from 'react-native-paper'
 import ModCard from '../mod-card'
 import {installList, deleteModList, renameModList, setActiveModList, saveList} from '../actions/mod-lists'
 import BreadCrumbs from './shared/breadcrumbs'
 import ActiveModList from './active-mod-list'
+import {setViewData} from '../actions/view.js'
 
 const uneditable = ['Installed', 'Favorites']
 
-const ModList = ({list = [], lists, id, installList, deleteModList, activeModList, renameModList, setActiveModList, saveList}) => {
+const ModList = ({list = [], lists, id, page, installList, setViewData, deleteModList, activeModList, renameModList, setActiveModList, saveList}) => {
   const [editListName, setEditListName] = useState(),
-        inEditMode = typeof editListName != 'undefined'
+        inEditMode = typeof editListName != 'undefined',
+        scrollViewRef = useRef(null),
+        numPerPage = 10,
+        numberOfPages = Math.ceil(list.length / numPerPage),
+        onPageChange = page => {
+          scrollViewRef.current.scrollTo({x: 0, y: 0, animated: false})
+          setViewData('modsList', 'page', page)
+        }
   return (
     <>
       <ActiveModList />
-      <ScrollView style={{
-        padding: 20, 
-        display: 'flex', 
-        marginBottom: 58 + (activeModList ? 100 : 0)
-      }}>
+      <ScrollView 
+        ref={scrollViewRef} 
+        style={{
+          padding: 20, 
+          display: 'flex', 
+          marginBottom: 58 + (activeModList ? 100 : 0)
+        }}>
         <View style={{flexDirection: 'row', flexWrap:'wrap', justifyContent: 'space-between'}}>
           <BreadCrumbs>
             <BreadCrumbs.Crumb view="ModLists">
@@ -31,11 +41,11 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
             <View style={{flexDirection: 'row', flexWrap:'wrap'}}>
               {inEditMode
                 ? <IconButton 
-                  icon="cancel" 
-                  onPress={() => setEditListName()} />
+                icon="cancel" 
+                onPress={() => setEditListName()} />
                 : <IconButton 
-                  icon="pencil" 
-                  onPress={() => setEditListName(id)} />
+                icon="pencil" 
+                onPress={() => setEditListName(id)} />
               }
               <IconButton 
                 icon="delete" 
@@ -67,7 +77,7 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
                   Alert.alert(
                     'Error: List already exists', 'There is already a list with the name "' + 
                     editListName + '". Please choose another name.'
-                  )
+                    )
                 }
                 else {
                   renameModList(id, editListName)
@@ -87,38 +97,59 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
         </Button>
         {uneditable.indexOf(id) == -1 && (
           id == activeModList
-            ? <View style={{marginTop: 20, marginBottom: 20}}>
+          ? <View style={{marginTop: 20, marginBottom: 20}}>
                 <Text>This list is currently active. Add mods while browsing.</Text>
             </View>
             : <Button
-              mode="contained"
-              style={{marginBottom: 20}}
-              icon="playlist-edit"
-              onPress={() => setActiveModList(id)}>
+            mode="contained"
+            style={{marginBottom: 20}}
+            icon="playlist-edit"
+            onPress={() => setActiveModList(id)}>
               Set as active list
             </Button>
         )}
         {list.length > 0  
           ? <Button
-            style={{marginBottom: 20}}
-              icon="cloud-download"
-              mode="contained"
-            onPress={() => {
-              Alert.alert(
-                'Install List?',
-                'Do you want to install all ' + list.length + 
-                ' mods in this list? This may take a while.',
-                [
-                  {text: 'Cancel', style: 'cancel'},
-                  {text: 'Install', onPress: () => installList(id)}
-                ]
+          style={{marginBottom: 20}}
+          icon="cloud-download"
+          mode="contained"
+          onPress={() => {
+            Alert.alert(
+              'Install List?',
+              'Do you want to install all ' + list.length + 
+              ' mods in this list? This may take a while.',
+              [
+                {text: 'Cancel', style: 'cancel'},
+                {text: 'Install', onPress: () => installList(id)}
+              ]
               )
             }}>
             {id == 'Installed' ? 'Re-' : ''}Install Mod List
           </Button>
           : <Text style={{marginTop: 20, marginBottom: 20}}>This mod list is currently empty.</Text>
         }
-        {list.map(modKey => <ModCard mod={modKey} key={modKey} />)}
+        {numberOfPages > 1 && 
+          <View style={{flexDirection: 'row', flexWrap:'wrap', justifyContent: 'flex-end'}}>
+            <DataTable.Pagination {...{
+              label: `Page ${page + 1} pf ${numberOfPages}`,
+              page,
+              numberOfPages,
+              onPageChange
+            }} />
+          </View>
+        }
+        {list
+          .slice(page * numPerPage, page * numPerPage + numPerPage)
+          .map(modKey => <ModCard mod={modKey} key={modKey} />)
+        }
+        {numberOfPages > 1 && 
+          <DataTable.Pagination {...{
+            label: `Page ${page + 1} pf ${numberOfPages}`,
+            page,
+            numberOfPages,
+            onPageChange
+          }} />
+        }
         <Text></Text>
         <Text></Text>
         <Text></Text>
@@ -135,8 +166,9 @@ export default connect(
       id,
       lists,
       list: lists[id],
-      activeModList: state.get('data').get('activeModList')
+      activeModList: state.get('data').get('activeModList'),
+      page: state.get('view').get('modsList').get('page'),
     }
   },
-  {installList, deleteModList, renameModList, setActiveModList, saveList}
+  {installList, deleteModList, renameModList, setActiveModList, saveList, setViewData}
 )(ModList)

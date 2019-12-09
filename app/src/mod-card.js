@@ -53,7 +53,7 @@ const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, remove
               </View>
             } />
           <Card.Content>
-            <View style={{flexDirection: 'row', flexWrap:'wrap', alignContent: 'center'}}>
+            <View style={{flexDirection: 'row', flexWrap:'wrap', alignContent: 'center', paddingBottom: 20}}>
               {mod && 
                 <View style={{marginRight: 20}}>
                   <View style={{flex: 1, alignItems: 'center'}}>
@@ -77,7 +77,6 @@ const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, remove
                       {mod.get('swap')}
                     </Button>
                     <Text style={{marginTop: -10}}></Text>
-                    <Text></Text>
                     <Text>by</Text>
                     <Text>{mod && mod.get('modder')}</Text>
                     <Text></Text>

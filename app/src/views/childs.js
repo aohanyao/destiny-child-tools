@@ -30,7 +30,6 @@ const Childs = ({childs, setView, page, setViewData, filter = '', order, sort, c
   childs = childs.toList()
     .filter(child => (child.get('id') + child.get('name')).toLowerCase().match(filter.toLowerCase()))
   const numPerPage = 10,
-        [sortOpen, setFilterOpen] = useState(false),
         numberOfPages = Math.ceil(childs.count() / numPerPage),
         scrollViewRef = useRef(null),
         onPageChange = page => {
