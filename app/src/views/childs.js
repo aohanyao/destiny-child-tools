@@ -17,8 +17,9 @@ import {
   Title
 } from 'react-native-paper'
 import defaultVariant from '../lib/default-variant.js'
+import ActiveModList from './active-mod-list'
 
-const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category}) => {
+const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category, activeModList}) => {
   if(!childs.count()) {
     return (
       <View style={{margin: 20}}>
@@ -69,7 +70,15 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
   if(order == 'desc') childs = childs.reverse()
   return (
     <>
-      <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex', marginBottom: 58}} keyboardShouldPersistTaps="handled">
+      <ActiveModList />
+      <ScrollView 
+        ref={scrollViewRef} 
+        style={{
+          background: '#424242', 
+          display: 'flex', 
+          marginBottom: 58 + (activeModList ? 100 : 0)
+        }} 
+        keyboardShouldPersistTaps="handled">
         <View style={{paddingLeft: 20, paddingRight: 20, paddingTop: 20, paddingBottom: 10}}>
           <TextInput
             label="Filter characters by name or ID"
@@ -189,7 +198,8 @@ export default connect(
     filter: state.get('view').get('childs').get('filter'),
     order: state.get('view').get('childs').get('order'),
     sort: state.get('view').get('childs').get('sort'),
-    category: state.get('view').get('childs').get('category')
+    category: state.get('view').get('childs').get('category'),
+    activeModList: state.get('data').get('activeModList')
   }),
   {setView, setViewChilds}
 )(Childs)

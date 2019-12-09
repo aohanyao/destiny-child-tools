@@ -10,11 +10,12 @@ import {installMod} from './actions/mods.js'
 import {addModToList, removeModFromList} from './actions/mod-lists'
 import theme from './theme'
 
-const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, removeModFromList}) => {
+const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, removeModFromList, activeModList, lists}) => {
   if(typeof mod == 'string') mod = getModFromKey(mod)
   if(!pck) pck = mod.get('child') + '_' + mod.get('variant')
   const key = mod ? stringifyMod(mod) : pck,
-        inFavorites = favorites.indexOf(key) > -1
+        inFavorites = favorites.indexOf(key) > -1,
+        inActiveModList = activeModList && lists[activeModList].indexOf(key) > -1
   return (
     <Card style={{
       marginBottom: 20,
@@ -24,11 +25,18 @@ const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, remove
         onPress={() => setView('Live2D', key)} 
         right={() => 
           <View style={{flexDirection: 'row', flexWrap:'wrap', alignContent: 'center'}}>
-            {/* TODO: Add favorite/list icon */}
-            <IconButton icon={inFavorites ? 'heart' : 'heart-outline'} onPress={() => {
-              if(inFavorites) removeModFromList(mod || pck, 'Favorites')
-              else addModToList(mod || pck, 'Favorites')
-            }} />
+            {activeModList 
+              ? <IconButton 
+                  icon={inActiveModList ? 'playlist-minus' : 'playlist-plus'} 
+                  onPress={() => {
+                    if(inActiveModList) removeModFromList(mod || pck, activeModList)
+                    else addModToList(mod || pck, activeModList)
+                  }} />
+              : <IconButton icon={inFavorites ? 'heart' : 'heart-outline'} onPress={() => {
+                if(inFavorites) removeModFromList(mod || pck, 'Favorites')
+                else addModToList(mod || pck, 'Favorites')
+              }} />
+            }
             <IconButton icon="download" onPress={() => installMod(mod || pck)} />
           </View>
         } />
@@ -81,7 +89,9 @@ const ModCard = ({mod, pck, setView, installMod, addModToList, favorites, remove
 
 export default connect(
   state => ({
-    favorites: state.get('data').get('modLists') && state.get('data').get('modLists').Favorites || []
+    favorites: state.get('data').get('modLists') && state.get('data').get('modLists').Favorites || [],
+    lists: state.get('data').get('modLists'),
+    activeModList: state.get('data').get('activeModList')
   }),
   {setView, installMod, addModToList, removeModFromList}
 )(ModCard)

@@ -3,8 +3,47 @@ import stringifyMod from '../lib/stringify-mod'
 import {setData} from './data'
 import {installMod} from './mods'
 import {Alert} from 'react-native'
+import {setView} from './view'
 
 const listsFile = RNFS.DocumentDirectoryPath + 'mod-lists.json'
+
+export const setActiveModList = modListName => 
+  setData('activeModList', modListName)
+
+export const createModList = () => 
+  (dispatch, getState) => {
+    const lists = getState().get('data').get('modLists')
+    let i = 1,
+        getListName = () => 'New List' + (i > 1 ? ' ' + i : '')
+
+    while(lists[getListName()]) {
+      i++
+    }
+    lists[getListName()] = []
+    _writeLists(lists).then(() => dispatch(readModLists(
+      dispatch => {
+        dispatch(setView('ModList', getListName()))
+        dispatch(setActiveModList(getListName()))
+      }
+    )))
+  }
+
+export const renameModList = (id, newName) => 
+  (dispatch, getState) => {
+    const lists = getState().get('data').get('modLists')
+    dispatch(setActiveModList())
+    lists[newName] = lists[id]
+    delete lists[id]
+    _writeLists(lists).then(() => dispatch(readModLists(setView('ModList', newName))))
+  }
+
+export const deleteModList = id => 
+  (dispatch, getState) => {
+    dispatch(setActiveModList())
+    const lists = getState().get('data').get('modLists')
+    delete lists[id]
+    _writeLists(lists).then(() => dispatch(readModLists(setView('ModLists'))))
+  }
 
 export const readModLists = nextAction => 
   dispatch => {
@@ -19,7 +58,7 @@ export const readModLists = nextAction =>
           RNFS.unlink(listsFile)
               .then(() => {
                 RNFS.writeFile(listsFile, JSON.stringify({Installed: []}, null, 2))
-                  .then(() => dispatch(readModLists()))
+                  .then(() => dispatch(readModLists(nextAction)))
               })
           alert(e + '\n\n Error importing mod list data.')
         }

@@ -15,6 +15,7 @@ import isSwap from '../lib/is-swap.js'
 import ModTypePicker from './shared/mod-type-picker.js'
 import BreadCrumbs from './shared/breadcrumbs'
 import ModSort from './shared/mod-sort.js'
+import ActiveModList from './active-mod-list'
 
 const ToggleButton = ({children, on, onPress}) => {
   return (
@@ -30,7 +31,7 @@ const ToggleButton = ({children, on, onPress}) => {
   )
 }
 
-const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, order, variant}) => {
+const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, order, variant, activeModList}) => {
   const id = child.get('id'),
         modCards = []
   if(variant) mods = mods.filter(m => m.get('variant') == variant)
@@ -57,8 +58,12 @@ const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, orde
   })
   // TODO: add pagination of modCards?
   return (
-    <View zIndex={1}>
-      <ScrollView padding={20}>
+    <>
+      <ActiveModList />
+      <ScrollView style={{
+        padding: 20,
+        marginBottom:  activeModList ? 50 : 0
+      }}>
         <BreadCrumbs>
           <BreadCrumbs.Crumb view="Childs">
             Childs
@@ -125,7 +130,7 @@ const Child = ({child, original, type, nsfw, sfw, mods, setChildView, sort, orde
         <Text></Text>
         <Text></Text>
       </ScrollView>
-    </View>
+    </>
   )
 }
 
@@ -141,7 +146,8 @@ export default connect(
       sort: state.get('childView').get('sort'),
       order: state.get('childView').get('order'),
       variant: state.get('childView').get('variant'),
-      mods: state.get('data').get('mods').filter(mod => mod.get('child') == child.get('id'))
+      mods: state.get('data').get('mods').filter(mod => mod.get('child') == child.get('id')),
+      activeModList: state.get('data').get('activeModList')
     }
   },
   {setChildView}

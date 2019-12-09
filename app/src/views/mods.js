@@ -24,8 +24,9 @@ import stringifyMod from '../lib/stringify-mod.js'
 import isSwap from '../lib/is-swap.js'
 import ModTypePicker from './shared/mod-type-picker.js'
 import ModSort from './shared/mod-sort.js'
+import ActiveModList from './active-mod-list'
 
-const Childs = ({mods, page, setModsView, filter = '', order, sort, type}) => {
+const Childs = ({mods, page, setModsView, filter = '', order, sort, type, activeModList}) => {
   if(!mods.count()) {
     return (
       <View style={{margin: 20}}>
@@ -56,7 +57,14 @@ const Childs = ({mods, page, setModsView, filter = '', order, sort, type}) => {
         }
   return (
     <>
-      <ScrollView ref={scrollViewRef} style={{background: '#424242', display: 'flex', marginBottom: 58}} keyboardShouldPersistTaps="handled">
+      <ActiveModList />
+      <ScrollView ref={scrollViewRef} 
+        style={{
+          background: '#424242', 
+          display: 'flex', 
+          marginBottom: 58 + (activeModList ? 100 : 0)
+        }} 
+        keyboardShouldPersistTaps="handled">
         <View style={{paddingLeft: 20, paddingRight: 20, paddingTop: 20, paddingBottom: 10}}>
           <TextInput
             label="Filter mods by name, ID, or modder"
@@ -119,7 +127,8 @@ export default connect(
     filter: state.get('modsView').get('filter'),
     order: state.get('childView').get('order'),
     sort: state.get('childView').get('sort'),
-    type: state.get('childView').get('type')
+    type: state.get('childView').get('type'),
+    activeModList: state.get('data').get('activeModList')
   }),
   {setView, setViewChilds, setChildView, setModsView}
 )(Childs)
