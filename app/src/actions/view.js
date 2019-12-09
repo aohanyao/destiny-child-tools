@@ -1,7 +1,7 @@
 export const VIEW_SET = 'VIEW_SET'
 export const VIEW_SET_DRAWER_OPEN = 'VIEW_SET_DRAWER_OPEN'
 export const VIEW_GO_BACK = 'VIEW_GO_BACK'
-export const VIEW_CHILDS_SET = 'VIEW_CHILDS_SET'
+export const VIEW_SET_VIEW_DATA = 'VIEW_SET_VIEW_DATA'
 export const VIEW_CHILD_SET = 'VIEW_CHILD_SET'
 
 export const setView = (name, id) => ({
@@ -15,8 +15,9 @@ export const setDrawerOpen = drawerOpen => ({
   drawerOpen
 })
 
-export const setViewChilds = (setting, value) => ({
-  type: VIEW_CHILDS_SET,
+export const setViewData = (view, setting, value) => ({
+  type: VIEW_SET_VIEW_DATA,
+  view,
   setting,
   value
 })

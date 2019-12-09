@@ -7,7 +7,7 @@ import {
   Dimensions
 } from 'react-native'
 import Image from 'react-native-scalable-image'
-import {setView, setViewChilds} from '../actions/view.js'
+import {setView, setViewData} from '../actions/view.js'
 import {
   Card,
   DataTable,
@@ -19,7 +19,7 @@ import {
 import defaultVariant from '../lib/default-variant.js'
 import ActiveModList from './active-mod-list'
 
-const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort, category, activeModList}) => {
+const Childs = ({childs, setView, page, setViewData, filter = '', order, sort, category, activeModList}) => {
   if(!childs.count()) {
     return (
       <View style={{margin: 20}}>
@@ -35,7 +35,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
         scrollViewRef = useRef(null),
         onPageChange = page => {
           scrollViewRef.current.scrollTo({x: 0, y: 0, animated: false})
-          setViewChilds('page', page)
+          setViewData('childs', 'page', page)
         }
   switch(sort) {
     case 'id':
@@ -86,8 +86,8 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
             value={filter}
             selectionColor="white"
             onChangeText={text => {
-              setViewChilds('filter', text)
-              setViewChilds('page', 0)
+              setViewData('childs', 'filter', text)
+              setViewData('childs', 'page', 0)
             }}
           />
           {Boolean(filter) && 
@@ -96,8 +96,8 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
                 icon="close"
                 color="gray"
                 onPress={() => {
-                  setViewChilds('filter', '')
-                  setViewChilds('page', 0)
+                  setViewData('childs', 'filter', '')
+                  setViewData('childs', 'page', 0)
                 }}
               />
             </View>
@@ -106,7 +106,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
             <Picker
                 selectedValue={category}
                 style={{color: 'white', minWidth: 130}}
-                onValueChange={value => setViewChilds('category', value)}>
+                onValueChange={value => setViewData('childs', 'category', value)}>
               <Picker.Item label="All" value={null} />
               <Picker.Item label="Child" value="childs" />
               <Picker.Item label="Monster" value="monsters" />
@@ -116,9 +116,9 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
               selectedValue={sort}
               style={{color: 'white', minWidth: 150}}
               onValueChange={value => {
-                setViewChilds('sort', value)
-                if(value.match(/(lastModAdded|numMods)/)) setViewChilds('order', 'desc')
-                else setViewChilds('order', 'asc')
+                setViewData('childs', 'sort', value)
+                if(value.match(/(lastModAdded|numMods)/)) setViewData('childs', 'order', 'desc')
+                else setViewData('childs', 'order', 'asc')
               }}>
               <Picker.Item label="ID" value="id" />
               <Picker.Item label="Name" value="name" />
@@ -129,7 +129,7 @@ const Childs = ({childs, setView, page, setViewChilds, filter = '', order, sort,
             </Picker>
             <IconButton
               icon={`sort-${order == 'desc' ? 'de' : 'a'}scending`} 
-              onPress={() => setViewChilds('order', order == 'desc' ? 'asc' : 'desc')} />
+              onPress={() => setViewData('childs', 'order', order == 'desc' ? 'asc' : 'desc')} />
           </View>
         </View>
         {numberOfPages > 1 && 
@@ -201,5 +201,5 @@ export default connect(
     category: state.get('view').get('childs').get('category'),
     activeModList: state.get('data').get('activeModList')
   }),
-  {setView, setViewChilds}
+  {setView, setViewData}
 )(Childs)

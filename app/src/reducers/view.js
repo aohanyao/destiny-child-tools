@@ -1,5 +1,5 @@
 import {fromJS} from 'immutable'
-import {VIEW_SET, VIEW_GO_BACK, VIEW_CHILDS_SET, VIEW_CHILD_SET, VIEW_SET_DRAWER_OPEN} from '../actions/view.js'
+import {VIEW_SET, VIEW_GO_BACK, VIEW_SET_VIEW_DATA, VIEW_SET_DRAWER_OPEN} from '../actions/view.js'
 
 export const history = [fromJS({
   name: 'Mods', 
@@ -9,6 +9,9 @@ export const history = [fromJS({
     page: 0,
     sort: 'lastModAdded',
     order: 'desc'
+  },
+  modsList: {
+    page: 0
   }
 })]
 
@@ -24,9 +27,9 @@ export default (state = history[0], action = {}) => {
   if(action.type == VIEW_SET_DRAWER_OPEN) {
     return state.set('drawerOpen', action.drawerOpen)
   }
-  if(action.type == VIEW_CHILDS_SET) {
+  if(action.type == VIEW_SET_VIEW_DATA) {
     state = state.set('index', history.length)
-    state = state.set('childs', state.get('childs').set(action.setting, action.value))
+    state = state.set(action.view, state.get(action.view).set(action.setting, action.value))
     history.push(state)
     return state
   }
