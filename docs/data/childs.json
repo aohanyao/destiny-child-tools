@@ -687,8 +687,9 @@
       }
     },
     "id": "sc221",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865187970
   },
   "sc232": {
     "name": "다프네",
@@ -743,8 +744,9 @@
       }
     },
     "id": "sc364",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575866156352
   },
   "sc012": {
     "name": "아가멤논",
@@ -1511,8 +1513,9 @@
       }
     },
     "id": "sc222",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865299739
   },
   "sc112": {
     "name": "엘리어스",
@@ -2356,8 +2359,9 @@
       }
     },
     "id": "sc311",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865813594
   },
   "sc322": {
     "name": "살라딘",
@@ -2388,8 +2392,9 @@
       }
     },
     "id": "sc223",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865353337
   },
   "sc344": {
     "name": "이졸데",
@@ -2432,8 +2437,9 @@
       }
     },
     "id": "sc355",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575866118193
   },
   "sc003": {
     "name": "다비",
@@ -3242,9 +3248,9 @@
       }
     },
     "id": "sc345",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1574705571093
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575865944671
   },
   "sc235": {
     "name": "다누",
@@ -4048,8 +4054,9 @@
       }
     },
     "id": "sc324",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865902641
   },
   "sc214": {
     "name": "주피터",
@@ -4141,8 +4148,9 @@
       }
     },
     "id": "sc247",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865550185
   },
   "sc379": {
     "id": "sc379",
@@ -7550,8 +7558,9 @@
       }
     },
     "id": "sc229",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865458181
   },
   "sc009": {
     "name": "헥토르",
@@ -10230,8 +10239,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575866370388
   },
   "c053": {
     "stars": 5,
@@ -22427,8 +22437,9 @@
       }
     },
     "id": "sc294",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865614661
   },
   "sc063": {
     "name": "프리지아",
@@ -22672,8 +22683,9 @@
       }
     },
     "id": "sc350",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865989697
   },
   "sc130": {
     "name": "게니우스",
@@ -22843,8 +22855,9 @@
       }
     },
     "id": "sc295",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865735992
   },
   "sc064": {
     "name": "메두사",
@@ -23140,8 +23153,9 @@
       }
     },
     "id": "sc351",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1575866037558
   },
   "sc120": {
     "name": "플로라",
@@ -23347,8 +23361,9 @@
       }
     },
     "id": "sc296",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 1,
+    "lastModAdded": 1575865775989
   },
   "sc065": {
     "name": "에라토",
