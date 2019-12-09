@@ -3,19 +3,23 @@ import {connect} from 'react-redux'
 import {ScrollView, View, Alert} from 'react-native'
 import {Text, Button, IconButton, TextInput} from 'react-native-paper'
 import ModCard from '../mod-card'
-import {installList, deleteModList, renameModList, setActiveModList} from '../actions/mod-lists'
+import {installList, deleteModList, renameModList, setActiveModList, saveList} from '../actions/mod-lists'
 import BreadCrumbs from './shared/breadcrumbs'
 import ActiveModList from './active-mod-list'
 
 const uneditable = ['Installed', 'Favorites']
 
-const ModList = ({list = [], lists, id, installList, deleteModList, activeModList, renameModList, setActiveModList}) => {
+const ModList = ({list = [], lists, id, installList, deleteModList, activeModList, renameModList, setActiveModList, saveList}) => {
   const [editListName, setEditListName] = useState(),
         inEditMode = typeof editListName != 'undefined'
   return (
     <>
       <ActiveModList />
-      <ScrollView style={{padding: 20, display: 'flex', marginBottom: 58}}>
+      <ScrollView style={{
+        padding: 20, 
+        display: 'flex', 
+        marginBottom: 58 + (activeModList ? 100 : 0)
+      }}>
         <View style={{flexDirection: 'row', flexWrap:'wrap', justifyContent: 'space-between'}}>
           <BreadCrumbs>
             <BreadCrumbs.Crumb view="ModLists">
@@ -74,6 +78,13 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
             </Button>
           </View>
         }
+        <Button
+          mode="contained"
+          style={{marginBottom: 20}}
+          icon="content-save"
+          onPress={() => saveList(id)}>
+          Save Mod List
+        </Button>
         {uneditable.indexOf(id) == -1 && (
           id == activeModList
             ? <View style={{marginTop: 20, marginBottom: 20}}>
@@ -82,6 +93,7 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
             : <Button
               mode="contained"
               style={{marginBottom: 20}}
+              icon="playlist-edit"
               onPress={() => setActiveModList(id)}>
               Set as active list
             </Button>
@@ -89,7 +101,8 @@ const ModList = ({list = [], lists, id, installList, deleteModList, activeModLis
         {list.length > 0  
           ? <Button
             style={{marginBottom: 20}}
-            mode="contained"
+              icon="cloud-download"
+              mode="contained"
             onPress={() => {
               Alert.alert(
                 'Install List?',
@@ -125,5 +138,5 @@ export default connect(
       activeModList: state.get('data').get('activeModList')
     }
   },
-  {installList, deleteModList, renameModList, setActiveModList}
+  {installList, deleteModList, renameModList, setActiveModList, saveList}
 )(ModList)

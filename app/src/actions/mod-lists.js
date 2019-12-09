@@ -7,6 +7,21 @@ import {setView} from './view'
 
 const listsFile = RNFS.DocumentDirectoryPath + 'mod-lists.json'
 
+export const saveList = listName => 
+  (dispatch, getState) => {
+    const lists = getState().get('data').get('modLists'),
+          filePath = RNFS.ExternalStorageDirectoryPath + '/dc-mods-list-' + listName.toLowerCase().replace(/\s/g, '-') + '.json'
+    RNFS.writeFile(filePath, JSON.stringify(lists[listName], null, 2))
+      .then(() => {
+        Alert.alert(
+          'Mod list saved',
+          'The mod lsit "' + listName + '" was saved to ' + filePath
+        )
+      })
+      .catch(() => Alert.alert('Error', 'There was an error attempting to write the mod list to ' + filePath))
+
+  }
+
 export const setActiveModList = modListName => 
   setData('activeModList', modListName)
 
