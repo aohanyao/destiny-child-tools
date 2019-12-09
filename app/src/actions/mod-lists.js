@@ -5,7 +5,8 @@ import {installMod} from './mods'
 import {Alert} from 'react-native'
 import {setView} from './view'
 
-const listsFile = RNFS.DocumentDirectoryPath + 'mod-lists.json'
+const listsFile = RNFS.DocumentDirectoryPath + 'mod-lists.json',
+      defaultLists = {Installed: [], Favorites: []}
 
 export const saveList = listName => 
   (dispatch, getState) => {
@@ -97,7 +98,7 @@ export const readModLists = nextAction =>
           console.log(data)
           RNFS.unlink(listsFile)
               .then(() => {
-                RNFS.writeFile(listsFile, JSON.stringify({Installed: []}, null, 2))
+                RNFS.writeFile(listsFile, JSON.stringify(defaultLists, null, 2))
                   .then(() => dispatch(readModLists(nextAction)))
               })
           alert(e + '\n\n Error importing mod list data.')
@@ -105,7 +106,7 @@ export const readModLists = nextAction =>
       })
     RNFS.exists(listsFile).then(exists => {
       if(!exists) {
-        RNFS.writeFile(listsFile, JSON.stringify({Installed: []}, null, 2))
+        RNFS.writeFile(listsFile, JSON.stringify(defaultLists, null, 2))
             .then(load)
       }
       else load()
