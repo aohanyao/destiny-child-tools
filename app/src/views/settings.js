@@ -25,7 +25,7 @@ const Settings = ({latestVersion, installPaths, installedClients, restoreModelIn
         }, [])
   return (
     <View padding={20}>
-      <ScrollView>
+      <ScrollView style={{marginBottom: 40}}>
         <Title>Settings</Title>
         <Text>Coming soon</Text>
         <Text></Text>
