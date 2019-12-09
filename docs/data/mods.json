@@ -8922,5 +8922,32 @@
     "child": "c005",
     "modder": "Unknown",
     "added": 1575642404896
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "10",
+    "child": "c045",
+    "modder": "Heather",
+    "added": 1575862249821,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "13",
+    "child": "c045",
+    "modder": "Heather",
+    "added": 1575862390734,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c430",
+    "modder": "Date.Takenobu",
+    "added": 1575862491745,
+    "nsfw": true
   }
 ]

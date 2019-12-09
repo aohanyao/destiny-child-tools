@@ -12713,9 +12713,9 @@
         }
       }
     },
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575249716609
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1575862491745
   },
   "c320": {
     "name": "Yan Zisuka",
@@ -13408,7 +13408,7 @@
     "tierPVP": 7,
     "name": "Aria",
     "tierRaid": 7,
-    "numModsNSFW": 11,
+    "numModsNSFW": 13,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -13492,8 +13492,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575493267959,
-    "numMods": 13,
+    "lastModAdded": 1575862390734,
+    "numMods": 15,
     "type": "support",
     "id": "c045",
     "element": "light",
@@ -14201,7 +14201,7 @@
     "tierPVP": 6,
     "name": "Lisa",
     "tierRaid": 7,
-    "numModsNSFW": 4,
+    "numModsNSFW": 5,
     "variants": {
       "10": {
         "title": "Beach",
@@ -14265,8 +14265,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575477035804,
-    "numMods": 8,
+    "lastModAdded": 1575641860814,
+    "numMods": 9,
     "type": "attacker",
     "id": "c002",
     "element": "water",
@@ -15476,7 +15476,7 @@
     "tierPVP": 4,
     "name": "Davi",
     "tierRaid": 3,
-    "numModsNSFW": 11,
+    "numModsNSFW": 13,
     "variants": {
       "10": {
         "title": "Beach",
@@ -15600,8 +15600,8 @@
       }
     },
     "tierBoss": 6,
-    "lastModAdded": 1575428076597,
-    "numMods": 12,
+    "lastModAdded": 1575642235324,
+    "numMods": 14,
     "type": "attacker",
     "id": "c003",
     "element": "fire",
@@ -17779,8 +17779,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575488560703,
-    "numMods": 6,
+    "lastModAdded": 1575642404896,
+    "numMods": 7,
     "type": "tank",
     "id": "c005",
     "element": "water",
