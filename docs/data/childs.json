@@ -4718,8 +4718,8 @@
       }
     },
     "tierBoss": 3,
-    "lastModAdded": 1575508984883,
-    "numMods": 5,
+    "lastModAdded": 1575946135512,
+    "numMods": 6,
     "type": "debuffer",
     "id": "m057",
     "element": "water",
@@ -8928,8 +8928,9 @@
       }
     },
     "id": "c140",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575946049449
   },
   "c382": {
     "name": "Nemean",
@@ -11082,9 +11083,9 @@
       }
     },
     "id": "c142",
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1575494459946
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575945130972
   },
   "c384": {
     "name": "Neruvi",
@@ -11407,9 +11408,9 @@
       }
     },
     "id": "c285",
-    "numMods": 3,
-    "numModsNSFW": 3,
-    "lastModAdded": 1575490940432
+    "numMods": 5,
+    "numModsNSFW": 5,
+    "lastModAdded": 1575945886690
   },
   "c054": {
     "name": "Legend",
@@ -15171,7 +15172,7 @@
     "tierPVP": 8,
     "name": "Khepri",
     "tierRaid": 8,
-    "numModsNSFW": 8,
+    "numModsNSFW": 10,
     "variants": {
       "89": {
         "title": "Vicious",
@@ -15215,8 +15216,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575475407249,
-    "numMods": 10,
+    "lastModAdded": 1575945347494,
+    "numMods": 12,
     "type": "attacker",
     "id": "c311",
     "element": "dark",
@@ -17121,7 +17122,7 @@
     "tierPVP": 7,
     "name": "Naiad",
     "tierRaid": 8,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "10": {
         "title": "Marine Blossom",
@@ -17165,8 +17166,8 @@
       }
     },
     "tierBoss": 10,
-    "lastModAdded": 1575472154102,
-    "numMods": 8,
+    "lastModAdded": 1575945729916,
+    "numMods": 9,
     "type": "support",
     "id": "c158",
     "element": "water",
@@ -19118,9 +19119,9 @@
       }
     },
     "id": "c205",
-    "numMods": 1,
+    "numMods": 2,
     "numModsNSFW": 1,
-    "lastModAdded": 1574086045640
+    "lastModAdded": 1575945630599
   },
   "c326": {
     "name": "Valla",
@@ -19544,8 +19545,9 @@
       }
     },
     "id": "c128",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1575946346294
   },
   "c018": {
     "name": "Korra",

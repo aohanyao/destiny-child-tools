@@ -9356,5 +9356,111 @@
     "modder": "Heather",
     "added": 1575897222316,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c142",
+    "modder": "Heather",
+    "added": 1575945130972,
+    "nsfw": true
+  },
+  {
+    "name": "Nude blue recolor",
+    "swap": "",
+    "variant": "02",
+    "child": "c311",
+    "modder": "Heather",
+    "added": 1575945283199,
+    "nsfw": true
+  },
+  {
+    "name": "Nude Red Recolor",
+    "swap": "",
+    "variant": "02",
+    "child": "c311",
+    "modder": "Heather",
+    "added": 1575945347494,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Tyche",
+    "swap": "c280_02",
+    "variant": "01",
+    "child": "c205",
+    "modder": "Heather",
+    "added": 1575945630599
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "10",
+    "child": "c158",
+    "modder": "Heather",
+    "added": 1575945729916,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "01",
+    "child": "c285",
+    "modder": "Heather",
+    "added": 1575945810305,
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c285",
+    "modder": "Heather",
+    "added": 1575945886690,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c140",
+    "modder": "Heather",
+    "added": 1575945975485,
+    "nsfw": true
+  },
+  {
+    "name": "Topless red",
+    "swap": "",
+    "variant": "01",
+    "child": "c140",
+    "modder": "Heather",
+    "added": 1575946049449,
+    "nsfw": true
+  },
+  {
+    "name": "Swap Diablo Special Red",
+    "swap": "",
+    "variant": "02",
+    "child": "m057",
+    "modder": "Heather",
+    "added": 1575946135512
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "02",
+    "child": "c128",
+    "modder": "Davxz",
+    "added": 1575946312151,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c128",
+    "modder": "Davxz",
+    "added": 1575946346294,
+    "nsfw": true
   }
 ]
