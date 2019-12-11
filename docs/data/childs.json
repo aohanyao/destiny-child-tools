@@ -12467,12 +12467,12 @@
       }
     },
     "tierBoss": 7,
+    "lastModAdded": 1575475052685,
     "numMods": 1,
     "type": "support",
     "id": "c286",
     "element": "fire",
-    "tierPVE": 6,
-    "lastModAdded": 1575475052685
+    "tierPVE": 6
   },
   "c176": {
     "name": "Eshu",
@@ -14985,12 +14985,12 @@
       }
     },
     "tierBoss": 7,
+    "lastModAdded": 1575475334742,
     "numMods": 1,
     "type": "debuffer",
     "id": "c299",
     "element": "grass",
-    "tierPVE": 6,
-    "lastModAdded": 1575475334742
+    "tierPVE": 6
   },
   "c068": {
     "name": "Ambrosia",
@@ -16702,12 +16702,12 @@
       }
     },
     "tierBoss": 1,
+    "lastModAdded": 1575487769415,
     "numMods": 2,
     "type": "attacker",
     "id": "c004",
     "element": "light",
-    "tierPVE": 1,
-    "lastModAdded": 1575487769415
+    "tierPVE": 1
   },
   "c125": {
     "name": "Altice",
@@ -19284,9 +19284,9 @@
   "c348": {
     "stars": 5,
     "tierPVP": 9,
-    "name": "Dark Mars",
+    "name": "Pretty Mars",
     "tierRaid": 9,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "10": {
         "title": "Sweet Darling",
@@ -19330,8 +19330,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575491065365,
-    "numMods": 4,
+    "lastModAdded": 1576024846225,
+    "numMods": 5,
     "type": "attacker",
     "id": "c348",
     "element": "dark",
@@ -19545,9 +19545,9 @@
       }
     },
     "id": "c128",
-    "numMods": 2,
-    "numModsNSFW": 2,
-    "lastModAdded": 1575946346294
+    "numMods": 3,
+    "numModsNSFW": 3,
+    "lastModAdded": 1576025072463
   },
   "c018": {
     "name": "Korra",
@@ -19626,12 +19626,12 @@
       }
     },
     "tierBoss": 8,
+    "lastModAdded": 1575494432987,
     "numMods": 2,
     "type": "healer",
     "id": "c139",
     "element": "light",
-    "tierPVE": 10,
-    "lastModAdded": 1575494432987
+    "tierPVE": 10
   },
   "c029": {
     "stars": 4,

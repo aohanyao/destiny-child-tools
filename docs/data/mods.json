@@ -9462,5 +9462,23 @@
     "modder": "Davxz",
     "added": 1575946346294,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c348",
+    "modder": "Heather",
+    "added": 1576024846225,
+    "nsfw": true
+  },
+  {
+    "name": "Topless 2",
+    "swap": "",
+    "variant": "02",
+    "child": "c128",
+    "modder": "Davxz",
+    "added": 1576025072463,
+    "nsfw": true
   }
 ]
