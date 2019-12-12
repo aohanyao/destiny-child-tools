@@ -9497,5 +9497,14 @@
     "child": "c110",
     "modder": "Gunz",
     "added": 1576164636464
+  },
+  {
+    "name": "Nude",
+    "swap": "",
+    "variant": "02",
+    "child": "c431",
+    "modder": "VeNus",
+    "added": 1576171427633,
+    "nsfw": true
   }
 ]
