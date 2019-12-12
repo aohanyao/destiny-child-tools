@@ -9489,5 +9489,13 @@
     "modder": "LobsterWithBoots",
     "added": 1576159725385,
     "nsfw": true
+  },
+  {
+    "name": "Ass",
+    "swap": "",
+    "variant": "01",
+    "child": "c110",
+    "modder": "Gunz",
+    "added": 1576164636464
   }
 ]

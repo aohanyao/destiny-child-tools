@@ -11777,8 +11777,9 @@
         }
       }
     },
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1576164636464
   },
   "c352": {
     "name": "Maestro",
