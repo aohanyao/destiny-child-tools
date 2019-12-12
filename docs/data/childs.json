@@ -14662,7 +14662,7 @@
     "tierPVP": 6,
     "name": "Elizabeth",
     "tierRaid": 7,
-    "numModsNSFW": 5,
+    "numModsNSFW": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -14696,8 +14696,8 @@
       }
     },
     "tierBoss": 8,
-    "lastModAdded": 1575897222316,
-    "numMods": 6,
+    "lastModAdded": 1576159725385,
+    "numMods": 7,
     "type": "attacker",
     "id": "c156",
     "element": "dark",

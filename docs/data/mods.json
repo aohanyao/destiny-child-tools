@@ -9480,5 +9480,14 @@
     "modder": "Davxz",
     "added": 1576025072463,
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "00",
+    "child": "c156",
+    "modder": "LobsterWithBoots",
+    "added": 1576159725385,
+    "nsfw": true
   }
 ]
