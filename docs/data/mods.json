@@ -9506,5 +9506,31 @@
     "modder": "VeNus",
     "added": 1576171427633,
     "nsfw": true
+  },
+  {
+    "name": "Pokies",
+    "swap": "",
+    "variant": "00",
+    "child": "c011",
+    "modder": "Anubis",
+    "added": 1576180109768
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "00",
+    "child": "c020",
+    "modder": "Anubis",
+    "added": 1576180182476,
+    "nsfw": true
+  },
+  {
+    "name": "Grin with Heather Butt",
+    "swap": "",
+    "variant": "01",
+    "child": "c039",
+    "modder": "Anubis",
+    "added": 1576180430256,
+    "nsfw": true
   }
 ]

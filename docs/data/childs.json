@@ -9957,7 +9957,7 @@
     "tierPVP": 6,
     "name": "Fortuna",
     "tierRaid": 6,
-    "numModsNSFW": 2,
+    "numModsNSFW": 3,
     "variants": {
       "00": {
         "title": "Human",
@@ -9991,8 +9991,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1575490212251,
-    "numMods": 2,
+    "lastModAdded": 1576180182476,
+    "numMods": 3,
     "type": "support",
     "id": "c020",
     "element": "fire",
@@ -11982,8 +11982,9 @@
       }
     },
     "id": "c011",
-    "numMods": 0,
-    "numModsNSFW": 0
+    "numMods": 1,
+    "numModsNSFW": 0,
+    "lastModAdded": 1576180109768
   },
   "c132": {
     "stars": 5,
@@ -18856,7 +18857,7 @@
     "tierPVP": 6,
     "name": "Morrigan",
     "tierRaid": 6,
-    "numModsNSFW": 3,
+    "numModsNSFW": 4,
     "variants": {
       "00": {
         "title": "Human",
@@ -18890,8 +18891,8 @@
       }
     },
     "tierBoss": 7,
-    "lastModAdded": 1574391896478,
-    "numMods": 5,
+    "lastModAdded": 1576180430256,
+    "numMods": 6,
     "type": "attacker",
     "id": "c039",
     "element": "dark",
