@@ -4,7 +4,11 @@ import RouterLink from '../link.jsx'
 import routes from '../routes.js'
 
 const ChildLink = ({child, children}) => (
-  <Link component={RouterLink} to={routes.CHILD.replace('/:id', '/' + child.get('id'))}>{children}</Link>
+  <Link
+    component={RouterLink} 
+    to={routes.CHILD.replace('/:id', '/' + (typeof child == 'string' ? child : child.get('id')))}>
+    {children}
+  </Link>
 )
 
 export default ChildLink

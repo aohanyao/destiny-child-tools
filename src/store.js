@@ -9,6 +9,7 @@ import censorship from './reducers/censorship.js'
 import processing from './reducers/processing.js'
 import page from './reducers/page.js'
 import mods from './reducers/mods.js'
+import modders from './reducers/modders.js'
 import routes from './routes.js'
 import {createHistory} from './history.js'
 import queryString from 'query-string'
@@ -28,8 +29,9 @@ export const createBrowserStore = (url) => {
     childs,
     childList,
     mods,
+    modders,
     page,
-    location: reducer
+    location: reducer,
   })
   const middlewares = applyMiddleware(middleware, thunk)
 

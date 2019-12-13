@@ -1,10 +1,12 @@
 const request = require('sync-request'),
       fs = require('fs'),
       path = require('path'),
-      childs = require('../docs/data/childs.json')
+      childs = require('../docs/data/childs.json'),
+      modders = require('../docs/data/modders.json'),
+      utf8 = require('utf8')
 
 const generateHtml = (pathname) => {
-  const res = request('GET', 'http://localhost:3000/destiny-child-tools' + pathname, {
+  const res = request('GET', utf8.encode('http://localhost:3000/destiny-child-tools' + pathname), {
     headers: {
       'accept': 'text/html',
     },
@@ -28,4 +30,6 @@ if(!res.getBody('utf8').match('Destiny Child Tools')) {
 
 generateHtml('/')
 generateHtml('/childs')
+generateHtml('/modders')
 Object.keys(childs).forEach(id => generateHtml('/childs/' + id))
+modders.forEach(({id}) => generateHtml('/modders/' + id))

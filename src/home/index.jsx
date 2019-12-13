@@ -7,6 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 import ImageIcon from '@material-ui/icons/Image'
 import FaceIcon from '@material-ui/icons/Face'
 import BuildIcon from '@material-ui/icons/Build'
+import PersonIcon from '@material-ui/icons/Person'
 import StorageIcon from '@material-ui/icons/Storage'
 import ComputerIcon from '@material-ui/icons/Computer'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew'
@@ -29,6 +30,10 @@ const Home = () => (
       <ListItem button component={RouterLink} to="/destiny-child-tools/childs">
         <ListItemIcon><FaceIcon /></ListItemIcon>
         <ListItemText primary="Childs &amp; Mods Database" />
+      </ListItem>
+      <ListItem button component={RouterLink} to="/destiny-child-tools/modders">
+        <ListItemIcon><PersonIcon /></ListItemIcon>
+        <ListItemText primary="Modder Database" />
       </ListItem>
       <Divider />
       <ListLink 

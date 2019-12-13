@@ -15,6 +15,7 @@ import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications'
 import {setModDetails} from '../actions/child.js'
 import {Censor} from '../censorship.jsx'
 import ModModal from './mod-modal.jsx'
+import ModCard from '../mod-card.jsx'
 
 const useStyles = makeStyles({
   live2d: {
@@ -104,63 +105,9 @@ const Mods = ({child, mods, mode, setModDetails}) => {
         </Box>
         <Grid container spacing={2}>
           {child.get('variants').toOrderedMap().sortBy((_, v) => parseInt(v)).map((_, variantId) =>
-            childMods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => {
-              const modPath = stringify(mod)
-              return (
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={mod.get('modder') + mod.get('name') + i}>
-                  <Card>
-                    <CardContent className={classes.cardContent}>
-                      {mod.get('modelInfo') &&
-                        <IconButton
-                          title="Model Info - This mod requires modifying model_info.json"
-                          className={classes.modelInfo}
-                          onClick={() => setModDetails(mod)}>
-                          <SettingsApplicationsIcon />
-                        </IconButton>
-                      }
-                      <Grid container>
-                        <Grid item xs={11}>
-                          <Button
-                            href={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=1000`}
-                            target="_blank"
-                            color="primary">
-                            {child.get('id')}_{variantId} {mod.get('name')} by {mod.get('modder')} {' '}
-                          </Button>
-                        </Grid>
-                        <Grid item xs={1}>
-                          <IconButton
-                            title="Download"
-                            className={classes.download}
-                            href={`/destiny-child-tools/live2d/assets/${modPath}/${id}_${variantId}.pck`}>
-                            <DownloadIcon />
-                          </IconButton>
-                        </Grid>
-                      </Grid>
-                      <Censor min={mod.get('nsfw') ? 0 : 1}
-                        fallback={
-                          <div style={{marginLeft: '1em'}}>
-                            <p>Censored! (NSFW)</p>
-                            <p>Change your censorship settings in the footer if you want to see this.</p>
-                          </div>
-                        }>
-                        <a 
-                          style={{
-                            textAlign: 'center', 
-                            display: 'block', 
-                            minHeight: '300px',
-                            background: `url(/destiny-child-tools/live2d/assets/${modPath}/preview-424242.png)`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center'
-                          }}
-                          href={`/destiny-child-tools/live2d/viewer.html?mN=${modPath}&size=1000&background=%23424242`}
-                          target="_blank"></a>
-                      </Censor>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              )
-            })
+            childMods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => 
+              <ModCard key={'mod' + variantId + 'i' + mod.get('name') + mod.get('modder')} mod={mod} />
+            )
           ).toList()}
         </Grid>
         {mode == 'edit' &&

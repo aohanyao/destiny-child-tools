@@ -13,6 +13,8 @@ import {fetchChilds} from './actions/childs.js'
 import {fetchMods} from './actions/mods.js'
 import Child from './child/index.jsx'
 import Childs from './childs/index.jsx'
+import Modders from './modders/index.jsx'
+import Modder from './modder/index.jsx'
 import Censorship from './censorship.jsx'
 import Home from './home/index.jsx'
 import NotFound from './not-found.jsx'
@@ -23,7 +25,9 @@ import routes from './routes.js'
 const pages = {
   HOME: Home,
   CHILDS: Childs,
-  CHILD: Child
+  CHILD: Child,
+  MODDERS: Modders,
+  MODDER: Modder
 }
 
 const App = function({page}) {
