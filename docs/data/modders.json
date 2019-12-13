@@ -122,8 +122,8 @@
   {
     "id": "heather",
     "name": "Heather",
-    "mods": 343,
-    "nsfw": 195,
+    "mods": 345,
+    "nsfw": 197,
     "sfw": 148,
     "swaps": 168
   },
@@ -178,8 +178,8 @@
   {
     "id": "kdg",
     "name": "KDG",
-    "mods": 102,
-    "nsfw": 94,
+    "mods": 103,
+    "nsfw": 95,
     "sfw": 8,
     "swaps": 3
   },
@@ -493,6 +493,14 @@
     "mods": 1,
     "nsfw": 1,
     "sfw": 0,
+    "swaps": 0
+  },
+  {
+    "id": "zyrox",
+    "name": "Zyrox",
+    "mods": 1,
+    "nsfw": 0,
+    "sfw": 1,
     "swaps": 0
   }
 ]

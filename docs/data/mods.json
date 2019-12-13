@@ -9532,5 +9532,40 @@
     "modder": "Anubis",
     "added": 1576180430256,
     "nsfw": true
+  },
+  {
+    "name": "Recolor",
+    "swap": "",
+    "variant": "02",
+    "child": "c198",
+    "modder": "Zyrox",
+    "added": 1576206274299
+  },
+  {
+    "name": "Nakirin KDG mashup",
+    "swap": "",
+    "variant": "01",
+    "child": "c253",
+    "modder": "Heather",
+    "added": 1576206714460,
+    "nsfw": true
+  },
+  {
+    "name": "Nakirin KDG mashup",
+    "swap": "",
+    "variant": "02",
+    "child": "c253",
+    "modder": "Heather",
+    "added": 1576206779376,
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "swap": "",
+    "variant": "01",
+    "child": "c431",
+    "modder": "KDG",
+    "added": 1576206926450,
+    "nsfw": true
   }
 ]

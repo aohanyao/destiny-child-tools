@@ -12057,7 +12057,7 @@
     "tierPVP": 8,
     "name": "Nicole",
     "tierRaid": 9,
-    "numModsNSFW": 5,
+    "numModsNSFW": 7,
     "variants": {
       "10": {
         "title": "Nativity",
@@ -12121,8 +12121,8 @@
       }
     },
     "tierBoss": 9,
-    "lastModAdded": 1575489924469,
-    "numMods": 11,
+    "lastModAdded": 1576206779376,
+    "numMods": 13,
     "type": "attacker",
     "id": "c253",
     "element": "grass",
@@ -12677,9 +12677,9 @@
       }
     },
     "id": "c198",
-    "numMods": 4,
+    "numMods": 5,
     "numModsNSFW": 3,
-    "lastModAdded": 1575494562575
+    "lastModAdded": 1576206274299
   },
   "c430": {
     "id": "c430",
@@ -23761,8 +23761,8 @@
         }
       }
     },
-    "numMods": 1,
-    "numModsNSFW": 1,
-    "lastModAdded": 1576171427633
+    "numMods": 2,
+    "numModsNSFW": 2,
+    "lastModAdded": 1576206926450
   }
 }
